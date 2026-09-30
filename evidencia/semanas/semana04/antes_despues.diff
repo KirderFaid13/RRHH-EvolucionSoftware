@@ -1,0 +1,64 @@
+--- src/v1/recuperado/ClassRRHH/RRHHClass.cs
++++ src/v2/caso_empleados/RRHHClass.cs
+@@ -302,14 +302,8 @@
+ 
+ 	public DataTable BuscarEmpleado_Codigo(int codigo)
+ 	{
+-		ObjCnn.Open();
+-		DataTable dataTable = new DataTable();
+-		objDA.SelectCommand = new SqlCommand("spRRHH_BuscarEmpleado_Codigo", ObjCnn);
+-		objDA.SelectCommand.CommandType = CommandType.StoredProcedure;
+-		objDA.SelectCommand.Parameters.Add("@codigo", SqlDbType.Int).Value = codigo;
+-		objDA.Fill(dataTable);
+-		ObjCnn.Close();
+-		return dataTable;
++		// C03: consulta delegada; se conservan los objetos compartidos actuales.
++		return new EmpleadoConsultas(ObjCnn, objDA).BuscarEmpleado_Codigo(codigo);
+ 	}
+ 
+ 	public bool ActualizaAsistencia(int idEmpleado, DateTime fecha, string hor_sal, bool flag_sal)
+@@ -812,19 +806,8 @@
+ 
+ 	public object ObtenerEmpleados()
+ 	{
+-		if (ObjCnn.State == ConnectionState.Closed)
+-		{
+-			ObjCnn.Open();
+-		}
+-		DataTable dataTable = new DataTable();
+-		objDA.SelectCommand = new SqlCommand("select idempleado,NombresC from vs_GetEmpleado where Estado=1", ObjCnn);
+-		objDA.SelectCommand.CommandType = CommandType.Text;
+-		objDA.Fill(dataTable);
+-		if (ObjCnn.State == ConnectionState.Open)
+-		{
+-			ObjCnn.Close();
+-		}
+-		return dataTable;
++		// C03: consulta delegada; se conservan los objetos compartidos actuales.
++		return new EmpleadoConsultas(ObjCnn, objDA).ObtenerEmpleados();
+ 	}
+ 
+ 	public object LlenarPlanillaAsistencia(string fechas, string idTipoTrabajador, string idLocales)
+@@ -962,20 +945,8 @@
+ 
+ 	public DataTable spRRHH_ListarTrabajadores(int idTipoTrabajador)
+ 	{
+-		if (ObjCnn.State == ConnectionState.Closed)
+-		{
+-			ObjCnn.Open();
+-		}
+-		DataTable dataTable = new DataTable();
+-		objDA.SelectCommand = new SqlCommand("spRRHH_ListarTrabajadores", ObjCnn);
+-		objDA.SelectCommand.CommandType = CommandType.StoredProcedure;
+-		objDA.SelectCommand.Parameters.Add("@IdTipoTrabajador", SqlDbType.Int).Value = idTipoTrabajador;
+-		objDA.Fill(dataTable);
+-		if (ObjCnn.State == ConnectionState.Open)
+-		{
+-			ObjCnn.Close();
+-		}
+-		return dataTable;
++		// C03: consulta delegada; se conservan los objetos compartidos actuales.
++		return new EmpleadoConsultas(ObjCnn, objDA).spRRHH_ListarTrabajadores(idTipoTrabajador);
+ 	}
+ 
+ 	public DataTable spRRHH_ListarTrabajadoresRep(int idTipoTrabajador)

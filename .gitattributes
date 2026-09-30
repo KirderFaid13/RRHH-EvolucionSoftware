@@ -7,6 +7,8 @@ referencias/**/*.pdf -text
 *.md text eol=lf
 *.json text eol=lf
 *.py text eol=lf
+*.cs text eol=lf
+*.diff text eol=lf
 *.txt text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf
@@ -16,3 +18,4 @@ referencias/**/*.pdf -text
 src/v1/recuperado/** -text
 src/v1/antecedentes/*.vb -text
 src/v1/antecedentes/*.txt -text
+src/v2/antecedentes/** -text

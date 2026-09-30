@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "path": "src/v2/antecedentes/README_recibido.md.txt",
+      "size": 2377,
+      "sha256": "f772d130455c3073a6cab6de93b96ab021718a2586952600592ee44605c3259d"
+    },
+    {
+      "path": "src/v2/antecedentes/src/DataAccess/AsistenciaRepository.cs",
+      "size": 2448,
+      "sha256": "2f9458e0e01f0a3d6b208ce4ec4ede79534053ccf7ce3fad576b0f77c08395ef"
+    },
+    {
+      "path": "src/v2/antecedentes/src/DataAccess/DatabaseHelper.cs",
+      "size": 3885,
+      "sha256": "bf8139af9e64b104d2c44e35c8374cff98f8068b41d3a076951250585c85e935"
+    },
+    {
+      "path": "src/v2/antecedentes/src/DataAccess/EmpleadoRepository.cs",
+      "size": 3462,
+      "sha256": "ec9347a92b9f2d0258ce33be08dc2a91ceb49f85118fee12911e9aefec8ea3fc"
+    },
+    {
+      "path": "src/v2/antecedentes/src/Models/Asistencia.cs",
+      "size": 1202,
+      "sha256": "7621b4cbd8991e8d52407d9e7c3356daa6fdb8861098c1100edae1c96a142016"
+    },
+    {
+      "path": "src/v2/antecedentes/src/Models/Empleado.cs",
+      "size": 1459,
+      "sha256": "1411793b348d9c8282b0acd6bb1f0512177b456846bc4ac63c36e417da9c10ab"
+    },
+    {
+      "path": "src/v2/antecedentes/src/Models/Permiso.cs",
+      "size": 1069,
+      "sha256": "1e145bc9ab7738bdb6adb66732ea0101f562847f1b15bbe7cdee71b6bbfd02a0"
+    },
+    {
+      "path": "src/v2/antecedentes/src/Services/AsistenciaImportService.cs",
+      "size": 5241,
+      "sha256": "10c3e6da8527797c6af286445a59f610645bc81177918307c2c72aad132174bb"
+    }
+  ],
+  "classification": "Propuesta academica previa; no equivalencia con v1 ni implementacion activa"
+}

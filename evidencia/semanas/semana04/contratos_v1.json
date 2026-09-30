@@ -1,0 +1,46 @@
+{
+  "source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+  "source_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+  "methods": [
+    {
+      "method": "ObtenerEmpleados",
+      "signature": "object ObtenerEmpleados()",
+      "command": "select idempleado,NombresC from vs_GetEmpleado where Estado=1",
+      "command_type": "Text",
+      "parameters": [],
+      "conditional_open": true,
+      "original_method_sha256": "7109491ad262b0dfc63aaddb243046654fabdfabd9c0b5bbd5973301edaf0e3d"
+    },
+    {
+      "method": "BuscarEmpleado_Codigo",
+      "signature": "DataTable BuscarEmpleado_Codigo(int codigo)",
+      "command": "spRRHH_BuscarEmpleado_Codigo",
+      "command_type": "StoredProcedure",
+      "parameters": [
+        {
+          "name": "@codigo",
+          "sql_type": "Int",
+          "argument": "codigo"
+        }
+      ],
+      "conditional_open": false,
+      "original_method_sha256": "265df02360d35eced51bcbb5329d75dbffc16e4b210655497194427f773ef22d"
+    },
+    {
+      "method": "spRRHH_ListarTrabajadores",
+      "signature": "DataTable spRRHH_ListarTrabajadores(int idTipoTrabajador)",
+      "command": "spRRHH_ListarTrabajadores",
+      "command_type": "StoredProcedure",
+      "parameters": [
+        {
+          "name": "@IdTipoTrabajador",
+          "sql_type": "Int",
+          "argument": "idTipoTrabajador"
+        }
+      ],
+      "conditional_open": true,
+      "original_method_sha256": "cda07262456a44809b2b947647889151a80e4f6725978a1e0d304d8f334d26d6"
+    }
+  ],
+  "schema_verified": false
+}

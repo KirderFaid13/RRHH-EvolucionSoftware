@@ -35,7 +35,7 @@ La unidad I busca desarrollar mantenimiento preventivo mediante refactorización
 
 El equipo se encuentra en la semana 07. Indica que sus últimos avances corresponden a la semana 05 y que en la evaluación T1 de la semana 06 no realizó una entrega. Este repositorio se organiza comenzando por el sistema original para que un lector pueda seguir cada incorporación en orden.
 
-En C02 se incorpora la recuperación parcial de ClassRRHH.dll y se audita la reconstrucción anterior. La existencia de avances locales no acredita su corrección: v2/v3 se revisarán en sus siguientes commits. Sílabo página 2 y guía final páginas 6, 8 y 10 respaldan el análisis del legado y los requisitos finales; [revisión documental](../docs/ingenieria_inversa/04_revision_antecedente.md).
+En C02 se incorporó la recuperación parcial de ClassRRHH.dll. En C03 se audita la propuesta v2 y se refactoriza un caso trazable de tres consultas de empleados, con compilación y pruebas de contratos sin SQL. v3 permanece pendiente. Sílabo página 2 y guía final páginas 6, 8 y 10 respaldan el análisis del legado y los requisitos finales; [revisión documental](../docs/ingenieria_inversa/04_revision_antecedente.md).
 
 ## Cuatro commits iniciales acordados
 

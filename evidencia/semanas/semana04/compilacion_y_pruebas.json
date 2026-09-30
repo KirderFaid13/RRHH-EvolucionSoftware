@@ -1,0 +1,44 @@
+{
+  "stage": "C03",
+  "sdk": "10.0.103",
+  "reference_profile": "installed Framework v4.0.30319",
+  "library": {
+    "exit_code": 0,
+    "source_count": 14,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "a90e3826f97cbc988029c0c7d8daa6d1533e523883d921d1658d7357d9c55d0b"
+  },
+  "antecedent_compilation": {
+    "exit_code": 1,
+    "source_count": 7,
+    "errors": [
+      "CS0246",
+      "CS0246",
+      "CS0246",
+      "CS0246",
+      "CS0246",
+      "CS0246",
+      "CS0246",
+      "CS0246"
+    ],
+    "warnings": [],
+    "output_sha256": null
+  },
+  "contract_test_compilation": {
+    "exit_code": 0,
+    "source_count": 3,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "8a33177238cb1fb9ce159c6f37e124f5e6f223bbc922612cc4c99719ee69b0f1"
+  },
+  "contract_tests": {
+    "exit_code": 0,
+    "scenarios_passed": 11,
+    "connection_opened": false,
+    "scope": "Only command construction in new authored code; no query execution or received assembly execution."
+  },
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false
+}

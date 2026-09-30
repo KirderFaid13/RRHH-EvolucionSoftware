@@ -1,6 +1,8 @@
 # Especificaciones por etapa
 
-Esta carpeta contiene contratos vinculados con una etapa del [roadmap](../.context/ROADMAP.md). [C02: ingeniería inversa](c02_ingenieria_inversa.json) delimita la recuperación estática y las comprobaciones de v1. No presupone un esquema SQL validado; los contratos de v2/v3 se definirán en sus etapas.
+Esta carpeta contiene contratos vinculados con una etapa del [roadmap](../.context/ROADMAP.md). [C02: ingeniería inversa](c02_ingenieria_inversa.json) delimita la recuperación estática y las comprobaciones de v1. Los contratos se definen en cada etapa y no presuponen un esquema SQL validado.
+
+[C03: SRP/DRY](c03_srp_dry.json) delimita tres consultas reales y su ejecución compartida, con firmas/contratos conservados y pruebas sin SQL. C04/v3 se definirá cuando el equipo indique avanzar.
 
 Antes de intervenir un caso, su especificación deberá indicar:
 

@@ -1,12 +1,12 @@
 # Roadmap del RRHH original a sus mejoras
 
-Este roadmap establece el orden de incorporación al repositorio. C01 conserva el original y C02 recupera una base parcial verificable. La publicación se confirma con el resultado de Git, no por la existencia de este archivo.
+Este roadmap establece el orden de incorporación al repositorio. C01 conserva el original, C02 recupera una base parcial verificable y C03 refactoriza tres consultas mediante SRP/DRY. La publicación se confirma con el resultado de Git, no por la existencia de este archivo.
 
 | Etapa | Objetivo | Estado de esta revisión | Evidencia de cierre |
 | --- | --- | --- | --- |
 | C01 | Incorporar RRHH original y estructura organizada. | Publicado en e1ead41; contenido preservado. | Inventarios y comprobaciones en evidencia/baseline/. |
-| C02 | Ingeniería inversa y v1. | Recuperación parcial documentada; 12 fuentes compilan como biblioteca diagnóstica. Contenido del segundo commit. | Informe, metadatos, hashes, contratos observados, compilación y comparación estática de API en evidencia/ingenieria_inversa/. Equivalencia funcional y esquema SQL pendientes. |
-| C03 | v2: única responsabilidad y DRY. | Pendiente; depende de una base identificada en C02. | Caso antes/después, responsabilidades separadas, duplicación tratada y verificación del alcance. |
+| C02 | Ingeniería inversa y v1. | Publicado en 9e18ca4; recuperación parcial y compilación diagnóstica. | Evidencia/ingenieria_inversa/: informe, metadatos, hashes y contratos. Equivalencia funcional y esquema SQL pendientes. |
+| C03 | v2: única responsabilidad y DRY. | Contenido de esta revisión: tres consultas extraídas, ejecución común centralizada, biblioteca compilada y 11 escenarios aprobados sin abrir SQL. | docs/semanas/semana04/ y evidencia/semanas/semana04/: contratos, diff, compilación, pruebas y conservación del resto. Integración real pendiente. |
 | C04 | v3: abierto/cerrado. | Pendiente; depende del caso y la base seleccionados. | Punto de extensión, implementación del caso, explicación de lo conservado y verificaciones reales. |
 | S07 | Mejora puntual mediante inversión de control. | Pendiente; fuera de los cuatro commits iniciales. | Dependencia directa identificada, mejora por abstracción e inyección, prueba pertinente y exposición breve. |
 | S08-S16 | Gestión de configuración, cambios, versiones y cierre del curso. | Pendiente de las consignas de cada semana. | Entregables definidos por el docente y registros verificables del trabajo. |
@@ -21,4 +21,4 @@ Este roadmap establece el orden de incorporación al repositorio. C01 conserva e
 6. Preparar un commit descriptivo de esa etapa y verificar el resultado de su publicación.
 7. Detenerse después del commit y esperar la indicación para la etapa siguiente.
 
-El [prompt de ingeniería inversa](../prompts/01_ingenieria_inversa.md) documenta el alcance de C02 y sirve para reproducirlo. C03 permanece pendiente de autorización y de un contrato que delimite su caso sobre la base elegida.
+El [contrato C03](../specs/c03_srp_dry.json) delimita la mejora de tres consultas reales. C04/v3 permanece pendiente de indicación y de su contrato; no se incorporó OCP ni la entrega IoC de semana 07.

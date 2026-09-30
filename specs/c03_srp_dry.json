@@ -1,0 +1,17 @@
+{
+  "stage": "C03",
+  "title": "SRP y DRY en tres consultas de empleados",
+  "status": "implemented_and_verified_with_documented_limits",
+  "baseline_commit": "9e18ca433073e50522791916fb29240f59723395",
+  "academic_week": 4,
+  "source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+  "scope": ["ObtenerEmpleados()", "BuscarEmpleado_Codigo(int codigo)", "spRRHH_ListarTrabajadores(int idTipoTrabajador)"],
+  "objective": "Separar definicion de consultas de empleados y ejecucion ADO.NET comun, manteniendo firmas y contratos del cliente recuperado.",
+  "preserve": ["Firmas publicas del facade RRHHClass", "Texto SQL y CommandType", "Nombres, tipos y valores de parametros", "Conexion y adaptador compartidos recibidos del facade", "Reglas de apertura/cierre de cada metodo en la ruta normal"],
+  "changes": ["Extraer tres consultas a EmpleadoConsultas", "Centralizar construccion de comandos y ejecucion DataTable en EjecutorConsultasSql", "Delegar tres metodos de RRHHClass; conservar todos los demas", "Archivar la propuesta previa v2 sin modificar sus bytes ni atribuirle equivalencia"],
+  "excluded": ["Interfaces, contenedores o implementacion IoC/OCP", "Refactorizar importadores Access", "Cambiar contratos de insercion/permisos/reportes", "Ejecutar codigo recibido o conectar/restaurar BD", "Reemplazar el EXE o DLL del legado"],
+  "verification": ["Compilacion de biblioteca v2 combinando fuentes verificadas v1 y tres fuentes del caso", "Pruebas del codigo nuevo: comandos contra contratos extraidos de v1 sin abrir SQL", "Conservacion de cuerpos de metodos no afectados y firmas publicas", "Diagnostico de compilacion del antecedente sin corregirlo", "Hashes, JSON, enlaces, secretos y exclusiones Git"],
+  "evidence": ["evidencia/semanas/semana04/contratos_v1.json", "evidencia/semanas/semana04/antes_despues.diff", "evidencia/semanas/semana04/compilacion_y_pruebas.json", "evidencia/semanas/semana04/verificacion_v2.json", "evidencia/semanas/semana04/antecedentes.json"],
+  "limits": ["SQL/Access y resultados reales no verificados", "Pruebas de comandos no demuestran equivalencia funcional completa", "Se conserva politica de errores y gestion manual del legado, no se garantiza cierre ante fallos", "La separacion es parcial; no se declara que toda RRHHClass cumpla SRP"],
+  "stop_condition": "Publicar solo el tercer commit, explicar cambios y esperar indicacion para C04/v3."
+}

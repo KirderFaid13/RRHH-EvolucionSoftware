@@ -25,3 +25,15 @@ python .\herramientas\compilar_v1.py
 ```
 
 Las evidencias de compilación y API deben interpretarse con sus límites. [Resultados C02](../evidencia/ingenieria_inversa/README.md).
+
+## SRP/DRY C03
+
+- `compilar_v2.py`: combina las fuentes verificadas de v1 con el caso de empleados, compila 14 C# y ejecuta 11 escenarios del código nuevo sin abrir SQL. Diagnostica aparte el antecedente original.
+- `verificar_v2.py`: comprueba que solo cambien tres cuerpos, que el resto de la fachada y etapas anteriores se conserven y que los ocho antecedentes mantengan sus hashes.
+
+```powershell
+python herramientas/compilar_v2.py
+python herramientas/verificar_v2.py
+```
+
+[Informe](../docs/semanas/semana04/01_srp_dry.md) y [evidencias](../evidencia/semanas/semana04/README.md). Necesita el entorno Windows/Framework descrito para v1; no sustituye pruebas de integración.

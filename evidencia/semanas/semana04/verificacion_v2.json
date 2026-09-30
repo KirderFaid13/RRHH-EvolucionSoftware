@@ -1,0 +1,37 @@
+{
+  "stage": "C03",
+  "ok": true,
+  "modified_methods": [
+    "ObtenerEmpleados",
+    "BuscarEmpleado_Codigo",
+    "spRRHH_ListarTrabajadores"
+  ],
+  "all_other_facade_code_and_public_signatures_preserved": true,
+  "previous_stage_files_changed": false,
+  "antecedents_hashes_verified": 8,
+  "library_compiled": true,
+  "contract_scenarios_passed": 11,
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false,
+  "execution_sequences_in_three_original_methods": 3,
+  "execution_sequence_in_shared_helper": 1,
+  "active_case_files": [
+    {
+      "path": "src/v2/caso_empleados/EjecutorConsultasSql.cs",
+      "sha256": "7abe9bdebfc86701daad4badfd4f89ee703c7a29d14d8a042aaf594a9e95008f",
+      "size": 1209
+    },
+    {
+      "path": "src/v2/caso_empleados/EmpleadoConsultas.cs",
+      "sha256": "9bf6cd6e97c1bdd87d8d88fdd027997b0b2557e3207761d4c8779b4941e7bf4d",
+      "size": 1552
+    },
+    {
+      "path": "src/v2/caso_empleados/RRHHClass.cs",
+      "sha256": "f0b9e8d338d9ec9f7263bc8ec255a2357313ffa80ee935aaf3a6f04fa46c3c5f",
+      "size": 42236
+    }
+  ],
+  "failures": []
+}

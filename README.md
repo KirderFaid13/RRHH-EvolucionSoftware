@@ -2,13 +2,13 @@
 
 Proyecto académico para estudiar, refactorizar y evolucionar el sistema de Recursos Humanos recibido por el grupo, identificado como un sistema de 2008. Curso: **Evolución y Configuración de Software, UPN, 2026-2**.
 
-**Etapa de esta revisión: ingeniería inversa y base v1.** Se recuperó código de `ClassRRHH.dll`, se identificaron clases y contratos de llamada y se compiló una biblioteca de diagnóstico. El programa original conserva su contenido; funcionamiento, esquema SQL y equivalencia siguen pendientes.
+**Etapa de esta revisión: v2, SRP y DRY.** Tres consultas reales de empleados se extraen a una clase dedicada y comparten un ejecutor SQL. Se conservan las firmas públicas de la fachada y los contratos observados en v1. El original y la recuperación de C02 permanecen intactos; resultados SQL, interfaz y equivalencia completa siguen pendientes.
 
 ## Lectura inicial
 
-1. [Segundo commit: qué recuperamos, dónde, por qué y límites](docs/ingenieria_inversa/01_informe.md).
-2. [Código v1 y procedencia](src/v1/README.md), [arquitectura](docs/ingenieria_inversa/02_arquitectura.md) y [comprobaciones C02](evidencia/ingenieria_inversa/README.md).
-3. [Primer commit: preservación y organización](docs/organizacion/01_baseline.md).
+1. [Tercer commit: SRP/DRY, antes/después y comprobaciones](docs/semanas/semana04/01_srp_dry.md).
+2. [Código v2](src/v2/README.md) y [evidencias semana 04](evidencia/semanas/semana04/README.md).
+3. [Ingeniería inversa y v1](docs/ingenieria_inversa/01_informe.md), [fuentes v1](src/v1/README.md) y [baseline original](docs/organizacion/01_baseline.md).
 4. [Cómo localizar y restaurar el RRHH original](legado/README.md).
 5. [Contexto del curso](.context/03_course_context.md), [reglas funcionales pendientes](.context/01_business_rules.md) y [diccionario de datos](.context/02_data_dictionary.json).
 6. [Roadmap](.context/ROADMAP.md) y [orden de commits y ramas](docs/organizacion/git_y_github.md).
@@ -82,8 +82,8 @@ La integridad de archivos **no acredita funcionamiento**. Todavía no se ha prob
 | Commit | Contenido | Estado de esta revisión |
 | --- | --- | --- |
 | 1 | RRHH original protegido y estructura organizada. | Conservado; publicado en `e1ead41`. |
-| 2 | Ingeniería inversa y base v1 con procedencia documentada. | Contenido de esta revisión: recuperación parcial, compilación diagnóstica comprobada. |
-| 3 | v2: refactorización mediante SRP y DRY. | Pendiente. |
+| 2 | Ingeniería inversa y base v1 con procedencia documentada. | Publicado en `9e18ca4`; recuperación parcial, compilación diagnóstica comprobada. |
+| 3 | v2: refactorización mediante SRP y DRY. | Contenido de esta revisión: tres consultas refactorizadas, biblioteca compilada y 11 escenarios de contratos aprobados. |
 | 4 | v3: mejora mediante abierto/cerrado, OCP. | Pendiente. |
 
 Se avanza y se explica **un commit por vez**, esperando la indicación del equipo antes del siguiente. La semana 07, IoC/v4, se trabajará después de esta secuencia. Las versiones y análisis anteriores se conservan localmente para revisarlos cuando corresponda.
@@ -95,3 +95,12 @@ python .\herramientas\compilar_v1.py
 ```
 
 La compilación incluye 12 fuentes recuperadas, no los VB del antecedente académico. `MySettings.cs` se almacena cifrada por sus valores codificados; once C# quedan visibles. [Procedimiento y límites](docs/ingenieria_inversa/03_procedencia_v1.md).
+
+Para la etapa actual, después de restaurar el legado:
+
+```powershell
+python herramientas/compilar_v2.py
+python herramientas/verificar_v2.py
+```
+
+Se compila la combinación de v1 con el caso v2 y se prueban comandos del código nuevo sin abrir SQL. La propuesta v2 previa se preserva como antecedente; no participa en la biblioteca activa. [Qué cambió y por qué](docs/semanas/semana04/01_srp_dry.md).

@@ -24,6 +24,12 @@ La fuente de estos puntos es la explicación del equipo. Las evidencias técnica
 
 Fuentes: [arquitectura](../docs/ingenieria_inversa/02_arquitectura.md), [contratos observados](../evidencia/ingenieria_inversa/contratos_observados.json) y [metadatos](../evidencia/ingenieria_inversa/ensamblados_propios.json). La v1 previa era una reconstrucción parcial; [auditoría](../docs/ingenieria_inversa/04_revision_antecedente.md).
 
+## Estado de mantenimiento C03
+
+Tres consultas de empleados se separaron de la fachada en `EmpleadoConsultas`; su mecánica ADO.NET se centralizó en `EjecutorConsultasSql`. Se conservan contratos del cliente y firmas, sin definir reglas nuevas ni cambiar la información de roles/esquema. [Caso SRP/DRY](../docs/semanas/semana04/01_srp_dry.md).
+
+La biblioteca compila y 11 escenarios de comandos pasan con conexiones cerradas. Ese resultado no acredita salidas SQL, permisos o funcionamiento integrado. La propuesta v2 anterior se conserva como antecedente, separada del caso activo.
+
 ## Información funcional pendiente
 
 | Aspecto | Estado inicial | Evidencia que necesitamos |
