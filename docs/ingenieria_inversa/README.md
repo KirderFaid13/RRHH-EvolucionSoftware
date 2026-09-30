@@ -1,5 +1,8 @@
-# Ingeniería inversa
+# Ingeniería inversa: segundo commit
 
-El segundo commit incorporará aquí los hallazgos, arquitectura recuperada, procedencia de fuentes, discrepancias y límites de la v1. Esta carpeta establece su ubicación; todavía no contiene ese trabajo.
+1. [Informe: qué recuperamos, dónde, por qué y límites](01_informe.md).
+2. [Arquitectura observada](02_arquitectura.md).
+3. [Procedencia de v1 y comandos reproducibles](03_procedencia_v1.md).
+4. [Revisión del antecedente académico](04_revision_antecedente.md).
 
-Consultar el [prompt de C02](../../prompts/01_ingenieria_inversa.md). Las comprobaciones correspondientes se conservarán en [evidencia de ingeniería inversa](../../evidencia/ingenieria_inversa/README.md).
+Resultado: código del ensamblado propio recuperado, biblioteca diagnóstica compilada y contratos de llamada identificados. La interfaz completa, esquema SQL y equivalencia funcional siguen pendientes. [Fuentes v1](../../src/v1/README.md) y [evidencias](../../evidencia/ingenieria_inversa/README.md).

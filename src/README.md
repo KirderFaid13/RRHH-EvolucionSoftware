@@ -1,6 +1,6 @@
 # Código recuperado y evolución
 
-Esta carpeta está preparada para el código que se recupere y mejore en las siguientes etapas. El primer commit no incorpora código nuevo de v1, v2, v3 o v4.
+Esta carpeta incorpora en el segundo commit la [v1 recuperada](v1/README.md) y su antecedente académico auditado. v2, v3 y v4 permanecen pendientes.
 
 La ubicación de la entrega original se describe en el [README del repositorio](../README.md). Se mantiene separada del código de esta carpeta para conservar la referencia contra la que se explicarán los cambios.
 

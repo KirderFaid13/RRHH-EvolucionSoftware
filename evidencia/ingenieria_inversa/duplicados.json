@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "scope": "Los 348 originales inventariados, incluido respaldo local",
+  "criterion": "Igualdad SHA-256 y tamano del inventario baseline; no similitud por nombre",
+  "summary": {
+    "original_files": 348,
+    "unique_contents": 239,
+    "duplicate_groups": 68,
+    "redundant_bytes": 115345957
+  },
+  "groups": [
+    {
+      "sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "size_per_file": 55808,
+      "copies": 2,
+      "redundant_bytes": 55808,
+      "paths": [
+        "ClassRRHH.dll",
+        "Reportes/ClassRRHH.dll"
+      ]
+    },
+    {
+      "sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "size_per_file": 91648,
+      "copies": 2,
+      "redundant_bytes": 91648,
+      "paths": [
+        "ClassRRHH.pdb",
+        "Reportes/ClassRRHH.pdb"
+      ]
+    },
+    {
+      "sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "size_per_file": 763,
+      "copies": 3,
+      "redundant_bytes": 1526,
+      "paths": [
+        "ClassRRHH.xml",
+        "Reportes/ClassRRHH.xml",
+        "temp/ClassRRHH.xml"
+      ]
+    },
+    {
+      "sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "size_per_file": 58880,
+      "copies": 3,
+      "redundant_bytes": 117760,
+      "paths": [
+        "ClsCtrls.dll",
+        "Reportes/ClsCtrls.dll",
+        "temp/ClsCtrls.dll"
+      ]
+    },
+    {
+      "sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "size_per_file": 36864,
+      "copies": 3,
+      "redundant_bytes": 73728,
+      "paths": [
+        "Custom Featured MessageBox.dll",
+        "Reportes/Custom Featured MessageBox.dll",
+        "temp/Custom Featured MessageBox.dll"
+      ]
+    },
+    {
+      "sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "size_per_file": 181152,
+      "copies": 3,
+      "redundant_bytes": 362304,
+      "paths": [
+        "DevExpress.Charts.v11.2.Core.dll",
+        "Reportes/DevExpress.Charts.v11.2.Core.dll",
+        "temp/DevExpress.Charts.v11.2.Core.dll"
+      ]
+    },
+    {
+      "sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "size_per_file": 2680736,
+      "copies": 3,
+      "redundant_bytes": 5361472,
+      "paths": [
+        "DevExpress.Data.v11.2.dll",
+        "Reportes/DevExpress.Data.v11.2.dll",
+        "temp/DevExpress.Data.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "size_per_file": 844979,
+      "copies": 2,
+      "redundant_bytes": 844979,
+      "paths": [
+        "DevExpress.Data.v11.2.xml",
+        "Reportes/DevExpress.Data.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "size_per_file": 995744,
+      "copies": 3,
+      "redundant_bytes": 1991488,
+      "paths": [
+        "DevExpress.PivotGrid.v11.2.Core.dll",
+        "Reportes/DevExpress.PivotGrid.v11.2.Core.dll",
+        "temp/DevExpress.PivotGrid.v11.2.Core.dll"
+      ]
+    },
+    {
+      "sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "size_per_file": 481082,
+      "copies": 2,
+      "redundant_bytes": 481082,
+      "paths": [
+        "DevExpress.PivotGrid.v11.2.Core.xml",
+        "Reportes/DevExpress.PivotGrid.v11.2.Core.xml"
+      ]
+    },
+    {
+      "sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "size_per_file": 2006944,
+      "copies": 3,
+      "redundant_bytes": 4013888,
+      "paths": [
+        "DevExpress.Printing.v11.2.Core.dll",
+        "Reportes/DevExpress.Printing.v11.2.Core.dll",
+        "temp/DevExpress.Printing.v11.2.Core.dll"
+      ]
+    },
+    {
+      "sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "size_per_file": 47008,
+      "copies": 3,
+      "redundant_bytes": 94016,
+      "paths": [
+        "DevExpress.Reports.v11.2.Designer.dll",
+        "Reportes/DevExpress.Reports.v11.2.Designer.dll",
+        "temp/DevExpress.Reports.v11.2.Designer.dll"
+      ]
+    },
+    {
+      "sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "size_per_file": 4915104,
+      "copies": 3,
+      "redundant_bytes": 9830208,
+      "paths": [
+        "DevExpress.RichEdit.v11.2.Core.dll",
+        "Reportes/DevExpress.RichEdit.v11.2.Core.dll",
+        "temp/DevExpress.RichEdit.v11.2.Core.dll"
+      ]
+    },
+    {
+      "sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "size_per_file": 1188777,
+      "copies": 2,
+      "redundant_bytes": 1188777,
+      "paths": [
+        "DevExpress.RichEdit.v11.2.Core.xml",
+        "Reportes/DevExpress.RichEdit.v11.2.Core.xml"
+      ]
+    },
+    {
+      "sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "size_per_file": 3473824,
+      "copies": 3,
+      "redundant_bytes": 6947648,
+      "paths": [
+        "DevExpress.Utils.v11.2.dll",
+        "Reportes/DevExpress.Utils.v11.2.dll",
+        "temp/DevExpress.Utils.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "size_per_file": 413014,
+      "copies": 2,
+      "redundant_bytes": 413014,
+      "paths": [
+        "DevExpress.Utils.v11.2.xml",
+        "Reportes/DevExpress.Utils.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "size_per_file": 2570144,
+      "copies": 3,
+      "redundant_bytes": 5140288,
+      "paths": [
+        "DevExpress.XtraBars.v11.2.dll",
+        "Reportes/DevExpress.XtraBars.v11.2.dll",
+        "temp/DevExpress.XtraBars.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "size_per_file": 1195919,
+      "copies": 2,
+      "redundant_bytes": 1195919,
+      "paths": [
+        "DevExpress.XtraBars.v11.2.xml",
+        "Reportes/DevExpress.XtraBars.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "size_per_file": 6955936,
+      "copies": 3,
+      "redundant_bytes": 13911872,
+      "paths": [
+        "DevExpress.XtraCharts.v11.2.dll",
+        "Reportes/DevExpress.XtraCharts.v11.2.dll",
+        "temp/DevExpress.XtraCharts.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "size_per_file": 1427210,
+      "copies": 2,
+      "redundant_bytes": 1427210,
+      "paths": [
+        "DevExpress.XtraCharts.v11.2.xml",
+        "Reportes/DevExpress.XtraCharts.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "size_per_file": 215552,
+      "copies": 3,
+      "redundant_bytes": 431104,
+      "paths": [
+        "DevExpress.XtraEditors.v11.2.Design.dll",
+        "Reportes/DevExpress.XtraEditors.v11.2.Design.dll",
+        "temp/DevExpress.XtraEditors.v11.2.Design.dll"
+      ]
+    },
+    {
+      "sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "size_per_file": 2001824,
+      "copies": 3,
+      "redundant_bytes": 4003648,
+      "paths": [
+        "DevExpress.XtraEditors.v11.2.dll",
+        "Reportes/DevExpress.XtraEditors.v11.2.dll",
+        "temp/DevExpress.XtraEditors.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "size_per_file": 1238439,
+      "copies": 2,
+      "redundant_bytes": 1238439,
+      "paths": [
+        "DevExpress.XtraEditors.v11.2.xml",
+        "Reportes/DevExpress.XtraEditors.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "size_per_file": 1946016,
+      "copies": 3,
+      "redundant_bytes": 3892032,
+      "paths": [
+        "DevExpress.XtraGrid.v11.2.dll",
+        "Reportes/DevExpress.XtraGrid.v11.2.dll",
+        "temp/DevExpress.XtraGrid.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "size_per_file": 1269167,
+      "copies": 2,
+      "redundant_bytes": 1269167,
+      "paths": [
+        "DevExpress.XtraGrid.v11.2.xml",
+        "Reportes/DevExpress.XtraGrid.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "size_per_file": 731040,
+      "copies": 3,
+      "redundant_bytes": 1462080,
+      "paths": [
+        "DevExpress.XtraLayout.v11.2.dll",
+        "Reportes/DevExpress.XtraLayout.v11.2.dll",
+        "temp/DevExpress.XtraLayout.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "size_per_file": 308974,
+      "copies": 2,
+      "redundant_bytes": 308974,
+      "paths": [
+        "DevExpress.XtraLayout.v11.2.xml",
+        "Reportes/DevExpress.XtraLayout.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "size_per_file": 589216,
+      "copies": 3,
+      "redundant_bytes": 1178432,
+      "paths": [
+        "DevExpress.XtraPivotGrid.v11.2.dll",
+        "Reportes/DevExpress.XtraPivotGrid.v11.2.dll",
+        "temp/DevExpress.XtraPivotGrid.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "size_per_file": 513491,
+      "copies": 2,
+      "redundant_bytes": 513491,
+      "paths": [
+        "DevExpress.XtraPivotGrid.v11.2.xml",
+        "Reportes/DevExpress.XtraPivotGrid.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "size_per_file": 56320,
+      "copies": 3,
+      "redundant_bytes": 112640,
+      "paths": [
+        "DevExpress.XtraPrinting.v11.2.Design.dll",
+        "Reportes/DevExpress.XtraPrinting.v11.2.Design.dll",
+        "temp/DevExpress.XtraPrinting.v11.2.Design.dll"
+      ]
+    },
+    {
+      "sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "size_per_file": 672672,
+      "copies": 3,
+      "redundant_bytes": 1345344,
+      "paths": [
+        "DevExpress.XtraPrinting.v11.2.dll",
+        "Reportes/DevExpress.XtraPrinting.v11.2.dll",
+        "temp/DevExpress.XtraPrinting.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "size_per_file": 148491,
+      "copies": 2,
+      "redundant_bytes": 148491,
+      "paths": [
+        "DevExpress.XtraPrinting.v11.2.xml",
+        "Reportes/DevExpress.XtraPrinting.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "size_per_file": 734208,
+      "copies": 3,
+      "redundant_bytes": 1468416,
+      "paths": [
+        "DevExpress.XtraReports.v11.2.Design.dll",
+        "Reportes/DevExpress.XtraReports.v11.2.Design.dll",
+        "temp/DevExpress.XtraReports.v11.2.Design.dll"
+      ]
+    },
+    {
+      "sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "size_per_file": 1668512,
+      "copies": 3,
+      "redundant_bytes": 3337024,
+      "paths": [
+        "DevExpress.XtraReports.v11.2.Extensions.dll",
+        "Reportes/DevExpress.XtraReports.v11.2.Extensions.dll",
+        "temp/DevExpress.XtraReports.v11.2.Extensions.dll"
+      ]
+    },
+    {
+      "sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "size_per_file": 139126,
+      "copies": 2,
+      "redundant_bytes": 139126,
+      "paths": [
+        "DevExpress.XtraReports.v11.2.Extensions.xml",
+        "Reportes/DevExpress.XtraReports.v11.2.Extensions.xml"
+      ]
+    },
+    {
+      "sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "size_per_file": 1166240,
+      "copies": 3,
+      "redundant_bytes": 2332480,
+      "paths": [
+        "DevExpress.XtraReports.v11.2.dll",
+        "Reportes/DevExpress.XtraReports.v11.2.dll",
+        "temp/DevExpress.XtraReports.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "size_per_file": 840645,
+      "copies": 2,
+      "redundant_bytes": 840645,
+      "paths": [
+        "DevExpress.XtraReports.v11.2.xml",
+        "Reportes/DevExpress.XtraReports.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "size_per_file": 1551264,
+      "copies": 3,
+      "redundant_bytes": 3102528,
+      "paths": [
+        "DevExpress.XtraRichEdit.v11.2.dll",
+        "Reportes/DevExpress.XtraRichEdit.v11.2.dll",
+        "temp/DevExpress.XtraRichEdit.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "size_per_file": 114637,
+      "copies": 2,
+      "redundant_bytes": 114637,
+      "paths": [
+        "DevExpress.XtraRichEdit.v11.2.xml",
+        "Reportes/DevExpress.XtraRichEdit.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "size_per_file": 989600,
+      "copies": 3,
+      "redundant_bytes": 1979200,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.Core.dll",
+        "Reportes/DevExpress.XtraScheduler.v11.2.Core.dll",
+        "temp/DevExpress.XtraScheduler.v11.2.Core.dll"
+      ]
+    },
+    {
+      "sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "size_per_file": 656716,
+      "copies": 2,
+      "redundant_bytes": 656716,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.Core.xml",
+        "Reportes/DevExpress.XtraScheduler.v11.2.Core.xml"
+      ]
+    },
+    {
+      "sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "size_per_file": 56736,
+      "copies": 3,
+      "redundant_bytes": 113472,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+        "Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+        "temp/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll"
+      ]
+    },
+    {
+      "sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "size_per_file": 1039,
+      "copies": 2,
+      "redundant_bytes": 1039,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+        "Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml"
+      ]
+    },
+    {
+      "sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "size_per_file": 1586592,
+      "copies": 3,
+      "redundant_bytes": 3173184,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.dll",
+        "Reportes/DevExpress.XtraScheduler.v11.2.dll",
+        "temp/DevExpress.XtraScheduler.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "size_per_file": 365197,
+      "copies": 2,
+      "redundant_bytes": 365197,
+      "paths": [
+        "DevExpress.XtraScheduler.v11.2.xml",
+        "Reportes/DevExpress.XtraScheduler.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "size_per_file": 700832,
+      "copies": 3,
+      "redundant_bytes": 1401664,
+      "paths": [
+        "DevExpress.XtraTreeList.v11.2.dll",
+        "Reportes/DevExpress.XtraTreeList.v11.2.dll",
+        "temp/DevExpress.XtraTreeList.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "size_per_file": 464312,
+      "copies": 2,
+      "redundant_bytes": 464312,
+      "paths": [
+        "DevExpress.XtraTreeList.v11.2.xml",
+        "Reportes/DevExpress.XtraTreeList.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "size_per_file": 530848,
+      "copies": 3,
+      "redundant_bytes": 1061696,
+      "paths": [
+        "DevExpress.XtraVerticalGrid.v11.2.dll",
+        "Reportes/DevExpress.XtraVerticalGrid.v11.2.dll",
+        "temp/DevExpress.XtraVerticalGrid.v11.2.dll"
+      ]
+    },
+    {
+      "sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "size_per_file": 316693,
+      "copies": 2,
+      "redundant_bytes": 316693,
+      "paths": [
+        "DevExpress.XtraVerticalGrid.v11.2.xml",
+        "Reportes/DevExpress.XtraVerticalGrid.v11.2.xml"
+      ]
+    },
+    {
+      "sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "size_per_file": 12288,
+      "copies": 3,
+      "redundant_bytes": 24576,
+      "paths": [
+        "GRLL.Common.Rutinas.dll",
+        "Reportes/GRLL.Common.Rutinas.dll",
+        "temp/GRLL.Common.Rutinas.dll"
+      ]
+    },
+    {
+      "sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c",
+      "size_per_file": 2269184,
+      "copies": 3,
+      "redundant_bytes": 4538368,
+      "paths": [
+        "GRLL.dll",
+        "Reportes/GRLL.dll",
+        "temp/GRLL.dll"
+      ]
+    },
+    {
+      "sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "size_per_file": 5381632,
+      "copies": 3,
+      "redundant_bytes": 10763264,
+      "paths": [
+        "GRLL.pdb",
+        "Reportes/GRLL.pdb",
+        "temp/GRLL.pdb"
+      ]
+    },
+    {
+      "sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "size_per_file": 764,
+      "copies": 3,
+      "redundant_bytes": 1528,
+      "paths": [
+        "GRLL.xml",
+        "Reportes/GRLL.xml",
+        "temp/GRLL.xml"
+      ]
+    },
+    {
+      "sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "size_per_file": 442368,
+      "copies": 2,
+      "redundant_bytes": 442368,
+      "paths": [
+        "Interop.Microsoft.Office.Core.dll",
+        "Reportes/Interop.Microsoft.Office.Core.dll"
+      ]
+    },
+    {
+      "sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "size_per_file": 57344,
+      "copies": 2,
+      "redundant_bytes": 57344,
+      "paths": [
+        "Interop.VBIDE.dll",
+        "Reportes/Interop.VBIDE.dll"
+      ]
+    },
+    {
+      "sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "size_per_file": 3649536,
+      "copies": 3,
+      "redundant_bytes": 7299072,
+      "paths": [
+        "Microsoft.ReportViewer.Common.dll",
+        "Reportes/Microsoft.ReportViewer.Common.dll",
+        "temp/Microsoft.ReportViewer.Common.dll"
+      ]
+    },
+    {
+      "sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "size_per_file": 339968,
+      "copies": 3,
+      "redundant_bytes": 679936,
+      "paths": [
+        "Microsoft.ReportViewer.WinForms.dll",
+        "Reportes/Microsoft.ReportViewer.WinForms.dll",
+        "temp/Microsoft.ReportViewer.WinForms.dll"
+      ]
+    },
+    {
+      "sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "size_per_file": 108039,
+      "copies": 3,
+      "redundant_bytes": 216078,
+      "paths": [
+        "Microsoft.ReportViewer.WinForms.xml",
+        "Reportes/Microsoft.ReportViewer.WinForms.xml",
+        "temp/Microsoft.ReportViewer.WinForms.xml"
+      ]
+    },
+    {
+      "sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "size_per_file": 11608,
+      "copies": 2,
+      "redundant_bytes": 11608,
+      "paths": [
+        "RecursosHumanos.vshost.exe",
+        "Reportes/RecursosHumanos.vshost.exe"
+      ]
+    },
+    {
+      "sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "size_per_file": 15950,
+      "copies": 2,
+      "redundant_bytes": 15950,
+      "paths": [
+        "RecursosHumanos.xml",
+        "Reportes/RecursosHumanos.xml"
+      ]
+    },
+    {
+      "sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "size_per_file": 1657,
+      "copies": 2,
+      "redundant_bytes": 1657,
+      "paths": [
+        "Reportes/RecursosHumanos.application",
+        "Reportes/RecursosHumanos.vshost.application"
+      ]
+    },
+    {
+      "sha256": "79945567217619d3a5a25ec0913277c9790ac88f9255ee7f03beca0dbe38c596",
+      "size_per_file": 3650,
+      "copies": 4,
+      "redundant_bytes": 10950,
+      "paths": [
+        "Reportes/RecursosHumanos.exe.config",
+        "Reportes/RecursosHumanos.vshost.exe.config",
+        "temp/RecursosHumanos.exe.config",
+        "temp/RecursosHumanos.vshost.exe.config"
+      ]
+    },
+    {
+      "sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "size_per_file": 95094,
+      "copies": 2,
+      "redundant_bytes": 95094,
+      "paths": [
+        "Reportes/RecursosHumanos.exe.manifest",
+        "Reportes/RecursosHumanos.vshost.exe.manifest"
+      ]
+    },
+    {
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "size_per_file": 16384,
+      "copies": 3,
+      "redundant_bytes": 32768,
+      "paths": [
+        "Reportes/Seguridad.dll",
+        "Seguridad.dll",
+        "temp/Seguridad.dll"
+      ]
+    },
+    {
+      "sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "size_per_file": 40448,
+      "copies": 3,
+      "redundant_bytes": 80896,
+      "paths": [
+        "Reportes/Seguridad.pdb",
+        "Seguridad.pdb",
+        "temp/Seguridad.pdb"
+      ]
+    },
+    {
+      "sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "size_per_file": 117,
+      "copies": 3,
+      "redundant_bytes": 234,
+      "paths": [
+        "Reportes/Seguridad.xml",
+        "Seguridad.xml",
+        "temp/Seguridad.xml"
+      ]
+    },
+    {
+      "sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "size_per_file": 667648,
+      "copies": 2,
+      "redundant_bytes": 667648,
+      "paths": [
+        "Reportes/System.Core.dll",
+        "temp/System.Core.dll"
+      ]
+    },
+    {
+      "sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "size_per_file": 45056,
+      "copies": 3,
+      "redundant_bytes": 90112,
+      "paths": [
+        "Reportes/TabStrip.dll",
+        "TabStrip.dll",
+        "temp/TabStrip.dll"
+      ]
+    }
+  ],
+  "changes_applied": "Ninguno: las copias originales se conservan"
+}

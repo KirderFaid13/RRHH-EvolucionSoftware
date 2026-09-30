@@ -2,15 +2,17 @@
 
 Proyecto académico para estudiar, refactorizar y evolucionar el sistema de Recursos Humanos recibido por el grupo, identificado como un sistema de 2008. Curso: **Evolución y Configuración de Software, UPN, 2026-2**.
 
-**Etapa de esta revisión: RRHH original y estructura organizada.** Los archivos del programa conservan su contenido original; las credenciales se protegen mediante cifrado y el respaldo SQL se conserva localmente. Este primer paso permite comparar las mejoras futuras con una referencia identificada y verificable.
+**Etapa de esta revisión: ingeniería inversa y base v1.** Se recuperó código de `ClassRRHH.dll`, se identificaron clases y contratos de llamada y se compiló una biblioteca de diagnóstico. El programa original conserva su contenido; funcionamiento, esquema SQL y equivalencia siguen pendientes.
 
 ## Lectura inicial
 
-1. [Qué incorporamos, dónde y por qué](docs/organizacion/01_baseline.md).
-2. [Cómo localizar y restaurar el RRHH original](legado/README.md).
-3. [Contexto del curso](.context/03_course_context.md), [reglas funcionales pendientes](.context/01_business_rules.md) y [diccionario de datos](.context/02_data_dictionary.json).
-4. [Roadmap](.context/ROADMAP.md) y [orden de commits y ramas](docs/organizacion/git_y_github.md).
-5. [Inventario y comprobaciones](evidencia/baseline/README.md).
+1. [Segundo commit: qué recuperamos, dónde, por qué y límites](docs/ingenieria_inversa/01_informe.md).
+2. [Código v1 y procedencia](src/v1/README.md), [arquitectura](docs/ingenieria_inversa/02_arquitectura.md) y [comprobaciones C02](evidencia/ingenieria_inversa/README.md).
+3. [Primer commit: preservación y organización](docs/organizacion/01_baseline.md).
+4. [Cómo localizar y restaurar el RRHH original](legado/README.md).
+5. [Contexto del curso](.context/03_course_context.md), [reglas funcionales pendientes](.context/01_business_rules.md) y [diccionario de datos](.context/02_data_dictionary.json).
+6. [Roadmap](.context/ROADMAP.md) y [orden de commits y ramas](docs/organizacion/git_y_github.md).
+7. [Inventario y comprobaciones del baseline](evidencia/baseline/README.md).
 
 ## Estructura del repositorio
 
@@ -26,11 +28,11 @@ Proyecto académico para estudiar, refactorizar y evolucionar el sistema de Recu
 ├── referencias/                 Documentos del curso y bibliografía
 ├── docs/
 │   ├── organizacion/            Decisiones, baseline y uso de Git
-│   ├── ingenieria_inversa/      Destino de la documentación del segundo commit
+│   ├── ingenieria_inversa/      Informe, arquitectura y procedencia de v1
 │   └── semanas/                 Destino de las mejoras semanales
 ├── evidencia/
 │   ├── baseline/                Inventarios SHA-256 y verificaciones
-│   ├── ingenieria_inversa/      Destino de las evidencias de recuperación
+│   ├── ingenieria_inversa/      Metadatos, contratos y comprobaciones de v1
 │   └── semanas/                 Destino de las comprobaciones semanales
 ├── prompts/                     Instrucciones para tareas delimitadas
 ├── herramientas/                Restauración y comprobación de integridad
@@ -79,9 +81,17 @@ La integridad de archivos **no acredita funcionamiento**. Todavía no se ha prob
 
 | Commit | Contenido | Estado de esta revisión |
 | --- | --- | --- |
-| 1 | RRHH original protegido y estructura organizada. | Contenido de esta revisión. |
-| 2 | Ingeniería inversa y base v1 con procedencia documentada. | Pendiente. |
+| 1 | RRHH original protegido y estructura organizada. | Conservado; publicado en `e1ead41`. |
+| 2 | Ingeniería inversa y base v1 con procedencia documentada. | Contenido de esta revisión: recuperación parcial, compilación diagnóstica comprobada. |
 | 3 | v2: refactorización mediante SRP y DRY. | Pendiente. |
 | 4 | v3: mejora mediante abierto/cerrado, OCP. | Pendiente. |
 
 Se avanza y se explica **un commit por vez**, esperando la indicación del equipo antes del siguiente. La semana 07, IoC/v4, se trabajará después de esta secuencia. Las versiones y análisis anteriores se conservan localmente para revisarlos cuando corresponda.
+
+Para repetir la comprobación de v1, después de restaurar el legado y disponer de la clave local:
+
+```powershell
+python .\herramientas\compilar_v1.py
+```
+
+La compilación incluye 12 fuentes recuperadas, no los VB del antecedente académico. `MySettings.cs` se almacena cifrada por sus valores codificados; once C# quedan visibles. [Procedimiento y límites](docs/ingenieria_inversa/03_procedencia_v1.md).

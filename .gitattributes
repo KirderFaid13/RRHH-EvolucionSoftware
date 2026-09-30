@@ -11,3 +11,8 @@ referencias/**/*.pdf -text
 .gitignore text eol=lf
 .gitattributes text eol=lf
 .env.example text eol=lf
+
+# Fuentes de C02 con hashes de la salida del descompilador y del antecedente.
+src/v1/recuperado/** -text
+src/v1/antecedentes/*.vb -text
+src/v1/antecedentes/*.txt -text

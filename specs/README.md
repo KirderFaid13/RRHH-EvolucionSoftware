@@ -1,6 +1,6 @@
 # Especificaciones por etapa
 
-Esta carpeta contendrá contratos de trabajo pequeños, vinculados con una etapa del [roadmap](../.context/ROADMAP.md). En el primer commit no se han creado contratos técnicos: aún no conocemos la arquitectura, las dependencias ni el esquema de datos con evidencia suficiente.
+Esta carpeta contiene contratos vinculados con una etapa del [roadmap](../.context/ROADMAP.md). [C02: ingeniería inversa](c02_ingenieria_inversa.json) delimita la recuperación estática y las comprobaciones de v1. No presupone un esquema SQL validado; los contratos de v2/v3 se definirán en sus etapas.
 
 Antes de intervenir un caso, su especificación deberá indicar:
 

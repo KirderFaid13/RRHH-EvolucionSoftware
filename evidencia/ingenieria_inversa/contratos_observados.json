@@ -1,0 +1,1651 @@
+{
+  "source": "ClassRRHH.dll descompilado por ILSpyCMD 11.1.0.9782",
+  "semantics": "contratos de llamada observados; NO schema SQL verificado",
+  "types": [
+    {
+      "name": "AsistenciaAccess",
+      "source_lines": 477,
+      "source_size": 19345,
+      "constructors": [
+        {
+          "name": "AsistenciaAccess",
+          "return_type": null,
+          "parameters": "",
+          "line": 26,
+          "end_line": 34,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": false,
+          "calls_connection_open": false,
+          "calls_connection_close": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "Grabar_Asis_Norm",
+          "return_type": "bool",
+          "parameters": "int Pers_DNI, string Fec_Asi, string Hor_Ent, string Hor_Sal, string Alm_Ent, string Alm_Sal",
+          "line": 36,
+          "end_line": 62,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ExistAsistencia",
+          "return_type": "bool",
+          "parameters": "int Pers_Cod, string Fecha",
+          "line": 64,
+          "end_line": 77,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": false,
+          "calls_connection_close": false
+        },
+        {
+          "name": "Grabar_Marcaciones",
+          "return_type": "bool",
+          "parameters": "string fecha, string dni, string estado, int proceso, string Lugar",
+          "line": 79,
+          "end_line": 95,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Actualizar_Empleado_Horario",
+          "return_type": "bool",
+          "parameters": "int idhorario, string dni",
+          "line": 97,
+          "end_line": 119,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Grabar_suspencion",
+          "return_type": "object",
+          "parameters": "string Dni, string Fecha",
+          "line": 121,
+          "end_line": 158,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": false
+        },
+        {
+          "name": "Grabar_SalidaAutorizada",
+          "return_type": "bool",
+          "parameters": "string Dni, int NPermiso, string FechaInicio, string FechaFin, bool dia, bool Retorno, string Lugar",
+          "line": 160,
+          "end_line": 197,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Access2Sql",
+          "return_type": "bool",
+          "parameters": "string FechaInicial, string FechaFinal, int forzar",
+          "line": 199,
+          "end_line": 267,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Access2SqlSEDE",
+          "return_type": "bool",
+          "parameters": "string FechaInicial, string FechaFinal, int forzar",
+          "line": 269,
+          "end_line": 336,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Access2SqlPROIND",
+          "return_type": "bool",
+          "parameters": "string FechaInicial, string FechaFinal, int forzar",
+          "line": 338,
+          "end_line": 406,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Access2SqlCONSEJO",
+          "return_type": "bool",
+          "parameters": "string FechaInicial, string FechaFinal, int forzar",
+          "line": 408,
+          "end_line": 476,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": true,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        }
+      ],
+      "method_count": 10
+    },
+    {
+      "name": "FamiliaresClass",
+      "source_lines": 49,
+      "source_size": 1330,
+      "constructors": [
+        {
+          "name": "FamiliaresClass",
+          "return_type": null,
+          "parameters": "",
+          "line": 14,
+          "end_line": 18,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": false,
+          "calls_connection_open": false,
+          "calls_connection_close": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "llena_parentezco",
+          "return_type": "object",
+          "parameters": "",
+          "line": 20,
+          "end_line": 28,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Busca_DNI",
+          "return_type": "object",
+          "parameters": "string numDoc, int tipodoc",
+          "line": 30,
+          "end_line": 38,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Busca_Codigo",
+          "return_type": "object",
+          "parameters": "int Codper",
+          "line": 40,
+          "end_line": 48,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        }
+      ],
+      "method_count": 3
+    },
+    {
+      "name": "FichaSocialClass",
+      "source_lines": 30,
+      "source_size": 713,
+      "constructors": [
+        {
+          "name": "FichaSocialClass",
+          "return_type": null,
+          "parameters": "",
+          "line": 13,
+          "end_line": 17,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": false,
+          "calls_connection_open": false,
+          "calls_connection_close": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "llenarFamiliares",
+          "return_type": "object",
+          "parameters": "int CodEmple",
+          "line": 19,
+          "end_line": 29,
+          "stored_procedure_literals": [
+            "spRRHH_BuscarFamiliares"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        }
+      ],
+      "method_count": 1
+    },
+    {
+      "name": "RRHHClass",
+      "source_lines": 1121,
+      "source_size": 44106,
+      "constructors": [
+        {
+          "name": "RRHHClass",
+          "return_type": null,
+          "parameters": "",
+          "line": 43,
+          "end_line": 48,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": false,
+          "has_new_oledb_command": false,
+          "calls_connection_open": false,
+          "calls_connection_close": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "llena_DocID",
+          "return_type": "object",
+          "parameters": "",
+          "line": 50,
+          "end_line": 58,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_Area",
+          "return_type": "object",
+          "parameters": "",
+          "line": 60,
+          "end_line": 68,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_Nacionalidad",
+          "return_type": "object",
+          "parameters": "",
+          "line": 70,
+          "end_line": 78,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_Discapacidad",
+          "return_type": "object",
+          "parameters": "",
+          "line": 80,
+          "end_line": 88,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_estCivil",
+          "return_type": "object",
+          "parameters": "",
+          "line": 90,
+          "end_line": 98,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "SgtIdPermiso",
+          "return_type": "int",
+          "parameters": "int idempleado",
+          "line": 100,
+          "end_line": 115,
+          "stored_procedure_literals": [
+            "sp_SgtID_Permiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "SgtIdHorarioTemporal",
+          "return_type": "int",
+          "parameters": "int idempleado",
+          "line": 117,
+          "end_line": 132,
+          "stored_procedure_literals": [
+            "sp_SgtID_HorarioTemporal"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "importarBio",
+          "return_type": "bool",
+          "parameters": "string FechaInicial, string FechaFinal",
+          "line": 134,
+          "end_line": 151,
+          "stored_procedure_literals": [
+            "spRRHH_ImportarAsistenciaBio"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "VarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ExisteMarcacion",
+          "return_type": "int",
+          "parameters": "int idempleado, string fecha",
+          "line": 153,
+          "end_line": 169,
+          "stored_procedure_literals": [
+            "sp_Verficar_Existe_Marcacion"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Fecha",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ExisteAsistencia",
+          "return_type": "int",
+          "parameters": "int idempleado, string fecha",
+          "line": 171,
+          "end_line": 187,
+          "stored_procedure_literals": [
+            "sp_Verficar_Existe_Asistencia"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Fecha",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ElimnarPermiso",
+          "return_type": "bool",
+          "parameters": "int idempleado, int NPermiso",
+          "line": 189,
+          "end_line": 205,
+          "stored_procedure_literals": [
+            "sp_Elimnar_Permiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@NPermiso",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "eliminarHorarioTemporal",
+          "return_type": "bool",
+          "parameters": "int idempleado, int NPermiso",
+          "line": 207,
+          "end_line": 223,
+          "stored_procedure_literals": [
+            "sp_Elimnar_HorarioTemporal"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@NPermiso",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llenar_Empleado_Area",
+          "return_type": "DataTable",
+          "parameters": "int idEmpleado",
+          "line": 225,
+          "end_line": 241,
+          "stored_procedure_literals": [
+            "sp_GetAll_EmpleadoArea_by_idEmpleado"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Actualizar_Area_Empleado",
+          "return_type": "void",
+          "parameters": "int idEmpleado, int Anio, int idAreaOrganiz",
+          "line": 243,
+          "end_line": 259,
+          "stored_procedure_literals": [
+            "sp_Actualiza_Empleado_Area"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idAreaOrganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Anio",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llenar_Areas_by_año",
+          "return_type": "DataTable",
+          "parameters": "int Anio",
+          "line": 261,
+          "end_line": 277,
+          "stored_procedure_literals": [
+            "sp_GetAll_Area_By_Anio"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@Anio",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "buscar_empleado",
+          "return_type": "DataTable",
+          "parameters": "int? codigo, string numdoc, string apellido, int? idTipoTrabajador, int activo, int idRol = 0",
+          "line": 279,
+          "end_line": 301,
+          "stored_procedure_literals": [
+            "spRRHH_busca_empleado"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idempleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idRol",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@activo",
+              "sql_db_type": "Bit"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "BuscarEmpleado_Codigo",
+          "return_type": "DataTable",
+          "parameters": "int codigo",
+          "line": 303,
+          "end_line": 313,
+          "stored_procedure_literals": [
+            "spRRHH_BuscarEmpleado_Codigo"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@codigo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ActualizaAsistencia",
+          "return_type": "bool",
+          "parameters": "int idEmpleado, DateTime fecha, string hor_sal, bool flag_sal",
+          "line": 315,
+          "end_line": 333,
+          "stored_procedure_literals": [
+            "sp_Actualiza_Asistencia"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Fecha",
+              "sql_db_type": "DateTime"
+            },
+            {
+              "name": "@Flag_Sal",
+              "sql_db_type": "Bit"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ExistePermiso",
+          "return_type": "int",
+          "parameters": "int idEmpleado, string FechaInicio, string FechaFin",
+          "line": 335,
+          "end_line": 352,
+          "stored_procedure_literals": [
+            "sp_ExistePermiso_Permiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "Char"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "Char"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ingresa_Empleado_Area",
+          "return_type": "void",
+          "parameters": "int year, int idorganiz, int idEmpleado",
+          "line": 354,
+          "end_line": 370,
+          "stored_procedure_literals": [
+            "sp_Insert_Empleado_Area"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@Year",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idAreaOrganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Ingresa_Empleado",
+          "return_type": "int",
+          "parameters": "int year, int idorganiz, int TipoDocIdent, string NumDoc, string Apellido_Paterno, string Apellido_Materno, string Nombres, string ubigeoNac, DateTime fechaNac, string Direccion, string Fono, string FonoLab, string FonoCel, string FonoOtro, string Mail, string UbigeoDireccion, int idNacionalidad, string sexo, int idEstCivil, int idDiscapacidad, string expSocial, DateTime FechaIngreso, int tiposangre, string brevete, string libmilitar, string gradoinstruccion, string numRuc, int idtipoTrabajador, byte[] Foto",
+          "line": 372,
+          "end_line": 412,
+          "stored_procedure_literals": [
+            "spRRHH_GrabarEmpleado"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@year",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idorganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@TipoDocIdent",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@fechaNac",
+              "sql_db_type": "DateTime"
+            },
+            {
+              "name": "@idNacionalidad",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idEstCivil",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idDiscapacidad",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@FechaIngreso",
+              "sql_db_type": "SmallDateTime"
+            },
+            {
+              "name": "@idtiposangre",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idtipoTrabajador",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Foto",
+              "sql_db_type": "Image"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Actualiza_Empleado",
+          "return_type": "void",
+          "parameters": "int codpersona, int codempleado, int year, int idorganiz, int TipoDocIdent, string NumDoc, string Apellido_Paterno, string Apellido_Materno, string Nombres, string ubigeoNac, DateTime fechaNac, string Direccion, string Fono, string FonoLab, string FonoCel, string FonoOtro, string Mail, string UbigeoDireccion, int idNacionalidad, string sexo, int idEstCivil, int idDiscapacidad, string expSocial, DateTime FechaIngreso, int tiposangre, string brevete, string libmilitar, string gradoinstruccion, string numRuc, int idtipoTrabajador, byte[] Foto",
+          "line": 414,
+          "end_line": 452,
+          "stored_procedure_literals": [
+            "spRRHH_ActualizaEmpleado"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@CodPer",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@codEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@year",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idorganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@TipoDocIdent",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@fechaNac",
+              "sql_db_type": "DateTime"
+            },
+            {
+              "name": "@idNacionalidad",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idEstCivil",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idDiscapacidad",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@FechaIngreso",
+              "sql_db_type": "SmallDateTime"
+            },
+            {
+              "name": "@idtiposangre",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idtipoTrabajador",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Foto",
+              "sql_db_type": "Image"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Actualiza_Empleado",
+          "return_type": "void",
+          "parameters": "int codempleado",
+          "line": 454,
+          "end_line": 462,
+          "stored_procedure_literals": [
+            "spRRHH_EliminarEmpleado"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@codEmple",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_tree",
+          "return_type": "object",
+          "parameters": "",
+          "line": 464,
+          "end_line": 472,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "buscar_empleado_tree",
+          "return_type": "DataTable",
+          "parameters": "int area, int tipotrab",
+          "line": 474,
+          "end_line": 493,
+          "stored_procedure_literals": [
+            "sp_RRHH_Busca_Empleado_tree"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idAreaOrganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@year",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@estado",
+              "sql_db_type": "Bit"
+            },
+            {
+              "name": "@tipotrabajador",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Ficha",
+          "return_type": "object",
+          "parameters": "int codEmple",
+          "line": 495,
+          "end_line": 509,
+          "stored_procedure_literals": [
+            "spRRHH_fichaSocial",
+            "spRRHH_Ficha_ExpLab"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@codEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@codEmple",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Ficha_Prueba",
+          "return_type": "object",
+          "parameters": "int codEmple",
+          "line": 511,
+          "end_line": 628,
+          "stored_procedure_literals": [
+            "spRRHH_Ficha_ExpLab_Datos",
+            "spRRHH_busca_Disciplina",
+            "spRRHH_Ficha_ExpLab",
+            "spRRHH_Ficha_Det_Familiar",
+            "spRRHH_Ficha_Estudio_Realizado",
+            "spRRHH_Ficha_Estudio_Titulo",
+            "spRRHH_Ficha_Estudio_Capacitacion",
+            "spRRHH_Ficha_Ingreso_Egreso",
+            "spRRHH_Ficha_Vivienda",
+            "spRRHH_Ficha_DatosPersonales",
+            "spRRHH_Ficha_Det_Familiar_Salud"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@CodEmple",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Cuadro_Pers",
+          "return_type": "object",
+          "parameters": "int tipo",
+          "line": 630,
+          "end_line": 640,
+          "stored_procedure_literals": [
+            "spRRHH_Report_CuadroPer"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@Tipo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Cumples",
+          "return_type": "object",
+          "parameters": "int mes",
+          "line": 642,
+          "end_line": 652,
+          "stored_procedure_literals": [
+            "spRRHH_Report_Cumple"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@mes",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_tree_reporte",
+          "return_type": "object",
+          "parameters": "",
+          "line": 654,
+          "end_line": 662,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Report_oficina",
+          "return_type": "object",
+          "parameters": "int CodOficina",
+          "line": 664,
+          "end_line": 674,
+          "stored_procedure_literals": [
+            "spRRHH_Report_Oficina_Unico"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idarea",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Report_oficina_Dep",
+          "return_type": "object",
+          "parameters": "string Sigla",
+          "line": 676,
+          "end_line": 686,
+          "stored_procedure_literals": [
+            "spRRHH_Report_Oficina"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@sigla",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Report_Emple_ficha",
+          "return_type": "object",
+          "parameters": "string FechaInicio, string Fechatermino, int tipo",
+          "line": 688,
+          "end_line": 701,
+          "stored_procedure_literals": [
+            "spRRHH_Report_FechaIngreso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@tipo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "generar_rep_cargos",
+          "return_type": "DataTable",
+          "parameters": "int idCargo",
+          "line": 703,
+          "end_line": 719,
+          "stored_procedure_literals": [
+            "spRRHH_Rep_cargos"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idCargo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_Asistencias",
+          "return_type": "object",
+          "parameters": "string fechaInicio, string fechaFin",
+          "line": 721,
+          "end_line": 732,
+          "stored_procedure_literals": [
+            "spRRHH_GetRepAsistencias"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "VarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_Permisos",
+          "return_type": "object",
+          "parameters": "int codempleado, int? permiso, int? motivo",
+          "line": 734,
+          "end_line": 752,
+          "stored_procedure_literals": [
+            "spRRHH_llenarPermiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idTipoPermiso",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idmotivo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "llena_HorariosTemporales",
+          "return_type": "object",
+          "parameters": "int codempleado",
+          "line": 754,
+          "end_line": 770,
+          "stored_procedure_literals": [],
+          "sql_parameters": [
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "Generar_Rep_Faltas",
+          "return_type": "object",
+          "parameters": "string fecha, int? idTipoTrabajador, int? idAreaOrganiz, int? Año",
+          "line": 772,
+          "end_line": 792,
+          "stored_procedure_literals": [
+            "spRRHH_Faltas"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@fecha",
+              "sql_db_type": "VarChar"
+            },
+            {
+              "name": "@idTipoTrabajador",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idAreaOrganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Anio",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ObtenerAsistenciasxDia",
+          "return_type": "object",
+          "parameters": "string fecha",
+          "line": 794,
+          "end_line": 811,
+          "stored_procedure_literals": [
+            "spRRHH_GetAsistencias"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@dia",
+              "sql_db_type": "Char"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ObtenerEmpleados",
+          "return_type": "object",
+          "parameters": "",
+          "line": 813,
+          "end_line": 828,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "LlenarPlanillaAsistencia",
+          "return_type": "object",
+          "parameters": "string fechas, string idTipoTrabajador, string idLocales",
+          "line": 830,
+          "end_line": 848,
+          "stored_procedure_literals": [
+            "spRRHH_RepPlanillaAsistencias"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@Fechas",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@idTipoTrabajador",
+              "sql_db_type": "Char"
+            },
+            {
+              "name": "@idLocales",
+              "sql_db_type": "NVarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "GetFeriado",
+          "return_type": "DataTable",
+          "parameters": "string fecha",
+          "line": 850,
+          "end_line": 865,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_RepPermisos",
+          "return_type": "DataTable",
+          "parameters": "string fechaI, string fechaF, int? tipopermiso, int? motivo, int? idTipoTrabajador",
+          "line": 867,
+          "end_line": 888,
+          "stored_procedure_literals": [
+            "spRRHH_RepPermisos"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@idTipoPermiso",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idmotivo",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idtipoEmpleado",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_ObtenerHorasExtras",
+          "return_type": "object",
+          "parameters": "string fechaI, string fechaF, int? tipo",
+          "line": 890,
+          "end_line": 909,
+          "stored_procedure_literals": [
+            "spRRHH_ObtenerHorasExtras"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@FechaI",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaF",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@tipo",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "BuscarPersonas",
+          "return_type": "object",
+          "parameters": "string ApellidoPaterno",
+          "line": 911,
+          "end_line": 926,
+          "stored_procedure_literals": [],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "ListarProfesiones",
+          "return_type": "object",
+          "parameters": "",
+          "line": 928,
+          "end_line": 943,
+          "stored_procedure_literals": [
+            "sp_RRHH_ListarProfesiones"
+          ],
+          "sql_parameters": [],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_Rep_profesion",
+          "return_type": "DataTable",
+          "parameters": "string profesion",
+          "line": 945,
+          "end_line": 961,
+          "stored_procedure_literals": [
+            "spRRHH_Rep_profesion"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@profesion",
+              "sql_db_type": "NVarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_ListarTrabajadores",
+          "return_type": "DataTable",
+          "parameters": "int idTipoTrabajador",
+          "line": 963,
+          "end_line": 979,
+          "stored_procedure_literals": [
+            "spRRHH_ListarTrabajadores"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdTipoTrabajador",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_ListarTrabajadoresRep",
+          "return_type": "DataTable",
+          "parameters": "int idTipoTrabajador",
+          "line": 981,
+          "end_line": 997,
+          "stored_procedure_literals": [
+            "spRRHH_ListarTrabajadoresRep"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdTipoTrabajador",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_AgregarReporte",
+          "return_type": "DataTable",
+          "parameters": "int idTipoTrabajador, int opcion",
+          "line": 999,
+          "end_line": 1016,
+          "stored_procedure_literals": [
+            "spRRHH_AgregarReporte"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@opt",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_RepAsisdiarria",
+          "return_type": "DataTable",
+          "parameters": "string fechaI, string fechaF, string DNI, int? area, int? tipo, string year, string idLocales, int opt = 0",
+          "line": 1018,
+          "end_line": 1041,
+          "stored_procedure_literals": [
+            "spGetAsistenciasDetalle"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@FechaIni",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@DNI",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@opt",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@TipoEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idLocales",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@Area",
+              "sql_db_type": "Int"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_ListarMotivos_byTipo",
+          "return_type": "DataTable",
+          "parameters": "string fechaI",
+          "line": 1043,
+          "end_line": 1060,
+          "stored_procedure_literals": [
+            "spRRHH_ListarMotivos_byTipo"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@TipoModalidad",
+              "sql_db_type": "NVarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_EstadisticaPermiso",
+          "return_type": "DataTable",
+          "parameters": "string IdTipoTrabajador, string FechaInicio, string FechaFin, string idMotivos, string Motivos, string MotivosNull, string idAreas",
+          "line": 1062,
+          "end_line": 1085,
+          "stored_procedure_literals": [
+            "spRRHH_EstadisticaPermiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdTipoTrabajador",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@idMotivos",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@Motivos",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@MotivosNull",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@idAreas",
+              "sql_db_type": "NVarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_ResumenEstadisticaPermiso",
+          "return_type": "DataTable",
+          "parameters": "string FechaInicio, string FechaFin, int idMotivo, int idArea",
+          "line": 1087,
+          "end_line": 1107,
+          "stored_procedure_literals": [
+            "spRRHH_ResumenEstadisticaPermiso"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@idAreaOrganiz",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@idMotivo",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaInicio",
+              "sql_db_type": "NVarChar"
+            },
+            {
+              "name": "@FechaFin",
+              "sql_db_type": "NVarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        },
+        {
+          "name": "spRRHH_GetAsistenciaDia",
+          "return_type": "DataTable",
+          "parameters": "int codigo, string fecha",
+          "line": 1109,
+          "end_line": 1120,
+          "stored_procedure_literals": [
+            "spRRHH_GetAsistenciaDia"
+          ],
+          "sql_parameters": [
+            {
+              "name": "@IdEmpleado",
+              "sql_db_type": "Int"
+            },
+            {
+              "name": "@Fecha",
+              "sql_db_type": "VarChar"
+            }
+          ],
+          "has_new_sql_command": true,
+          "has_new_oledb_command": false,
+          "calls_connection_open": true,
+          "calls_connection_close": true
+        }
+      ],
+      "method_count": 55
+    }
+  ],
+  "extraction_method": "Inventario por expresiones regulares del C# descompilado; citas de contratos seleccionados cotejadas manualmente con el codigo. No parser SQL ni introspeccion de BD.",
+  "schema_verified": false
+}

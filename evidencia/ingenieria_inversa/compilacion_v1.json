@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "source_files": 12,
+  "sdk": "10.0.103",
+  "compilation_target": "library_x86",
+  "reference_profile": "installed_.NET_Framework_v4.0.30319",
+  "error_codes": [],
+  "warning_codes": [],
+  "output_size": 52224,
+  "output_sha256": "7c9f63d206462c1168efa1890c842e73dd01496d975565dd292d93628ce37a97",
+  "application_executed": false,
+  "database_connected": false,
+  "functional_equivalence_verified": false,
+  "limits": "Diagnostic compilation with installed framework references; does not verify original target framework, resources, signing, deployment or runtime equivalence."
+}

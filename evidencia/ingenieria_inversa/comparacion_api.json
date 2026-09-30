@@ -1,0 +1,44 @@
+{
+  "comparison_kind": "Firmas y campos publicos de cuatro clases, comparados mediante IL estatico; no equivalencia de comportamiento",
+  "classes": [
+    {
+      "name": "ClassRRHH.AsistenciaAccess",
+      "original_public_methods_including_accessors_and_constructor": 11,
+      "compiled_public_methods_including_accessors_and_constructor": 11,
+      "methods_match": true,
+      "fields_match": true,
+      "only_original": [],
+      "only_compiled": []
+    },
+    {
+      "name": "ClassRRHH.RRHHClass",
+      "original_public_methods_including_accessors_and_constructor": 60,
+      "compiled_public_methods_including_accessors_and_constructor": 60,
+      "methods_match": true,
+      "fields_match": true,
+      "only_original": [],
+      "only_compiled": []
+    },
+    {
+      "name": "ClassRRHH.FamiliaresClass",
+      "original_public_methods_including_accessors_and_constructor": 4,
+      "compiled_public_methods_including_accessors_and_constructor": 4,
+      "methods_match": true,
+      "fields_match": true,
+      "only_original": [],
+      "only_compiled": []
+    },
+    {
+      "name": "ClassRRHH.FichaSocialClass",
+      "original_public_methods_including_accessors_and_constructor": 2,
+      "compiled_public_methods_including_accessors_and_constructor": 2,
+      "methods_match": true,
+      "fields_match": true,
+      "only_original": [],
+      "only_compiled": []
+    }
+  ],
+  "all_match": true,
+  "comparison_compilation_sha256": "ecb56d910bad94364c3e4530a16baf6f7c5c574efa50dac19a489c7f5fe79e09",
+  "scope_note": "La comparacion usa la primera compilacion diagnostica de las mismas 12 fuentes recuperadas. La compilacion del script publicado produce otro assembly name/hash; no se afirma identidad binaria ni equivalencia funcional."
+}

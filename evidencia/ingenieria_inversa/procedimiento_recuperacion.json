@@ -1,0 +1,101 @@
+{
+  "stage": "C02",
+  "documented_at_local": "2026-09-30",
+  "input_assembly": {
+    "path": "legado/RRHH/ClassRRHH.dll",
+    "size": 55808,
+    "sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c"
+  },
+  "tool": {
+    "name": "ILSpyCMD",
+    "version": "11.1.0.9782",
+    "decompiler_version": "11.1.0.9782",
+    "official_documentation": "https://github.com/icsharpcode/ILSpy/blob/master/ICSharpCode.ILSpyCmd/README.md"
+  },
+  "decompilation_exit_code": 0,
+  "generated_csharp_files": 12,
+  "project_inferred_target": "net35",
+  "inferred_project_is_original": false,
+  "inferred_project_build_verified": false,
+  "compiler_references": [
+    {
+      "path": "${FRAMEWORK_V4}/mscorlib.dll",
+      "size": 5715296,
+      "sha256": "93d46bdac1664dba87641925572c789d71a21bb01dc7c7e5aa99c0eca8335e5e"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.dll",
+      "size": 3545264,
+      "sha256": "2b3c17c6208a0b4b6beb94e1a066f99ba06cdb2ea919479e99d47e8c6d96dc71"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.Core.dll",
+      "size": 1551024,
+      "sha256": "fd1097aed825d392a5dc8d19384381d4bb2a43498ea1c9d917f5d80c66600e1b"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.Data.dll",
+      "size": 3497528,
+      "sha256": "5f06ad4c5c2ec7bf7414fcd3678cd8bc732f72ba260a023fc206919c118f9edd"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.Xml.dll",
+      "size": 2629808,
+      "sha256": "83e2bfce895a7ba9138c470e5983d05ada404cb7c4cabc0d3c7f52a2d08b80af"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.Xml.Linq.dll",
+      "size": 159640,
+      "sha256": "abc96c873a7447c9d8857eb30cda54afe9b4aa069b0762f6535197025a1f8807"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/System.Configuration.dll",
+      "size": 418200,
+      "sha256": "5a3d35a9a0db4f075cc073ea8e875ef6b3533e88ec610621ac400efcc7c8e663"
+    },
+    {
+      "path": "${FRAMEWORK_V4}/Microsoft.VisualBasic.dll",
+      "size": 636824,
+      "sha256": "806f0976c9310084bf31a56da6fd2ed1d738e75ca89f3221347b1d76baea68bb"
+    },
+    {
+      "path": "legado/RRHH/Seguridad.dll",
+      "size": 16384,
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5"
+    },
+    {
+      "path": ".local/RRHH/GRLL.dll",
+      "size": 2269184,
+      "sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c"
+    }
+  ],
+  "commands": [
+    "dotnet tool install ilspycmd --version 11.1.0.9782 --tool-path .local/tools --configfile .local/c02/NuGet.Config",
+    ".local/tools/ilspycmd.exe --version",
+    ".local/tools/ilspycmd.exe --disable-updatecheck --project --outputdir .local/c02/ClassRRHH_recuperado --referencepath legado/RRHH legado/RRHH/ClassRRHH.dll",
+    "dotnet ${SDK_10_0_103}/Roslyn/bincore/csc.dll @.local/c02/compilar.rsp",
+    ".local/tools/ilspycmd.exe --disable-updatecheck --ilcode legado/RRHH/ClassRRHH.dll > .local/c02/original.il",
+    ".local/tools/ilspycmd.exe --disable-updatecheck --ilcode .local/c02/ClassRRHH_recuperado_compilado.dll > .local/c02/recuperado.il"
+  ],
+  "compilation": {
+    "exit_code": 0,
+    "source_files": 12,
+    "compiler": "Roslyn SDK 10.0.103",
+    "reference_profile": ".NET Framework 4.0 assemblies",
+    "source_declared_framework": "net35",
+    "warning_codes": [],
+    "error_codes": [],
+    "output_size": 52224,
+    "output_sha256": "ecb56d910bad94364c3e4530a16baf6f7c5c574efa50dac19a489c7f5fe79e09",
+    "executed_output": false
+  },
+  "api_public_classes_match": true,
+  "encoded_settings_values_published": false,
+  "application_executed": false,
+  "database_connected": false,
+  "limitations": [
+    "C# obtenido de IL no recupera comentarios ni fuentes VB originales.",
+    "Biblioteca diagnostica compilada con referencias instaladas Framework4; no confirma objetivo net35, recursos ni firma.",
+    "No se recuperaron todos los formularios de la aplicacion; no se verifico equivalencia funcional."
+  ]
+}

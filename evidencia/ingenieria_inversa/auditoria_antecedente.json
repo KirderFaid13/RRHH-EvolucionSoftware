@@ -1,0 +1,441 @@
+{
+  "stage": "C02",
+  "classification": "Reconstruccion academica parcial; no fuente fiel ni aplicacion equivalente",
+  "files": [
+    {
+      "local_original_path": "versiones/v1.0_Original/src/ClassRRHH_Original.vb",
+      "repository_path": "src/v1/antecedentes/ClassRRHH_Original.vb",
+      "size": 16712,
+      "sha256": "3257c4262e5f7164f1442b474a9b3bd96b65f377a31c229d0eada0e4acc10e4e"
+    },
+    {
+      "local_original_path": "versiones/v1.0_Original/src/frmPrincipal_Original.vb",
+      "repository_path": "src/v1/antecedentes/frmPrincipal_Original.vb",
+      "size": 5030,
+      "sha256": "e8965ef46380592c4ea261225865212fd6d7ace4fc14baf33ab588b829134f0b"
+    },
+    {
+      "local_original_path": "versiones/v1.0_Original/README.md",
+      "repository_path": "src/v1/antecedentes/README_recibido.md.txt",
+      "size": 850,
+      "sha256": "929256a459bfefe92b020fbf7dbe10e1defa101af9cb52cc6e10aac2735b0226"
+    }
+  ],
+  "source_audit": [
+    {
+      "path": "RRHH_Evolucion/archivo/preorganizacion/versiones/v1.0_Original/README.md",
+      "sha256": "929256a459bfefe92b020fbf7dbe10e1defa101af9cb52cc6e10aac2735b0226",
+      "line_count": 14,
+      "first_vb_invalid_slash_comment_lines": [],
+      "known_credential_present": false,
+      "known_credential_lines": [],
+      "password_assignment_candidate_present": false,
+      "password_assignment_candidate_lines": [],
+      "classes": [],
+      "methods": []
+    },
+    {
+      "path": "RRHH_Evolucion/archivo/preorganizacion/versiones/v1.0_Original/src/ClassRRHH_Original.vb",
+      "sha256": "3257c4262e5f7164f1442b474a9b3bd96b65f377a31c229d0eada0e4acc10e4e",
+      "line_count": 408,
+      "first_vb_invalid_slash_comment_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "known_credential_present": false,
+      "known_credential_lines": [],
+      "password_assignment_candidate_present": false,
+      "password_assignment_candidate_lines": [],
+      "classes": [
+        {
+          "name": "ClassRRHH",
+          "line": 24
+        },
+        {
+          "name": "FichaSocialClass",
+          "line": 405
+        }
+      ],
+      "methods": [
+        {
+          "name": "ObtenerEmpleados",
+          "line": 76,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "BuscarEmpleado_Codigo",
+          "line": 88,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Ingresa_Empleado",
+          "line": 101,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Actualiza_Empleado",
+          "line": 111,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Actualizar_Area_Empleado",
+          "line": 121,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "BuscarPersonas",
+          "line": 132,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ObtenerAsistenciasxDia",
+          "line": 150,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ActualizaAsistencia",
+          "line": 163,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ExisteAsistencia",
+          "line": 174,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "LlenarPlanillaAsistencia",
+          "line": 186,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Access2Sql",
+          "line": 206,
+          "binary_method_name_owners": [
+            "ClassRRHH.AsistenciaAccess"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Access2SqlCONSEJO",
+          "line": 232,
+          "binary_method_name_owners": [
+            "ClassRRHH.AsistenciaAccess"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Access2SqlPROIND",
+          "line": 256,
+          "binary_method_name_owners": [
+            "ClassRRHH.AsistenciaAccess"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Access2SqlSEDE",
+          "line": 280,
+          "binary_method_name_owners": [
+            "ClassRRHH.AsistenciaAccess"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ExistePermiso",
+          "line": 308,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ElimnarPermiso",
+          "line": 320,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "SgtIdPermiso",
+          "line": 330,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Generar_Ficha",
+          "line": 345,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "Generar_Report_oficina",
+          "line": 353,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "generar_rep_cargos",
+          "line": 365,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ListarProfesiones",
+          "line": 377,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "GetFeriado",
+          "line": 389,
+          "binary_method_name_owners": [
+            "ClassRRHH.RRHHClass"
+          ],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        }
+      ]
+    },
+    {
+      "path": "RRHH_Evolucion/archivo/preorganizacion/versiones/v1.0_Original/src/frmPrincipal_Original.vb",
+      "sha256": "e8965ef46380592c4ea261225865212fd6d7ace4fc14baf33ab588b829134f0b",
+      "line_count": 117,
+      "first_vb_invalid_slash_comment_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "known_credential_present": false,
+      "known_credential_lines": [],
+      "password_assignment_candidate_present": false,
+      "password_assignment_candidate_lines": [],
+      "classes": [
+        {
+          "name": "frmPrincipal",
+          "line": 12
+        }
+      ],
+      "methods": [
+        {
+          "name": "frmPrincipal_Load",
+          "line": 19,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ImportarAsistenciasToolStripMenuItem_Click",
+          "line": 33,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ImportarAsistenciasCONSEJOToolStripMenuItem_Click",
+          "line": 39,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ImportarAsistenciasPROINDToolStripMenuItem_Click",
+          "line": 45,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "ImportacionAsistenciasNOSEDEToolStripMenuItem_Click",
+          "line": 51,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "BusquedaToolStripMenuItem_Click",
+          "line": 61,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "CargosToolStripMenuItem_Click",
+          "line": 66,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "MotivoDePermisoToolStripMenuItem_Click",
+          "line": 70,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "PersonalPorOficinaToolStripMenuItem_Click",
+          "line": 79,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "PersonalPorProfesionToolStripMenuItem_Click",
+          "line": 84,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "PersonalPorFechaDeIngresoToolStripMenuItem_Click",
+          "line": 89,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "EstadisticoPermisosToolStripMenuItem_Click",
+          "line": 93,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "AsistenciaDiaToolStripMenuItem_Click",
+          "line": 101,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "RecordAsistenciasSemanalesToolStripMenuItem_Click",
+          "line": 105,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "AsistenciaDiaSeleccionToolStripMenuItem_Click",
+          "line": 109,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        },
+        {
+          "name": "CargarListas",
+          "line": 113,
+          "binary_method_name_owners": [],
+          "method_name_presence_does_not_validate_parameters_or_body": true
+        }
+      ]
+    }
+  ],
+  "binary_hash_verification": [
+    {
+      "path": "RRHH/ClassRRHH.dll",
+      "metadata_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "actual_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "match": true
+    },
+    {
+      "path": "RRHH/RecursosHumanos.exe",
+      "metadata_sha256": "2f14cae9088d6678236c3705a0156d662b625188eccecf18e013a1d2ba6d7469",
+      "actual_sha256": "2f14cae9088d6678236c3705a0156d662b625188eccecf18e013a1d2ba6d7469",
+      "match": true
+    }
+  ],
+  "known_secret_values_published": false,
+  "pdf_inventory": [
+    {
+      "path": "referencias/bibliografia/Codigo sostenible.pdf",
+      "sha256": "8cf86146d34483f5a72e466e381640e3024eac8e045cc1c2c472090c12443f63",
+      "page_count": 27
+    },
+    {
+      "path": "referencias/bibliografia/DIP.pdf",
+      "sha256": "add39fb66205250899b1dd0f6366cf926c8f9faeb8f04610591c9a0986149ab1",
+      "page_count": 12
+    },
+    {
+      "path": "referencias/bibliografia/solid-principles.pdf",
+      "sha256": "e9a1151f673061f45257d07c4867b61130697698576e2818e5f2d527abaff554",
+      "page_count": 19
+    },
+    {
+      "path": "referencias/curso/Proyecto Final_Legado.pdf",
+      "sha256": "0be0c5698285d722c6d12734b534eb49ff87133b81388651bcdf7e688938d184",
+      "page_count": 11
+    },
+    {
+      "path": "referencias/curso/Silabo del curso.pdf",
+      "sha256": "9e5724acf277f7363d4975c125778b3f063ad909e77ef3e9dc4ff6035097e5da",
+      "page_count": 3
+    },
+    {
+      "path": "referencias/semanas/semana04/Semana04_EVO_TG.pdf",
+      "sha256": "243694203008ae733aa7c02c243a5391dbbe2be1c6e8f482a152774c6ae00102",
+      "page_count": 17
+    },
+    {
+      "path": "referencias/semanas/semana05/Semana05_EVO_TG.pdf",
+      "sha256": "676190ecbfb1e56717211e39042417ec9b2fc3cff341e80817095b75295c1677",
+      "page_count": 15
+    },
+    {
+      "path": "referencias/semanas/semana07/Semana07_EVO_TG.pdf",
+      "sha256": "7242178093db68d7d89a29644e5f2cf544edd9327a441f6ce2ed503ded1b7296",
+      "page_count": 15
+    }
+  ],
+  "limits": "La auditoria de este antecedente no acredita compilacion ni equivalencia; ver informe para discrepancias y paginas del curso.",
+  "pdf_summary": {
+    "files": 8,
+    "pages": 119,
+    "independent_week03_assignment_found": false,
+    "visually_reviewed_pages": [
+      "Silabo del curso.pdf: 2",
+      "Proyecto Final_Legado.pdf: 6,8,10"
+    ]
+  }
+}

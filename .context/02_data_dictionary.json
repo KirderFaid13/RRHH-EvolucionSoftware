@@ -1,37 +1,317 @@
 {
-  "format_version": "1.0",
-  "stage": "baseline_original",
-  "purpose": "Registrar el modelo de datos recuperado del RRHH original con evidencia y procedencia.",
-  "technical_analysis_status": "not_started_in_this_history",
+  "format_version": "1.1",
+  "stage": "C02_reverse_engineering",
+  "updated_at_local": "2026-09-30",
+  "purpose": "Contratos y nombres observados en cliente descompilado; no esquema SQL para migrar.",
+  "technical_analysis_status": "static_analysis_and_partial_decompilation_completed",
   "sources": [
     {
-      "kind": "team_description",
-      "description": "El equipo identifica el objeto de estudio como un sistema de Recursos Humanos del año 2008. No proporcionó un esquema de base de datos verificado."
+      "kind": "decompiled_assembly",
+      "path": "src/v1/recuperado/ClassRRHH/",
+      "manifest": "evidencia/ingenieria_inversa/recuperacion_v1.json"
+    },
+    {
+      "kind": "call_contract_inventory",
+      "path": "evidencia/ingenieria_inversa/contratos_observados.json"
     }
   ],
   "database": {
-    "engine": null,
+    "engine": "SQL Server (cliente System.Data.SqlClient observado)",
     "version": null,
-    "name": null,
-    "schema_verified": false
+    "name": "CMI (indicio de configuracion, no base inspeccionada)",
+    "schema_verified": false,
+    "restored": false,
+    "connection_tested": false
   },
-  "entities": [],
+  "entities": [
+    {
+      "name_observed": "empleado",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "Jet/OleDb",
+      "source": "src/v1/recuperado/ClassRRHH/AsistenciaAccess.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "pers_cod",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "pers_dni",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "pers_estado",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "idHorario",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    },
+    {
+      "name_observed": "Asis_Norm",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "Jet/OleDb",
+      "source": "src/v1/recuperado/ClassRRHH/AsistenciaAccess.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "Pers_Cod",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Fec_Asi",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Hor_Ent",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Hor_Sal",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Alm_Ent",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Alm_Sal",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "idhorario",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "estado",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "suspendido",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    },
+    {
+      "name_observed": "Marcacion",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "Jet/OleDb",
+      "source": "src/v1/recuperado/ClassRRHH/AsistenciaAccess.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "Fecha",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Valor",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Estado",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Proceso",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "Lugar",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    },
+    {
+      "name_observed": "persona",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "SQL Server/SqlClient",
+      "source": "src/v1/recuperado/ClassRRHH/FamiliaresClass.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "IdPersona",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "NumDocId",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "TipoDocID",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    },
+    {
+      "name_observed": "familiar",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "SQL Server/SqlClient",
+      "source": "src/v1/recuperado/ClassRRHH/FamiliaresClass.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "idpersona",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    },
+    {
+      "name_observed": "tipofamiliar",
+      "kind": "table_reference_in_client_SQL",
+      "provider_observed": "SQL Server/SqlClient",
+      "source": "src/v1/recuperado/ClassRRHH/FamiliaresClass.cs",
+      "physical_existence_verified": false,
+      "schema": null,
+      "primary_key": null,
+      "foreign_keys": null,
+      "columns_referenced": [
+        {
+          "name": "IdTipoFam",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        },
+        {
+          "name": "DescripTipoFam",
+          "physical_type": null,
+          "nullable": null,
+          "constraints": null
+        }
+      ]
+    }
+  ],
   "relationships": [],
   "enums": [],
-  "stored_procedures": [],
+  "stored_procedures": [
+    {
+      "name_observed": "spRRHH_Report_Oficina_Unico",
+      "client_method": "RRHHClass.Generar_Report_oficina",
+      "client_parameters_observed": [
+        {
+          "name": "@idarea",
+          "client_sql_db_type": "Int"
+        }
+      ],
+      "definition_verified": false,
+      "physical_parameter_signature": null,
+      "result_schema": null
+    },
+    {
+      "name_observed": "spRRHH_Report_Oficina",
+      "client_method": "RRHHClass.Generar_Report_oficina_Dep",
+      "client_parameters_observed": [
+        {
+          "name": "@sigla",
+          "client_sql_db_type": "VarChar"
+        }
+      ],
+      "definition_verified": false,
+      "physical_parameter_signature": null,
+      "result_schema": null
+    },
+    {
+      "name_observed": "spRRHH_BuscarFamiliares",
+      "client_method": "FichaSocialClass.llenarFamiliares",
+      "client_parameters_observed": [
+        {
+          "name": "@idempleado",
+          "client_sql_db_type": "Int"
+        }
+      ],
+      "definition_verified": false,
+      "physical_parameter_signature": null,
+      "result_schema": null
+    },
+    {
+      "name_observed": "SpRRHH_Asistencia_Import",
+      "client_method": "AsistenciaAccess.Access2Sql*",
+      "client_parameters_observed": null,
+      "definition_verified": false,
+      "physical_parameter_signature": null,
+      "result_schema": null
+    },
+    {
+      "name_observed": "SpRRHH_Marcacion_Import",
+      "client_method": "AsistenciaAccess.Access2Sql*",
+      "client_parameters_observed": null,
+      "definition_verified": false,
+      "physical_parameter_signature": null,
+      "result_schema": null
+    }
+  ],
   "unknowns": [
-    "Motor y versión de base de datos.",
-    "Tablas, vistas y procedimientos almacenados.",
-    "Columnas, tipos, restricciones y valores predeterminados.",
-    "Llaves primarias y foráneas.",
-    "Relaciones y reglas de integridad.",
-    "Correspondencia entre objetos del programa y estructuras de persistencia."
+    "Esquema fisico y version de motor",
+    "Tipos, claves, restricciones e integridad",
+    "Firmas efectivas y cuerpos de procedimientos",
+    "Formato/tipos reales de MDB",
+    "Roles y permisos funcionales",
+    "Equivalencia y comportamiento con datos reales"
   ],
   "interpretation_rules": {
-    "null_means": "Dato técnico todavía desconocido; no significa que una columna SQL permita NULL.",
-    "empty_collections_mean": "No se ha registrado información verificada; no demuestran que el sistema carezca de esos elementos.",
-    "entity_admission_rule": "Agregar una entidad únicamente con evidencia de su procedencia y con el estado de verificación de sus propiedades.",
-    "may_generate_database_migrations": false,
-    "migration_condition": "Verificar previamente el esquema necesario, sus restricciones y el alcance autorizado del cambio."
+    "null_means": "Desconocido, no SQL NULL ni columna nullable.",
+    "empty_collections_mean": "No recuperado, no ausencia de elementos.",
+    "evidence_scope": "El codigo del cliente muestra que intenta consultar/ejecutar, no que el contrato exista en una BD instalada.",
+    "may_generate_database_migrations": false
   }
 }

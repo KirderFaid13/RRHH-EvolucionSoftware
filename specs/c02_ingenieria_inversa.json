@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "stage": "C02",
+  "title": "Ingenieria inversa y base v1 del RRHH recibido",
+  "status": "completed_with_documented_limits",
+  "baseline_commit": "e1ead41a4101460dd1317856302ca18fc355d0d4",
+  "academic_week": 3,
+  "objective": "Recuperar estructura y codigo con procedencia verificable para fundamentar las siguientes refactorizaciones, sin cambiar comportamiento.",
+  "inputs": [
+    "evidencia/baseline/inventario_original.json",
+    "legado/RRHH/",
+    ".local/RRHH/ (originales restaurados; no versionados)",
+    "referencias/curso/",
+    "Reconstruccion historica v1 conservada localmente como antecedente, no como fuente fiel"
+  ],
+  "allowed_work": [
+    "Inventario y analisis estatico de metadatos y despliegue.",
+    "Descompilacion estatica de ensamblado propio con herramienta y version registradas.",
+    "Comparacion de reconstruccion historica con evidencia del binario.",
+    "Compilacion diagnostica sin ejecutar metodos de la aplicacion, si lo permite el entorno.",
+    "Actualizacion de arquitectura, contexto funcional y diccionario con niveles de evidencia."
+  ],
+  "excluded_work": [
+    "Ejecutar el programa o conectar SQL/Access.",
+    "Restaurar o publicar el respaldo real.",
+    "Implementar SRP/DRY, OCP, IoC o una nueva aplicacion.",
+    "Inventar contratos SQL, roles, restricciones o fuentes que no fueron recuperadas.",
+    "Modificar archivos originales o la proteccion del primer commit."
+  ],
+  "deliverables": [
+    "docs/ingenieria_inversa/README.md",
+    "docs/ingenieria_inversa/01_informe.md",
+    "docs/ingenieria_inversa/02_arquitectura.md",
+    "docs/ingenieria_inversa/03_procedencia_v1.md",
+    "docs/ingenieria_inversa/04_revision_antecedente.md",
+    "evidencia/ingenieria_inversa/",
+    "src/v1/README.md",
+    "Codigo realmente recuperado con estado explicito de compilacion y equivalencia",
+    ".context/ actualizada con hallazgos citables"
+  ],
+  "acceptance": [
+    {
+      "id": "C02-01",
+      "criterion": "Identificar runtime, arquitectura y dependencias a partir de metadatos, diferenciando CLR de framework objetivo.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    },
+    {
+      "id": "C02-02",
+      "criterion": "Documentar tipos y llamadas reales del ensamblado propio con hashes y procedencia.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    },
+    {
+      "id": "C02-03",
+      "criterion": "Registrar origen, herramienta, alcance y limites de cada fuente recuperada de v1.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    },
+    {
+      "id": "C02-04",
+      "criterion": "Distinguir contratos observados en codigo de esquema SQL desconocido y de equivalencia funcional no probada.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    },
+    {
+      "id": "C02-05",
+      "criterion": "Registrar compilacion diagnostica real o el bloqueo concreto, sin presentar DLL como aplicacion integrada.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    },
+    {
+      "id": "C02-06",
+      "criterion": "Mantener intactos los archivos del baseline, comprobar secretos/enlaces/JSON y excluir originales locales.",
+      "status": "passed",
+      "evidence": "evidencia/ingenieria_inversa/README.md"
+    }
+  ],
+  "stop_condition": "Publicar exactamente el segundo commit, verificarlo, explicar que/donde/por que/aporte al equipo y esperar indicacion para C03.",
+  "limitations": [
+    "La recuperacion de fuente cubre ClassRRHH.dll, no toda la aplicacion.",
+    "No equivalencia funcional, esquema ni integracion SQL/Access comprobados."
+  ]
+}

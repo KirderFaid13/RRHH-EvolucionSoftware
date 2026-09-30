@@ -1,0 +1,18 @@
+{
+  "stage": "C02",
+  "ok": true,
+  "counts": {
+    "recovered_files": 13,
+    "antecedent_files": 3,
+    "public_text_files_scanned": 67
+  },
+  "baseline_changed": false,
+  "compilation_passed": true,
+  "api_four_business_classes_match": true,
+  "encoded_settings_count_withheld": 6,
+  "secret_scan_scope": "Archivos publicos de texto contra contrasenas conocidas de al menos seis caracteres y seis defaults codificados; no certifica ausencia de secretos desconocidos.",
+  "application_executed": false,
+  "database_connected": false,
+  "functional_equivalence_verified": false,
+  "failures": []
+}

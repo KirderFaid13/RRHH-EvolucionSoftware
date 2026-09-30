@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "stage": "C02",
+  "kind": "actual_static_decompilation",
+  "source_assembly": "legado/RRHH/ClassRRHH.dll",
+  "source_assembly_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+  "tool": {
+    "name": "ILSpyCMD",
+    "version": "11.1.0.9782",
+    "language": "C#"
+  },
+  "decompiled_csharp_files": 12,
+  "business_classes": 4,
+  "support_csharp_files": 8,
+  "icon_files": 1,
+  "encrypted_csharp_files": 1,
+  "generated_project_included": false,
+  "generated_project_exclusion_reason": "The tool inferred net35 and generated host-dependent HintPaths; this project is not a recovered original project or a verified build definition.",
+  "generated_project_sha256": "3a785a26af8339b9d9d6f281523ee0fa93bee553283ca64fbb63d9af4cb5c522",
+  "source_changes_after_decompilation": false,
+  "settings_protection_reason": "MySettings contains six encoded defaults, including two used as Jet passwords; their values are not published as readable source.",
+  "files": [
+    {
+      "recovered_path": "app.ico",
+      "repository_path": "src/v1/recuperado/app.ico",
+      "recovered_sha256": "877a97946a57ab8f8795bbf019d9e5e3a22e1bed2e0ffd8fb3e5df3edc696881",
+      "recovered_size": 1078,
+      "repository_sha256": "877a97946a57ab8f8795bbf019d9e5e3a22e1bed2e0ffd8fb3e5df3edc696881",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH/AsistenciaAccess.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH/AsistenciaAccess.cs",
+      "recovered_sha256": "9700d26f14c9f2104239d717c230c6f775286282474d7d4ae629854c6400e7cb",
+      "recovered_size": 19345,
+      "repository_sha256": "9700d26f14c9f2104239d717c230c6f775286282474d7d4ae629854c6400e7cb",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH/FamiliaresClass.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH/FamiliaresClass.cs",
+      "recovered_sha256": "05519be4fcaf4952f18bafb8198a1fab58cd1a78a882a1b2235dfa136467f00c",
+      "recovered_size": 1330,
+      "repository_sha256": "05519be4fcaf4952f18bafb8198a1fab58cd1a78a882a1b2235dfa136467f00c",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH/FichaSocialClass.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH/FichaSocialClass.cs",
+      "recovered_sha256": "b794ba48ddf6d656fbc2efc25b51812ead7a210eca75018833ab440bea38ab46",
+      "recovered_size": 713,
+      "repository_sha256": "b794ba48ddf6d656fbc2efc25b51812ead7a210eca75018833ab440bea38ab46",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH/RRHHClass.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+      "recovered_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+      "recovered_size": 44106,
+      "repository_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My/InternalXmlHelper.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/InternalXmlHelper.cs",
+      "recovered_sha256": "30d7f5f76c9215dc36e47b79c8a7b6807cedc7ddb4cfdb5b0daf2dd8f686fd44",
+      "recovered_size": 7022,
+      "repository_sha256": "30d7f5f76c9215dc36e47b79c8a7b6807cedc7ddb4cfdb5b0daf2dd8f686fd44",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My/MyApplication.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/MyApplication.cs",
+      "recovered_sha256": "3e069c0ac81dc8ac4714920593cccc8536b72484b237c56994d6590089fb2f75",
+      "recovered_size": 368,
+      "repository_sha256": "3e069c0ac81dc8ac4714920593cccc8536b72484b237c56994d6590089fb2f75",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My/MyComputer.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/MyComputer.cs",
+      "recovered_sha256": "a8e9ed9421b7b5dd4411c379dd93bb60b3586a2dd2e3e7a88ffb8c38d4f6282c",
+      "recovered_size": 386,
+      "repository_sha256": "a8e9ed9421b7b5dd4411c379dd93bb60b3586a2dd2e3e7a88ffb8c38d4f6282c",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My/MyProject.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/MyProject.cs",
+      "recovered_sha256": "63c549c858226f192356e4cb38a888e2e010237308cca4d187ef27a155917227",
+      "recovered_size": 3547,
+      "repository_sha256": "63c549c858226f192356e4cb38a888e2e010237308cca4d187ef27a155917227",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My/MySettings.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/MySettings.cs.aesgcm",
+      "recovered_sha256": "76def10a06f71eaef09ae8f0ccc85c8e0ea25f1b03706435f36a5ab114976dc4",
+      "recovered_size": 2343,
+      "repository_sha256": "6f514ba6838c7cf8e8dff724b968f5c47b679e607617e0ea53b023424b461e7c",
+      "storage": "aes256_gcm",
+      "associated_data": "v1/ClassRRHH.My/MySettings.cs"
+    },
+    {
+      "recovered_path": "ClassRRHH.My/MySettingsProperty.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My/MySettingsProperty.cs",
+      "recovered_sha256": "b57aa2ea848c8f38a575fc6a65f088edbf539d5b5428ed13bce3fd1b29aaaffe",
+      "recovered_size": 430,
+      "repository_sha256": "b57aa2ea848c8f38a575fc6a65f088edbf539d5b5428ed13bce3fd1b29aaaffe",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "ClassRRHH.My.Resources/Resources.cs",
+      "repository_path": "src/v1/recuperado/ClassRRHH.My.Resources/Resources.cs",
+      "recovered_sha256": "a7dc4a75e76b674c9484a125cff3d880507348793e389968407ed53516660245",
+      "recovered_size": 1409,
+      "repository_sha256": "a7dc4a75e76b674c9484a125cff3d880507348793e389968407ed53516660245",
+      "storage": "unchanged",
+      "associated_data": null
+    },
+    {
+      "recovered_path": "Properties/AssemblyInfo.cs",
+      "repository_path": "src/v1/recuperado/Properties/AssemblyInfo.cs",
+      "recovered_sha256": "569cd4307c8807050885037e546c255a2fd26351d512a4e68890e8c147faa4a1",
+      "recovered_size": 555,
+      "repository_sha256": "569cd4307c8807050885037e546c255a2fd26351d512a4e68890e8c147faa4a1",
+      "storage": "unchanged",
+      "associated_data": null
+    }
+  ],
+  "limits": [
+    "C# is decompiler output, not original VB source.",
+    "The main application and its UI were not recovered in this source export.",
+    "Compilation of these sources is diagnostic only; functional equivalence and database integration were not verified."
+  ]
+}
