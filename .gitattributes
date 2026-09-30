@@ -1,0 +1,13 @@
+# Preservar los bytes del paquete recibido, incluso XML y símbolos.
+legado/RRHH/** -text
+referencias/**/*.pdf -text
+*.aesgcm -text
+
+# Documentación y herramientas nuevas con finales de línea uniformes.
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.env.example text eol=lf

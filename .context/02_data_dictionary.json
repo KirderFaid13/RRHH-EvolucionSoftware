@@ -1,0 +1,37 @@
+{
+  "format_version": "1.0",
+  "stage": "baseline_original",
+  "purpose": "Registrar el modelo de datos recuperado del RRHH original con evidencia y procedencia.",
+  "technical_analysis_status": "not_started_in_this_history",
+  "sources": [
+    {
+      "kind": "team_description",
+      "description": "El equipo identifica el objeto de estudio como un sistema de Recursos Humanos del año 2008. No proporcionó un esquema de base de datos verificado."
+    }
+  ],
+  "database": {
+    "engine": null,
+    "version": null,
+    "name": null,
+    "schema_verified": false
+  },
+  "entities": [],
+  "relationships": [],
+  "enums": [],
+  "stored_procedures": [],
+  "unknowns": [
+    "Motor y versión de base de datos.",
+    "Tablas, vistas y procedimientos almacenados.",
+    "Columnas, tipos, restricciones y valores predeterminados.",
+    "Llaves primarias y foráneas.",
+    "Relaciones y reglas de integridad.",
+    "Correspondencia entre objetos del programa y estructuras de persistencia."
+  ],
+  "interpretation_rules": {
+    "null_means": "Dato técnico todavía desconocido; no significa que una columna SQL permita NULL.",
+    "empty_collections_mean": "No se ha registrado información verificada; no demuestran que el sistema carezca de esos elementos.",
+    "entity_admission_rule": "Agregar una entidad únicamente con evidencia de su procedencia y con el estado de verificación de sus propiedades.",
+    "may_generate_database_migrations": false,
+    "migration_condition": "Verificar previamente el esquema necesario, sus restricciones y el alcance autorizado del cambio."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Storage review for commit 1; not the academic reverse engineering deliverable",
+  "method": "Static inspection of configuration XML, direct credential matches in package files, connection-string contexts and own .NET assembly strings. Secret values are omitted.",
+  "original_files_reviewed": 348,
+  "credential_files": [
+    "RecursosHumanos.exe.config",
+    "RecursosHumanos.vshost.exe.config",
+    "RecursosHumanos.exe",
+    "GRLL.dll",
+    "Reportes/RecursosHumanos.exe.config",
+    "Reportes/RecursosHumanos.vshost.exe.config",
+    "Reportes/RecursosHumanos.exe",
+    "Reportes/GRLL.dll",
+    "temp/RecursosHumanos.exe.config",
+    "temp/RecursosHumanos.vshost.exe.config",
+    "temp/RecursosHumanos.exe",
+    "temp/GRLL.dll"
+  ],
+  "decision": "Store these twelve originals with AES-256-GCM; keep the key outside Git; preserve original SHA-256 and size for authenticated restoration.",
+  "false_positive_handling": "Incidental binary matches without a password assignment or connection-string context were not treated as leaked credentials. ClassRRHH.dll Password fragments had empty values.",
+  "backup": {
+    "path": "CMI_Backup_QA.bak",
+    "size": 199401472,
+    "content_reviewed": false,
+    "storage": "local_only"
+  },
+  "limits": [
+    "Targeted static review does not certify the absence of every unknown secret.",
+    "Restored originals still contain their original credentials; encryption does not change the program.",
+    "No application execution or database restoration was performed."
+  ]
+}

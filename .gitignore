@@ -1,0 +1,28 @@
+# Claves, originales restaurados y registros locales
+/.local/
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Datos reales: se conservan fuera del historial
+*.bak
+*.mdf
+*.ldf
+*.mdb
+*.accdb
+
+# Configuraciones originales: solo ejemplos y copias cifradas
+*.exe.config
+*.dll.config
+
+# Compilaciones y preferencias nuevas; legado/RRHH conserva el paquete recibido
+/src/**/bin/
+/src/**/obj/
+**/__pycache__/
+*.pyc
+.vs/
+*.user
+*.suo
+node_modules/

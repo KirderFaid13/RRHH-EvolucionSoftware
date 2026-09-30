@@ -1,0 +1,3162 @@
+{
+  "schema_version": 1,
+  "scope": "commit_01_rrhh_original",
+  "description": "Inventario de la distribucion recibida; protege credenciales sin refactorizar el programa.",
+  "hash_algorithm": "SHA-256",
+  "encryption": {
+    "algorithm": "AES-256-GCM",
+    "header_ascii": "RRHH-AESGCM-v1\n",
+    "nonce_size": 12,
+    "tag_size": 16,
+    "associated_data": "original_path UTF-8",
+    "key_committed": false
+  },
+  "counts": {
+    "original_files": 348,
+    "unchanged": 335,
+    "aes256_gcm": 12,
+    "local_only": 1,
+    "configuration_examples": 6
+  },
+  "original_total_bytes": 519216065,
+  "files": [
+    {
+      "original_path": "ClassRRHH.dll",
+      "original_size": 55808,
+      "original_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/ClassRRHH.dll",
+      "repository_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "ClassRRHH.pdb",
+      "original_size": 91648,
+      "original_sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/ClassRRHH.pdb",
+      "repository_sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "ClassRRHH.xml",
+      "original_size": 763,
+      "original_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/ClassRRHH.xml",
+      "repository_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "ClsCtrls.dll",
+      "original_size": 58880,
+      "original_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/ClsCtrls.dll",
+      "repository_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "CMI_Backup_QA.bak",
+      "original_size": 199401472,
+      "original_sha256": "3fef0663ad058563484480f9da3cbae1bbb6fbea917f981176d07b0acb0198ca",
+      "storage": "local_only",
+      "repository_path": null,
+      "repository_sha256": null,
+      "reason": "Respaldo SQL con contenido no revisado y tamano superior a 100 MiB; conservado integro fuera de Git."
+    },
+    {
+      "original_path": "Custom Featured MessageBox.dll",
+      "original_size": 36864,
+      "original_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Custom Featured MessageBox.dll",
+      "repository_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Charts.v11.2.Core.dll",
+      "original_size": 181152,
+      "original_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Charts.v11.2.Core.dll",
+      "repository_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Data.v11.2.dll",
+      "original_size": 2680736,
+      "original_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Data.v11.2.dll",
+      "repository_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Data.v11.2.xml",
+      "original_size": 844979,
+      "original_sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Data.v11.2.xml",
+      "repository_sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Data.v7.3.dll",
+      "original_size": 573440,
+      "original_sha256": "8fa158f2f3a2709c56f811f3bd312b32ea633807d1c87fc4d8116d9c4ddfe61b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Data.v7.3.dll",
+      "repository_sha256": "8fa158f2f3a2709c56f811f3bd312b32ea633807d1c87fc4d8116d9c4ddfe61b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Data.v9.1.dll",
+      "original_size": 800768,
+      "original_sha256": "35205b85f4fccccedf8e94a6654281e3d0581147cfe40b7c9a3d21fcad02facb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Data.v9.1.dll",
+      "repository_sha256": "35205b85f4fccccedf8e94a6654281e3d0581147cfe40b7c9a3d21fcad02facb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Data.v9.1.xml",
+      "original_size": 319735,
+      "original_sha256": "b2413c6485ba1f7ab89ac3982437ad7266acca6fe0cfa64141cbdefdf3677bb4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Data.v9.1.xml",
+      "repository_sha256": "b2413c6485ba1f7ab89ac3982437ad7266acca6fe0cfa64141cbdefdf3677bb4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.PivotGrid.v11.2.Core.dll",
+      "original_size": 995744,
+      "original_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.PivotGrid.v11.2.Core.dll",
+      "repository_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.PivotGrid.v11.2.Core.xml",
+      "original_size": 481082,
+      "original_sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.PivotGrid.v11.2.Core.xml",
+      "repository_sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Printing.v11.2.Core.dll",
+      "original_size": 2006944,
+      "original_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Printing.v11.2.Core.dll",
+      "repository_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Reports.v11.2.Designer.dll",
+      "original_size": 47008,
+      "original_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Reports.v11.2.Designer.dll",
+      "repository_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.RichEdit.v11.2.Core.dll",
+      "original_size": 4915104,
+      "original_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.RichEdit.v11.2.Core.dll",
+      "repository_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.RichEdit.v11.2.Core.xml",
+      "original_size": 1188777,
+      "original_sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.RichEdit.v11.2.Core.xml",
+      "repository_sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Utils.v11.2.dll",
+      "original_size": 3473824,
+      "original_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Utils.v11.2.dll",
+      "repository_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Utils.v11.2.xml",
+      "original_size": 413014,
+      "original_sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Utils.v11.2.xml",
+      "repository_sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Utils.v7.3.dll",
+      "original_size": 3792896,
+      "original_sha256": "2c5fc2ac863f5c263ece34b7d2ceea7fb1a379012e1fe734ab744e915f44320e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Utils.v7.3.dll",
+      "repository_sha256": "2c5fc2ac863f5c263ece34b7d2ceea7fb1a379012e1fe734ab744e915f44320e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Utils.v9.1.dll",
+      "original_size": 4084736,
+      "original_sha256": "4c0bd8d7c9d9a25dedfe051965ec9dabf0271cdc2722a89a218d55a157bd1434",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Utils.v9.1.dll",
+      "repository_sha256": "4c0bd8d7c9d9a25dedfe051965ec9dabf0271cdc2722a89a218d55a157bd1434",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.Utils.v9.1.xml",
+      "original_size": 525077,
+      "original_sha256": "a23c36155943dd825d0775a2efe63e240ae600ca83269052e8233e45d3cee466",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.Utils.v9.1.xml",
+      "repository_sha256": "a23c36155943dd825d0775a2efe63e240ae600ca83269052e8233e45d3cee466",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraBars.v11.2.dll",
+      "original_size": 2570144,
+      "original_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraBars.v11.2.dll",
+      "repository_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraBars.v11.2.xml",
+      "original_size": 1195919,
+      "original_sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraBars.v11.2.xml",
+      "repository_sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraBars.v7.3.dll",
+      "original_size": 1613824,
+      "original_sha256": "fc3cff90b57b06808aceb3dda8ad0ed725ac0329f308ae9e224bb538c1ca3e54",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraBars.v7.3.dll",
+      "repository_sha256": "fc3cff90b57b06808aceb3dda8ad0ed725ac0329f308ae9e224bb538c1ca3e54",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraBars.v9.1.dll",
+      "original_size": 1714688,
+      "original_sha256": "278e0e5531308e1f3eeb056980dbfb74126f59b3a995011ccb63694a4b852c5e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraBars.v9.1.dll",
+      "repository_sha256": "278e0e5531308e1f3eeb056980dbfb74126f59b3a995011ccb63694a4b852c5e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraBars.v9.1.xml",
+      "original_size": 845867,
+      "original_sha256": "a626ef195367cc201d32a2ad39d23363bb843f18e68eebc0360369fe41ee4e87",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraBars.v9.1.xml",
+      "repository_sha256": "a626ef195367cc201d32a2ad39d23363bb843f18e68eebc0360369fe41ee4e87",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraCharts.v11.2.dll",
+      "original_size": 6955936,
+      "original_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraCharts.v11.2.dll",
+      "repository_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraCharts.v11.2.xml",
+      "original_size": 1427210,
+      "original_sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraCharts.v11.2.xml",
+      "repository_sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraCharts.v7.3.dll",
+      "original_size": 5033984,
+      "original_sha256": "dafbb736b62b555eeb610a888beec0d453e2f437d45358ce30d65f89f3599fd2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraCharts.v7.3.dll",
+      "repository_sha256": "dafbb736b62b555eeb610a888beec0d453e2f437d45358ce30d65f89f3599fd2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraCharts.v9.1.dll",
+      "original_size": 5821952,
+      "original_sha256": "fa677fe172d5de91868ed4ea51bafbedcfa3645a008244274fdd95ea143a827f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraCharts.v9.1.dll",
+      "repository_sha256": "fa677fe172d5de91868ed4ea51bafbedcfa3645a008244274fdd95ea143a827f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraCharts.v9.1.xml",
+      "original_size": 973022,
+      "original_sha256": "94c9b4d733562ef04e3e1e76a2ba6ed62f74407fcb5057d5c61c6440ed910a45",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraCharts.v9.1.xml",
+      "repository_sha256": "94c9b4d733562ef04e3e1e76a2ba6ed62f74407fcb5057d5c61c6440ed910a45",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v11.2.Design.dll",
+      "original_size": 215552,
+      "original_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v11.2.Design.dll",
+      "repository_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v11.2.dll",
+      "original_size": 2001824,
+      "original_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v11.2.dll",
+      "repository_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v11.2.xml",
+      "original_size": 1238439,
+      "original_sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v11.2.xml",
+      "repository_sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v7.3.Design.dll",
+      "original_size": 253952,
+      "original_sha256": "8baddd86094bf31de433f3cae1915074b6ac3a357f21fabb1fb1364a99149e87",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v7.3.Design.dll",
+      "repository_sha256": "8baddd86094bf31de433f3cae1915074b6ac3a357f21fabb1fb1364a99149e87",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v7.3.dll",
+      "original_size": 1425408,
+      "original_sha256": "bdb0890d2cdb3c62634c867b34a954776015220768fab53bc014d7e148f15f2b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v7.3.dll",
+      "repository_sha256": "bdb0890d2cdb3c62634c867b34a954776015220768fab53bc014d7e148f15f2b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v9.1.Design.dll",
+      "original_size": 218112,
+      "original_sha256": "0e297bc6d82e1ba867cfe276551f247987a45cac6e6149a1f99333f27b924808",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v9.1.Design.dll",
+      "repository_sha256": "0e297bc6d82e1ba867cfe276551f247987a45cac6e6149a1f99333f27b924808",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v9.1.dll",
+      "original_size": 1502208,
+      "original_sha256": "169400fd8f0b65a11bfecf76e9a83e7d69753f76518c09ea17fee6f7356c8a32",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v9.1.dll",
+      "repository_sha256": "169400fd8f0b65a11bfecf76e9a83e7d69753f76518c09ea17fee6f7356c8a32",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraEditors.v9.1.xml",
+      "original_size": 1016388,
+      "original_sha256": "df19c5b71cd9811db6afce2dc4005d7b322863707cfeecf4440790ff52936754",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraEditors.v9.1.xml",
+      "repository_sha256": "df19c5b71cd9811db6afce2dc4005d7b322863707cfeecf4440790ff52936754",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraGrid.v11.2.dll",
+      "original_size": 1946016,
+      "original_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraGrid.v11.2.dll",
+      "repository_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraGrid.v11.2.xml",
+      "original_size": 1269167,
+      "original_sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraGrid.v11.2.xml",
+      "repository_sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraGrid.v7.3.dll",
+      "original_size": 1507328,
+      "original_sha256": "78614df37581d63d6a5ceaa73c72fa633831665b80802cbe44d9fe4849cf0a57",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraGrid.v7.3.dll",
+      "repository_sha256": "78614df37581d63d6a5ceaa73c72fa633831665b80802cbe44d9fe4849cf0a57",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraGrid.v9.1.dll",
+      "original_size": 1665024,
+      "original_sha256": "66c0f29a4a5552a8fd31b215285fe73d17051798759876d505623ccdfa383d5f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraGrid.v9.1.dll",
+      "repository_sha256": "66c0f29a4a5552a8fd31b215285fe73d17051798759876d505623ccdfa383d5f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraGrid.v9.1.xml",
+      "original_size": 1152465,
+      "original_sha256": "09aa8e6846e7d3c35b6526666366df469ece2914089d348503335cc3cce40675",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraGrid.v9.1.xml",
+      "repository_sha256": "09aa8e6846e7d3c35b6526666366df469ece2914089d348503335cc3cce40675",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraLayout.v11.2.dll",
+      "original_size": 731040,
+      "original_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraLayout.v11.2.dll",
+      "repository_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraLayout.v11.2.xml",
+      "original_size": 308974,
+      "original_sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraLayout.v11.2.xml",
+      "repository_sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraLayout.v7.3.dll",
+      "original_size": 598016,
+      "original_sha256": "1131732c22454f9ff4d8a5d5f58d9d38d293ad9fb8cdb7df2f43864ac489c9e5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraLayout.v7.3.dll",
+      "repository_sha256": "1131732c22454f9ff4d8a5d5f58d9d38d293ad9fb8cdb7df2f43864ac489c9e5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraLayout.v9.1.dll",
+      "original_size": 664576,
+      "original_sha256": "a2c287a99cbfbca4095acc39a1282ee0656b2522ebc8b2740f85c2cac46ccea9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraLayout.v9.1.dll",
+      "repository_sha256": "a2c287a99cbfbca4095acc39a1282ee0656b2522ebc8b2740f85c2cac46ccea9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraLayout.v9.1.xml",
+      "original_size": 269451,
+      "original_sha256": "ca7d57f3bbf32171370d8340107f304bec23598a18d64db5414766a168139e4c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraLayout.v9.1.xml",
+      "repository_sha256": "ca7d57f3bbf32171370d8340107f304bec23598a18d64db5414766a168139e4c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPivotGrid.v11.2.dll",
+      "original_size": 589216,
+      "original_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPivotGrid.v11.2.dll",
+      "repository_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPivotGrid.v11.2.xml",
+      "original_size": 513491,
+      "original_sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPivotGrid.v11.2.xml",
+      "repository_sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v11.2.Design.dll",
+      "original_size": 56320,
+      "original_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "repository_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v11.2.dll",
+      "original_size": 672672,
+      "original_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v11.2.dll",
+      "repository_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v11.2.xml",
+      "original_size": 148491,
+      "original_sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v11.2.xml",
+      "repository_sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v7.3.Design.dll",
+      "original_size": 57344,
+      "original_sha256": "cf7f1061d32926fbd7b3e2e4e67225ac3f189f221520df2081eeafe08ca5d0d2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v7.3.Design.dll",
+      "repository_sha256": "cf7f1061d32926fbd7b3e2e4e67225ac3f189f221520df2081eeafe08ca5d0d2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v7.3.dll",
+      "original_size": 1540096,
+      "original_sha256": "8444495101df2aaa574bfc9ee66fac1b3d2a79e92cc46893ff9d37bfa8eeafac",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v7.3.dll",
+      "repository_sha256": "8444495101df2aaa574bfc9ee66fac1b3d2a79e92cc46893ff9d37bfa8eeafac",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v9.1.Design.dll",
+      "original_size": 52224,
+      "original_sha256": "1f2193f8e47cd74a5c73b81f5f40eeadeccdcc3a9f80799210e5a0a2ff89e1bc",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v9.1.Design.dll",
+      "repository_sha256": "1f2193f8e47cd74a5c73b81f5f40eeadeccdcc3a9f80799210e5a0a2ff89e1bc",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v9.1.dll",
+      "original_size": 1518080,
+      "original_sha256": "79862e8f7d7d703b6bf36482d0da67052e4e6b4cdd958ec83d0e9331aeb032fa",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v9.1.dll",
+      "repository_sha256": "79862e8f7d7d703b6bf36482d0da67052e4e6b4cdd958ec83d0e9331aeb032fa",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraPrinting.v9.1.xml",
+      "original_size": 454103,
+      "original_sha256": "88117166d4105d13b6081db3ec6f4fc78afb1669d2eea2cd055b23c14dbf2db4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraPrinting.v9.1.xml",
+      "repository_sha256": "88117166d4105d13b6081db3ec6f4fc78afb1669d2eea2cd055b23c14dbf2db4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v11.2.Design.dll",
+      "original_size": 734208,
+      "original_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v11.2.Design.dll",
+      "repository_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v11.2.dll",
+      "original_size": 1166240,
+      "original_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v11.2.dll",
+      "repository_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v11.2.Extensions.dll",
+      "original_size": 1668512,
+      "original_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "repository_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v11.2.Extensions.xml",
+      "original_size": 139126,
+      "original_sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v11.2.Extensions.xml",
+      "repository_sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v11.2.xml",
+      "original_size": 840645,
+      "original_sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v11.2.xml",
+      "repository_sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v7.3.dll",
+      "original_size": 2756608,
+      "original_sha256": "22bda89e7165ad98d1308fbc6ffb5420b7a25dcec31cd60dc1e32eb6caec2011",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v7.3.dll",
+      "repository_sha256": "22bda89e7165ad98d1308fbc6ffb5420b7a25dcec31cd60dc1e32eb6caec2011",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v9.1.dll",
+      "original_size": 2875392,
+      "original_sha256": "c65ca735502572419b39ac7d9ae3cc14919030dae31c9dba37d865584114c8d3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v9.1.dll",
+      "repository_sha256": "c65ca735502572419b39ac7d9ae3cc14919030dae31c9dba37d865584114c8d3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraReports.v9.1.xml",
+      "original_size": 730023,
+      "original_sha256": "f9cecfab9dd5f37f98ca05184cd3f7c685afa214003991f35b4be549a3afb3d9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraReports.v9.1.xml",
+      "repository_sha256": "f9cecfab9dd5f37f98ca05184cd3f7c685afa214003991f35b4be549a3afb3d9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraRichEdit.v11.2.dll",
+      "original_size": 1551264,
+      "original_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraRichEdit.v11.2.dll",
+      "repository_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraRichEdit.v11.2.xml",
+      "original_size": 114637,
+      "original_sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraRichEdit.v11.2.xml",
+      "repository_sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraRichEdit.v9.1.dll",
+      "original_size": 2182144,
+      "original_sha256": "fbf756b250e8cdecde104a6beb039c907cc583928b3ca71837ae2c87bd8a40f3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraRichEdit.v9.1.dll",
+      "repository_sha256": "fbf756b250e8cdecde104a6beb039c907cc583928b3ca71837ae2c87bd8a40f3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraRichEdit.v9.1.xml",
+      "original_size": 144262,
+      "original_sha256": "6317ea77e4ce686d307872242c87941ccb6f4a6a67931f0f55705e198c239c9e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraRichEdit.v9.1.xml",
+      "repository_sha256": "6317ea77e4ce686d307872242c87941ccb6f4a6a67931f0f55705e198c239c9e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraRichTextEdit.v7.3.dll",
+      "original_size": 307200,
+      "original_sha256": "35e92e6f1028308f7d236a49cb9e3ca34683ace137f57068047665a6eed0278c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraRichTextEdit.v7.3.dll",
+      "repository_sha256": "35e92e6f1028308f7d236a49cb9e3ca34683ace137f57068047665a6eed0278c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.Core.dll",
+      "original_size": 989600,
+      "original_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "repository_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.Core.xml",
+      "original_size": 656716,
+      "original_sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Core.xml",
+      "repository_sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.dll",
+      "original_size": 1586592,
+      "original_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.dll",
+      "repository_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "original_size": 56736,
+      "original_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "repository_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "original_size": 1039,
+      "original_sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "repository_sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v11.2.xml",
+      "original_size": 365197,
+      "original_sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v11.2.xml",
+      "repository_sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v7.3.dll",
+      "original_size": 1306624,
+      "original_sha256": "59910da5a1f39250383e0e7a09dd1f256219d0467716d1e9ef871b5e9832958f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v7.3.dll",
+      "repository_sha256": "59910da5a1f39250383e0e7a09dd1f256219d0467716d1e9ef871b5e9832958f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v9.1.dll",
+      "original_size": 1428480,
+      "original_sha256": "1b82258be8c898af4727c7afec49d147d845880362b13827259003e6ac3c651c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v9.1.dll",
+      "repository_sha256": "1b82258be8c898af4727c7afec49d147d845880362b13827259003e6ac3c651c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraScheduler.v9.1.xml",
+      "original_size": 306999,
+      "original_sha256": "a2950b66a3893449308cee162f0fd606522f55463e6a69ef639631ed1ac2abb3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraScheduler.v9.1.xml",
+      "repository_sha256": "a2950b66a3893449308cee162f0fd606522f55463e6a69ef639631ed1ac2abb3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraTreeList.v11.2.dll",
+      "original_size": 700832,
+      "original_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraTreeList.v11.2.dll",
+      "repository_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraTreeList.v11.2.xml",
+      "original_size": 464312,
+      "original_sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraTreeList.v11.2.xml",
+      "repository_sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraTreeList.v7.3.dll",
+      "original_size": 610304,
+      "original_sha256": "a6597c7af094ef9aa00961885955211f5a3083cfeb1aff07b540d2482ebf1c46",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraTreeList.v7.3.dll",
+      "repository_sha256": "a6597c7af094ef9aa00961885955211f5a3083cfeb1aff07b540d2482ebf1c46",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraTreeList.v9.1.dll",
+      "original_size": 578560,
+      "original_sha256": "57f035e1dd8b8e19c8aa19110bab3e141817b415b35f84db1d31d59dca862ba4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraTreeList.v9.1.dll",
+      "repository_sha256": "57f035e1dd8b8e19c8aa19110bab3e141817b415b35f84db1d31d59dca862ba4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraTreeList.v9.1.xml",
+      "original_size": 434838,
+      "original_sha256": "5fe78c0accb1d7d59cbf68630332ecf9509cd47f074a51b39cd7497e45c0b425",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraTreeList.v9.1.xml",
+      "repository_sha256": "5fe78c0accb1d7d59cbf68630332ecf9509cd47f074a51b39cd7497e45c0b425",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraVerticalGrid.v11.2.dll",
+      "original_size": 530848,
+      "original_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "repository_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraVerticalGrid.v11.2.xml",
+      "original_size": 316693,
+      "original_sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraVerticalGrid.v11.2.xml",
+      "repository_sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraVerticalGrid.v7.3.dll",
+      "original_size": 442368,
+      "original_sha256": "fe6745b59471cab93ccf0349876e2a945791ac09fc43ad0b0c3f378165ec3396",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraVerticalGrid.v7.3.dll",
+      "repository_sha256": "fe6745b59471cab93ccf0349876e2a945791ac09fc43ad0b0c3f378165ec3396",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraVerticalGrid.v9.1.dll",
+      "original_size": 445440,
+      "original_sha256": "65db3c121a646c97c04c2d7c4d23b28a8b60693be33e38458e85af521616b0ec",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraVerticalGrid.v9.1.dll",
+      "repository_sha256": "65db3c121a646c97c04c2d7c4d23b28a8b60693be33e38458e85af521616b0ec",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "DevExpress.XtraVerticalGrid.v9.1.xml",
+      "original_size": 292197,
+      "original_sha256": "f8a25b9a390ab028c4d748a78710a3153957368f3e9ab630a994b68bdc59fec3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/DevExpress.XtraVerticalGrid.v9.1.xml",
+      "repository_sha256": "f8a25b9a390ab028c4d748a78710a3153957368f3e9ab630a994b68bdc59fec3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "GRLL.Common.Rutinas.dll",
+      "original_size": 12288,
+      "original_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/GRLL.Common.Rutinas.dll",
+      "repository_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "GRLL.Common.Rutinas.pdb",
+      "original_size": 24064,
+      "original_sha256": "b462700963a30480679119838844793390ee14e19564ab283b4c8dd1104cf38b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/GRLL.Common.Rutinas.pdb",
+      "repository_sha256": "b462700963a30480679119838844793390ee14e19564ab283b4c8dd1104cf38b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "GRLL.dll",
+      "original_size": 2269184,
+      "original_sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/GRLL.dll.aesgcm",
+      "repository_sha256": "e2ae5f8772b688ed35808fd13a54cd9100610b2e7808a30af50384b92b5e8aab",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "GRLL.pdb",
+      "original_size": 5381632,
+      "original_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/GRLL.pdb",
+      "repository_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "GRLL.xml",
+      "original_size": 764,
+      "original_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/GRLL.xml",
+      "repository_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Interop.Excel.dll",
+      "original_size": 1093632,
+      "original_sha256": "fe2954e10e8b5ef673061da53424a1edfe22f41715c32ef25d4c575f58c727bd",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Interop.Excel.dll",
+      "repository_sha256": "fe2954e10e8b5ef673061da53424a1edfe22f41715c32ef25d4c575f58c727bd",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Interop.Microsoft.Office.Core.dll",
+      "original_size": 442368,
+      "original_sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Interop.Microsoft.Office.Core.dll",
+      "repository_sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Interop.VBIDE.dll",
+      "original_size": 57344,
+      "original_sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Interop.VBIDE.dll",
+      "repository_sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Microsoft.ReportViewer.Common.dll",
+      "original_size": 3649536,
+      "original_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Microsoft.ReportViewer.Common.dll",
+      "repository_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Microsoft.ReportViewer.WinForms.dll",
+      "original_size": 339968,
+      "original_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Microsoft.ReportViewer.WinForms.dll",
+      "repository_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Microsoft.ReportViewer.WinForms.xml",
+      "original_size": 108039,
+      "original_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Microsoft.ReportViewer.WinForms.xml",
+      "repository_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.application",
+      "original_size": 1657,
+      "original_sha256": "115949fa782d4f2f8705b41e4fdb57db7f0283b0394c36796096bf38678c4d02",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.application",
+      "repository_sha256": "115949fa782d4f2f8705b41e4fdb57db7f0283b0394c36796096bf38678c4d02",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.exe",
+      "original_size": 2839040,
+      "original_sha256": "2f14cae9088d6678236c3705a0156d662b625188eccecf18e013a1d2ba6d7469",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/RecursosHumanos.exe.aesgcm",
+      "repository_sha256": "fd10b5a604712affc8b5c8d56e3d98ef36ebae84d168f3d1ddeb98869e5487e1",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "RecursosHumanos.exe.config",
+      "original_size": 3636,
+      "original_sha256": "ed24cbb42a628ecc5965a93ef3fdf2b078e5bc5889929a99533c6c1f06182ae6",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/RecursosHumanos.exe.config.aesgcm",
+      "repository_sha256": "33a2896b3718e7c5e5af2f463ce7157913e307c26f6e5ac2f3d289a304246a84",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/RecursosHumanos.exe.config.example"
+    },
+    {
+      "original_path": "RecursosHumanos.exe.manifest",
+      "original_size": 94471,
+      "original_sha256": "56f5cb2bfc2d26c992d868fc7517656af8dfdae91f5e76ea495487df19278069",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.exe.manifest",
+      "repository_sha256": "56f5cb2bfc2d26c992d868fc7517656af8dfdae91f5e76ea495487df19278069",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.pdb",
+      "original_size": 1940992,
+      "original_sha256": "906e985d65a4775560fc793f28c904137d0bc394e8e3799435407b9fae7a240a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.pdb",
+      "repository_sha256": "906e985d65a4775560fc793f28c904137d0bc394e8e3799435407b9fae7a240a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.vshost.application",
+      "original_size": 1657,
+      "original_sha256": "a16181a9300c452bdea834f41e43d2e8330827bd84f62080c55c2f34e8bf44f9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.vshost.application",
+      "repository_sha256": "a16181a9300c452bdea834f41e43d2e8330827bd84f62080c55c2f34e8bf44f9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.vshost.exe",
+      "original_size": 11608,
+      "original_sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.vshost.exe",
+      "repository_sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.vshost.exe.config",
+      "original_size": 3650,
+      "original_sha256": "b253aa70c91831ae16603a820d0785738a96cf6b9b1c2d61134303c94a2eb86d",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/RecursosHumanos.vshost.exe.config.aesgcm",
+      "repository_sha256": "9e3c4c27849ee641a505ff2679b35b94e7fa86ea79ab7c3b4ece25d1932fe48b",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/RecursosHumanos.vshost.exe.config.example"
+    },
+    {
+      "original_path": "RecursosHumanos.vshost.exe.manifest",
+      "original_size": 94471,
+      "original_sha256": "167d7cb3d6827dae7078e67724d14dd6f233622ae9cda58a948d9438a0eecbcd",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.vshost.exe.manifest",
+      "repository_sha256": "167d7cb3d6827dae7078e67724d14dd6f233622ae9cda58a948d9438a0eecbcd",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "RecursosHumanos.xml",
+      "original_size": 15950,
+      "original_sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/RecursosHumanos.xml",
+      "repository_sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ClassRRHH.dll",
+      "original_size": 55808,
+      "original_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ClassRRHH.dll",
+      "repository_sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ClassRRHH.pdb",
+      "original_size": 91648,
+      "original_sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ClassRRHH.pdb",
+      "repository_sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ClassRRHH.xml",
+      "original_size": 763,
+      "original_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ClassRRHH.xml",
+      "repository_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ClsCtrls.dll",
+      "original_size": 58880,
+      "original_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ClsCtrls.dll",
+      "repository_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Custom Featured MessageBox.dll",
+      "original_size": 36864,
+      "original_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Custom Featured MessageBox.dll",
+      "repository_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.Data.v11.2.resources.dll",
+      "original_size": 168352,
+      "original_sha256": "88a45c567ac8fdb891bd2b01f4442399d74034859049b0894066c4ef03c14c73",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.Data.v11.2.resources.dll",
+      "repository_sha256": "88a45c567ac8fdb891bd2b01f4442399d74034859049b0894066c4ef03c14c73",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "original_size": 86432,
+      "original_sha256": "abc91674fe665e1176a71d83edfd4654aa51a41aec95ee5ed138f95276a5b7ea",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "repository_sha256": "abc91674fe665e1176a71d83edfd4654aa51a41aec95ee5ed138f95276a5b7ea",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "original_size": 184736,
+      "original_sha256": "cc10fc9bc44fd7f4e32829f89f051f36f2d3f24714a19b9c04043def98089f98",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "repository_sha256": "cc10fc9bc44fd7f4e32829f89f051f36f2d3f24714a19b9c04043def98089f98",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.Utils.v11.2.resources.dll",
+      "original_size": 33184,
+      "original_sha256": "be1362c3b7fec11b48b6fc601f487d7cd314d1173be2b505f06a70d0f7980d12",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.Utils.v11.2.resources.dll",
+      "repository_sha256": "be1362c3b7fec11b48b6fc601f487d7cd314d1173be2b505f06a70d0f7980d12",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraBars.v11.2.resources.dll",
+      "original_size": 20384,
+      "original_sha256": "ef1d897dc372a3ba96afd3e454b9c12a78bdd646fab99cb2b346347296bd09f2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraBars.v11.2.resources.dll",
+      "repository_sha256": "ef1d897dc372a3ba96afd3e454b9c12a78bdd646fab99cb2b346347296bd09f2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraCharts.v11.2.resources.dll",
+      "original_size": 336288,
+      "original_sha256": "1a4f5d951461e8fa2705947906f6a63ee41b062605d234b49f7003265f43342c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraCharts.v11.2.resources.dll",
+      "repository_sha256": "1a4f5d951461e8fa2705947906f6a63ee41b062605d234b49f7003265f43342c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraEditors.v11.2.resources.dll",
+      "original_size": 49568,
+      "original_sha256": "e1a2d8cdfa4b63897991a33b28ce96b93659d15a53838c430fb490a2f6dbe0db",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraEditors.v11.2.resources.dll",
+      "repository_sha256": "e1a2d8cdfa4b63897991a33b28ce96b93659d15a53838c430fb490a2f6dbe0db",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraGrid.v11.2.resources.dll",
+      "original_size": 45472,
+      "original_sha256": "b592e4723ce5b5b1fc4fe25f67997bb4c72e311a09d22406c2f5edc9c70b3d86",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraGrid.v11.2.resources.dll",
+      "repository_sha256": "b592e4723ce5b5b1fc4fe25f67997bb4c72e311a09d22406c2f5edc9c70b3d86",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraLayout.v11.2.resources.dll",
+      "original_size": 15264,
+      "original_sha256": "881396ce74c57d08e6589d80ed0a7b5676661876a2e0bd143300b9ca8b24d8a0",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraLayout.v11.2.resources.dll",
+      "repository_sha256": "881396ce74c57d08e6589d80ed0a7b5676661876a2e0bd143300b9ca8b24d8a0",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "original_size": 9120,
+      "original_sha256": "0824360ce3a97afda46cfa5aad203d10ab6ef6013230470e3161081a663917fb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "repository_sha256": "0824360ce3a97afda46cfa5aad203d10ab6ef6013230470e3161081a663917fb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "original_size": 14752,
+      "original_sha256": "52987fc003fc4df7ae7d5db919d99ef8b2940d3289c60bff25faf30749e53bb2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "repository_sha256": "52987fc003fc4df7ae7d5db919d99ef8b2940d3289c60bff25faf30749e53bb2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "original_size": 135584,
+      "original_sha256": "3ca9c29e6483d34ee4e39660ef77a1378f5df2371e6e1018f8d2111f2f16e29f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "repository_sha256": "3ca9c29e6483d34ee4e39660ef77a1378f5df2371e6e1018f8d2111f2f16e29f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraReports.v11.2.resources.dll",
+      "original_size": 156064,
+      "original_sha256": "0387aaa1d284d35ec2d1947f490de3f0bea26e243a638bd1c81076ea79cc93ce",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraReports.v11.2.resources.dll",
+      "repository_sha256": "0387aaa1d284d35ec2d1947f490de3f0bea26e243a638bd1c81076ea79cc93ce",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "original_size": 98720,
+      "original_sha256": "e9a6fde641397a2f9d8d086d6c8c4b12e5db1f804059dce2e06c659af7f68f04",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "repository_sha256": "e9a6fde641397a2f9d8d086d6c8c4b12e5db1f804059dce2e06c659af7f68f04",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "original_size": 61856,
+      "original_sha256": "2b1f9a6dbf91cf9485bfcf87ed1faef50d9f3a03e9f0c7142ae3a823fa2d7060",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "repository_sha256": "2b1f9a6dbf91cf9485bfcf87ed1faef50d9f3a03e9f0c7142ae3a823fa2d7060",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "original_size": 86432,
+      "original_sha256": "870f8f528c21f5105907352b94b5ec12274ce818c79704337fcb6fa11d095cdb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "repository_sha256": "870f8f528c21f5105907352b94b5ec12274ce818c79704337fcb6fa11d095cdb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "original_size": 14752,
+      "original_sha256": "b1f122664f66f3d1fa0ce135e5bf8eb8fcd1b4b78eeeca2b4b8fc1da81c7ef04",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "repository_sha256": "b1f122664f66f3d1fa0ce135e5bf8eb8fcd1b4b78eeeca2b4b8fc1da81c7ef04",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/de/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "original_size": 10144,
+      "original_sha256": "7b1ad4015e0f176ed06ff6b39894244aa2bd29d6c75d4af9b85532cc2d2ce16a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/de/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "repository_sha256": "7b1ad4015e0f176ed06ff6b39894244aa2bd29d6c75d4af9b85532cc2d2ce16a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Charts.v11.2.Core.dll",
+      "original_size": 181152,
+      "original_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Charts.v11.2.Core.dll",
+      "repository_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Data.v11.2.dll",
+      "original_size": 2680736,
+      "original_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Data.v11.2.dll",
+      "repository_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Data.v11.2.xml",
+      "original_size": 844979,
+      "original_sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Data.v11.2.xml",
+      "repository_sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.PivotGrid.v11.2.Core.dll",
+      "original_size": 995744,
+      "original_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.PivotGrid.v11.2.Core.dll",
+      "repository_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.PivotGrid.v11.2.Core.xml",
+      "original_size": 481082,
+      "original_sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.PivotGrid.v11.2.Core.xml",
+      "repository_sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Printing.v11.2.Core.dll",
+      "original_size": 2006944,
+      "original_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Printing.v11.2.Core.dll",
+      "repository_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Reports.v11.2.Designer.dll",
+      "original_size": 47008,
+      "original_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Reports.v11.2.Designer.dll",
+      "repository_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.RichEdit.v11.2.Core.dll",
+      "original_size": 4915104,
+      "original_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.RichEdit.v11.2.Core.dll",
+      "repository_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.RichEdit.v11.2.Core.xml",
+      "original_size": 1188777,
+      "original_sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.RichEdit.v11.2.Core.xml",
+      "repository_sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Utils.v11.2.dll",
+      "original_size": 3473824,
+      "original_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Utils.v11.2.dll",
+      "repository_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.Utils.v11.2.xml",
+      "original_size": 413014,
+      "original_sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.Utils.v11.2.xml",
+      "repository_sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraBars.v11.2.dll",
+      "original_size": 2570144,
+      "original_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraBars.v11.2.dll",
+      "repository_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraBars.v11.2.xml",
+      "original_size": 1195919,
+      "original_sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraBars.v11.2.xml",
+      "repository_sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraCharts.v11.2.dll",
+      "original_size": 6955936,
+      "original_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraCharts.v11.2.dll",
+      "repository_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraCharts.v11.2.xml",
+      "original_size": 1427210,
+      "original_sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraCharts.v11.2.xml",
+      "repository_sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraEditors.v11.2.Design.dll",
+      "original_size": 215552,
+      "original_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.Design.dll",
+      "repository_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraEditors.v11.2.dll",
+      "original_size": 2001824,
+      "original_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.dll",
+      "repository_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraEditors.v11.2.xml",
+      "original_size": 1238439,
+      "original_sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.xml",
+      "repository_sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraGrid.v11.2.dll",
+      "original_size": 1946016,
+      "original_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraGrid.v11.2.dll",
+      "repository_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraGrid.v11.2.xml",
+      "original_size": 1269167,
+      "original_sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraGrid.v11.2.xml",
+      "repository_sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraLayout.v11.2.dll",
+      "original_size": 731040,
+      "original_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraLayout.v11.2.dll",
+      "repository_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraLayout.v11.2.xml",
+      "original_size": 308974,
+      "original_sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraLayout.v11.2.xml",
+      "repository_sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraPivotGrid.v11.2.dll",
+      "original_size": 589216,
+      "original_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraPivotGrid.v11.2.dll",
+      "repository_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraPivotGrid.v11.2.xml",
+      "original_size": 513491,
+      "original_sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraPivotGrid.v11.2.xml",
+      "repository_sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "original_size": 56320,
+      "original_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "repository_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraPrinting.v11.2.dll",
+      "original_size": 672672,
+      "original_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.dll",
+      "repository_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraPrinting.v11.2.xml",
+      "original_size": 148491,
+      "original_sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.xml",
+      "repository_sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraReports.v11.2.Design.dll",
+      "original_size": 734208,
+      "original_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Design.dll",
+      "repository_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraReports.v11.2.dll",
+      "original_size": 1166240,
+      "original_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.dll",
+      "repository_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "original_size": 1668512,
+      "original_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "repository_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraReports.v11.2.Extensions.xml",
+      "original_size": 139126,
+      "original_sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Extensions.xml",
+      "repository_sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraReports.v11.2.xml",
+      "original_size": 840645,
+      "original_sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.xml",
+      "repository_sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraRichEdit.v11.2.dll",
+      "original_size": 1551264,
+      "original_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraRichEdit.v11.2.dll",
+      "repository_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraRichEdit.v11.2.xml",
+      "original_size": 114637,
+      "original_sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraRichEdit.v11.2.xml",
+      "repository_sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "original_size": 989600,
+      "original_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "repository_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.Core.xml",
+      "original_size": 656716,
+      "original_sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Core.xml",
+      "repository_sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.dll",
+      "original_size": 1586592,
+      "original_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.dll",
+      "repository_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "original_size": 56736,
+      "original_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "repository_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "original_size": 1039,
+      "original_sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "repository_sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraScheduler.v11.2.xml",
+      "original_size": 365197,
+      "original_sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.xml",
+      "repository_sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraTreeList.v11.2.dll",
+      "original_size": 700832,
+      "original_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraTreeList.v11.2.dll",
+      "repository_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraTreeList.v11.2.xml",
+      "original_size": 464312,
+      "original_sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraTreeList.v11.2.xml",
+      "repository_sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "original_size": 530848,
+      "original_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "repository_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/DevExpress.XtraVerticalGrid.v11.2.xml",
+      "original_size": 316693,
+      "original_sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/DevExpress.XtraVerticalGrid.v11.2.xml",
+      "repository_sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.Data.v11.2.resources.dll",
+      "original_size": 172448,
+      "original_sha256": "a160dc77ca35109666b455405cb348dbe0942755546fff25863b6be2bc1085eb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.Data.v11.2.resources.dll",
+      "repository_sha256": "a160dc77ca35109666b455405cb348dbe0942755546fff25863b6be2bc1085eb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "original_size": 82336,
+      "original_sha256": "6930029542b67ca49ab7f0526c7a7d7f533f55c75f1b9af775054154f903cc81",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "repository_sha256": "6930029542b67ca49ab7f0526c7a7d7f533f55c75f1b9af775054154f903cc81",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "original_size": 139680,
+      "original_sha256": "16950c6371a86bf3386e43350c2c78d248d40eec3b2cee3053c8edca01392fbe",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "repository_sha256": "16950c6371a86bf3386e43350c2c78d248d40eec3b2cee3053c8edca01392fbe",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.Utils.v11.2.resources.dll",
+      "original_size": 33184,
+      "original_sha256": "ca668a041df4dab1002e730d409e6b09753a03f5edc4971c931afd6d89a3e1b9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.Utils.v11.2.resources.dll",
+      "repository_sha256": "ca668a041df4dab1002e730d409e6b09753a03f5edc4971c931afd6d89a3e1b9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraBars.v11.2.resources.dll",
+      "original_size": 33184,
+      "original_sha256": "2826d575bf068a1bb11d20d0b86195e4f836dc66d8c6d0f7d2d16255aca74fd5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraBars.v11.2.resources.dll",
+      "repository_sha256": "2826d575bf068a1bb11d20d0b86195e4f836dc66d8c6d0f7d2d16255aca74fd5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraCharts.v11.2.resources.dll",
+      "original_size": 311712,
+      "original_sha256": "5012fad101fc3e1ee62a4d48af2602b8670d87c919929551cd0f9025262df11c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraCharts.v11.2.resources.dll",
+      "repository_sha256": "5012fad101fc3e1ee62a4d48af2602b8670d87c919929551cd0f9025262df11c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraEditors.v11.2.resources.dll",
+      "original_size": 70048,
+      "original_sha256": "1d55afb085ede6bb68cdb08f1183d5232cfc7530762ba052a84b264188f15918",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraEditors.v11.2.resources.dll",
+      "repository_sha256": "1d55afb085ede6bb68cdb08f1183d5232cfc7530762ba052a84b264188f15918",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraGrid.v11.2.resources.dll",
+      "original_size": 45472,
+      "original_sha256": "4bdc1a260040e5455b2aa3bbee9af78669ed528921f85417ed5206f6289c75a5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraGrid.v11.2.resources.dll",
+      "repository_sha256": "4bdc1a260040e5455b2aa3bbee9af78669ed528921f85417ed5206f6289c75a5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraLayout.v11.2.resources.dll",
+      "original_size": 15264,
+      "original_sha256": "70adcc007154f1074e34526e99f8ccdc539ead093aea3936d2d797a01821aa19",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraLayout.v11.2.resources.dll",
+      "repository_sha256": "70adcc007154f1074e34526e99f8ccdc539ead093aea3936d2d797a01821aa19",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "original_size": 9120,
+      "original_sha256": "2c30b773b51ecbf07fbc79ffea11259abcce49b898bb07ba691c24c6544ff308",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "repository_sha256": "2c30b773b51ecbf07fbc79ffea11259abcce49b898bb07ba691c24c6544ff308",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "original_size": 45472,
+      "original_sha256": "0002a775c01f718d1834099bc76d4cff07f956fa8d33e35bd7c78a0c1f0e36ba",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "repository_sha256": "0002a775c01f718d1834099bc76d4cff07f956fa8d33e35bd7c78a0c1f0e36ba",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "original_size": 41376,
+      "original_sha256": "197f9b11264bab32ec451ede29b1b624e8ee851b95ef4bed2ef3e9440e8282c7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "repository_sha256": "197f9b11264bab32ec451ede29b1b624e8ee851b95ef4bed2ef3e9440e8282c7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraReports.v11.2.resources.dll",
+      "original_size": 160160,
+      "original_sha256": "e1bdfbf451a880a7442c7698fbe69a2f8c2aa4fba9d1c6f3cf792fc496dc8902",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraReports.v11.2.resources.dll",
+      "repository_sha256": "e1bdfbf451a880a7442c7698fbe69a2f8c2aa4fba9d1c6f3cf792fc496dc8902",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "original_size": 74144,
+      "original_sha256": "fef155520e892b886f9f7b956a71b6cbc0d6c09fb074ee6a1c98a408ced4c11a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "repository_sha256": "fef155520e892b886f9f7b956a71b6cbc0d6c09fb074ee6a1c98a408ced4c11a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "original_size": 61856,
+      "original_sha256": "420965731fe4f412b9d4b5d82b1212b1d3c52dc1eb4d7d7a5b2903abe18db723",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "repository_sha256": "420965731fe4f412b9d4b5d82b1212b1d3c52dc1eb4d7d7a5b2903abe18db723",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "original_size": 70048,
+      "original_sha256": "64d96786bedcffd1a1edfaba815ee4f4b2f766f2cafa9f19f179ecebb3872ebf",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "repository_sha256": "64d96786bedcffd1a1edfaba815ee4f4b2f766f2cafa9f19f179ecebb3872ebf",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "original_size": 14752,
+      "original_sha256": "aa7bc895cdf0b3addf9ec89a6f1831ec6b5f5f81485b284facbea1c37193fbf4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "repository_sha256": "aa7bc895cdf0b3addf9ec89a6f1831ec6b5f5f81485b284facbea1c37193fbf4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/es/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "original_size": 10144,
+      "original_sha256": "baced3e8689c4e5fbfcd0e39dc17101895e7844081cf0a1ca7e6f3b4665125e5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/es/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "repository_sha256": "baced3e8689c4e5fbfcd0e39dc17101895e7844081cf0a1ca7e6f3b4665125e5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/GRLL.Common.Rutinas.dll",
+      "original_size": 12288,
+      "original_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/GRLL.Common.Rutinas.dll",
+      "repository_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/GRLL.dll",
+      "original_size": 2269184,
+      "original_sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/Reportes/GRLL.dll.aesgcm",
+      "repository_sha256": "6a715e17f95fbda21e8be062150f952399bcbfa5378353b29f99bbab21765c92",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "Reportes/GRLL.pdb",
+      "original_size": 5381632,
+      "original_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/GRLL.pdb",
+      "repository_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/GRLL.xml",
+      "original_size": 764,
+      "original_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/GRLL.xml",
+      "repository_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Interop.Microsoft.Office.Core.dll",
+      "original_size": 442368,
+      "original_sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Interop.Microsoft.Office.Core.dll",
+      "repository_sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Interop.VBIDE.dll",
+      "original_size": 57344,
+      "original_sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Interop.VBIDE.dll",
+      "repository_sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.Data.v11.2.resources.dll",
+      "original_size": 184736,
+      "original_sha256": "629ec3f91b26a3b1816def1e589232d4ba8372522cd8d62664c0a6d2a8e00b7b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.Data.v11.2.resources.dll",
+      "repository_sha256": "629ec3f91b26a3b1816def1e589232d4ba8372522cd8d62664c0a6d2a8e00b7b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "original_size": 90528,
+      "original_sha256": "c099bf8da64e7d154ca7109345533a2866fc60e2366ea2e993a3ec5b24180cc9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "repository_sha256": "c099bf8da64e7d154ca7109345533a2866fc60e2366ea2e993a3ec5b24180cc9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "original_size": 188832,
+      "original_sha256": "62a9dad78813e61894456418cc91f8105ef3e986861ea3a81c78e05477e1dcc3",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "repository_sha256": "62a9dad78813e61894456418cc91f8105ef3e986861ea3a81c78e05477e1dcc3",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.Utils.v11.2.resources.dll",
+      "original_size": 33184,
+      "original_sha256": "3d4692373ccaf14262099efca5b11a4cfc194b8dab027be6cf3b5c1256e6aff6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.Utils.v11.2.resources.dll",
+      "repository_sha256": "3d4692373ccaf14262099efca5b11a4cfc194b8dab027be6cf3b5c1256e6aff6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraBars.v11.2.resources.dll",
+      "original_size": 41376,
+      "original_sha256": "3cb1369e65b3dce2f8c923a43ebefd261e5057b1e7b5fd304ebacd5357ffa8f6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraBars.v11.2.resources.dll",
+      "repository_sha256": "3cb1369e65b3dce2f8c923a43ebefd261e5057b1e7b5fd304ebacd5357ffa8f6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraCharts.v11.2.resources.dll",
+      "original_size": 364960,
+      "original_sha256": "21f68d899c67627d824abc50fd8ef7728f797121299ee20ab27ecfde24243e18",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraCharts.v11.2.resources.dll",
+      "repository_sha256": "21f68d899c67627d824abc50fd8ef7728f797121299ee20ab27ecfde24243e18",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraEditors.v11.2.resources.dll",
+      "original_size": 74144,
+      "original_sha256": "27981518b145e3bdaf9b8a49a65382f2af936354458a5d2792ba6d1ebf412def",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraEditors.v11.2.resources.dll",
+      "repository_sha256": "27981518b145e3bdaf9b8a49a65382f2af936354458a5d2792ba6d1ebf412def",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraGrid.v11.2.resources.dll",
+      "original_size": 74144,
+      "original_sha256": "8145737944e02ee5edba7c6348aaf5a9602af80b8c238e72bd3b209cd5cd5dc4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraGrid.v11.2.resources.dll",
+      "repository_sha256": "8145737944e02ee5edba7c6348aaf5a9602af80b8c238e72bd3b209cd5cd5dc4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraLayout.v11.2.resources.dll",
+      "original_size": 15776,
+      "original_sha256": "29d5b96f4e1eb7cf8bac332233b798fd575e5bc128b1ce59dc5f5c665aa61df5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraLayout.v11.2.resources.dll",
+      "repository_sha256": "29d5b96f4e1eb7cf8bac332233b798fd575e5bc128b1ce59dc5f5c665aa61df5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "original_size": 9632,
+      "original_sha256": "8b2f782f62b1bf515c8ff277a3001ff5b7812b36b0f824d50721ff737ed71beb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "repository_sha256": "8b2f782f62b1bf515c8ff277a3001ff5b7812b36b0f824d50721ff737ed71beb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "original_size": 45472,
+      "original_sha256": "ffbf56fb6003f70d32bb92863004806f2acdaf1a9055f8c49fa76376fa45964b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "repository_sha256": "ffbf56fb6003f70d32bb92863004806f2acdaf1a9055f8c49fa76376fa45964b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "original_size": 41376,
+      "original_sha256": "9e2be9ec5c620ce28910ae4af2aca6a944b36959a7ef8dc06000ec584935ef81",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "repository_sha256": "9e2be9ec5c620ce28910ae4af2aca6a944b36959a7ef8dc06000ec584935ef81",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraReports.v11.2.resources.dll",
+      "original_size": 164256,
+      "original_sha256": "02f7b89e90fdc4aa637e61c4a45022250826d8c4cf81485e258aee180e16a72b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraReports.v11.2.resources.dll",
+      "repository_sha256": "02f7b89e90fdc4aa637e61c4a45022250826d8c4cf81485e258aee180e16a72b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "original_size": 78240,
+      "original_sha256": "584e07413beb633abcd3f2a51e786a7c42e473d74471f3834488e7629c63db45",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "repository_sha256": "584e07413beb633abcd3f2a51e786a7c42e473d74471f3834488e7629c63db45",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "original_size": 65952,
+      "original_sha256": "be023a92569529cec04b3f40f1200592eaad2c4e14a19f189999783a2e7f7ba4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "repository_sha256": "be023a92569529cec04b3f40f1200592eaad2c4e14a19f189999783a2e7f7ba4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "original_size": 65952,
+      "original_sha256": "690dfff1e9ba13cd22b2a70f815135ba585c85a99853b49d220cbf189cd6c72c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "repository_sha256": "690dfff1e9ba13cd22b2a70f815135ba585c85a99853b49d220cbf189cd6c72c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "original_size": 15264,
+      "original_sha256": "b2a7df3caec0b6a576a5093ce8fa2570b9bb4984b6d0cce74a0112beb702ca74",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "repository_sha256": "b2a7df3caec0b6a576a5093ce8fa2570b9bb4984b6d0cce74a0112beb702ca74",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ja/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "original_size": 10144,
+      "original_sha256": "c9ad2cd9ec011387fca1a1f2931da7c854004f322d6434dce0f8be6a4856ea82",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ja/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "repository_sha256": "c9ad2cd9ec011387fca1a1f2931da7c854004f322d6434dce0f8be6a4856ea82",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Microsoft.ReportViewer.Common.dll",
+      "original_size": 3649536,
+      "original_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Microsoft.ReportViewer.Common.dll",
+      "repository_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Microsoft.ReportViewer.WinForms.dll",
+      "original_size": 339968,
+      "original_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Microsoft.ReportViewer.WinForms.dll",
+      "repository_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Microsoft.ReportViewer.WinForms.xml",
+      "original_size": 108039,
+      "original_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Microsoft.ReportViewer.WinForms.xml",
+      "repository_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.application",
+      "original_size": 1657,
+      "original_sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.application",
+      "repository_sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.exe",
+      "original_size": 2840064,
+      "original_sha256": "7a7975fde812273a1a5d3a59aac87e350d7dc6b0b665b6ed49c9d4cc9f2a7ea1",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.exe.aesgcm",
+      "repository_sha256": "18eaf342b50fac4a341dfca2cbc3bb427b6c6afed69a92c7ecc1d0eb0acb4597",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.exe.config",
+      "original_size": 3650,
+      "original_sha256": "79945567217619d3a5a25ec0913277c9790ac88f9255ee7f03beca0dbe38c596",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.exe.config.aesgcm",
+      "repository_sha256": "f322cda4f06261a11962b1970a541c3f5d34c0e66c81cc44ce97e20684549e8a",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/Reportes/RecursosHumanos.exe.config.example"
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.exe.manifest",
+      "original_size": 95094,
+      "original_sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.exe.manifest",
+      "repository_sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.pdb",
+      "original_size": 1943040,
+      "original_sha256": "c68b6ff561385ccea39ff1ac07864dbc9d2dceea5f0ca3334d4f5249a26467c9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.pdb",
+      "repository_sha256": "c68b6ff561385ccea39ff1ac07864dbc9d2dceea5f0ca3334d4f5249a26467c9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.vshost.application",
+      "original_size": 1657,
+      "original_sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.vshost.application",
+      "repository_sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.vshost.exe",
+      "original_size": 11608,
+      "original_sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe",
+      "repository_sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.vshost.exe.config",
+      "original_size": 3650,
+      "original_sha256": "79945567217619d3a5a25ec0913277c9790ac88f9255ee7f03beca0dbe38c596",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.config.aesgcm",
+      "repository_sha256": "6cb8ecff072c69ad8d4b2850460753db2ac2186dccd99766d10c59cee25790f2",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.config.example"
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.vshost.exe.manifest",
+      "original_size": 95094,
+      "original_sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.manifest",
+      "repository_sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/RecursosHumanos.xml",
+      "original_size": 15950,
+      "original_sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/RecursosHumanos.xml",
+      "repository_sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.Data.v11.2.resources.dll",
+      "original_size": 197024,
+      "original_sha256": "5c94ec1c527093e4497ab719f3910f88dfd065eabab053869235eec3d2d981ee",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.Data.v11.2.resources.dll",
+      "repository_sha256": "5c94ec1c527093e4497ab719f3910f88dfd065eabab053869235eec3d2d981ee",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "original_size": 94624,
+      "original_sha256": "20e8a868a28a77ba513dd54ebd74f115355c862ced8ad97ed7bdeaec71530fed",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "repository_sha256": "20e8a868a28a77ba513dd54ebd74f115355c862ced8ad97ed7bdeaec71530fed",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "original_size": 209312,
+      "original_sha256": "cd208f0caa57a914347586cbefe23bcb95069551095b7b9c89b8bd16e754a468",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "repository_sha256": "cd208f0caa57a914347586cbefe23bcb95069551095b7b9c89b8bd16e754a468",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.Utils.v11.2.resources.dll",
+      "original_size": 49568,
+      "original_sha256": "7dc546b406d032467b058bf630a4d63d3fafb64eaf28dfd03b86899806d0e13b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.Utils.v11.2.resources.dll",
+      "repository_sha256": "7dc546b406d032467b058bf630a4d63d3fafb64eaf28dfd03b86899806d0e13b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraBars.v11.2.resources.dll",
+      "original_size": 37280,
+      "original_sha256": "63842ac07b8f54a757377d47bd012e6c1cc811825198f54063c5ce0231535d92",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraBars.v11.2.resources.dll",
+      "repository_sha256": "63842ac07b8f54a757377d47bd012e6c1cc811825198f54063c5ce0231535d92",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraCharts.v11.2.resources.dll",
+      "original_size": 410016,
+      "original_sha256": "64b9c093671d0ad6a8cb744ee6cd980f7ad9c8ea78187b17dec15cb85f75a302",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraCharts.v11.2.resources.dll",
+      "repository_sha256": "64b9c093671d0ad6a8cb744ee6cd980f7ad9c8ea78187b17dec15cb85f75a302",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraEditors.v11.2.resources.dll",
+      "original_size": 78240,
+      "original_sha256": "ac587803120fa33d080a10b80cce1076aff7a57fc77d5e54212cb79235464419",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraEditors.v11.2.resources.dll",
+      "repository_sha256": "ac587803120fa33d080a10b80cce1076aff7a57fc77d5e54212cb79235464419",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraGrid.v11.2.resources.dll",
+      "original_size": 53664,
+      "original_sha256": "a1f090f79ad70bc457f4f90d00ec2970d1f51552a52b05d406e5cffc9293c279",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraGrid.v11.2.resources.dll",
+      "repository_sha256": "a1f090f79ad70bc457f4f90d00ec2970d1f51552a52b05d406e5cffc9293c279",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraLayout.v11.2.resources.dll",
+      "original_size": 16288,
+      "original_sha256": "d9391f15ca25da9320adaa7944c9df02f7fad2a0b9f01a699171a19ec4b7e30f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraLayout.v11.2.resources.dll",
+      "repository_sha256": "d9391f15ca25da9320adaa7944c9df02f7fad2a0b9f01a699171a19ec4b7e30f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "original_size": 9632,
+      "original_sha256": "e157ecbc3c84b925aae405a31960deb11ced9fa207ad87d0238a5e46245e2c80",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "repository_sha256": "e157ecbc3c84b925aae405a31960deb11ced9fa207ad87d0238a5e46245e2c80",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "original_size": 37280,
+      "original_sha256": "12d721cdd7a2e6a18698cb8ea3663eb67b63132583c97b33f931ae0b9f98a5b2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "repository_sha256": "12d721cdd7a2e6a18698cb8ea3663eb67b63132583c97b33f931ae0b9f98a5b2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "original_size": 45472,
+      "original_sha256": "3e2d82c6784ebf1b53848ad666b0ab379cbcba13a7eed4581539a6698e900f76",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "repository_sha256": "3e2d82c6784ebf1b53848ad666b0ab379cbcba13a7eed4581539a6698e900f76",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraReports.v11.2.resources.dll",
+      "original_size": 180640,
+      "original_sha256": "bd668f465fc99d80368feebd1a7abc4e133e02aea19002010a19212989ac1c7e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraReports.v11.2.resources.dll",
+      "repository_sha256": "bd668f465fc99d80368feebd1a7abc4e133e02aea19002010a19212989ac1c7e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "original_size": 94624,
+      "original_sha256": "253bd01bf46f2aaa9ba83090d89685dc6b8932a179811ac15633ada9ff3d0bf6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "repository_sha256": "253bd01bf46f2aaa9ba83090d89685dc6b8932a179811ac15633ada9ff3d0bf6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "original_size": 65952,
+      "original_sha256": "98a94b82d5c646fe6de3fa600d30bafa40c03afa7accb55ba7a2f6732c98dc4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "repository_sha256": "98a94b82d5c646fe6de3fa600d30bafa40c03afa7accb55ba7a2f6732c98dc4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "original_size": 90528,
+      "original_sha256": "d95519a75af58a41eb28febf225872ff23b10a3cb7fc0cf02784af24c6075078",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "repository_sha256": "d95519a75af58a41eb28febf225872ff23b10a3cb7fc0cf02784af24c6075078",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "original_size": 20896,
+      "original_sha256": "ce1c40dd6bae361030acd33e0f430b878ebe02e636bc029cc7c4d98e489a1acd",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "repository_sha256": "ce1c40dd6bae361030acd33e0f430b878ebe02e636bc029cc7c4d98e489a1acd",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/ru/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "original_size": 10144,
+      "original_sha256": "bd829e021dc7ddb081af208f9e8e3b4e31e7be37482561f97211570d8c754a8e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/ru/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "repository_sha256": "bd829e021dc7ddb081af208f9e8e3b4e31e7be37482561f97211570d8c754a8e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Seguridad.dll",
+      "original_size": 16384,
+      "original_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Seguridad.dll",
+      "repository_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Seguridad.pdb",
+      "original_size": 40448,
+      "original_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Seguridad.pdb",
+      "repository_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/Seguridad.xml",
+      "original_size": 117,
+      "original_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/Seguridad.xml",
+      "repository_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Core.dll",
+      "original_size": 667648,
+      "original_sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Core.dll",
+      "repository_sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Data.DataSetExtensions.dll",
+      "original_size": 53248,
+      "original_sha256": "aed1f7d5984fcfd814f2e5dd5b80cb9bb8c2acda2e5b6de2b960877aafd06edc",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Data.DataSetExtensions.dll",
+      "repository_sha256": "aed1f7d5984fcfd814f2e5dd5b80cb9bb8c2acda2e5b6de2b960877aafd06edc",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Data.dll",
+      "original_size": 2927616,
+      "original_sha256": "d9bed31c194c54a786a043d65d95093c3dedf675948f4470ced6c3251e7fee70",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Data.dll",
+      "repository_sha256": "d9bed31c194c54a786a043d65d95093c3dedf675948f4470ced6c3251e7fee70",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Data.Linq.dll",
+      "original_size": 684032,
+      "original_sha256": "f40a510fdd844a87d15d586c1ce7b75191f6e51d7708d38ec01812cdd8435b91",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Data.Linq.dll",
+      "repository_sha256": "f40a510fdd844a87d15d586c1ce7b75191f6e51d7708d38ec01812cdd8435b91",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Deployment.dll",
+      "original_size": 970752,
+      "original_sha256": "c7e4035579f75d4dc8ee6ba98faeb33f096f20681cab17221fd81866971bcb5c",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Deployment.dll",
+      "repository_sha256": "c7e4035579f75d4dc8ee6ba98faeb33f096f20681cab17221fd81866971bcb5c",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Design.dll",
+      "original_size": 4927488,
+      "original_sha256": "f32848f2b73cccc7b1bc50ddca67dd7bb3bd3ee4df9fd8fba74f2daa94a6fcb4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Design.dll",
+      "repository_sha256": "f32848f2b73cccc7b1bc50ddca67dd7bb3bd3ee4df9fd8fba74f2daa94a6fcb4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.dll",
+      "original_size": 3198976,
+      "original_sha256": "82ddc9060fabb2127ea93b5d97988253802a47e10113c46faaf1b0d9aada7b31",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.dll",
+      "repository_sha256": "82ddc9060fabb2127ea93b5d97988253802a47e10113c46faaf1b0d9aada7b31",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Drawing.dll",
+      "original_size": 630784,
+      "original_sha256": "0a788344ed020aa7dd876d6a12078a7140dc2d7cc9b25283faca3d16b4875dc2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Drawing.dll",
+      "repository_sha256": "0a788344ed020aa7dd876d6a12078a7140dc2d7cc9b25283faca3d16b4875dc2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Windows.Forms.dll",
+      "original_size": 5025792,
+      "original_sha256": "1977c5979a473f06028fe51405f3c752c34acb7a3bbd95c242add171e0e69046",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Windows.Forms.dll",
+      "repository_sha256": "1977c5979a473f06028fe51405f3c752c34acb7a3bbd95c242add171e0e69046",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Xml.dll",
+      "original_size": 2048000,
+      "original_sha256": "555b1f6e2a11c61f2881e351229a43e6fb74163d2c6c6ff8411b058d41c4b35f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Xml.dll",
+      "repository_sha256": "555b1f6e2a11c61f2881e351229a43e6fb74163d2c6c6ff8411b058d41c4b35f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/System.Xml.Linq.dll",
+      "original_size": 139264,
+      "original_sha256": "2d72acad2f9a20df52bdde3f60ef0a73593884bed79adffbdbf2f9f52a0bde46",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/System.Xml.Linq.dll",
+      "repository_sha256": "2d72acad2f9a20df52bdde3f60ef0a73593884bed79adffbdbf2f9f52a0bde46",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Reportes/TabStrip.dll",
+      "original_size": 45056,
+      "original_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Reportes/TabStrip.dll",
+      "repository_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Seguridad.dll",
+      "original_size": 16384,
+      "original_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Seguridad.dll",
+      "repository_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Seguridad.pdb",
+      "original_size": 40448,
+      "original_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Seguridad.pdb",
+      "repository_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "Seguridad.xml",
+      "original_size": 117,
+      "original_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/Seguridad.xml",
+      "repository_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Core.dll",
+      "original_size": 667648,
+      "original_sha256": "6bcafd59d1c92ee6499b35054442f8e6c5f2723025827e97c1d63308df8fe1b2",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Core.dll",
+      "repository_sha256": "6bcafd59d1c92ee6499b35054442f8e6c5f2723025827e97c1d63308df8fe1b2",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Data.DataSetExtensions.dll",
+      "original_size": 53248,
+      "original_sha256": "ee76404eeba00e198eecd6a7c5281aa005ac751ff5b1b120752837fdc966ccff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Data.DataSetExtensions.dll",
+      "repository_sha256": "ee76404eeba00e198eecd6a7c5281aa005ac751ff5b1b120752837fdc966ccff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Data.dll",
+      "original_size": 2933248,
+      "original_sha256": "f32c399f4f1c4d1bc923256af2ffa8e1ee65f090d2d780b0b5d2476170abb1ff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Data.dll",
+      "repository_sha256": "f32c399f4f1c4d1bc923256af2ffa8e1ee65f090d2d780b0b5d2476170abb1ff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Data.Linq.dll",
+      "original_size": 684032,
+      "original_sha256": "c70b3ad93d103b3e0ea0828e1d27473b36b5711b134fa87e388f2055b12c407b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Data.Linq.dll",
+      "repository_sha256": "c70b3ad93d103b3e0ea0828e1d27473b36b5711b134fa87e388f2055b12c407b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Deployment.dll",
+      "original_size": 970752,
+      "original_sha256": "bff0f773a4bef44304a68090315c2a86f552af2585661c4b9661f8d967579ed4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Deployment.dll",
+      "repository_sha256": "bff0f773a4bef44304a68090315c2a86f552af2585661c4b9661f8d967579ed4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Design.dll",
+      "original_size": 4927488,
+      "original_sha256": "50b9c05af2fbbb1edb2deac33cad1777c7923c6a7236efa71cc3c463b696ecf4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Design.dll",
+      "repository_sha256": "50b9c05af2fbbb1edb2deac33cad1777c7923c6a7236efa71cc3c463b696ecf4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.dll",
+      "original_size": 3178496,
+      "original_sha256": "44221778c81d3960232ee7f4a005e6e01c438108a565e58038d598cddb7056eb",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.dll",
+      "repository_sha256": "44221778c81d3960232ee7f4a005e6e01c438108a565e58038d598cddb7056eb",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Drawing.dll",
+      "original_size": 626688,
+      "original_sha256": "d19f5b12275014ff93d6678cb0a6652b48018c3741f243679fe04419086c496d",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Drawing.dll",
+      "repository_sha256": "d19f5b12275014ff93d6678cb0a6652b48018c3741f243679fe04419086c496d",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Windows.Forms.dll",
+      "original_size": 5025792,
+      "original_sha256": "7cf1eded738650cae28616f985d75dfc806cf4c7d3f321f21d05e56a34e20206",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Windows.Forms.dll",
+      "repository_sha256": "7cf1eded738650cae28616f985d75dfc806cf4c7d3f321f21d05e56a34e20206",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Xml.dll",
+      "original_size": 2048000,
+      "original_sha256": "eb26b9149cee8e2695a7273e0a0a600dad71a09fc2033d91cd15feb84807bb66",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Xml.dll",
+      "repository_sha256": "eb26b9149cee8e2695a7273e0a0a600dad71a09fc2033d91cd15feb84807bb66",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "System.Xml.Linq.dll",
+      "original_size": 139264,
+      "original_sha256": "21e668ae055f5bf2151b6f52e32caf0f7a74daccdd803954371ed9696dddaa6f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/System.Xml.Linq.dll",
+      "repository_sha256": "21e668ae055f5bf2151b6f52e32caf0f7a74daccdd803954371ed9696dddaa6f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "TabStrip.dll",
+      "original_size": 45056,
+      "original_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/TabStrip.dll",
+      "repository_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/ClassRRHH.dll",
+      "original_size": 65024,
+      "original_sha256": "505e6aeee7a2a4a828792c090c596b5df6aa18af92d8827192f25dadf6855519",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/ClassRRHH.dll",
+      "repository_sha256": "505e6aeee7a2a4a828792c090c596b5df6aa18af92d8827192f25dadf6855519",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/ClassRRHH.pdb",
+      "original_size": 93696,
+      "original_sha256": "ee7bde3f34f9e8c6629f6764d10bfd18c544d77e801a0a4930fee26c5072c576",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/ClassRRHH.pdb",
+      "repository_sha256": "ee7bde3f34f9e8c6629f6764d10bfd18c544d77e801a0a4930fee26c5072c576",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/ClassRRHH.xml",
+      "original_size": 763,
+      "original_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/ClassRRHH.xml",
+      "repository_sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/ClsCtrls.dll",
+      "original_size": 58880,
+      "original_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/ClsCtrls.dll",
+      "repository_sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Custom Featured MessageBox.dll",
+      "original_size": 36864,
+      "original_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Custom Featured MessageBox.dll",
+      "repository_sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.Charts.v11.2.Core.dll",
+      "original_size": 181152,
+      "original_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.Charts.v11.2.Core.dll",
+      "repository_sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.Data.v11.2.dll",
+      "original_size": 2680736,
+      "original_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.Data.v11.2.dll",
+      "repository_sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.PivotGrid.v11.2.Core.dll",
+      "original_size": 995744,
+      "original_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.PivotGrid.v11.2.Core.dll",
+      "repository_sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.Printing.v11.2.Core.dll",
+      "original_size": 2006944,
+      "original_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.Printing.v11.2.Core.dll",
+      "repository_sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.Reports.v11.2.Designer.dll",
+      "original_size": 47008,
+      "original_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.Reports.v11.2.Designer.dll",
+      "repository_sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.RichEdit.v11.2.Core.dll",
+      "original_size": 4915104,
+      "original_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.RichEdit.v11.2.Core.dll",
+      "repository_sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.Utils.v11.2.dll",
+      "original_size": 3473824,
+      "original_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.Utils.v11.2.dll",
+      "repository_sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraBars.v11.2.dll",
+      "original_size": 2570144,
+      "original_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraBars.v11.2.dll",
+      "repository_sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraCharts.v11.2.dll",
+      "original_size": 6955936,
+      "original_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraCharts.v11.2.dll",
+      "repository_sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraEditors.v11.2.Design.dll",
+      "original_size": 215552,
+      "original_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraEditors.v11.2.Design.dll",
+      "repository_sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraEditors.v11.2.dll",
+      "original_size": 2001824,
+      "original_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraEditors.v11.2.dll",
+      "repository_sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraGrid.v11.2.dll",
+      "original_size": 1946016,
+      "original_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraGrid.v11.2.dll",
+      "repository_sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraLayout.v11.2.dll",
+      "original_size": 731040,
+      "original_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraLayout.v11.2.dll",
+      "repository_sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraPivotGrid.v11.2.dll",
+      "original_size": 589216,
+      "original_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraPivotGrid.v11.2.dll",
+      "repository_sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "original_size": 56320,
+      "original_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "repository_sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraPrinting.v11.2.dll",
+      "original_size": 672672,
+      "original_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraPrinting.v11.2.dll",
+      "repository_sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraReports.v11.2.Design.dll",
+      "original_size": 734208,
+      "original_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.Design.dll",
+      "repository_sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraReports.v11.2.dll",
+      "original_size": 1166240,
+      "original_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.dll",
+      "repository_sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "original_size": 1668512,
+      "original_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "repository_sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraRichEdit.v11.2.dll",
+      "original_size": 1551264,
+      "original_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraRichEdit.v11.2.dll",
+      "repository_sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "original_size": 989600,
+      "original_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "repository_sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraScheduler.v11.2.dll",
+      "original_size": 1586592,
+      "original_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.dll",
+      "repository_sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "original_size": 56736,
+      "original_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "repository_sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraTreeList.v11.2.dll",
+      "original_size": 700832,
+      "original_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraTreeList.v11.2.dll",
+      "repository_sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "original_size": 530848,
+      "original_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "repository_sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/GRLL.Common.Rutinas.dll",
+      "original_size": 12288,
+      "original_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/GRLL.Common.Rutinas.dll",
+      "repository_sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/GRLL.dll",
+      "original_size": 2269184,
+      "original_sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/temp/GRLL.dll.aesgcm",
+      "repository_sha256": "fe0f77067e486a0bd666428fee9d11dd72ca67c678a6cc2c8710349fee92d065",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "temp/GRLL.pdb",
+      "original_size": 5381632,
+      "original_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/GRLL.pdb",
+      "repository_sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/GRLL.xml",
+      "original_size": 764,
+      "original_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/GRLL.xml",
+      "repository_sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Interop.Microsoft.Office.Core.dll",
+      "original_size": 450560,
+      "original_sha256": "1a52f4df0cbe1ab0caeda7701e863ce1a1fcd6bc846136846afe6128a59789e1",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Interop.Microsoft.Office.Core.dll",
+      "repository_sha256": "1a52f4df0cbe1ab0caeda7701e863ce1a1fcd6bc846136846afe6128a59789e1",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Interop.VBIDE.dll",
+      "original_size": 57344,
+      "original_sha256": "e8aeb9af55cce0f5e37f4c1becd085efa3ba2ffe54bcf98b221c9dd210cc5436",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Interop.VBIDE.dll",
+      "repository_sha256": "e8aeb9af55cce0f5e37f4c1becd085efa3ba2ffe54bcf98b221c9dd210cc5436",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Microsoft.ReportViewer.Common.dll",
+      "original_size": 3649536,
+      "original_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Microsoft.ReportViewer.Common.dll",
+      "repository_sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Microsoft.ReportViewer.WinForms.dll",
+      "original_size": 339968,
+      "original_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Microsoft.ReportViewer.WinForms.dll",
+      "repository_sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Microsoft.ReportViewer.WinForms.xml",
+      "original_size": 108039,
+      "original_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Microsoft.ReportViewer.WinForms.xml",
+      "repository_sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.application",
+      "original_size": 1657,
+      "original_sha256": "e2e0fb3890b386eac8593e80f951a7d86b37cff352d48ce6c849dda0e9c09914",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.application",
+      "repository_sha256": "e2e0fb3890b386eac8593e80f951a7d86b37cff352d48ce6c849dda0e9c09914",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.exe",
+      "original_size": 2792448,
+      "original_sha256": "035fffe7bd7181c2537108a94f38fcee4bccd8c067d4a739684fa9f21b655d57",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.exe.aesgcm",
+      "repository_sha256": "00347d976d962e98fd47de331bf67a3e2e3800e76a0315ac52f9364a09f3525b",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.exe.config",
+      "original_size": 3650,
+      "original_sha256": "79945567217619d3a5a25ec0913277c9790ac88f9255ee7f03beca0dbe38c596",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.exe.config.aesgcm",
+      "repository_sha256": "566e31b467de11aa2b66e23981422d0e2e4f441d75a6097888ef3c38afc5411c",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/temp/RecursosHumanos.exe.config.example"
+    },
+    {
+      "original_path": "temp/RecursosHumanos.exe.manifest",
+      "original_size": 34916,
+      "original_sha256": "cdc881b66ddba2a873acc397edbb7bd0aedf737fe8a744b62eda524bc354acbe",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.exe.manifest",
+      "repository_sha256": "cdc881b66ddba2a873acc397edbb7bd0aedf737fe8a744b62eda524bc354acbe",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.pdb",
+      "original_size": 1943040,
+      "original_sha256": "b62ac9a3354ff73624eaba9c314c844d639d6ce0797aec185a87f9401f533174",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.pdb",
+      "repository_sha256": "b62ac9a3354ff73624eaba9c314c844d639d6ce0797aec185a87f9401f533174",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.vshost.application",
+      "original_size": 1657,
+      "original_sha256": "97953156163dc04ab4b2c925b59039a54d2803620e39f828f9d9e9d3c34db64f",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.vshost.application",
+      "repository_sha256": "97953156163dc04ab4b2c925b59039a54d2803620e39f828f9d9e9d3c34db64f",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.vshost.exe",
+      "original_size": 21472,
+      "original_sha256": "bf59b95c0ecdb9a99ebbe2f5cc8e15ded1e32accf8645523216fcace8eeb7c3e",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.vshost.exe",
+      "repository_sha256": "bf59b95c0ecdb9a99ebbe2f5cc8e15ded1e32accf8645523216fcace8eeb7c3e",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.vshost.exe.config",
+      "original_size": 3650,
+      "original_sha256": "79945567217619d3a5a25ec0913277c9790ac88f9255ee7f03beca0dbe38c596",
+      "storage": "aes256_gcm",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.vshost.exe.config.aesgcm",
+      "repository_sha256": "ea18d3fa3c4edbf921a4e737e3af610c53e93e67c380ef27385e99a209bfcfd7",
+      "reason": "Conserva el original byte a byte mediante cifrado autenticado porque contiene credenciales.",
+      "configuration_example": "legado/RRHH/temp/RecursosHumanos.vshost.exe.config.example"
+    },
+    {
+      "original_path": "temp/RecursosHumanos.vshost.exe.manifest",
+      "original_size": 86089,
+      "original_sha256": "80fa3957e51d7228b64181286f7b7aa3ee87dc1a087f7dcf89f3bb0e507f0527",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.vshost.exe.manifest",
+      "repository_sha256": "80fa3957e51d7228b64181286f7b7aa3ee87dc1a087f7dcf89f3bb0e507f0527",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/RecursosHumanos.xml",
+      "original_size": 15950,
+      "original_sha256": "2548d9d6890d09878f95b8b815bdee084c3c06114c9ecfd1c19eebeb21f317f8",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/RecursosHumanos.xml",
+      "repository_sha256": "2548d9d6890d09878f95b8b815bdee084c3c06114c9ecfd1c19eebeb21f317f8",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Seguridad.dll",
+      "original_size": 16384,
+      "original_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Seguridad.dll",
+      "repository_sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Seguridad.pdb",
+      "original_size": 40448,
+      "original_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Seguridad.pdb",
+      "repository_sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/Seguridad.xml",
+      "original_size": 117,
+      "original_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/Seguridad.xml",
+      "repository_sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Core.dll",
+      "original_size": 667648,
+      "original_sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Core.dll",
+      "repository_sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Data.DataSetExtensions.dll",
+      "original_size": 53248,
+      "original_sha256": "210d821a41d90217cc09f604777d62a2b7a7fac215bb0eaf692a9e26e8f2c23b",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Data.DataSetExtensions.dll",
+      "repository_sha256": "210d821a41d90217cc09f604777d62a2b7a7fac215bb0eaf692a9e26e8f2c23b",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Data.dll",
+      "original_size": 2972672,
+      "original_sha256": "bef49a8e4caff98a3efea9a53a61c1e9a9b63141dc5bc22df3cfc990c55b13a6",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Data.dll",
+      "repository_sha256": "bef49a8e4caff98a3efea9a53a61c1e9a9b63141dc5bc22df3cfc990c55b13a6",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Data.Linq.dll",
+      "original_size": 684032,
+      "original_sha256": "01adcbd3a544794c40bdbc9abd0e1433136167b2177a11119f6151b90bf621a4",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Data.Linq.dll",
+      "repository_sha256": "01adcbd3a544794c40bdbc9abd0e1433136167b2177a11119f6151b90bf621a4",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Deployment.dll",
+      "original_size": 970752,
+      "original_sha256": "b8de50739e231722cb17f79b1f309aa9f76560a25ef635beb9ba8b00c91da5cf",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Deployment.dll",
+      "repository_sha256": "b8de50739e231722cb17f79b1f309aa9f76560a25ef635beb9ba8b00c91da5cf",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Design.dll",
+      "original_size": 5062656,
+      "original_sha256": "0598d91bfdf3a9a7585314db27a3d6396de68412a5e143047427bbe9dc2a1010",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Design.dll",
+      "repository_sha256": "0598d91bfdf3a9a7585314db27a3d6396de68412a5e143047427bbe9dc2a1010",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.dll",
+      "original_size": 3198976,
+      "original_sha256": "c190ab95851252549d9eed81ac3b5dd3b59f6db41f482d80fc04a305a8db15f9",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.dll",
+      "repository_sha256": "c190ab95851252549d9eed81ac3b5dd3b59f6db41f482d80fc04a305a8db15f9",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Drawing.dll",
+      "original_size": 630784,
+      "original_sha256": "7b92496ac930d5f891654f3b4d3ecfa2751dbc86df314c1a141801d1ebfe8643",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Drawing.dll",
+      "repository_sha256": "7b92496ac930d5f891654f3b4d3ecfa2751dbc86df314c1a141801d1ebfe8643",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Windows.Forms.dll",
+      "original_size": 5025792,
+      "original_sha256": "5f1d216750488e283fc74337e7ba2e352e9cb4d2493f1dff3a141a83cfe92b00",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Windows.Forms.dll",
+      "repository_sha256": "5f1d216750488e283fc74337e7ba2e352e9cb4d2493f1dff3a141a83cfe92b00",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Xml.dll",
+      "original_size": 2052096,
+      "original_sha256": "9e5331c60a512dd364e25a10e22a52ffe16f08e618f3907e987a4fa5cc3ead14",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Xml.dll",
+      "repository_sha256": "9e5331c60a512dd364e25a10e22a52ffe16f08e618f3907e987a4fa5cc3ead14",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/System.Xml.Linq.dll",
+      "original_size": 139264,
+      "original_sha256": "a6f9daaf462f58c8808b63a78db9c4502e1d26dbadb560e8fcc212358f7b93c7",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/System.Xml.Linq.dll",
+      "repository_sha256": "a6f9daaf462f58c8808b63a78db9c4502e1d26dbadb560e8fcc212358f7b93c7",
+      "reason": "Archivo original sin cambios de contenido."
+    },
+    {
+      "original_path": "temp/TabStrip.dll",
+      "original_size": 45056,
+      "original_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "storage": "unchanged",
+      "repository_path": "legado/RRHH/temp/TabStrip.dll",
+      "repository_sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "reason": "Archivo original sin cambios de contenido."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "scope": "commit_01_rrhh_original",
+  "ok": true,
+  "counts": {
+    "original_inventory": 348,
+    "unchanged_verified": 335,
+    "encrypted_storage_verified": 12,
+    "encrypted_original_verified": 12,
+    "excluded_backup": 1,
+    "source_original_verified": 348,
+    "configuration_examples": 6,
+    "reference_pdfs": 8,
+    "json_documents": 5,
+    "markdown_documents": 22,
+    "git_inventory_files_verified": 355
+  },
+  "encrypted_original_check": "verified_with_local_key",
+  "source_original_check": "verified",
+  "git_index_check": "verified",
+  "application_executed": false,
+  "database_restored": false,
+  "failures": []
+}
