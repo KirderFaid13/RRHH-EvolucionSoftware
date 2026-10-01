@@ -1,0 +1,19 @@
+{
+  "stage": "C04",
+  "title": "OCP en definiciones de reportes de oficina",
+  "status": "implemented_and_verified_with_documented_limits",
+  "baseline_commit": "a5849d9d024394757b50449869a7c47bb6446557",
+  "academic_week": 5,
+  "source": "src/v2/caso_empleados/RRHHClass.cs",
+  "original_source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+  "scope": ["Generar_Report_oficina(int CodOficina)", "Generar_Report_oficina_Dep(string Sigla)"],
+  "objective": "Añadir definiciones tipadas de reporte a través de una interfaz sin cambiar la lógica del generador común al incorporar la segunda variante.",
+  "preserve": ["Firmas públicas object de la fachada con valor DataSet", "StoredProcedure y nombres SQL observados en v1", "@idarea Int y @sigla VarChar, sin defaults, validaciones o conversiones nuevas", "Nombres suministrados a Fill(DataSet, nombreTabla)", "ObjCnn/objDA compartidos y apertura/cierre incondicionales en la ruta normal", "Todo el código v2 fuera de los dos cuerpos autorizados"],
+  "changes": ["IDefinicionReporte, ReporteOficina y ReporteOficinaPorSigla", "GeneradorReportes prepara y ejecuta a través de la definición; no selecciona tipos concretos", "ComandoReporte conserva comando y nombre de tabla; EjecutorReportesSql ejecuta DataSet", "Dos delegaciones en fachada v3; empleados siguen usando los helpers v2", "Archivar los 18 archivos de la propuesta v3 recibida sin modificar sus bytes"],
+  "extension_proof": "Compilar núcleo con una definición; después compilar la variante real por sigla en otro ensamblado contra ese núcleo sin recompilarlo. El harness utiliza ambas desde el mismo generador manteniendo SQL cerrado y verifica que el hash del núcleo no cambió.",
+  "excluded": ["Desacoplar el ejecutor SQL por interfaz o contenedor: entrega IoC posterior", "Implementar otros reportes, CSV, Access o fábricas", "Inventar procedimientos, tablas o reglas del servidor", "Ejecutar código recibido, conectar/restaurar CMI o instalar la DLL en el legado", "Diapositivas o entrega de semana 07"],
+  "verification": ["Biblioteca v3 acumulativa compilada con fuentes v1/v2 y caso nuevo", "Contratos de comandos y nombre de tabla contrastados con v1", "Extensión externa compilada y ejecutada en preparación de comandos sin modificar/recompilar núcleo", "Comparación completa de fachada excluyendo solo dos cuerpos", "Hashes de antecedentes y conservación de C01/C02/C03", "JSON, enlaces, valores secretos conocidos y exclusiones de Git"],
+  "evidence": ["evidencia/semanas/semana05/contratos_v1.json", "evidencia/semanas/semana05/antes_despues.diff", "evidencia/semanas/semana05/compilacion_y_pruebas.json", "evidencia/semanas/semana05/verificacion_v3.json", "evidencia/semanas/semana05/antecedentes.json"],
+  "limits": ["Pruebas de preparación no verifican ejecución Fill ni salidas SQL", "No se acredita equivalencia funcional completa, UI, framework original o despliegue", "La nueva composición cambia; el núcleo queda estable frente a esta variante", "Preparar comandos ocurre antes de Open; se conserva la ruta normal, no equivalencia de todos los fallos", "Se mantienen gestión manual de conexiones y dependencias SQL concretas"],
+  "stop_condition": "Publicar solo el cuarto commit, describir qué/dónde/por qué/mejora y esperar autorización para semana 07."
+}

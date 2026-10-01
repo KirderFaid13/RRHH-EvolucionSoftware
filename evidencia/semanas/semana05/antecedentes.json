@@ -1,0 +1,112 @@
+{
+  "files": [
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/README.md",
+      "path": "src/v3/antecedentes/README_recibido.md.txt",
+      "size": 4128,
+      "sha256": "54dc9911795179f30f5d26d3bc12991c92bc2525056a734c386442c7135a1b6c"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/DataAccess/AsistenciaRepository.cs",
+      "path": "src/v3/antecedentes/src/DataAccess/AsistenciaRepository.cs",
+      "size": 1517,
+      "sha256": "a0bb94a57342934147f6edf1266ab733cf3aeb8acf4ac501169e0951f756a263"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/DataAccess/DatabaseHelper.cs",
+      "path": "src/v3/antecedentes/src/DataAccess/DatabaseHelper.cs",
+      "size": 2148,
+      "sha256": "49af25b73140c21d7dadbf17ed91f3a9b0a8edad045edb0d7fd8e9d5d2b77991"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/DataAccess/EmpleadoRepository.cs",
+      "path": "src/v3/antecedentes/src/DataAccess/EmpleadoRepository.cs",
+      "size": 1922,
+      "sha256": "a031ebd7859e9334d705267087971306f1cf980d44f4038c0e74e6a8f5f5ccb1"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/DataAccess/PermisoRepository.cs",
+      "path": "src/v3/antecedentes/src/DataAccess/PermisoRepository.cs",
+      "size": 1704,
+      "sha256": "031b6ab63e69ab6cb782f96730f2ccb3ff28968f1dc678f4bfc4ddc450a072f4"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Importers/AccessImporter.cs",
+      "path": "src/v3/antecedentes/src/Importers/AccessImporter.cs",
+      "size": 2542,
+      "sha256": "6353e9455ec2f686db2f9e3a80d0da9a09ffa7f12c1e303ddf00c61d8c1128e8"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Importers/CsvImporter.cs",
+      "path": "src/v3/antecedentes/src/Importers/CsvImporter.cs",
+      "size": 2266,
+      "sha256": "c8840f2c7cfe9cc699f05fb4381f63eeeca5248e7418d8a120cb177f6e4216fc"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Importers/ImporterFactory.cs",
+      "path": "src/v3/antecedentes/src/Importers/ImporterFactory.cs",
+      "size": 3403,
+      "sha256": "b006fa4eb5a58ecfa07cd173a08cbbee1d6b3faa08f5e8969c04015bbbb2e95e"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Interfaces/IAsistenciaImporter.cs",
+      "path": "src/v3/antecedentes/src/Interfaces/IAsistenciaImporter.cs",
+      "size": 1746,
+      "sha256": "44893e49bbe2ad8ff9826bfeb4c48431090c5db273b713297b58843284ccfaa8"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Interfaces/IReporteGenerator.cs",
+      "path": "src/v3/antecedentes/src/Interfaces/IReporteGenerator.cs",
+      "size": 1466,
+      "sha256": "0ab0fb777843a2d559061fad437cbbfe6e90eb4c0c2cbe6954632cfd107fdb6e"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Models/Asistencia.cs",
+      "path": "src/v3/antecedentes/src/Models/Asistencia.cs",
+      "size": 494,
+      "sha256": "b9ac0502790f90082557a646f82619612114528d8125c5ccfaded52178f28c88"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Models/Empleado.cs",
+      "path": "src/v3/antecedentes/src/Models/Empleado.cs",
+      "size": 727,
+      "sha256": "337b64dc9f4bcf2fb9164d38c47145bfd2bf3999f38f01354eaf857a13649d85"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Models/Permiso.cs",
+      "path": "src/v3/antecedentes/src/Models/Permiso.cs",
+      "size": 508,
+      "sha256": "866ea18fdd0dd05bd5f6880f5090a61a99bcbf215370ca28c5438caefa1b2bea"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Reports/ReporteCargos.cs",
+      "path": "src/v3/antecedentes/src/Reports/ReporteCargos.cs",
+      "size": 545,
+      "sha256": "bdb053749c26ac6d29db786432f50fe19b2004fea497033c8358bfacfd1ba31c"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Reports/ReporteCumpleanos.cs",
+      "path": "src/v3/antecedentes/src/Reports/ReporteCumpleanos.cs",
+      "size": 570,
+      "sha256": "e6a68ab97adba39a9276977d6d99c440ef40919de401acecbeb585e5aa0a670f"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Reports/ReporteOficina.cs",
+      "path": "src/v3/antecedentes/src/Reports/ReporteOficina.cs",
+      "size": 761,
+      "sha256": "c05b42d3d771bcd545834b1ce4c19c45d3c1bddc3c61760f8b7c705916210371"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Reports/ReporteProfesion.cs",
+      "path": "src/v3/antecedentes/src/Reports/ReporteProfesion.cs",
+      "size": 567,
+      "sha256": "9c011b5f96eb1c5fafaff2dceddc27fad0aaaa8199ededf5f096d6ba4b45e75d"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v3.0_Semana05_OCP/src/Services/AsistenciaImportService.cs",
+      "path": "src/v3/antecedentes/src/Services/AsistenciaImportService.cs",
+      "size": 1593,
+      "sha256": "9febfcff4f2e30c57bacf744c39518576be1f9521d26f7814ce562fa87f9c6a1"
+    }
+  ]
+}

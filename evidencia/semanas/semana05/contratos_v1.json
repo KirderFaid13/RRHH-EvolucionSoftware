@@ -1,0 +1,41 @@
+{
+  "source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+  "source_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+  "baseline": "src/v2/caso_empleados/RRHHClass.cs",
+  "baseline_sha256": "f0b9e8d338d9ec9f7263bc8ec255a2357313ffa80ee935aaf3a6f04fa46c3c5f",
+  "methods": [
+    {
+      "method": "Generar_Report_oficina",
+      "signature": "object Generar_Report_oficina(int CodOficina)",
+      "command": "spRRHH_Report_Oficina_Unico",
+      "command_type": "StoredProcedure",
+      "table_name": "spRRHH_Report_Oficina_Unico",
+      "parameter": {
+        "name": "@idarea",
+        "sql_type": "Int",
+        "argument": "CodOficina",
+        "direction": "Input"
+      },
+      "return_runtime_type": "DataSet",
+      "conditional_open": false,
+      "original_method_sha256": "2a3bc1cc23fbc3792742ef47e012363ca815907808c6ffae728cdf0213fead0c"
+    },
+    {
+      "method": "Generar_Report_oficina_Dep",
+      "signature": "object Generar_Report_oficina_Dep(string Sigla)",
+      "command": "spRRHH_Report_Oficina",
+      "command_type": "StoredProcedure",
+      "table_name": "spRRHH_Report_Oficina",
+      "parameter": {
+        "name": "@sigla",
+        "sql_type": "VarChar",
+        "argument": "Sigla",
+        "direction": "Input"
+      },
+      "return_runtime_type": "DataSet",
+      "conditional_open": false,
+      "original_method_sha256": "f2fdbb65deb0bccd3680e044f07ee31dc93d47d8d347c870c0395e99fe28f822"
+    }
+  ],
+  "schema_verified": false
+}

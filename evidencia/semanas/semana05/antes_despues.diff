@@ -1,0 +1,33 @@
+--- src/v2/caso_empleados/RRHHClass.cs
++++ src/v3/caso_reportes/RRHHClass.cs
+@@ -657,26 +657,14 @@
+ 
+ 	public object Generar_Report_oficina(int CodOficina)
+ 	{
+-		ObjCnn.Open();
+-		DataSet dataSet = new DataSet();
+-		objDA.SelectCommand = new SqlCommand("spRRHH_Report_Oficina_Unico", ObjCnn);
+-		objDA.SelectCommand.CommandType = CommandType.StoredProcedure;
+-		objDA.SelectCommand.Parameters.Add("@idarea", SqlDbType.Int).Value = CodOficina;
+-		objDA.Fill(dataSet, "spRRHH_Report_Oficina_Unico");
+-		ObjCnn.Close();
+-		return dataSet;
++		// C04: definición extensible; se conservan los objetos compartidos actuales.
++		return new GeneradorReportes(ObjCnn, objDA).Generar(new ReporteOficina(CodOficina));
+ 	}
+ 
+ 	public object Generar_Report_oficina_Dep(string Sigla)
+ 	{
+-		ObjCnn.Open();
+-		DataSet dataSet = new DataSet();
+-		objDA.SelectCommand = new SqlCommand("spRRHH_Report_Oficina", ObjCnn);
+-		objDA.SelectCommand.CommandType = CommandType.StoredProcedure;
+-		objDA.SelectCommand.Parameters.Add("@sigla", SqlDbType.VarChar).Value = Sigla;
+-		objDA.Fill(dataSet, "spRRHH_Report_Oficina");
+-		ObjCnn.Close();
+-		return dataSet;
++		// C04: definición extensible; se conservan los objetos compartidos actuales.
++		return new GeneradorReportes(ObjCnn, objDA).Generar(new ReporteOficinaPorSigla(Sigla));
+ 	}
+ 
+ 	public object Generar_Report_Emple_ficha(string FechaInicio, string Fechatermino, int tipo)

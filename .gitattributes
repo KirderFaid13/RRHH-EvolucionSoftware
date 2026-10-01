@@ -19,3 +19,4 @@ src/v1/recuperado/** -text
 src/v1/antecedentes/*.vb -text
 src/v1/antecedentes/*.txt -text
 src/v2/antecedentes/** -text
+src/v3/antecedentes/** -text

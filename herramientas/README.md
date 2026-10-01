@@ -37,3 +37,15 @@ python herramientas/verificar_v2.py
 ```
 
 [Informe](../docs/semanas/semana04/01_srp_dry.md) y [evidencias](../evidencia/semanas/semana04/README.md). Necesita el entorno Windows/Framework descrito para v1; no sustituye pruebas de integración.
+
+## OCP C04
+
+- `compilar_v3.py`: compila la biblioteca acumulativa de 20 fuentes y el antecedente de 17 fuentes por separado. Compila un núcleo con un reporte y después la segunda definición como biblioteca externa contra ese núcleo. Ejecuta 11 escenarios de preparación de comandos con ambas definiciones y conserva los hashes del núcleo.
+- `verificar_v3.py`: compara v3 con v2 excluyendo solo los dos cuerpos autorizados, coteja contratos con v1 y comprueba fuentes compiladas, extensión estable, antecedentes y conservación de C01/C02/C03.
+
+```powershell
+python herramientas/compilar_v3.py
+python herramientas/verificar_v3.py
+```
+
+Los binarios, logs y harness permanecen en `.local/c04/`. Se ejecuta solo la preparación del código nuevo, sin `Fill`, conexión SQL o binarios recibidos. [Informe](../docs/semanas/semana05/01_ocp.md) y [evidencias](../evidencia/semanas/semana05/README.md). Requiere el mismo entorno Windows/Framework y restauración privada que las etapas anteriores.

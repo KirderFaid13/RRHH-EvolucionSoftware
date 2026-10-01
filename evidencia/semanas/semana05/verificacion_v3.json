@@ -1,0 +1,55 @@
+{
+  "stage": "C04",
+  "ok": true,
+  "modified_methods": [
+    "Generar_Report_oficina",
+    "Generar_Report_oficina_Dep"
+  ],
+  "all_other_facade_code_and_public_signatures_preserved": true,
+  "previous_stage_files_changed": false,
+  "antecedents_hashes_verified": 18,
+  "library_compiled": true,
+  "contract_scenarios_passed": 11,
+  "external_extension_without_rebuilding_core": true,
+  "active_case_files": [
+    {
+      "path": "src/v3/caso_reportes/ComandoReporte.cs",
+      "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6",
+      "size": 486
+    },
+    {
+      "path": "src/v3/caso_reportes/EjecutorReportesSql.cs",
+      "sha256": "55c323ed5c8c39a9235944291dd76805f332b43e4d4fd1f644b83b7e524fa636",
+      "size": 730
+    },
+    {
+      "path": "src/v3/caso_reportes/GeneradorReportes.cs",
+      "sha256": "83b69da47348cd5e3218ce81139e6fb8225db1125014b3b3756c93dce2bd809e",
+      "size": 671
+    },
+    {
+      "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+      "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936",
+      "size": 258
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficina.cs",
+      "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e",
+      "size": 635
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficinaPorSigla.cs",
+      "sha256": "94da3cf581271f6b9a39cec1b147f5c63d1607b9411a9ce156db07d05d014258",
+      "size": 698
+    },
+    {
+      "path": "src/v3/caso_reportes/RRHHClass.cs",
+      "sha256": "b1d066121225e45b2403f6a699385e615c6ef82f81b2f57a2020bd39fac99e0a",
+      "size": 41851
+    }
+  ],
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false,
+  "failures": []
+}

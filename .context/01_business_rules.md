@@ -30,6 +30,12 @@ Tres consultas de empleados se separaron de la fachada en `EmpleadoConsultas`; s
 
 La biblioteca compila y 11 escenarios de comandos pasan con conexiones cerradas. Ese resultado no acredita salidas SQL, permisos o funcionamiento integrado. La propuesta v2 anterior se conserva como antecedente, separada del caso activo.
 
+## Estado de mantenimiento C04
+
+Los reportes `Generar_Report_oficina(int)` y `Generar_Report_oficina_Dep(string)` se delegan a definiciones de `IDefinicionReporte` y un generador común. Se conservan `spRRHH_Report_Oficina_Unico/@idarea Int`, `spRRHH_Report_Oficina/@sigla VarChar`, el retorno `object` con valor `DataSet` y los nombres suministrados a `Fill`. [Caso OCP](../docs/semanas/semana05/01_ocp.md) y [contratos extraídos](../evidencia/semanas/semana05/contratos_v1.json).
+
+La variante por sigla se compila contra el núcleo existente y se utiliza desde el mismo generador sin recompilarlo. Once escenarios comprueban preparación de comandos con conexiones cerradas. La biblioteca acumulativa compila; no se ejecutó `Fill` ni se comprobaron resultados SQL. El ejecutor sigue siendo concreto y las etapas anteriores permanecen intactas.
+
 ## Información funcional pendiente
 
 | Aspecto | Estado inicial | Evidencia que necesitamos |

@@ -1,0 +1,138 @@
+{
+  "stage": "C04",
+  "sdk": "10.0.103",
+  "reference_profile": "installed Framework v4.0.30319",
+  "library": {
+    "exit_code": 0,
+    "source_count": 20,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "0bc5f746124b3f2782f9ca3d8b8ffc35872aaf3e928cc6cf0d4a3c4c498fce0a"
+  },
+  "case_and_reused_source_hashes": [
+    {
+      "path": "src/v2/caso_empleados/EjecutorConsultasSql.cs",
+      "sha256": "7abe9bdebfc86701daad4badfd4f89ee703c7a29d14d8a042aaf594a9e95008f"
+    },
+    {
+      "path": "src/v2/caso_empleados/EmpleadoConsultas.cs",
+      "sha256": "9bf6cd6e97c1bdd87d8d88fdd027997b0b2557e3207761d4c8779b4941e7bf4d"
+    },
+    {
+      "path": "src/v3/caso_reportes/ComandoReporte.cs",
+      "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6"
+    },
+    {
+      "path": "src/v3/caso_reportes/EjecutorReportesSql.cs",
+      "sha256": "55c323ed5c8c39a9235944291dd76805f332b43e4d4fd1f644b83b7e524fa636"
+    },
+    {
+      "path": "src/v3/caso_reportes/GeneradorReportes.cs",
+      "sha256": "83b69da47348cd5e3218ce81139e6fb8225db1125014b3b3756c93dce2bd809e"
+    },
+    {
+      "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+      "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficina.cs",
+      "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficinaPorSigla.cs",
+      "sha256": "94da3cf581271f6b9a39cec1b147f5c63d1607b9411a9ce156db07d05d014258"
+    },
+    {
+      "path": "src/v3/caso_reportes/RRHHClass.cs",
+      "sha256": "b1d066121225e45b2403f6a699385e615c6ef82f81b2f57a2020bd39fac99e0a"
+    }
+  ],
+  "antecedent_compilation": {
+    "exit_code": 0,
+    "source_count": 17,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "3094d9b1a8dea6b6725a5894a6df8280d41d985c03568dbbc478d7e7484c2524"
+  },
+  "core_compilation": {
+    "exit_code": 0,
+    "source_count": 5,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "2c3bd062ca88037d1be58f1b85551375506bca1e116e37e35c56aabb469d5334"
+  },
+  "extension_compilation": {
+    "exit_code": 0,
+    "source_count": 1,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "daa91ae44b282240fe1025f6e58fa2488fb6ce8a85c2462425d6c73f52fe7f98"
+  },
+  "test_compilation": {
+    "exit_code": 0,
+    "source_count": 1,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "4d8bd6d6a7ccfebc05df25c099da2678c012fe67e912447de4b363f7cc2cf7d9"
+  },
+  "contract_tests": {
+    "exit_code": 0,
+    "scenarios_passed": 11,
+    "external_extension_accepted": true,
+    "connection_opened": false,
+    "scope": "Only authored report preparation via the unchanged generator; no Fill or received code execution."
+  },
+  "extension_proof": {
+    "core_source_files_before": [
+      {
+        "path": "src/v3/caso_reportes/ComandoReporte.cs",
+        "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6"
+      },
+      {
+        "path": "src/v3/caso_reportes/EjecutorReportesSql.cs",
+        "sha256": "55c323ed5c8c39a9235944291dd76805f332b43e4d4fd1f644b83b7e524fa636"
+      },
+      {
+        "path": "src/v3/caso_reportes/GeneradorReportes.cs",
+        "sha256": "83b69da47348cd5e3218ce81139e6fb8225db1125014b3b3756c93dce2bd809e"
+      },
+      {
+        "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+        "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936"
+      },
+      {
+        "path": "src/v3/caso_reportes/ReporteOficina.cs",
+        "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e"
+      }
+    ],
+    "core_source_files_after": [
+      {
+        "path": "src/v3/caso_reportes/ComandoReporte.cs",
+        "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6"
+      },
+      {
+        "path": "src/v3/caso_reportes/EjecutorReportesSql.cs",
+        "sha256": "55c323ed5c8c39a9235944291dd76805f332b43e4d4fd1f644b83b7e524fa636"
+      },
+      {
+        "path": "src/v3/caso_reportes/GeneradorReportes.cs",
+        "sha256": "83b69da47348cd5e3218ce81139e6fb8225db1125014b3b3756c93dce2bd809e"
+      },
+      {
+        "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+        "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936"
+      },
+      {
+        "path": "src/v3/caso_reportes/ReporteOficina.cs",
+        "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e"
+      }
+    ],
+    "core_sha256_before": "2c3bd062ca88037d1be58f1b85551375506bca1e116e37e35c56aabb469d5334",
+    "core_sha256_after": "2c3bd062ca88037d1be58f1b85551375506bca1e116e37e35c56aabb469d5334",
+    "core_recompiled_for_extension": false,
+    "core_unchanged": true
+  },
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false
+}
