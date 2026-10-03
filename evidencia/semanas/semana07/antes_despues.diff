@@ -1,0 +1,52 @@
+--- src/v3/caso_reportes/RRHHClass.cs
++++ src/v4/caso_ioc/RRHHClass.cs
+@@ -657,14 +657,14 @@
+ 
+ 	public object Generar_Report_oficina(int CodOficina)
+ 	{
+-		// C04: definición extensible; se conservan los objetos compartidos actuales.
+-		return new GeneradorReportes(ObjCnn, objDA).Generar(new ReporteOficina(CodOficina));
++		// C05: la composición entrega el ejecutor fuera del generador.
++		return ComposicionReportes.CrearSql(ObjCnn, objDA).Generar(new ReporteOficina(CodOficina));
+ 	}
+ 
+ 	public object Generar_Report_oficina_Dep(string Sigla)
+ 	{
+-		// C04: definición extensible; se conservan los objetos compartidos actuales.
+-		return new GeneradorReportes(ObjCnn, objDA).Generar(new ReporteOficinaPorSigla(Sigla));
++		// C05: la composición entrega el ejecutor fuera del generador.
++		return ComposicionReportes.CrearSql(ObjCnn, objDA).Generar(new ReporteOficinaPorSigla(Sigla));
+ 	}
+ 
+ 	public object Generar_Report_Emple_ficha(string FechaInicio, string Fechatermino, int tipo)
+--- src/v3/caso_reportes/GeneradorReportes.cs
++++ src/v4/caso_ioc/GeneradorReportes.cs
+@@ -6,12 +6,12 @@
+ public sealed class GeneradorReportes
+ {
+     private readonly SqlConnection _conexion;
+-    private readonly EjecutorReportesSql _sql;
++    private readonly IEjecutorReportes _sql;
+ 
+-    public GeneradorReportes(SqlConnection conexion, SqlDataAdapter adaptador)
++    public GeneradorReportes(SqlConnection conexion, IEjecutorReportes sql)
+     {
+         _conexion = conexion;
+-        _sql = new EjecutorReportesSql(conexion, adaptador);
++        _sql = sql;
+     }
+ 
+     public ComandoReporte Preparar(IDefinicionReporte reporte)
+--- src/v3/caso_reportes/EjecutorReportesSql.cs
++++ src/v4/caso_ioc/EjecutorReportesSql.cs
+@@ -3,8 +3,8 @@
+ 
+ namespace ClassRRHH;
+ 
+-// Dependencia concreta conservada. La entrega IoC queda para semana 07.
+-public sealed class EjecutorReportesSql
++// Semana 07: implementación SQL del contrato inyectado.
++public sealed class EjecutorReportesSql : IEjecutorReportes
+ {
+     private readonly SqlConnection _conexion;
+     private readonly SqlDataAdapter _adaptador;

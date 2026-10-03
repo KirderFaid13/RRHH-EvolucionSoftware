@@ -35,7 +35,7 @@ La unidad I busca desarrollar mantenimiento preventivo mediante refactorización
 
 El equipo se encuentra en la semana 07. Indica que sus últimos avances corresponden a la semana 05 y que en la evaluación T1 de la semana 06 no realizó una entrega. Este repositorio se organiza comenzando por el sistema original para que un lector pueda seguir cada incorporación en orden.
 
-En C02 se incorporó la recuperación parcial de ClassRRHH.dll. C03, publicado en a5849d9, refactoriza tres consultas de empleados con SRP/DRY. C04 incorpora OCP en dos reportes de oficina, con compilación y preparación de una extensión externa sin modificar ni recompilar el núcleo. La entrega de semana 07 sigue pendiente. Sílabo página 2 y guía final páginas 6, 8 y 10 respaldan el análisis del legado y los requisitos finales; [revisión documental](../docs/ingenieria_inversa/04_revision_antecedente.md). La guía de semana 05, páginas 9-12, sustenta teoría, caso práctico, comparación y exposición; [informe OCP](../docs/semanas/semana05/01_ocp.md).
+En C02 se incorporó la recuperación parcial de ClassRRHH.dll. C03, publicado en a5849d9, refactoriza tres consultas de empleados con SRP/DRY. C04, publicado en 7bd215a, aplica OCP a dos reportes. C05/S07 aplica IoC sobre GeneradorReportes→ejecutor, con composición externa, compilación y 16 escenarios con sustitutos. El equipo revisó la preparación y autorizó su incorporación como quinto commit por PR desde semana-07-ioc y squash en main. Sílabo página 2 y guía final páginas 6, 8 y 10 respaldan los requisitos finales; [revisión documental](../docs/ingenieria_inversa/04_revision_antecedente.md). Guías de semana 05 y 07, páginas 8-12, sustentan cada caso; [informe OCP](../docs/semanas/semana05/01_ocp.md) e [informe IoC](../docs/semanas/semana07/01_ioc.md).
 
 ## Cuatro commits iniciales acordados
 
@@ -50,9 +50,11 @@ Después de cada commit se debe detener el trabajo y explicar qué se incorporó
 
 Cada etapa debe describir su estado real: propuesta, recuperación parcial, compilación comprobada o ejecución comprobada. No se debe presentar una mejora como validada si solo existe una descripción o un fragmento de código.
 
+Durante la preparación de C05 el responsable aclaró que convirtió el repositorio a público por decisión propia. La comprobación previa de GitHub confirmó visibilidad pública y cuatro commits, con `7bd215a` como último. Esta preferencia reemplaza la indicación inicial de usar un repositorio privado; no cambia las exclusiones de claves, configuraciones restauradas y datos locales. Esa comprobación se conserva como evidencia histórica anterior a la incorporación de semana 07.
+
 ## Consigna conocida para la semana 07
 
-La semana 07 se trabajará después de los cuatro commits iniciales, cuando el equipo lo indique. Debe elegirse **un caso concreto de dependencia directa entre clases** y mejorarlo aplicando inversión de control.
+Después de los cuatro commits iniciales, el equipo autorizó preparar semana 07 antes del quinto commit. Se eligió **GeneradorReportes → EjecutorReportesSql**, dependencia concreta creada dentro del generador, y se mejora mediante interfaz e inyección por constructor con composición manual.
 
 La consigna admite casos como una clase que crea otra mediante `new`, un controlador o servicio que depende de una clase concreta, una implementación fija que dificulta las pruebas o un cambio de implementación que obliga a modificar varias clases.
 

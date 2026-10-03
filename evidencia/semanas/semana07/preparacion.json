@@ -1,0 +1,59 @@
+{
+  "stage": "C05_S07",
+  "ok": true,
+  "working_branch": "semana-07-ioc",
+  "head": "7bd215a0d7aebb47fd99309c0a3ed661304cfb19",
+  "local_commit_count": 4,
+  "staged_files": 0,
+  "fifth_commit_created": false,
+  "week07_published": false,
+  "current_documentation": {
+    "stage": "C05_S07",
+    "ok": true,
+    "counts": {
+      "json_documents": 35,
+      "markdown_documents": 45
+    },
+    "failures": []
+  },
+  "baseline": {
+    "ok": true,
+    "counts": {
+      "original_inventory": 348,
+      "unchanged_verified": 335,
+      "encrypted_storage_verified": 12,
+      "encrypted_original_verified": 12,
+      "excluded_backup": 1,
+      "source_original_verified": 348,
+      "configuration_examples": 6,
+      "reference_pdfs": 8,
+      "json_documents": 34,
+      "markdown_documents": 45,
+      "git_inventory_files_verified": 0
+    },
+    "source_original_check": "verified",
+    "git_index_check": "not_requested"
+  },
+  "known_secret_scan": {
+    "ok": true,
+    "public_text_files_scanned": 164,
+    "scope": "Archivos publicos de texto contra contrasenas conocidas de al menos seis caracteres y seis defaults codificados; no certifica ausencia de secretos desconocidos.",
+    "pptx_xml_entries_scanned": 24,
+    "pptx_ok": true
+  },
+  "github": {
+    "repository": "KirderFaid13/RRHH-EvolucionSoftware",
+    "private": false,
+    "visibility_confirmed_by_user": "El responsable indico que lo hizo publico.",
+    "verified_at_utc": "2026-10-03T01:19:08.677028+00:00",
+    "history_commit_count": 4,
+    "latest_commit_sha": "7bd215a0d7aebb47fd99309c0a3ed661304cfb19",
+    "forbidden_paths": [],
+    "tree_truncated": false
+  },
+  "verification_note": "La consulta inicial esperaba visibilidad privada y dio ok:false solo por private:false; la aclaracion posterior del responsable confirma que publico es el estado deseado. El intento de ajuste fallo en la lectura inicial antes de enviar cualquier PATCH; no se cambio visibilidad.",
+  "received_application_executed": false,
+  "database_restored": false,
+  "failures": [],
+  "snapshot_scope": "Comprobacion previa a la autorizacion de crear y publicar el quinto commit; campos de historial/publicacion describen ese momento."
+}

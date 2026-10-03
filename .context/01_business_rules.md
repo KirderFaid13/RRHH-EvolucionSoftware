@@ -36,6 +36,12 @@ Los reportes `Generar_Report_oficina(int)` y `Generar_Report_oficina_Dep(string)
 
 La variante por sigla se compila contra el núcleo existente y se utiliza desde el mismo generador sin recompilarlo. Once escenarios comprueban preparación de comandos con conexiones cerradas. La biblioteca acumulativa compila; no se ejecutó `Fill` ni se comprobaron resultados SQL. El ejecutor sigue siendo concreto y las etapas anteriores permanecen intactas.
 
+## Estado de mantenimiento C05/S07
+
+`GeneradorReportes` recibe `IEjecutorReportes` por constructor. `ComposicionReportes` crea y entrega el ejecutor SQL con las referencias actuales; la fachada conserva sus dos firmas y los contratos de reporte. No se añaden reglas del negocio ni se modifica el diccionario SQL. [Caso IoC](../docs/semanas/semana07/01_ioc.md).
+
+La biblioteca de 22 fuentes compila y 16 escenarios comprueban `Generar` con sustitutos, identidad del `DataSet` sintético, comandos, llamadas y errores. El cuerpo del ejecutor SQL permanece intacto y sin ejecución contra CMI. Se desacopla ese ejecutor propio; `SqlConnection`/`SqlCommand` siguen concretos. Esta mejora constituye la entrega C05, cuya incorporación por PR y squash fue autorizada por el equipo.
+
 ## Información funcional pendiente
 
 | Aspecto | Estado inicial | Evidencia que necesitamos |

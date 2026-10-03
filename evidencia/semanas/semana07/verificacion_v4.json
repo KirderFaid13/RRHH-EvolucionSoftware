@@ -1,0 +1,47 @@
+{
+  "stage": "C05_S07",
+  "ok": true,
+  "modified_facade_methods": [
+    "Generar_Report_oficina",
+    "Generar_Report_oficina_Dep"
+  ],
+  "all_other_facade_code_and_public_signatures_preserved": true,
+  "generator_only_field_and_constructor_changed": true,
+  "sql_executor_body_and_constructor_preserved": true,
+  "previous_stage_files_changed": false,
+  "antecedents_hashes_verified": 8,
+  "library_compiled": true,
+  "ioc_scenarios_passed": 16,
+  "generated_contract_source_hash_verified": true,
+  "active_case_files": [
+    {
+      "path": "src/v4/caso_ioc/ComposicionReportes.cs",
+      "sha256": "847db97f8d6deb187329b511be6189ea6ef741f7f68a981e22bf4e9d922e59d4",
+      "size": 398
+    },
+    {
+      "path": "src/v4/caso_ioc/EjecutorReportesSql.cs",
+      "sha256": "db33beaff5ae771ba9fe6ec7a7130553ff1821d8fad492574c23a9496b3e4b71",
+      "size": 735
+    },
+    {
+      "path": "src/v4/caso_ioc/GeneradorReportes.cs",
+      "sha256": "ee7dcd53a3d1c57376024a99e6e2968ca6885e3aa8b80d59b21870c2094e8b6b",
+      "size": 625
+    },
+    {
+      "path": "src/v4/caso_ioc/IEjecutorReportes.cs",
+      "sha256": "9e0480dae37a92f2392d083b3c424b2b5453cc56585523677dd40cd0edd54522",
+      "size": 202
+    },
+    {
+      "path": "src/v4/caso_ioc/RRHHClass.cs",
+      "sha256": "e50a8b4067cae0e4de75e0691a0ecbceda66996c59963a6b93b5780d5158d513",
+      "size": 41837
+    }
+  ],
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false,
+  "failures": []
+}

@@ -1,0 +1,76 @@
+{
+  "stage": "C05_S07",
+  "title": "Inversión de control en la ejecución de reportes",
+  "status": "implemented_and_verified",
+  "baseline_commit": "7bd215a0d7aebb47fd99309c0a3ed661304cfb19",
+  "academic_week": 7,
+  "working_branch": "semana-07-ioc",
+  "source": "src/v3/caso_reportes/",
+  "problem": "GeneradorReportes guarda EjecutorReportesSql concreto y lo crea con new; Generar no permite sustituir su ejecución para probar el flujo sin SQL.",
+  "scope": [
+    "GeneradorReportes: campo y constructor reciben IEjecutorReportes",
+    "EjecutorReportesSql implementa interfaz sin cambiar constructor ni Ejecutar",
+    "ComposicionReportes crea SQL fuera del generador",
+    "Dos cuerpos de RRHHClass usan composición externa manteniendo sus firmas"
+  ],
+  "interface": "IEjecutorReportes: DataSet Ejecutar(ComandoReporte reporte)",
+  "preserve": [
+    "Preparar y Generar de GeneradorReportes",
+    "Constructor y método Ejecutar del ejecutor SQL",
+    "Las cuatro fuentes v3 no sustituidas: definición OCP, dos reportes y ComandoReporte",
+    "Contratos v1: procedimientos, tipos, parámetros, valores y nombre de Fill",
+    "Referencias ObjCnn/objDA compartidas y ruta normal SQL",
+    "Firmas de RRHHClass y código fuera de los dos cuerpos",
+    "C01/C02/C03/C04 intactos"
+  ],
+  "intentional_api_change": "El constructor público del generador cambia de (SqlConnection, SqlDataAdapter) a (SqlConnection, IEjecutorReportes); composición actualizada y pruebas adaptadas. No es sustitución binaria de la DLL original.",
+  "verification": [
+    "Biblioteca v4 acumulativa de 22 fuentes compilada",
+    "Generar ejecutado con sustituto: once contratos observados en v1, salida DataSet por identidad y llamada única",
+    "Dos instancias de la misma clase de generador con ejecutores distintos, Preparar sin ejecución y propagación del error simulado",
+    "Composición SQL creada y comandos preparados manteniendo conexiones cerradas, sin ejecutar SQL",
+    "Error de preparación sin llamada al ejecutor",
+    "Comparación de firmas/fachada/cuerpos SQL y fuentes anteriores",
+    "Integridad, JSON, enlaces y secretos conocidos",
+    "Presentación breve con código antes/después y pruebas reales"
+  ],
+  "excluded": [
+    "Desacoplar todo SqlClient o afirmar compatibilidad con otro motor",
+    "Contenedor IoC genérico, cambios de reglas, importadores o migración web",
+    "Validaciones, defaults, normalización de siglas o corrección de gestión manual de conexiones",
+    "Ejecutar recibidos, abrir SQL, restaurar CMI o instalar DLL en legado"
+  ],
+  "evidence": [
+    "evidencia/semanas/semana07/procedencia.json",
+    "evidencia/semanas/semana07/antes_despues.diff",
+    "evidencia/semanas/semana07/compilacion_y_pruebas.json",
+    "evidencia/semanas/semana07/verificacion_v4.json",
+    "evidencia/semanas/semana07/antecedentes.json",
+    "evidencia/semanas/semana07/presentacion.json",
+    "docs/semanas/semana07/03_preparacion_quinto_commit.md",
+    "evidencia/semanas/semana07/preparacion.json"
+  ],
+  "limits": [
+    "Solo GeneradorReportes→Ejecutor propio se desacopla; conexión y comandos SqlClient permanecen",
+    "Datos del sustituto son sintéticos y no prueban resultados reales de CMI",
+    "La implementación SQL, UI, despliegue y equivalencia funcional completa siguen sin ejecutar",
+    "Se conserva gestión manual de conexión y política de fallos de la ruta SQL"
+  ],
+  "stop_condition": "Crear y subir el quinto commit, abrir PR e integrar mediante squash tras verificar su diferencia; comprobar main con cinco commits y detenerse despues de explicar el resultado.",
+  "presentation_status": "local_pptx_verified_canva_saved_corrections_verified",
+  "publication_workflow": {
+    "authorized_by_user": true,
+    "branch": "semana-07-ioc",
+    "target": "main",
+    "merge_method": "squash",
+    "one_stage_commit_on_main": true,
+    "commit_description": "docs/semanas/semana07/03_preparacion_quinto_commit.md",
+    "verify_after_merge": [
+      "main contiene cinco commits",
+      "cuatro commits anteriores conservados",
+      "arbol integrado igual a entrega revisada",
+      "archivos privados excluidos"
+    ],
+    "publication_result_source": "Historial de GitHub y estado del PR; registros locales en .local/c05/."
+  }
+}
