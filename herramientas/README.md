@@ -49,3 +49,15 @@ python herramientas/verificar_v3.py
 ```
 
 Los binarios, logs y harness permanecen en `.local/c04/`. Se ejecuta solo la preparación del código nuevo, sin `Fill`, conexión SQL o binarios recibidos. [Informe](../docs/semanas/semana05/01_ocp.md) y [evidencias](../evidencia/semanas/semana05/README.md). Requiere el mismo entorno Windows/Framework y restauración privada que las etapas anteriores.
+
+## IoC C05/S07
+
+- `compilar_v4.py`: compila 22 fuentes acumulativas y 10 del harness. Las llamadas de caracterización se generan desde contratos recuperados de v1 y se combinan con [PruebasIoC.cs](../src/v4/pruebas/PruebasIoC.cs). Ejecuta 16 escenarios con sustitutos; no ejecuta el método SQL real.
+- `verificar_v4.py`: comprueba que el cambio del generador se limite a campo/constructor, SQL conserve su constructor y cuerpo, la fachada cambie solo dos cuerpos, las fuentes coincidan con la compilación y C01-C04 permanezcan intactos.
+
+```powershell
+python herramientas/compilar_v4.py
+python herramientas/verificar_v4.py
+```
+
+Los binarios, logs y contratos de prueba generados permanecen en `.local/c05/`. El caso y sus pruebas requieren el mismo entorno Windows/SDK10.0.103/Framework que v3. [Informe](../docs/semanas/semana07/01_ioc.md) y [evidencias](../evidencia/semanas/semana07/README.md).

@@ -1,0 +1,41 @@
+# Guion de exposición: IoC en reportes RRHH
+
+Duración prevista: 4 minutos y 45 segundos. Seis diapositivas. La consigna de [Semana07_EVO_TG.pdf](../../../referencias/semanas/semana07/Semana07_EVO_TG.pdf), páginas 8 a 11, pide una mejora concreta de una dependencia directa y su aplicación con código funcional.
+
+## 1. Caso y objetivo (0:00 a 0:40)
+
+Esta exposición presenta un caso concreto de inversión de control dentro de los reportes de RRHH. La clase `GeneradorReportes` coordina la preparación y la ejecución de un reporte. En v3, esa misma clase decide crear un `EjecutorReportesSql`. El objetivo es trasladar esa decisión al código que compone los objetos. Así podremos entregar un ejecutor SQL en el uso normal y un sustituto en las pruebas. La mejora se concentra en esa dependencia.
+
+Fuente: [GeneradorReportes v3](../../../src/v3/caso_reportes/GeneradorReportes.cs).
+
+## 2. Antes: creación fija (0:40 a 1:25)
+
+El fragmento corresponde al código real de v3. El campo `_sql` tiene el tipo concreto `EjecutorReportesSql` y el constructor crea una instancia mediante `new`. Después, `Generar` llama a ese campo. Una definición de reporte puede cambiar qué comando se prepara, pero no puede cambiar quién lo ejecuta. Por eso una prueba de `Generar` queda ligada al ejecutor que abre la conexión y llama a `Fill`. La dependencia fija está en el campo y en su creación dentro del constructor.
+
+Fuentes: [GeneradorReportes](../../../src/v3/caso_reportes/GeneradorReportes.cs) y [EjecutorReportesSql](../../../src/v3/caso_reportes/EjecutorReportesSql.cs).
+
+## 3. Después: inyección por constructor (1:25 a 2:15)
+
+En v4 introducimos `IEjecutorReportes`. La interfaz tiene un único método: `Ejecutar` recibe el `ComandoReporte` y devuelve un `DataSet`. El campo del generador ahora utiliza esa interfaz. Su constructor recibe la instancia y la asigna, en lugar de crearla. Esto aplica inyección de dependencias por constructor: quien construye el generador elige la implementación. `EjecutorReportesSql` implementa el contrato. `Preparar` y `Generar` conservan sus cuerpos anteriores. También conservamos `SqlConnection` porque esta etapa solo cambia la dependencia del ejecutor.
+
+Fuentes: [IEjecutorReportes](../../../src/v4/caso_ioc/IEjecutorReportes.cs), [GeneradorReportes v4](../../../src/v4/caso_ioc/GeneradorReportes.cs) y [verificación](../../../evidencia/semanas/semana07/verificacion_v4.json).
+
+## 4. Composición manual (2:15 a 3:00)
+
+La creación continúa existiendo, pero cambia de lugar. `ComposicionReportes.CrearSql` crea el ejecutor con la conexión y el adaptador actuales. Después crea `GeneradorReportes` y le entrega esa misma conexión y el ejecutor. El diagrama muestra que la composición crea ambos objetos y entrega SQL como dependencia del generador. La fachada llama a `CrearSql` y luego a `Generar`. Esta es una composición manual y no requiere un contenedor. Las pruebas construyen el generador directamente con un sustituto que implementa la interfaz.
+
+Fuentes: [ComposicionReportes](../../../src/v4/caso_ioc/ComposicionReportes.cs) y [fachada v4](../../../src/v4/caso_ioc/RRHHClass.cs).
+
+## 5. Demostración y resultados (3:00 a 4:05)
+
+La comprobación local aprobó **16 escenarios**. Once llaman a `Generar` completo mediante un ejecutor de prueba y verifican los contratos recuperados: procedimiento, tabla, conexión y propiedades de los parámetros. El sustituto registra la solicitud y devuelve un `DataSet` conocido. Se comprueba que el generador devuelve exactamente ese objeto.
+
+Los cinco escenarios adicionales prueban sustitución de ejecutor, preparación sin ejecución, propagación de una excepción conocida, composición SQL sin abrir la conexión y fallo de preparación sin llamar al ejecutor. La biblioteca y el harness compilaron sin errores ni advertencias. Los datos son sintéticos y no se ejecutó el método del ejecutor SQL.
+
+Fuentes: [compilación y pruebas](../../../evidencia/semanas/semana07/compilacion_y_pruebas.json) y [verificación](../../../evidencia/semanas/semana07/verificacion_v4.json).
+
+## 6. Aporte y límites (4:05 a 4:45)
+
+El aporte de IoC es que el generador recibe la dependencia en lugar de elegir su creación. Ese cambio permite sustituir la ejecución y comprobar `Generar` completo sin SQL. La abstracción tiene un alcance concreto: `Preparar` sigue usando `SqlConnection` y `ComandoReporte` contiene un `SqlCommand`. El ejecutor SQL conserva su constructor y su cuerpo ADO.NET. Estas pruebas acreditan la sustitución y los contratos que se verificaron. La integración con la base real y el funcionamiento completo de la aplicación continúan pendientes.
+
+Fuentes: [GeneradorReportes v4](../../../src/v4/caso_ioc/GeneradorReportes.cs), [EjecutorReportesSql v4](../../../src/v4/caso_ioc/EjecutorReportesSql.cs) y [verificación](../../../evidencia/semanas/semana07/verificacion_v4.json).

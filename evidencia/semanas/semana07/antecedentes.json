@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/README.md",
+      "path": "src/v4/antecedentes/README_recibido.md.txt",
+      "size": 564,
+      "sha256": "b14c58d632bfdfb3c6f2ecf34f628b2167792fa98521e2c88670f2d3749393b1"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IAsistenciaImporter.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IAsistenciaImporter.cs",
+      "size": 267,
+      "sha256": "951da48de06b979d9198d8d688d68459207686fc08d1d1e8ee3c43a6a1b760d6"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IAsistenciaRepository.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IAsistenciaRepository.cs",
+      "size": 483,
+      "sha256": "a85ad64ce0a9e49dad98a50d7e0d3f98c09e80d731038d1188038cfa4ef49b78"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IDatabaseHelper.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IDatabaseHelper.cs",
+      "size": 598,
+      "sha256": "9b98d840cfbf9531ece06659a79da9ffffd7c396ba7aebddd1e4ce87c3783088"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IEmpleadoRepository.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IEmpleadoRepository.cs",
+      "size": 458,
+      "sha256": "fe7b3ea05ad998998706ad8693679cb689341cbf1cf66633c9eab38a36286c5c"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IPermisoRepository.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IPermisoRepository.cs",
+      "size": 403,
+      "sha256": "20477072a41d04db1a89a8637b2779baf48d8b46bd331b25dc0ee26e3837bf24"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Interfaces/IReporteGenerator.cs",
+      "path": "src/v4/antecedentes/src/Interfaces/IReporteGenerator.cs",
+      "size": 299,
+      "sha256": "1efb40e291c888556cc5866cc2cbd906f982b72df0de27c6b072e52265c575ad"
+    },
+    {
+      "source": "RRHH_Evolucion/archivo/preorganizacion/versiones/v4.0_Semana07_DIP_IoC/src/Models",
+      "path": "src/v4/antecedentes/src/Models",
+      "size": 508,
+      "sha256": "866ea18fdd0dd05bd5f6880f5090a61a99bcbf215370ca28c5438caefa1b2bea"
+    }
+  ]
+}

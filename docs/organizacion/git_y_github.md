@@ -1,6 +1,6 @@
 # Commits, ramas y publicación
 
-Repositorio privado: [KirderFaid13/RRHH-EvolucionSoftware](https://github.com/KirderFaid13/RRHH-EvolucionSoftware).
+Repositorio: [KirderFaid13/RRHH-EvolucionSoftware](https://github.com/KirderFaid13/RRHH-EvolucionSoftware). Se inició privado y el responsable confirmó durante C05 que lo hizo público. Se mantienen las exclusiones de claves, configuraciones restauradas y datos locales.
 
 ## Decisión inicial: main
 
@@ -21,7 +21,7 @@ Tras cada commit se comprueba la publicación, se explica al equipo lo realizado
 
 ## Trabajo semanal posterior
 
-Para semana 07 recomendamos una rama `semana-07-ioc`, creada desde `main` cuando se autorice ese trabajo. Permitirá revisar la dependencia concreta, aplicar la mejora, comprobarla y proponer su incorporación mediante un pull request. Las semanas siguientes pueden seguir el mismo patrón.
+Semana 07 utiliza la rama `semana-07-ioc`, creada desde `main` en `7bd215a`. El equipo autorizó crear el quinto commit, subir esa rama, abrir un pull request descriptivo e integrarlo mediante **Squash and merge**. La línea principal incorpora así un único commit de la etapa; se conserva la rama semanal como referencia. Las semanas siguientes pueden seguir el mismo patrón, según su autorización.
 
 No se crean esas ramas en el primer commit. Los nombres v1, v2 y v3 identifican etapas del contenido; no requieren por sí solos una rama permanente cada uno.
 
@@ -39,6 +39,6 @@ En los siguientes commits, describir un antes/después del caso cuando se modifi
 
 ## Datos y claves
 
-`.local/` está ignorada y contiene la clave y los registros privados de publicación. No usar `git add -f` para incluir ese directorio. Los respaldos y configuraciones reales también están excluidos. El acceso al repositorio privado no reemplaza estas exclusiones.
+`.local/` está ignorada y contiene la clave y los registros privados de publicación. No usar `git add -f` para incluir ese directorio. Los respaldos y configuraciones reales también están excluidos. La visibilidad del repositorio no reemplaza estas exclusiones.
 
 Los archivos `*.aesgcm` del legado sí se versionan: son los originales cifrados cuya integridad está registrada. La clave se conserva fuera del historial y se comparte por un medio privado cuando el grupo la necesite. Consulta [restauración](../../legado/README.md).

@@ -1,0 +1,68 @@
+{
+  "stage": "C05_S07",
+  "local_presentation_verified": true,
+  "slide_count": 6,
+  "speaker_notes_count": 6,
+  "planned_duration_seconds": 285,
+  "authoring_library": "@oai/artifact-tool",
+  "authoring_library_version": "2.8.59",
+  "verification": "PPTX final reimportado y renderizado con ArtifactTool; seis PNG revisados individualmente por autor y coordinador; XML y notas comprobados.",
+  "finalizer_findings": [],
+  "native_editable_text": true,
+  "raster_pictures": 0,
+  "powerpoint_application_opened": false,
+  "libreoffice_used": false,
+  "files": [
+    {
+      "path": "docs/semanas/semana07/Semana07_IoC_RRHH.pptx",
+      "sha256": "00e72250e762f8001c45cdfa1b5501264303f4381a3bb30ca36bff1976a2f200",
+      "size": 30660
+    },
+    {
+      "path": "docs/semanas/semana07/vista_previa.png",
+      "sha256": "dff19e3551065d23e1e37869fe59c35818b249c7a769f6a8e47b0606fc37ed54",
+      "size": 36944
+    },
+    {
+      "path": "docs/semanas/semana07/02_guion_exposicion.md",
+      "sha256": "9936807373448cc7eec1f7fdd61afa1199bef7afde0700350666eb674b85ce30",
+      "size": 4908
+    },
+    {
+      "path": "herramientas/presentacion_semana07/generar_presentacion.mjs",
+      "sha256": "a14d82237b6e5a579c4e1e074475ea536d2f9b1d9e914e192cb96837a4467441",
+      "size": 10443
+    },
+    {
+      "path": "herramientas/presentacion_semana07/contenido_verificado.json",
+      "sha256": "5c5ee8a8444e59fa85ee96238d7a2b8bd5f0300966b7c52bd1fb93e02e0bafe7",
+      "size": 4462
+    }
+  ],
+  "canva": {
+    "design_created": true,
+    "design_id": "DAHW6bu2tdo",
+    "status": "saved_corrections_verified",
+    "slide_count": 6,
+    "speaker_notes_count": 0,
+    "draft_corrections_prepared": 6,
+    "initial_creation_rejected_by_automatic_approval_review": true,
+    "initial_rejection_resolved": "El responsable aclaro que hizo publico el repositorio, confirmado por GitHub. Canva acepto el brief academico sanitizado solicitado, sin secretos, datos reales o binarios.",
+    "approval_to_save_required_by": "canva_commit_editing_transaction: mostrar vista previa y obtener aprobacion explicita antes de guardar.",
+    "limitations": [
+      "Diapositiva 2 compuesta de imagenes, sin texto nativo; el codigo Antes no es editable ni se verifica su exactitud mediante API de texto.",
+      "Canva no genero notas y la herramienta no ofrece escritura de notas; se utiliza el guion local.",
+      "No todos los objetos de Canva son editables; el PPTX local tiene codigo, diagrama y notas nativos.",
+      "El PPTX local se genero por separado; no es un exportado de Canva."
+    ],
+    "preview_shared_with_user": true,
+    "draft_corrections_saved": true,
+    "user_approval_after_preview_received": true,
+    "post_save_native_text_verified": true,
+    "public_edit_links_or_access_tokens_recorded": false,
+    "shared_or_published": false
+  },
+  "fifth_commit_created": false,
+  "published": false,
+  "snapshot_scope": "Comprobacion previa a la autorizacion de crear y publicar el quinto commit; campos de historial/publicacion describen ese momento."
+}
