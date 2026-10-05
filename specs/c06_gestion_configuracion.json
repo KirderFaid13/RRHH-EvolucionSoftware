@@ -1,0 +1,92 @@
+{
+  "id": "C06-S08",
+  "fecha_preparacion": "2026-10-05",
+  "tema": "Introducción a la gestión de la configuración del software",
+  "estado": "incorporacion_autorizada_por_el_responsable",
+  "consigna": {
+    "ruta": "referencias/semanas/semana08/Semana08_EVO_TG.pdf",
+    "sha256": "d9f058972ac3b72334b9a26fc81ff19064f203f922e2e5b8b12bc009b9f1f191",
+    "paginas_practica": [
+      14,
+      15,
+      16
+    ],
+    "pagina_rubrica": 17,
+    "observacion": "Las páginas 4 y 18 conservan textos de IoC/OCP. El caso sigue la práctica de GCS de páginas 14 a 16."
+  },
+  "base": {
+    "commit": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+    "tree": "a6b85aad0d6ab119297cd4ffd37c8ef5421a383e",
+    "archivos_versionados": 531,
+    "rama_origen": "main",
+    "rama_trabajo": "semana-08-gcs",
+    "software": "v4 diagnóstica de semana 07"
+  },
+  "responsable": {
+    "cuenta": "KirderFaid13",
+    "revision": "El usuario confirmó que revisará los cambios",
+    "integracion": "El usuario confirmó que integrará los cambios",
+    "coordinacion": "El autor anuncia alcance y rutas antes de editar. KirderFaid13 coordina e integra."
+  },
+  "entregables": [
+    "Justificación de GCS aplicada al RRHH",
+    "Tabla de elementos de configuración, inventario completo de la base C05 y estado de configuración",
+    "Organización del repositorio existente y reglas básicas Git/GitHub",
+    "Registro CAM-S08-001 y procedimiento introductorio de cambios",
+    "Plan inicial de pruebas y calidad, diferenciando ejecución real y propuestas",
+    "Auditor funcional de configuración y comprobaciones con casos aislados",
+    "Presentación editable de ocho diapositivas, notas y guion preciso"
+  ],
+  "cambios_permitidos_base": [
+    "README.md",
+    ".context/ROADMAP.md",
+    ".context/03_course_context.md",
+    "docs/README.md",
+    "docs/semanas/README.md",
+    "evidencia/README.md",
+    "evidencia/semanas/README.md",
+    "herramientas/README.md",
+    "prompts/README.md",
+    "specs/README.md",
+    "referencias/README.md"
+  ],
+  "nuevos_prefijos_permitidos": [
+    "configuracion/",
+    "docs/semanas/semana08/",
+    "evidencia/semanas/semana08/",
+    "referencias/semanas/semana08/",
+    "herramientas/presentacion_semana08/"
+  ],
+  "nuevos_archivos_permitidos": [
+    "specs/c06_gestion_configuracion.json",
+    "prompts/05_gestion_configuracion.md",
+    "herramientas/auditar_configuracion.py",
+    "herramientas/verificar_configuracion.py"
+  ],
+  "limites": [
+    "Sin modificación de src/, legado/, antecedentes ni evidencia de semanas anteriores",
+    "Sin ejecución de binarios recibidos ni restauración o conexión SQL",
+    "La preparación inicial no publicaba; la indicación posterior autoriza commit/push/PR/squash. No autoriza etiquetas ni protección de ramas",
+    "Sin atribuir validación de interfaz, base de datos, rendimiento o autenticación",
+    "Inventario C05 congelado: nuevos entregables C06 se identifican por separado",
+    "Claves, configuraciones restauradas, datos reales y compilados generados permanecen en .local/"
+  ],
+  "aceptacion": [
+    "Responder los seis puntos prácticos con rutas y estados reales",
+    "Verificar los 531 archivos de la base y reportar por separado cambios autorizados",
+    "Detectar modificación y ausencia de archivos protegidos usando muestras temporales",
+    "Rechazar rutas fuera del repositorio, inventarios alterados y archivos nuevos fuera de alcance",
+    "Demostrar exclusión Git de .local/, claves, backups y compilados generados",
+    "Repetir los 16 escenarios de v4 sin abrir conexión SQL",
+    "Renderizar y revisar las ocho diapositivas y comprobar notas y texto editable",
+    "Conservar hashes y alcance de las verificaciones, sin datos reales"
+  ],
+  "incorporacion": {
+    "fecha_solicitud": "2026-10-05",
+    "solicitud": "realiza el 6to commit entonces",
+    "responsable": "KirderFaid13",
+    "dinamica": "Commit descriptivo en semana-08-gcs, push, PR a main y squash como en semana 07",
+    "resultado": "Se verifica después en GitHub, no se presume en el contrato",
+    "revision_formal": "No acreditada por pruebas automáticas"
+  }
+}

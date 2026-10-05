@@ -1,0 +1,107 @@
+{
+  "id": "C06-S08",
+  "fecha_preparacion": "2026-10-05",
+  "fecha_verificacion_utc": "2026-10-05T20:09:42+00:00",
+  "ok": true,
+  "base": {
+    "commit": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+    "tree": "a6b85aad0d6ab119297cd4ffd37c8ef5421a383e",
+    "archivos_versionados": 531
+  },
+  "resumen": {
+    "archivos_verificados": 531,
+    "iguales_a_base": 520,
+    "cambios_autorizados": 11,
+    "nuevos_en_alcance": 27,
+    "fallos": 0
+  },
+  "cambios_autorizados": [
+    ".context/03_course_context.md",
+    ".context/ROADMAP.md",
+    "README.md",
+    "docs/README.md",
+    "docs/semanas/README.md",
+    "evidencia/README.md",
+    "evidencia/semanas/README.md",
+    "herramientas/README.md",
+    "prompts/README.md",
+    "referencias/README.md",
+    "specs/README.md"
+  ],
+  "nuevos_autorizados": [
+    "configuracion/PLAN_CALIDAD.md",
+    "configuracion/PLAN_CONFIGURACION.md",
+    "configuracion/PLAN_PRUEBAS.md",
+    "configuracion/README.md",
+    "configuracion/cambios.json",
+    "configuracion/elementos.json",
+    "configuracion/inventario_c05.csv",
+    "configuracion/inventario_c05.json",
+    "docs/semanas/semana08/01_gestion_configuracion.md",
+    "docs/semanas/semana08/02_guion_exposicion.md",
+    "docs/semanas/semana08/03_preparacion_sexto_commit.md",
+    "docs/semanas/semana08/Semana08_GCS_RRHH.pptx",
+    "docs/semanas/semana08/vista_previa.png",
+    "evidencia/semanas/semana08/README.md",
+    "evidencia/semanas/semana08/auditoria_configuracion.json",
+    "evidencia/semanas/semana08/canva.json",
+    "evidencia/semanas/semana08/presentacion.json",
+    "evidencia/semanas/semana08/procedencia.json",
+    "evidencia/semanas/semana08/verificacion_configuracion.json",
+    "herramientas/auditar_configuracion.py",
+    "herramientas/presentacion_semana08/README.md",
+    "herramientas/presentacion_semana08/contenido_verificado.json",
+    "herramientas/presentacion_semana08/generar_presentacion.mjs",
+    "herramientas/verificar_configuracion.py",
+    "prompts/05_gestion_configuracion.md",
+    "referencias/semanas/semana08/Semana08_EVO_TG.pdf",
+    "specs/c06_gestion_configuracion.json"
+  ],
+  "exclusiones_git": [
+    {
+      "ruta": ".local/clave_legado.key",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": ".local/RRHH/RecursosHumanos.exe.config",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": ".local/RRHH/CMI_Backup_QA.bak",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": ".local/c06/compilacion/PruebasIoC.exe",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": "src/v4/bin/diagnostico.dll",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": "prueba.key",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": "prueba.bak",
+      "ignorada": true,
+      "versionada": false
+    },
+    {
+      "ruta": ".env",
+      "ignorada": true,
+      "versionada": false
+    }
+  ],
+  "fallos": [],
+  "revision_humana": "El PASS automático no acredita revisión humana; consulte CAM-S08-001 y la decisión del responsable",
+  "publicacion": "Se comprueba en Git y el PR. Esta auditoría no certifica su resultado.",
+  "head_observado": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+  "limite": "Compara contenido de trabajo, no blobs del índice o futuro commit. No certifica ejecución RRHH, integración SQL, datos, seguridad completa ni equivalencia funcional."
+}

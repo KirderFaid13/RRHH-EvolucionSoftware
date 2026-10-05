@@ -61,3 +61,11 @@ python herramientas/verificar_v4.py
 ```
 
 Los binarios, logs y contratos de prueba generados permanecen en `.local/c05/`. El caso y sus pruebas requieren el mismo entorno Windows/SDK10.0.103/Framework que v3. [Informe](../docs/semanas/semana07/01_ioc.md) y [evidencias](../evidencia/semanas/semana07/README.md).
+
+## Configuración C06/S08
+
+- `auditar_configuracion.py`: compara 531 archivos contra objetos Git del commit C05 fijo, valida el inventario y clasifica cambios y archivos nuevos según el alcance C06. Comprueba ocho exclusiones Git. `--crear-inventario` reconstruye el JSON/CSV desde Git. No lee secretos de .local/.
+- `verificar_configuracion.py`: ejecuta 14 escenarios aislados del auditor, compara JSON/CSV y repite la compilación de 22 fuentes y 16 escenarios v4 con salidas nuevas en .local/c06/. Requiere las fuentes privadas y contratos generados verificados de C05. No ejecuta RRHH recibido ni abre SQL.
+- [Generador de diapositivas S08](presentacion_semana08/README.md): reproduce el PPTX editable usando evidencia aprobada.
+
+Desde la raíz: `python herramientas/auditar_configuracion.py` y `python herramientas/verificar_configuracion.py`. Para estos dos scripts use Python 3.12 o posterior y Git compatible con check-attr --source. La repetición v4 requiere el entorno Windows/SDK/Framework descrito en semana 07. AppContainer puede bloquear los contadores locales que SqlClient inicializa: en esta sesión se repitió con ejecución elevada autorizada, sin SQL. [Plan de pruebas y límites](../configuracion/PLAN_PRUEBAS.md).

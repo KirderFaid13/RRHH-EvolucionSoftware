@@ -15,3 +15,5 @@ Antes de intervenir un caso, su especificación deberá indicar:
 - Las incógnitas que impiden afirmar una validación completa.
 
 Los contratos pueden usar Markdown o JSON según resulte más claro. No deben presuponer interfaces web, endpoints, roles o tablas que todavía no se hayan recuperado del sistema.
+
+[C06/S08: gestión de configuración](c06_gestion_configuracion.json) define el inventario y el auditor, los planes iniciales y la exposición. Preserva fuentes y evidencia anterior y deja el sexto commit pendiente de indicación.

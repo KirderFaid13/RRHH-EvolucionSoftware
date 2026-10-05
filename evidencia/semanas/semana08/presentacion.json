@@ -1,0 +1,125 @@
+{
+  "id": "C06-S08",
+  "fecha": "2026-10-05",
+  "archivo": "docs/semanas/semana08/Semana08_GCS_RRHH.pptx",
+  "sha256": "28b04f7fce4507a44bf112e1aef161f3d804b578c0135f24a7d376b7b18156d0",
+  "diapositivas": 8,
+  "notas": 8,
+  "tabla_nativa": [
+    3
+  ],
+  "texto_editable": true,
+  "comprobaciones": {
+    "archivos_base": 531,
+    "escenarios_auditor": 14,
+    "escenarios_v4": 16,
+    "conexion_sql": false
+  },
+  "fuentes": {
+    "auditoria": {
+      "ruta": "evidencia/semanas/semana08/auditoria_configuracion.json",
+      "sha256": "6c135d8f291b3be90c9c4180cf2ccdda66380375512adf6aaa6a4ee6c40d0c1d"
+    },
+    "verificacion": {
+      "ruta": "evidencia/semanas/semana08/verificacion_configuracion.json",
+      "sha256": "da9e48b5d46150cd5985ceba7e753200da15db30b86d6dbc307c05a9d1f12365"
+    }
+  },
+  "validacion": {
+    "estructura_paquete": "PASS",
+    "geometria": "PASS",
+    "importacion_artifact_tool": "PASS",
+    "renderizado_final": "ocho diapositivas importadas del PPTX final",
+    "revision_visual": "PASS: ocho diapositivas revisadas individualmente a 1920 x 1080",
+    "apertura_en_powerpoint": false,
+    "paquete_xml": {
+      "diapositivas": 8,
+      "notas": 8,
+      "tablas_nativas": 1,
+      "texto_por_diapositiva": {
+        "ppt/slides/slide1.xml": {
+          "textos": 7,
+          "tablas": 0
+        },
+        "ppt/slides/slide2.xml": {
+          "textos": 14,
+          "tablas": 0
+        },
+        "ppt/slides/slide3.xml": {
+          "textos": 25,
+          "tablas": 1
+        },
+        "ppt/slides/slide4.xml": {
+          "textos": 19,
+          "tablas": 0
+        },
+        "ppt/slides/slide5.xml": {
+          "textos": 13,
+          "tablas": 0
+        },
+        "ppt/slides/slide6.xml": {
+          "textos": 15,
+          "tablas": 0
+        },
+        "ppt/slides/slide7.xml": {
+          "textos": 11,
+          "tablas": 0
+        },
+        "ppt/slides/slide8.xml": {
+          "textos": 9,
+          "tablas": 0
+        }
+      }
+    },
+    "advertencias_geometria": 0
+  },
+  "limites": [
+    "La vista previa y el PPTX local se generan con Artifact Tool, independientemente de Canva.",
+    "No se atribuye equivalencia funcional completa ni conexión con SQL.",
+    "El sexto commit y la integración siguen pendientes."
+  ],
+  "revision_humana": "pendiente: KirderFaid13",
+  "fuentes_al_generar": {
+    "auditoria": {
+      "ruta": "evidencia/semanas/semana08/auditoria_configuracion.json",
+      "sha256": "5e2f13c4ab16e22e93cb4c67f99d0fe12b370ba00423de19ff54e021becd3e50"
+    },
+    "verificacion": {
+      "ruta": "evidencia/semanas/semana08/verificacion_configuracion.json",
+      "sha256": "f3e1f6719fb5531bb59597a3681f685bb49a7b2816d1ab2135f3365ac3cff392"
+    }
+  },
+  "conciliacion_final": {
+    "estado": "PASS",
+    "criterio": "Los hechos de las diapositivas se contrastaron con la evidencia final. Se conservan los hashes de las entradas de generación.",
+    "archivos_base": 531,
+    "escenarios_auditor": 14,
+    "escenarios_v4": 16,
+    "cambios_fuentes_rrhh": 0,
+    "revision_humana": "La indicación de incorporación del responsable está registrada; no se presume revisión formal",
+    "canva": "guardado tras aprobación explícita"
+  },
+  "reproduccion_privada": {
+    "estado": "PASS",
+    "archivo": ".local/c06/reproducciones/Reproduccion_S08_verificada.pptx",
+    "evidencia_publica_preservada": true,
+    "recibo": "privado en .local/c06/presentacion/"
+  },
+  "incorporacion_autorizada": {
+    "solicitud_literal": "realiza el 6to commit entonces",
+    "fecha": "2026-10-05",
+    "estado": "Autorizada; resultado se verifica en GitHub",
+    "momento_del_pptx": "Preparación anterior al commit; se conserva como evidencia",
+    "pruebas_automaticas": "No acreditan revisión formal humana"
+  },
+  "indice_previo_commit": {
+    "estado": "PASS",
+    "originales_directos": 335,
+    "originales_cifrados": 12,
+    "originales_descifrados_hash_comprobado": 12,
+    "respaldo_fuera_de_git": 1,
+    "archivos_originales_y_referencias_verificados_en_indice": 355,
+    "ejecucion_rrhh": false,
+    "restauracion_base_datos": false
+  }
+}

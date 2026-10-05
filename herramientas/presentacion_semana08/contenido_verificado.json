@@ -1,0 +1,39 @@
+{
+  "id": "C06-S08",
+  "slideCount": 8,
+  "auditScenarios": 14,
+  "v4Scenarios": 16,
+  "baselineCommit": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+  "reviewer": "KirderFaid13",
+  "sourcePdf": "referencias/semanas/semana08/Semana08_EVO_TG.pdf",
+  "practicalPages": [14, 15, 16],
+  "titles": [
+    "Gestión de la configuración en RRHH",
+    "Riesgos de trabajar sin control",
+    "Elementos bajo control",
+    "Organización del repositorio",
+    "Versiones y línea base",
+    "Control de cambios",
+    "Plan inicial de pruebas",
+    "Auditoría de la configuración"
+  ],
+  "inventoryRows": [
+    ["Elemento", "Ubicación", "Control"],
+    ["Código y mejoras", "src/v1/ hasta src/v4/", "Git, por etapa"],
+    ["Originales, binarios y datos", "legado/ y copias locales", "Hash y acceso local"],
+    ["Scripts de construcción", "herramientas/", "Git y ejecución"],
+    ["Requisitos, diseño y arquitectura", ".context/, specs/ y docs/", "Origen y estado"],
+    ["Pruebas y planes de calidad", "src/*/pruebas/, evidencia/\ny configuracion/", "Resultado y alcance"],
+    ["Curso y diapositivas", "referencias/ y docs/semanas/", "Fuente y versión"]
+  ],
+  "notes": [
+    "Caso práctico de la semana 08 del curso Evolución y Configuración de Software. Organizamos el trabajo sobre RRHH mediante identificación de elementos, reglas de versiones, registro de cambios y comprobaciones. La consigna práctica pide estas medidas en páginas 14 a 16 de Semana08_EVO_TG.pdf. El alcance conserva el código v4 de la semana 07 y prepara C06 localmente. No se crea una nueva versión funcional del RRHH. Fuente: referencias/semanas/semana08/Semana08_EVO_TG.pdf, páginas 14 a 16. Alcance: specs/c06_gestion_configuracion.json.",
+    "RRHH reúne originales recibidos, recuperación parcial y mejoras académicas. Esa procedencia distinta debe acompañar cada archivo. Sin control, el grupo podría confundir propuestas con fuentes verificadas, sobrescribir una etapa o perder la relación entre código y documentación. Son riesgos posibles, no incidentes que afirmemos que ya ocurrieron. Conservamos el original, identificamos las mejoras por etapa y registramos quién revisa e integra. Fuente del problema académico: Semana08_EVO_TG.pdf, páginas 14 a 16. Referencia conceptual: IEEE Computer Society, SWEBOK, capítulo de gestión de configuración, https://www.computer.org/education/bodies-of-knowledge/software-engineering/topics .",
+    "Un elemento de configuración puede ser un archivo o un conjunto controlado como unidad. La tabla agrupa los elementos para facilitar la exposición. El inventario y el informe desarrollan las categorías de la consigna: código fuente, datos, compilados, scripts, requisitos, diseño, arquitectura, planes y procedimientos de prueba y planes de calidad. src/*/pruebas/ identifica subdirectorios dentro de src/v2, src/v3 y src/v4. Los originales públicos mantienen los cifrados que ya existían. Claves, configuraciones restauradas y compilados nuevos permanecen en .local/ fuera de Git. El respaldo SQL se conserva en el workspace privado del responsable fuera del repositorio activo. No presentamos el esquema de CMI como verificado. Fuentes: Semana08_EVO_TG.pdf, páginas 11 y 15; IEEE Computer Society, SWEBOK, https://www.computer.org/education/bodies-of-knowledge/software-engineering/topics .",
+    "Aplicamos la estructura de memoria y contratos solicitada por el equipo a un sistema legado. .context/ conserva hechos y desconocidos. specs/ delimita cada caso. src/ distingue v1, v2, v3 y v4. legado/ conserva la referencia original. configuracion/ incorpora identificación, cambios y planes. docs/ explica decisiones y evidencia/ respalda comprobaciones. herramientas/ permite repetirlas y referencias/ conserva el material del curso. .local/ guarda material privado y Git la ignora. La organización complementa la que ya existe, preservando los entregables anteriores. Fuente: árbol real del repositorio y specs/c06_gestion_configuracion.json.",
+    "Git guarda el historial de cambios y GitHub aloja el repositorio RRHH-EvolucionSoftware. main tiene cinco commits publicados. La línea base C05 es el commit 6d82f9f, con 531 archivos versionados. Esta base permite comparar la preparación C06 de la rama semana-08-gcs. Las guías que el contrato permite actualizar se informan como cambios autorizados. La regla propuesta es una etapa por commit, con explicación de qué cambia, por qué y cómo se verificó. KirderFaid13 revisará e integrará. La integración por solicitud de cambios y squash corresponde al procedimiento propuesto para la siguiente publicación. El sexto commit sigue pendiente de la indicación del responsable. Fuentes: historial Git y specs/c06_gestion_configuracion.json; Git, https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control ; GitHub, https://docs.github.com/en/pull-requests/get-started/about-pull-requests .",
+    "CAM-S08-001 registra la preparación de gestión de configuración. Antes de editar, el autor comunica alcance y rutas para evitar trabajo simultáneo incompatible. Después implementa en la rama de la semana, ejecuta comprobaciones y documenta resultados y límites. KirderFaid13 confirmó que revisará e integrará los cambios. Se conserva el registro de qué se modifica, dónde, por qué, qué pruebas respaldan el cambio y qué queda pendiente. La solicitud de cambios sirve para comparar y revisar antes de integrar. Este procedimiento se propone para las siguientes integraciones. No afirmamos que exista protección de main o validación automática remota. Fuentes: Semana08_EVO_TG.pdf, página 16; confirmación del responsable; GitHub, https://docs.github.com/en/pull-requests/get-started/about-pull-requests .",
+    "Separamos las comprobaciones ejecutadas de las pruebas propuestas. Los 16 escenarios v4 comprueban preparación e inyección con sustitutos en un entorno aislado, sin abrir SQL. Los 14 escenarios del auditor comprueban conservación, alcance, rutas e inventario. Incluyen el rechazo de un CSV incompleto, sin hash ni esquema, tras exigir las seis columnas y comparar su contenido con el JSON. El auditor de C06 compara el inventario C05, diferencia cambios autorizados y detecta problemas de configuración mediante muestras temporales. Para el RRHH completo proponemos casos funcionales de interfaz, integración con SQL, rendimiento y seguridad, todos pendientes de un entorno autorizado y criterios acordados. Caja negra, blanca y gris describen el acceso al interior del sistema. Funcionalidad, rendimiento y seguridad describen el objetivo de una prueba. Las categorías pueden combinarse. No atribuimos a las pruebas aisladas resultados reales de CMI o de la interfaz. Fuentes: Semana08_EVO_TG.pdf, páginas 13 y 16; evidencia/semanas/semana08/verificacion_configuracion.json.",
+    "La demostración usa python herramientas/auditar_configuracion.py. La herramienta compara los 531 archivos versionados de la base C05. Verifica el contenido protegido, separa las actualizaciones de guías permitidas y comprueba el alcance de nuevos archivos. El resultado muestra cero fallos cuando la preparación cumple el contrato. Las comprobaciones adicionales introducen casos inválidos sobre muestras temporales, sin modificar originales. Esta mejora permite saber qué pertenece a cada etapa y detectar alteraciones antes de integrar. C06 queda preparado localmente, con revisión y sexto commit pendientes. Fuentes: evidencia/semanas/semana08/auditoria_configuracion.json y verificacion_configuracion.json; specs/c06_gestion_configuracion.json."
+  ]
+}

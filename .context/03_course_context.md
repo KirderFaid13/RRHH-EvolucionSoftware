@@ -33,7 +33,7 @@ La unidad I busca desarrollar mantenimiento preventivo mediante refactorización
 
 ## Situación comunicada por el equipo
 
-El equipo se encuentra en la semana 07. Indica que sus últimos avances corresponden a la semana 05 y que en la evaluación T1 de la semana 06 no realizó una entrega. Este repositorio se organiza comenzando por el sistema original para que un lector pueda seguir cada incorporación en orden.
+El equipo se encuentra en la semana 08. En la revisión inicial indicó que sus últimos avances correspondían a la semana 05 y que en la evaluación T1 de semana 06 no realizó una entrega. El repositorio conserva el sistema original y sus mejoras incorporadas en orden, incluyendo la entrega IoC de semana 07 publicada en el quinto commit.
 
 En C02 se incorporó la recuperación parcial de ClassRRHH.dll. C03, publicado en a5849d9, refactoriza tres consultas de empleados con SRP/DRY. C04, publicado en 7bd215a, aplica OCP a dos reportes. C05/S07 aplica IoC sobre GeneradorReportes→ejecutor, con composición externa, compilación y 16 escenarios con sustitutos. El equipo revisó la preparación y autorizó su incorporación como quinto commit por PR desde semana-07-ioc y squash en main. Sílabo página 2 y guía final páginas 6, 8 y 10 respaldan los requisitos finales; [revisión documental](../docs/ingenieria_inversa/04_revision_antecedente.md). Guías de semana 05 y 07, páginas 8-12, sustentan cada caso; [informe OCP](../docs/semanas/semana05/01_ocp.md) e [informe IoC](../docs/semanas/semana07/01_ioc.md).
 
@@ -61,3 +61,9 @@ La consigna admite casos como una clase que crea otra mediante `new`, un control
 La exposición debe concentrarse en esa mejora, con documentación ordenada y diapositivas breves y precisas. No corresponde convertirla en una presentación general del progreso del proyecto.
 
 Consulta el [roadmap](ROADMAP.md) para el estado de las etapas.
+
+## Consigna y preparación de semana 08
+
+El usuario proporcionó [Semana08_EVO_TG.pdf](../referencias/semanas/semana08/Semana08_EVO_TG.pdf). La práctica de páginas 14–16 pide justificar GCS, identificar elementos, organizar el repositorio y proponer controles iniciales de versiones, cambios y pruebas. La rúbrica de página 17 evalúa organización, dominio del tema, calidad visual y participación. Los textos IoC/OCP de páginas 4 y 18 no cambian el alcance de esa práctica.
+
+C06 se prepara desde `6d82f9f` (531 archivos versionados) en `semana-08-gcs`. Se añade control de configuración y un auditor repetible; el código v4 permanece intacto. El usuario confirmó «Yo revisaré e integraré los cambios»: se registra a KirderFaid13 como responsable. Después de recibir la preparación, indicó «realiza el 6to commit entonces» el 5 de octubre de 2026. Esta autorización habilita su incorporación con la dinámica anterior de rama, PR y squash, sin atribuir una revisión formal que no está registrada. [Informe](../docs/semanas/semana08/01_gestion_configuracion.md), [contrato](../specs/c06_gestion_configuracion.json) y [registro CAM-S08-001](../configuracion/cambios.json). La publicación real se comprueba mediante el historial y el estado del PR.

@@ -1,0 +1,18 @@
+{
+  "id": "C06-S08",
+  "fecha": "2026-10-05",
+  "fuente": "PDF proporcionado por el usuario",
+  "ruta_publica": "referencias/semanas/semana08/Semana08_EVO_TG.pdf",
+  "bytes": 1636224,
+  "paginas": 20,
+  "sha256": "d9f058972ac3b72334b9a26fc81ff19064f203f922e2e5b8b12bc009b9f1f191",
+  "practica_paginas": [14, 15, 16],
+  "rubrica_pagina": 17,
+  "rubrica": {"organizacion": 5, "dominio_del_tema": 10, "calidad_visual": 2, "participacion": 3, "total": 20},
+  "nota_lectura": "Página 4 conserva objetivo IoC y página 18 conclusiones OCP. El tema y práctica de GCS de páginas 8 a 16 determinan esta entrega.",
+  "revision_documental": "Texto de las 20 páginas y revisión visual de la práctica y rúbrica",
+  "inventario_referencias_baseline": "El inventario inicial conserva sus ocho PDF originales; esta nueva consigna tiene procedencia propia.",
+  "responsable_revision_integracion": "KirderFaid13 confirmado por el usuario",
+  "base": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+  "estado": "preparacion_local_sin_sexto_commit"
+}

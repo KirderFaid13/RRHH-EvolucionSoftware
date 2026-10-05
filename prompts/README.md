@@ -7,3 +7,5 @@ Disponibles: [ingeniería inversa](01_ingenieria_inversa.md), [revisión OCP](03
 Se utiliza únicamente el prompt correspondiente a la etapa autorizada. Semana 07 se prepara antes de crear y publicar su quinto commit.
 
 Cada ejecución debe terminar con una explicación del cambio, su ubicación, su motivo, las comprobaciones realizadas y las limitaciones pendientes. El orden completo se encuentra en el [roadmap](../.context/ROADMAP.md).
+
+[05: gestión de configuración](05_gestion_configuracion.md) limita el trabajo a C06/S08 y separa preparación, decisión del responsable y publicación verificable. El [contrato](../specs/c06_gestion_configuracion.json) define las rutas permitidas.
