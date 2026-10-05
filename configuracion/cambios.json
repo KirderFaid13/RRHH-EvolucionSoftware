@@ -1,0 +1,151 @@
+{
+  "version_registro": 1,
+  "fecha_preparacion": "2026-10-05",
+  "alcance": "Registro inicial C06/S08; no reconstruye aprobaciones históricas de C01-C05",
+  "cambios": [
+    {
+      "id": "CAM-S08-001",
+      "contrato": "specs/c06_gestion_configuracion.json",
+      "fecha_solicitud": "2026-10-05",
+      "titulo": "Identificar y auditar la configuración del RRHH para semana 08",
+      "origen": "El usuario pidió realizar el caso práctico de semana 08 y sus diapositivas, siguiendo la dinámica de preparar y explicar cada etapa antes de su commit",
+      "motivo": "Reconocer qué forma parte de la base y de la preparación, coordinar cambios y vincular cada etapa con documentación y evidencia",
+      "base_commit": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+      "base_archivos_versionados": 531,
+      "rama_trabajo": "semana-08-gcs",
+      "estado": "incorporacion_autorizada",
+      "autorizacion_preparacion": {
+        "estado": "autorizada_por_solicitud_del_usuario",
+        "incluye": [
+          "Caso práctico GCS",
+          "Documentación y planes iniciales",
+          "Auditor funcional y verificaciones aisladas",
+          "Diapositivas y guion"
+        ],
+        "no_incluye": [
+          "Sexto commit",
+          "Push",
+          "PR",
+          "Merge",
+          "Etiquetas",
+          "Protección de ramas"
+        ]
+      },
+      "alcance": {
+        "nuevos_componentes": [
+          "configuracion/",
+          "docs/semanas/semana08/",
+          "evidencia/semanas/semana08/",
+          "referencias/semanas/semana08/",
+          "herramientas/presentacion_semana08/",
+          "herramientas/auditar_configuracion.py",
+          "herramientas/verificar_configuracion.py",
+          "specs/c06_gestion_configuracion.json",
+          "prompts/05_gestion_configuracion.md"
+        ],
+        "guias_mutables": "Las once rutas base autorizadas se enumeran en el contrato C06",
+        "preservar": [
+          "src/",
+          "legado/",
+          "Antecedentes",
+          "Evidencia y documentación de etapas anteriores"
+        ],
+        "limites": [
+          "No ejecutar binarios recibidos",
+          "No conectar ni restaurar SQL",
+          "No inventar roles o esquema",
+          "No publicar material privado",
+          "No presentar v4 como entrega de producción"
+        ]
+      },
+      "beneficio_esperado": "Detectar diferencias que requieren explicación y facilitar que el responsable revise alcance, motivos y evidencia antes de integrar",
+      "riesgos": [
+        "Confundir inventario congelado C05 con archivos nuevos C06",
+        "Afirmar validaciones integradas a partir de hashes o pruebas aisladas",
+        "Añadir archivos fuera de alcance o material privado"
+      ],
+      "validaciones": [
+        {
+          "id": "PC-01",
+          "descripcion": "Auditoría de la base de 531 archivos, cambios permitidos y altas C06",
+          "evidencia": "evidencia/semanas/semana08/auditoria_configuracion.json",
+          "estado": "ejecutada_y_aprobada"
+        },
+        {
+          "id": "PC-02",
+          "descripcion": "Detección de fallos con muestras temporales del auditor",
+          "evidencia_directorio": "evidencia/semanas/semana08/",
+          "estado": "ejecutada_y_aprobada",
+          "evidencia": "evidencia/semanas/semana08/verificacion_configuracion.json",
+          "resultado": "14 escenarios aprobados, incluido CSV con columnas incompletas rechazado"
+        },
+        {
+          "id": "PC-03",
+          "descripcion": "Exclusiones Git de material privado y generado",
+          "evidencia": "evidencia/semanas/semana08/auditoria_configuracion.json",
+          "estado": "ejecutada_y_aprobada"
+        },
+        {
+          "id": "PC-04-PC-05",
+          "descripcion": "Repetición de compilación diagnóstica y 16 escenarios aislados de v4",
+          "evidencia_directorio": "evidencia/semanas/semana08/",
+          "estado": "ejecutada_y_aprobada",
+          "evidencia": "evidencia/semanas/semana08/verificacion_configuracion.json",
+          "resultado": "22 fuentes de biblioteca y 10 de harness compiladas, 16 escenarios v4 aprobados, sin SQL"
+        },
+        {
+          "id": "PC-06",
+          "descripcion": "Coherencia documental y ocho diapositivas revisadas",
+          "evidencia_directorio": "evidencia/semanas/semana08/",
+          "estado": "ejecutada_y_aprobada",
+          "evidencia": "evidencia/semanas/semana08/presentacion.json",
+          "resultado": "Ocho diapositivas, notas y tabla editables, revisión de renders; la revisión humana del proyecto continúa pendiente"
+        }
+      ],
+      "revision": {
+        "responsable": "KirderFaid13",
+        "confirmacion": "El usuario confirmó: Yo revisaré e integraré los cambios",
+        "estado": "responsable_indico_incorporacion",
+        "fecha": "2026-10-05",
+        "observaciones": "La indicación de incorporación queda registrada. No se atribuye una revisión formal de GitHub ni aprobación por otra persona."
+      },
+      "integracion": {
+        "responsable": "KirderFaid13",
+        "estado": "autorizada_para_pr_y_squash",
+        "rama_destino": "main",
+        "commit_c06": null,
+        "pr": null,
+        "fecha": null,
+        "registro_resultado": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pulls?q=is%3Apr+head%3Asemana-08-gcs",
+        "nota": "Este registro forma parte del commit: su hash y el estado de integración se verifican después en GitHub."
+      },
+      "pendientes_funcionales": [
+        "Interfaz completa",
+        "SQL y CMI",
+        "Resultados reales",
+        "Rendimiento",
+        "Autenticación y permisos",
+        "Equivalencia con el original"
+      ],
+      "autorizacion_incorporacion": {
+        "fecha": "2026-10-05",
+        "responsable": "KirderFaid13",
+        "solicitud_literal": "realiza el 6to commit entonces",
+        "fundamento": "Indicación posterior a la entrega preparada; se aplica la dinámica previa de publicación GitHub, rama temática, PR y squash",
+        "incluye": [
+          "Sexto commit descriptivo",
+          "Subir semana-08-gcs",
+          "Crear PR a main",
+          "Integrar por squash y comprobar el resultado"
+        ],
+        "resultado_publicacion": "Historial Git y estado del PR; no se anticipa un hash propio",
+        "no_incluye": [
+          "Semana 09",
+          "Etiquetas",
+          "Cambiar visibilidad",
+          "Configurar protección de ramas"
+        ]
+      }
+    }
+  ]
+}

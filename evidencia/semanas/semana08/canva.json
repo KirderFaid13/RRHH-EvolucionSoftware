@@ -1,0 +1,16 @@
+{
+  "id": "C06-S08-CANVA",
+  "design_id": "DAHXIMUijd4",
+  "titulo": "GCS en RRHH legado",
+  "diapositivas": 8,
+  "formato": "1920x1080, 16:9",
+  "estado": "correcciones_guardadas_y_contenido_comprobado",
+  "aprobacion_guardado": "El usuario respondió: Sí, guarda las correcciones en Canva, después de revisar las vistas previas",
+  "revision_proyecto_c06": "Pendiente. La aprobación del guardado Canva no autoriza el sexto commit.",
+  "correcciones": "Rutas literales sin tilde, C05, 14 pruebas del auditor, 16 escenarios v4 y todas las pruebas integradas propuestas pendientes",
+  "notas_presentador": "Canva no devolvió notas. El PPTX local y el guion sí incluyen la exposición.",
+  "edicion": "Canva devolvió elementos de texto editables y elementos de imagen. No se afirma tabla nativa en Canva.",
+  "pptx": "Creado de forma independiente con Artifact Tool; no es una exportación de Canva",
+  "enlaces_privados": "Se conservan en .local/, fuera de Git",
+  "sexto_commit": null
+}

@@ -1,0 +1,129 @@
+{
+  "id": "C06-S08",
+  "fecha_preparacion": "2026-10-05",
+  "fecha_verificacion_utc": "2026-10-05T20:09:44+00:00",
+  "ok": true,
+  "pruebas_auditor": {
+    "aprobadas": 14,
+    "total": 14,
+    "escenarios": [
+      {
+        "nombre": "archivo_conservado",
+        "ok": true
+      },
+      {
+        "nombre": "cambio_protegido_detectado",
+        "ok": true
+      },
+      {
+        "nombre": "cambio_autorizado_identificado",
+        "ok": true
+      },
+      {
+        "nombre": "archivo_ausente_detectado",
+        "ok": true
+      },
+      {
+        "nombre": "texto_crlf_equivalente_a_lf",
+        "ok": true
+      },
+      {
+        "nombre": "escape_de_ruta_rechazado",
+        "ok": true
+      },
+      {
+        "nombre": "ruta_absoluta_rechazada",
+        "ok": true
+      },
+      {
+        "nombre": "ruta_duplicada_rechazada",
+        "ok": true
+      },
+      {
+        "nombre": "hash_del_inventario_alterado_rechazado",
+        "ok": true
+      },
+      {
+        "nombre": "inventario_incompleto_rechazado",
+        "ok": true
+      },
+      {
+        "nombre": "archivo_nuevo_fuera_de_alcance_rechazado",
+        "ok": true
+      },
+      {
+        "nombre": "secreto_en_carpeta_permitida_rechazado",
+        "ok": true
+      },
+      {
+        "nombre": "entregable_nuevo_en_alcance_aceptado",
+        "ok": true
+      },
+      {
+        "nombre": "csv_sin_hash_ni_esquema_rechazado",
+        "ok": true
+      }
+    ],
+    "muestras": "Archivos temporales propios, nunca originales RRHH"
+  },
+  "inventario_json_csv_coinciden": true,
+  "auditoria_resumen": {
+    "archivos_verificados": 531,
+    "iguales_a_base": 520,
+    "cambios_autorizados": 11,
+    "nuevos_en_alcance": 27,
+    "fallos": 0
+  },
+  "v4": {
+    "library": {
+      "exit_code": 0,
+      "source_count": 22,
+      "errors": [],
+      "warnings": [],
+      "output_sha256": "02e50b361003674acc5b4ca2e399421776c709f4500f484ecead63cdb1ecd7bb"
+    },
+    "test_compilation": {
+      "exit_code": 0,
+      "source_count": 10,
+      "errors": [],
+      "warnings": [],
+      "output_sha256": "38489ff41818370c58655ab9a546e26011f4c1711d73898f43f79d454fe79561"
+    },
+    "tests": {
+      "exit_code": 0,
+      "scenarios_passed": 16,
+      "scenarios": [
+        "Generar_Report_oficina_valor_1",
+        "Generar_Report_oficina_valor_2",
+        "Generar_Report_oficina_valor_3",
+        "Generar_Report_oficina_valor_4",
+        "Generar_Report_oficina_valor_5",
+        "Generar_Report_oficina_Dep_valor_1",
+        "Generar_Report_oficina_Dep_valor_2",
+        "Generar_Report_oficina_Dep_valor_3",
+        "Generar_Report_oficina_Dep_valor_4",
+        "Generar_Report_oficina_Dep_valor_5",
+        "Generar_Report_oficina_Dep_valor_6",
+        "sustitucion_de_ejecutor_y_resultado",
+        "preparar_no_ejecuta_dependencia",
+        "excepcion_del_ejecutor_se_propaga",
+        "composicion_sql_solo_prepara_sin_abrir",
+        "fallo_de_preparacion_no_llama_ejecutor"
+      ],
+      "connection_opened": false,
+      "sql_executor_ejecutar_executed": false,
+      "synthetic_data_only": true
+    },
+    "sources_checked_against_c05": true,
+    "received_code_executed": false,
+    "database_connected": false,
+    "whole_system_equivalence_verified": false,
+    "resultados_anteriores_modificados": false
+  },
+  "fallos": [],
+  "limites": [
+    "Pruebas aisladas de configuración e IoC, sin aplicación original ni SQL",
+    "Sin medición de rendimiento ni verificación completa de autenticación",
+    "Las pruebas automáticas no acreditan revisión humana. La publicación se comprueba en Git y el PR."
+  ]
+}

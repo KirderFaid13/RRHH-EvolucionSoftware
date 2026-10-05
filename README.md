@@ -4,9 +4,15 @@ Proyecto académico para estudiar, refactorizar y evolucionar el sistema de Recu
 
 Repositorio [RRHH-EvolucionSoftware](https://github.com/KirderFaid13/RRHH-EvolucionSoftware) público por decisión del responsable, confirmada durante esta preparación. Las claves, configuraciones restauradas y datos locales siguen excluidos de Git.
 
-**Entrega C05: v4, semana 07, IoC.** `GeneradorReportes` recibe un `IEjecutorReportes` por constructor y la composición externa crea el ejecutor SQL. La biblioteca de 22 fuentes compila y 16 escenarios prueban el flujo con sustitutos sin abrir SQL. Esta etapa se incorpora mediante `semana-07-ioc` y una solicitud de cambios hacia `main`, con un único commit mediante squash. Resultados reales de CMI, interfaz y equivalencia completa siguen pendientes.
+**Entrega C06: semana 08, gestión de la configuración.** Se añade el inventario de los 531 archivos de C05, un catálogo de elementos, reglas de versiones y cambios, planes de pruebas y calidad y un auditor funcional. El responsable autorizó incorporar esta entrega como sexto commit desde `semana-08-gcs` hacia `main`, mediante solicitud de cambios y squash. [Detalle de incorporación](docs/semanas/semana08/03_preparacion_sexto_commit.md), [informe](docs/semanas/semana08/01_gestion_configuracion.md) y [resultado real en el historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/).
+
+Las diapositivas y evidencias fechadas durante la preparación conservan ese momento anterior al commit. El registro `CAM-S08-001` añade la autorización posterior. El estado del PR y el historial Git acreditan la publicación; las pruebas automáticas no acreditan una revisión humana formal.
+
+La base software sigue siendo **v4 diagnóstica**, publicada como quinto commit `6d82f9f` mediante [PR #1](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/1). Sus 22 fuentes y 16 escenarios con sustitutos vuelven a comprobarse sin abrir SQL. Resultados reales de CMI, interfaz y equivalencia completa siguen pendientes.
 
 ## Lectura inicial
+
+La entrega actual se recorre desde el [plan de configuración](configuracion/PLAN_CONFIGURACION.md), el [inventario completo C05](configuracion/inventario_c05.csv), el [registro de cambios](configuracion/cambios.json), las [diapositivas semana 08](docs/semanas/semana08/Semana08_GCS_RRHH.pptx) y el [guion de exposición](docs/semanas/semana08/02_guion_exposicion.md). Los informes anteriores conservan su estado histórico:
 
 1. [Semana 07: IoC, antes/después y pruebas](docs/semanas/semana07/01_ioc.md), [código v4](src/v4/README.md) y [evidencias](evidencia/semanas/semana07/README.md).
 2. [Cuarto commit: OCP](docs/semanas/semana05/01_ocp.md), [código v3](src/v3/README.md) y [evidencias semana 05](evidencia/semanas/semana05/README.md).
@@ -24,6 +30,7 @@ La entrega de semana 07 incluye [diapositivas editables](docs/semanas/semana07/S
 .
 ├── .context/                    Memoria del proyecto, desconocidos y roadmap
 ├── specs/                       Contratos de las siguientes tareas
+├── configuracion/               Elementos, inventario, cambios y planes iniciales
 ├── src/                         Código recuperado y mejoras posteriores
 ├── legado/
 │   └── RRHH/                    Archivos originales y originales cifrados
@@ -90,8 +97,9 @@ La integridad de archivos **no acredita funcionamiento**. Todavía no se ha prob
 | 3 | v2: refactorización mediante SRP y DRY. | Publicado en `a5849d9`; tres consultas refactorizadas y 11 escenarios aprobados. |
 | 4 | v3: mejora mediante abierto/cerrado, OCP. | Publicado en `7bd215a`; biblioteca de 20 fuentes compilada y extensión externa aceptada sin recompilar el núcleo. |
 | 5 | v4: semana 07, inversión de control. | Entrega C05 validada: 22 fuentes compiladas y 16 escenarios aprobados con sustitutos. Incorporación por PR desde `semana-07-ioc` con squash. |
+| 6 | Semana 08: gestión de la configuración. | Inventario, auditor, planes y exposición comprobados. Incorporación autorizada desde `semana-08-gcs` mediante PR y squash; resultado consultable en GitHub. |
 
-Se avanza y se explica **un commit por vez**, esperando la indicación del equipo antes del siguiente. Los cuatro commits iniciales forman la base y esta entrega corresponde al quinto. Los archivos y análisis de etapas anteriores se conservan. El [historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/) y la solicitud de cambios registran el resultado de publicación.
+Se avanza y se explica **un commit por vez**, esperando la indicación del equipo antes del siguiente. C06 corresponde a la sexta entrega autorizada. Los archivos y análisis de etapas anteriores se conservan. El [historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/) y las solicitudes de cambios registran la publicación real. Después de incorporar y explicar semana 08 se detiene el avance.
 
 Para repetir la comprobación de v1, después de restaurar el legado y disponer de la clave local:
 
@@ -119,7 +127,7 @@ python herramientas/verificar_v3.py
 
 v3 reutiliza las fuentes v1 y los dos helpers de empleados de v2, sustituye la fachada por su variante v3 y añade el caso de reportes. Se demuestra la preparación de una extensión contra el núcleo ya compilado; no se ejecuta `Fill`, SQL ni la aplicación recibida. La propuesta v3 anterior se conserva como antecedente. [Qué cambió y por qué](docs/semanas/semana05/01_ocp.md).
 
-Para la etapa actual:
+Para repetir el procedimiento histórico de v4 (genera evidencia de semana 07):
 
 ```powershell
 python herramientas/compilar_v4.py
@@ -127,3 +135,12 @@ python herramientas/verificar_v4.py
 ```
 
 v4 conserva cuatro fuentes de reportes v3 y dos helpers v2, sustituye fachada/generador/ejecutor y añade interfaz/composición. `Generar` se ejecuta con sustitutos, devuelve un `DataSet` sintético y permite comprobar llamadas y errores; el ejecutor SQL real no se ejecuta. [Informe](docs/semanas/semana07/01_ioc.md) y [prompt de revisión](prompts/04_ioc.md).
+
+Para comprobar la preparación de semana 08 conservando la evidencia anterior:
+
+```powershell
+python herramientas/auditar_configuracion.py
+python herramientas/verificar_configuracion.py
+```
+
+El primer comando audita C05 y el alcance autorizado. El segundo prueba el auditor con muestras temporales, comprueba JSON/CSV y recompila/repite v4 con salidas nuevas en `.local/c06/`. Auditor: Python 3.12 o posterior y Git con `check-attr --source`; compilación v4: entorno Windows, SDK/referencias y fuentes privadas descritos en el [plan de pruebas](configuracion/PLAN_PRUEBAS.md). En AppContainer, SqlClient puede necesitar permiso adicional para inicializar contadores locales. [Resultados y límites](evidencia/semanas/semana08/README.md).

@@ -1,0 +1,4258 @@
+{
+  "id": "BASE-C05",
+  "commit": "6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2",
+  "tree": "a6b85aad0d6ab119297cd4ffd37c8ef5421a383e",
+  "archivos_versionados": 531,
+  "origen": "Objetos Git del quinto commit, no una nueva entrega de software",
+  "sha256_bytes": "Contenido Git. Solo texto declarado se compara normalizando CRLF a LF.",
+  "archivos": [
+    {
+      "ruta": ".context/01_business_rules.md",
+      "bytes": 6577,
+      "sha256": "6f8174853ec4e66f3255eba45249b53ea673dd0977fece6880110fa922cc253a",
+      "git_blob": "c5b34267854a410ff74f498b5e267bb9362903c4",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": ".context/02_data_dictionary.json",
+      "bytes": 8837,
+      "sha256": "7560ecece3869be6edb06651d407b4d0b6d22fca28ccd79bc4ab5ebee1c14a05",
+      "git_blob": "ed883d1f096b8a3858d53220550c87dd57da9ccc",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": ".context/03_course_context.md",
+      "bytes": 5316,
+      "sha256": "4e5d766c1a85dc830b06adf1bb8ff28935a3d48cb58a1cc725587396151fd1b2",
+      "git_blob": "b2d7d4bbf15790edb1c835d5d8516cc18d06abe4",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": ".context/ROADMAP.md",
+      "bytes": 3378,
+      "sha256": "11faaaed48567c3e4414b47c1601b98ca216c484b7c5194909e5de86ffa49417",
+      "git_blob": "bcdc7e3fceeff6f2b3b6cc30a34374574848b203",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": ".env.example",
+      "bytes": 98,
+      "sha256": "27a2f8908bc5ec92f01c1d30895759fb734edc579ee4daa1c1057c213519bccb",
+      "git_blob": "71db1faa4176de26c1bf75cfbb8cbe0f466a1c77",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": ".gitattributes",
+      "bytes": 780,
+      "sha256": "5763f396c39be090f867780480321f030d278983f864bad38010cc8eb7884c07",
+      "git_blob": "53efce52cb9ee3c2e6b1a1d05c17c1da73745f00",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": ".gitignore",
+      "bytes": 432,
+      "sha256": "51e7a10b384195f7b5dd278a268a820e594b8931f786e589451ca6bf381e5f60",
+      "git_blob": "31d1a4ac7d3d645d029dfb164345d9696d3d119f",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "AGENTS.md",
+      "bytes": 1373,
+      "sha256": "a3b490894af8e7c586b1a9ba23596518153611600ac64bd22680d2f88a6c1048",
+      "git_blob": "f906c5dfdefb47a93656bd3d64d6886ecb90220b",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 9111,
+      "sha256": "8c8b2edae95411c569f2b17a1f54dcc73158b545ceb6fa5e7901b642395a6d42",
+      "git_blob": "83b5db2873267b68d4fcab82711ea6c4b1190986",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "datos/README.md",
+      "bytes": 310,
+      "sha256": "9a1b2b524ce72e4f76285ec5dcedb19fd325b16fee95d6e5de6b9bcd1e2e5ac0",
+      "git_blob": "5033180254d0e370e839040e2192ffec60d561cf",
+      "normalizar_lf": true,
+      "grupo": "SCI-DATOS"
+    },
+    {
+      "ruta": "datos/respaldos/README.md",
+      "bytes": 822,
+      "sha256": "b5a6b81012a2bff01121d05d4c0ea00f0070711e7b4f5f016acad1e1475aa3cf",
+      "git_blob": "972274d5850dccf0912b0a9c1d44fd6ab4e75ff0",
+      "normalizar_lf": true,
+      "grupo": "SCI-DATOS"
+    },
+    {
+      "ruta": "docs/README.md",
+      "bytes": 907,
+      "sha256": "be411bc37d7d54cc73a0bf0b6bbe0edf740270a72405b3ebe1a8724fcf904fdf",
+      "git_blob": "b60d9b25db33e6d15ea24a12ebbea88a98273f8e",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/ingenieria_inversa/01_informe.md",
+      "bytes": 6482,
+      "sha256": "e97457bb29ac072a4452f699452040e93967af4d9749f84760879ad762ec80ba",
+      "git_blob": "4d0f4191a22fd87fec05efea0ab44d654b6363f5",
+      "normalizar_lf": true,
+      "grupo": "SCI-ARQUITECTURA"
+    },
+    {
+      "ruta": "docs/ingenieria_inversa/02_arquitectura.md",
+      "bytes": 3356,
+      "sha256": "693acc7e5d67ec024fcf1be3f5a97d50e525ccf65dcb37dbf8dfa4de069f824f",
+      "git_blob": "645cdd4db3745dfbf72bfb7df57e03d87183a3ae",
+      "normalizar_lf": true,
+      "grupo": "SCI-ARQUITECTURA"
+    },
+    {
+      "ruta": "docs/ingenieria_inversa/03_procedencia_v1.md",
+      "bytes": 3817,
+      "sha256": "4b42016128a8fd2cbbb22a85b660e3a4764df2cf673d5ba2254811971cc4638b",
+      "git_blob": "34074443472190287e444fd5b48ffa2d062793c3",
+      "normalizar_lf": true,
+      "grupo": "SCI-ARQUITECTURA"
+    },
+    {
+      "ruta": "docs/ingenieria_inversa/04_revision_antecedente.md",
+      "bytes": 7069,
+      "sha256": "240a930043c276c34c2974216faacc4d79d71751294bc3eb9358b753d7a2f8c4",
+      "git_blob": "64de815b4b8b1b049da239c68ec3a40c760c5474",
+      "normalizar_lf": true,
+      "grupo": "SCI-ARQUITECTURA"
+    },
+    {
+      "ruta": "docs/ingenieria_inversa/README.md",
+      "bytes": 609,
+      "sha256": "cea46684cd8630a96fa08808d716751bef09e205509435d0ac95126fcc39292e",
+      "git_blob": "3c0a4e174a99af1d866f1524441c4364fb7bac2e",
+      "normalizar_lf": true,
+      "grupo": "SCI-ARQUITECTURA"
+    },
+    {
+      "ruta": "docs/organizacion/01_baseline.md",
+      "bytes": 4808,
+      "sha256": "6b731d908a7d75d8d729eb7965033ab0b9cd6ade3c2cb0554bc6eb5992cadb85",
+      "git_blob": "92e6938efe44652a37b2966c86f754cca24d584d",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/organizacion/git_y_github.md",
+      "bytes": 3416,
+      "sha256": "626576ec7152df5b9ad63c56b72b99a38b992eb7cffb51a504070d3003a53aa4",
+      "git_blob": "8fec02a766dc02beeb42d62b9751c8bfb26e4ab9",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/README.md",
+      "bytes": 741,
+      "sha256": "84d547238f6633721bd05cc4c2f859f7f73385253a8be7fb1d8ea7c15d98e742",
+      "git_blob": "a2eb15e96acc7c90fe5ee4ee7f4c42e03f5dfe2f",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana04/01_srp_dry.md",
+      "bytes": 5765,
+      "sha256": "ca6fa77fa61807fe9c4efb784d9fd96d930e100ddbe133a50225847e378b414e",
+      "git_blob": "2d0a2b926e83c2a721e000bf3288ec6d17c48831",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana05/01_ocp.md",
+      "bytes": 5847,
+      "sha256": "3be257ac9f7ba2f4c794418b13d1bcb2684a3aef71c577ba80c87051f211ef7d",
+      "git_blob": "c371a1a55e051b2b6666d154ad6cd1c17156fdaa",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana07/01_ioc.md",
+      "bytes": 8250,
+      "sha256": "98307c98baf5bc2e2f1dad8a4c3ae6a4205d61b20a6174d22c6b337a4b75f532",
+      "git_blob": "c8d894da09f35fc65cd8c1dc8b4a13015f1076f5",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana07/02_guion_exposicion.md",
+      "bytes": 4908,
+      "sha256": "9936807373448cc7eec1f7fdd61afa1199bef7afde0700350666eb674b85ce30",
+      "git_blob": "159d2f8b4c2a8a56f7933710afd2a499431897be",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana07/03_preparacion_quinto_commit.md",
+      "bytes": 7219,
+      "sha256": "6c0329cdc1e3c6dfe8406f7a7a40fe772678513a059eacdaea59d1e41968e5f0",
+      "git_blob": "af5fe5f6cab72caa332dc4e2ff1dd416fcb3af9f",
+      "normalizar_lf": true,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana07/Semana07_IoC_RRHH.pptx",
+      "bytes": 30660,
+      "sha256": "00e72250e762f8001c45cdfa1b5501264303f4381a3bb30ca36bff1976a2f200",
+      "git_blob": "ecc4d1122fa3a44257cf628594cda6e9477ee6f4",
+      "normalizar_lf": false,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "docs/semanas/semana07/vista_previa.png",
+      "bytes": 36944,
+      "sha256": "dff19e3551065d23e1e37869fe59c35818b249c7a769f6a8e47b0606fc37ed54",
+      "git_blob": "95e4ee41a8259a0b9d21d70df6265855a21e4ba1",
+      "normalizar_lf": false,
+      "grupo": "SCI-DISENO"
+    },
+    {
+      "ruta": "evidencia/README.md",
+      "bytes": 487,
+      "sha256": "4a33cd077b41a36a955ca16dc403938d5a08aea4c0010331a8c1a146ceb42787",
+      "git_blob": "7afc2c9658f9b7f9dbb063fbe40aa96f00c3f754",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/baseline/README.md",
+      "bytes": 1180,
+      "sha256": "8ccc3ce7e7dac9d5febdc5f7f6d4ad744d150f64b53688a775b9a2497bb50eb5",
+      "git_blob": "af46567f086de620a871600298f5501efbd4a78b",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/baseline/inventario_original.json",
+      "bytes": 163205,
+      "sha256": "bf984c9dc58f93a74e887d9f09f58a6e5460ec3722256246a857b7ba9d4cdd2a",
+      "git_blob": "c7096c82f1200fb59b5f1e393c913364411412ef",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/baseline/inventario_referencias.json",
+      "bytes": 1459,
+      "sha256": "9a6e47585e1446fe8317bbe6ce6233801c948e7c58c6e4479f6ddb6534eaf777",
+      "git_blob": "80f774b08ad3b3105c6edbe7e970d530d490dd67",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/baseline/revision_credenciales.json",
+      "bytes": 1530,
+      "sha256": "87bacb86c9e9bc77abe175872cd20047631c3d190bbc55be9612dbc44977525b",
+      "git_blob": "8598b1a50d7ddbfcbc8df9fdd76fe2f7b0d6cdb6",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/baseline/verificacion_baseline.json",
+      "bytes": 639,
+      "sha256": "16c3b7ad3b23d911378119beeb2e1b0db74e073f550aca341c35de02bff88da7",
+      "git_blob": "5eabfb1725e94e4d252c20f591fec57a693f6c41",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/README.md",
+      "bytes": 2466,
+      "sha256": "6cd55227027687964a000793caf3b2abe7a60f968d5a00337e2d3bab6fac2257",
+      "git_blob": "14c10e0f3b91e733fc735e1f993ca70c22da1575",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/auditoria_antecedente.json",
+      "bytes": 14402,
+      "sha256": "f2bebaf03522fab41c75af6ec9a9035a4dad5df72d06c5458319a8bf4759416c",
+      "git_blob": "73b14c1da5b6bbf429c37f67af89766b720f4900",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/comparacion_api.json",
+      "bytes": 1758,
+      "sha256": "21e5665e1e91f0bfee984925f97a7d417905b696e02f4b6f7a5553d343064c55",
+      "git_blob": "5d8ccca1d373006b0a37dc6ad28c23ca67d3003c",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/compilacion_v1.json",
+      "bytes": 601,
+      "sha256": "78ab8980c94827fd546d47ca9356cd92b6f10b8ee747c34c1f144f8c22c8195d",
+      "git_blob": "e810d614f2f946565276abc9c462827501fc971b",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/contratos_observados.json",
+      "bytes": 50273,
+      "sha256": "dfce0b97190f16d6155ec83618729837c3dbb72fae7a11f735ce918768f95564",
+      "git_blob": "80781f062613bb8e5f79f5965ba83c6995313329",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/despliegue.json",
+      "bytes": 336117,
+      "sha256": "728d5569f6e7dc585d4c4f8c95f92a9463302bee50fd506114efedf412437f26",
+      "git_blob": "9badcae86163c29226d901651ecba97b640b5ddf",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/duplicados.json",
+      "bytes": 22424,
+      "sha256": "2724095aae0d92b2d244b437b075a2c1aa4ad6f8941fac88a3dc70f8dcaa1169",
+      "git_blob": "f6866bf3b07d330702a7f3c3c8d418828492eacf",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/ensamblados_propios.json",
+      "bytes": 1246744,
+      "sha256": "8bdd7ef88edcfd71cb47832ff12f1b5b67d030770a00a7e6e961c79467b91862",
+      "git_blob": "2e3b6ac15d98359f8c9abb055a20328f868f4a41",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/inventario_tecnico.json",
+      "bytes": 458820,
+      "sha256": "482e84ac9470700c3ef0217db7c2e54a4b0c40a7518e5ace78dd2d3db9bd16ed",
+      "git_blob": "8cc639fa203a403eb22be19cea9bcff805040692",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/procedimiento_recuperacion.json",
+      "bytes": 3891,
+      "sha256": "9cd53b54945f2e4579e1a2b543f6b44f05e0d9dbccd9f9c95eb971a5f6c3a23d",
+      "git_blob": "d8711cef60a2c924a4ebab85de56546950043962",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/recuperacion_v1.json",
+      "bytes": 6793,
+      "sha256": "3d73da2931f95f7de80f9357a44e4fda66391896698337114464ca4218b2c881",
+      "git_blob": "2ce377f501c07dee6d9649d3451730e12db6fca7",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/ingenieria_inversa/verificacion_c02.json",
+      "bytes": 599,
+      "sha256": "152a187f94f88a54eec2cd4f726b3b16cc2c0988b3841d407057bb43788a2903",
+      "git_blob": "8d6c0dc2e3e364de3d54b47b19edbdaf4718d08a",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/README.md",
+      "bytes": 549,
+      "sha256": "87b680475061dca5773c5256d3e04a9cf9b1fc6cfd1acc12fec2c6b23ce78a83",
+      "git_blob": "8d58c09a1d4b267daee84d8f17c9d729f89fe54b",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/README.md",
+      "bytes": 1410,
+      "sha256": "5b991e4e141fa1c8f4ef0859d28dab7aa6c331a1375116268e8d58a324d7731b",
+      "git_blob": "7b5cacbde5e8014a8e2b0ac739787ecd90d18227",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/antecedentes.json",
+      "bytes": 1585,
+      "sha256": "097730c8849805173770be732f653f4c686f4c0d980e235d0255774d6ac014a2",
+      "git_blob": "655f65be55e849b1e8f0212696cdbb20a88e2770",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/antes_despues.diff",
+      "bytes": 2318,
+      "sha256": "708eda4915a2f1a44e75d2c481177727d4a62ac97ed52a3ededdfb44ff5cdd2a",
+      "git_blob": "c923293bcc1824d2244098dacebe998017144d7c",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/compilacion_y_pruebas.json",
+      "bytes": 1103,
+      "sha256": "bb11f8151d786cbaaa9a3f4110dc440593db1ed3aae7648b5ee29a3f81623b87",
+      "git_blob": "8a15583f91f55ce73b9b545d7840a0b5af70a2b4",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/contratos_v1.json",
+      "bytes": 1555,
+      "sha256": "f358af3f540ba85958ff52efc1bf48f59a18c6ce0b249638c61ca6c6b0203b4c",
+      "git_blob": "faca0f75d49e24d80fadf864eb87c2dd8185cfaa",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana04/verificacion_v2.json",
+      "bytes": 1135,
+      "sha256": "02170cbc70f9bed4e35a23aa9ffcc488a03bb9928eaf46721bbc6f0a04ec10e6",
+      "git_blob": "8e4d6b26b06e2a938e1a14c8c1136e23286b06c6",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/README.md",
+      "bytes": 3607,
+      "sha256": "20063227709c27798fe7cdb6bb5bb96fc07a01cd24b6f4d257bd7bdc6b587733",
+      "git_blob": "73002b50ab9d8b7f708579ec42a225c04a4f48f1",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/antecedentes.json",
+      "bytes": 5442,
+      "sha256": "9b4121119ab50a1ef4622c457da31c9b17c18eef7cf94a0d6b65e62da77d5bed",
+      "git_blob": "7d1ea60fa3b5d23a576dd7c88f77eea4da738a0e",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/antes_despues.diff",
+      "bytes": 1410,
+      "sha256": "98b113be7bf3c0ed208c6014779e1e74429399f1c9278ae30b6c28d1a7cddb25",
+      "git_blob": "e87cbeeb112c2e90f12fefafdf1b54a42cf3b4f0",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/compilacion_y_pruebas.json",
+      "bytes": 4890,
+      "sha256": "9a7b2cb67cc145c352a2d55fd03f474c950446255449205e466c78af9c091c1f",
+      "git_blob": "e7dc1ef8765fe45b304895fbde7e61a3ed8216f0",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/contratos_v1.json",
+      "bytes": 1490,
+      "sha256": "4909e385f7d4cadf0ce0ab201f1a19746b9e507eae6cfe916206f2ebc4b6dc39",
+      "git_blob": "c8dd4f51f148fc00084806bd32f1aacf0100d66e",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana05/verificacion_v3.json",
+      "bytes": 1760,
+      "sha256": "2df3a60acb7632c918826b42b48ae3982d60fcdc4e3967801a59cff1a0be2215",
+      "git_blob": "3ed9daf2a77b524490a58495341af56c8c080449",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/README.md",
+      "bytes": 5506,
+      "sha256": "a8fcee0cbb79f64ee3218fddd8dd3fda248dc404410ea155e72047cd61ae3f7c",
+      "git_blob": "e225a9ce751ed1bc8cb95aaf64477e3f3b38c2d2",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/antecedentes.json",
+      "bytes": 2457,
+      "sha256": "0e4b475b5ea16ec3e85781987ce2fa2c241b8150016fdb49b3da4fd68ebaf183",
+      "git_blob": "f713df8d3b71acc92f1761cd7291a222f8f8e7f1",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/antes_despues.diff",
+      "bytes": 2101,
+      "sha256": "b44f204c5da422b079371a5bc7fa848136213c584a404e3a387f058ee3361212",
+      "git_blob": "25c6758706e916c763556ea5fbb03e4636e4c658",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/compilacion_y_pruebas.json",
+      "bytes": 3510,
+      "sha256": "c6a315adc6aa86356ab5269351c06ee3a25040ba208d58e1f1f91262def5dbf3",
+      "git_blob": "910bdc1d61d2e28c6ce2700a67d8c7abb25917ac",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/preparacion.json",
+      "bytes": 2191,
+      "sha256": "dda3eab2f4e01ba65938a6b80ffbd034fda867c93cbcd41d614adf14c5288e6a",
+      "git_blob": "98601a569804b3390414bbf5d6892b4d8b3cde08",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/presentacion.json",
+      "bytes": 3046,
+      "sha256": "7bb465dccc61fc064438736c1bd97c8dc0c774527bcecf14c2de88d80db31a59",
+      "git_blob": "0927b5f5b2f4d5aaef94cb8d75f972942b7d9a3f",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/procedencia.json",
+      "bytes": 1531,
+      "sha256": "e6e369ca59a2274b6b8c84ddcc6b95ac19399ef6a6c0ecc7a0d2bd71135123e1",
+      "git_blob": "a1ba4ab6e7cdd6ed766b79a176efbbd33bc443cf",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "evidencia/semanas/semana07/verificacion_v4.json",
+      "bytes": 1502,
+      "sha256": "b17737f95f5f73df5820e0760866ddda61e54d2f435140980daf3cfa19127f8e",
+      "git_blob": "18811598bce4a951600834bdb04ad9e4333ed02d",
+      "normalizar_lf": true,
+      "grupo": "SCI-EVIDENCIA"
+    },
+    {
+      "ruta": "herramientas/README.md",
+      "bytes": 4387,
+      "sha256": "3ffd5eacdb56412cb5b0c381bdd623250d48e84d69fa91f95ce9f3cf6669e2fc",
+      "git_blob": "c4b929d83c51a64a218ae85070d7715eec4f7cdc",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/compilar_v1.py",
+      "bytes": 3402,
+      "sha256": "4739c664bd78ff20c534ae4cc321a19bb0a02c6bbc17a66731ddd486437e7c90",
+      "git_blob": "51dbaa25120de590a00a4f66e4ef958a129f08dd",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/compilar_v2.py",
+      "bytes": 6390,
+      "sha256": "42533b2970b1d1f44e0fcd85385078d15360f71b418c55c7f4f4c80c5dfa7d89",
+      "git_blob": "be83f9ba49cbab4be37c89dcb7430f1de87a5794",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/compilar_v3.py",
+      "bytes": 7916,
+      "sha256": "8761a8c4132bdd4ad5b5a653ba6d0a4bf446fc8d638f8c64baceb5bb2599d34b",
+      "git_blob": "beb31a5ee5491c3b1d938c812c72314f60853450",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/compilar_v4.py",
+      "bytes": 5302,
+      "sha256": "1b79459cd8dffb0967db0c94869fd1900417ad85741ded7147ea3f13f4c02ede",
+      "git_blob": "1f47570e767f7ecb7ae48c564a7f1ec825b9af82",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/inspeccionar_legado.py",
+      "bytes": 20119,
+      "sha256": "5d26f3dc452500c9f5e3dc27b84fa00683752a74a161026bf66f5f998bd83517",
+      "git_blob": "c4e67716305b5c9b0ef672863354a0c478a46761",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/presentacion_semana07/README.md",
+      "bytes": 1945,
+      "sha256": "0e59f3a8a298e18dc7f398e29599f7ae602a6d3185b3cd5f94c4280304c093bd",
+      "git_blob": "e487b66e271556daf85aefb5037a76e377619d9f",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/presentacion_semana07/contenido_verificado.json",
+      "bytes": 4462,
+      "sha256": "5c5ee8a8444e59fa85ee96238d7a2b8bd5f0300966b7c52bd1fb93e02e0bafe7",
+      "git_blob": "5fb6846900c46125fe7aaaeebc3eb63b092460dd",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/presentacion_semana07/generar_presentacion.mjs",
+      "bytes": 10443,
+      "sha256": "a14d82237b6e5a579c4e1e074475ea536d2f9b1d9e914e192cb96837a4467441",
+      "git_blob": "96e68e1a1d57272fc19f766c02c3ce8c9c57ebdf",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/requirements.txt",
+      "bytes": 21,
+      "sha256": "4026896996503d662ae0d9b5db045d1d5ff511c681dbfc09f5d5a11ee06b28c5",
+      "git_blob": "1943c4daf920199f2cd1751bf2cd09c5ee778e3b",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/requirements_ir.txt",
+      "bytes": 33,
+      "sha256": "7036b64d2fde2a4858e4cb5c2e9dab84f13832aa683d1875cf08fc555c0ac1aa",
+      "git_blob": "8196b061cb29334172399c00873dc894a744c094",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/restaurar_legado.py",
+      "bytes": 3236,
+      "sha256": "ee8b3a15ac2092a9079a094fc4c478502fddbc8d15368db2e71b34ad1e16b7cd",
+      "git_blob": "bac5516ad0d866ea47d5d8c5ab44325a621a0e16",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/restaurar_v1.py",
+      "bytes": 2936,
+      "sha256": "e4712e22e0bc92cf7a7ba39e5cae54ac7d48acb4d5a5f71f2b1238c5c8ec1d17",
+      "git_blob": "b58b01f9f981042817bc4296c6d6395c1240b274",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/verificar_baseline.py",
+      "bytes": 9117,
+      "sha256": "2e5ba6712a2d423297a377dd5e4760af070aee98b4cff9bb800da9caf169b60a",
+      "git_blob": "09e09f57ebb26eb4fc190424c6dba9e9dfa0b4a8",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/verificar_c02.py",
+      "bytes": 4424,
+      "sha256": "1ad019af2632d8cc7244b3387eb8ee9b0541c67e0ec1cd408731551379a162be",
+      "git_blob": "818b6abf058f8c19f54e6813ac6b3e077a1945fb",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/verificar_v2.py",
+      "bytes": 3590,
+      "sha256": "2e9b56dca2b9228c9bea5554a5f14de90ac75bdc3e7a82e100dfbe87cac6f2bf",
+      "git_blob": "2bfeedece23e25445e2391501798f52256c0a74a",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/verificar_v3.py",
+      "bytes": 5921,
+      "sha256": "394605a8b8b3612c8f00ba059b4f9ee66dc57fd5a75a7b54b3f68d25b1a171a3",
+      "git_blob": "ab0c8dfe8ed030f6590a25f769fba9c04aa119a1",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "herramientas/verificar_v4.py",
+      "bytes": 6371,
+      "sha256": "d0143ae48b8cc3a499b443e50966bcd2959ef23f7e9a8ab411567064be3a73fe",
+      "git_blob": "4f1a4e796026e3bdf07019a9cc7cd7b8ed876492",
+      "normalizar_lf": true,
+      "grupo": "SCI-HERRAMIENTAS"
+    },
+    {
+      "ruta": "legado/README.md",
+      "bytes": 2223,
+      "sha256": "692be1c0e9a66a4554e9e9001d61ffc7f75d5df89f2b75ffe9c1c3bf3d388799",
+      "git_blob": "78683ebc1ebe408b7dc3ea41db2ce45bab023d35",
+      "normalizar_lf": true,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/ClassRRHH.dll",
+      "bytes": 55808,
+      "sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "git_blob": "0fb3660d751dc5b4102029c666b88b7feec18765",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/ClassRRHH.pdb",
+      "bytes": 91648,
+      "sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "git_blob": "2fe4c8fd9716d783f2a60e0812c124a2bfddad94",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/ClassRRHH.xml",
+      "bytes": 763,
+      "sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "git_blob": "df2659892efd960564fbacc1d7bc1e990bdb39f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/ClsCtrls.dll",
+      "bytes": 58880,
+      "sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "git_blob": "36e083674bbd48315d96e18616ace5c5cf7e30f0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Custom Featured MessageBox.dll",
+      "bytes": 36864,
+      "sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "git_blob": "e3923b269d80bbd084a770813cd5181a2b892971",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Charts.v11.2.Core.dll",
+      "bytes": 181152,
+      "sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "git_blob": "2b066cee40c78f67d76517aa35c46503fa83b4e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Data.v11.2.dll",
+      "bytes": 2680736,
+      "sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "git_blob": "f0267d59e5662ce06f9a69b726e3a5971f7b4e8f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Data.v11.2.xml",
+      "bytes": 844979,
+      "sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "git_blob": "8600991a5bc10cba1a5cabda230a095318e6658a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Data.v7.3.dll",
+      "bytes": 573440,
+      "sha256": "8fa158f2f3a2709c56f811f3bd312b32ea633807d1c87fc4d8116d9c4ddfe61b",
+      "git_blob": "ef67ef5b954fe82d398c5fd47cce4ef9410a43a1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Data.v9.1.dll",
+      "bytes": 800768,
+      "sha256": "35205b85f4fccccedf8e94a6654281e3d0581147cfe40b7c9a3d21fcad02facb",
+      "git_blob": "5478f322dfdd985f88e8db810edaee15aa2ad1ad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Data.v9.1.xml",
+      "bytes": 319735,
+      "sha256": "b2413c6485ba1f7ab89ac3982437ad7266acca6fe0cfa64141cbdefdf3677bb4",
+      "git_blob": "870f2342399446a6fd654277d1dd56753ae23b80",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.PivotGrid.v11.2.Core.dll",
+      "bytes": 995744,
+      "sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "git_blob": "7f7e680f3e691842a6a7c27f31ffc2b5eeed268b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.PivotGrid.v11.2.Core.xml",
+      "bytes": 481082,
+      "sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "git_blob": "39ccfb1c1d7da3a654dd7668e6d7c679d4c6b9e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Printing.v11.2.Core.dll",
+      "bytes": 2006944,
+      "sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "git_blob": "acf6ffc1b77e236b166df2bd04e4614d62328d9b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Reports.v11.2.Designer.dll",
+      "bytes": 47008,
+      "sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "git_blob": "1ed5bb063b8b570723f463b4e063b0ecc7dc8ddd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.RichEdit.v11.2.Core.dll",
+      "bytes": 4915104,
+      "sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "git_blob": "bc240a8938949aee5ccb2c16525091a2903cfca8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.RichEdit.v11.2.Core.xml",
+      "bytes": 1188777,
+      "sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "git_blob": "13cab4bd75ec0128a859f3db096bce74b8b70eeb",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Utils.v11.2.dll",
+      "bytes": 3473824,
+      "sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "git_blob": "ab63186acff5a3e134aff5ae05ca83405cb7affc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Utils.v11.2.xml",
+      "bytes": 413014,
+      "sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "git_blob": "a1ba404169093901f2e7aedca8c1b029ff642be1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Utils.v7.3.dll",
+      "bytes": 3792896,
+      "sha256": "2c5fc2ac863f5c263ece34b7d2ceea7fb1a379012e1fe734ab744e915f44320e",
+      "git_blob": "c70cfb27a4e6c46335a6c0c9ac0cd6b8e23fb07a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Utils.v9.1.dll",
+      "bytes": 4084736,
+      "sha256": "4c0bd8d7c9d9a25dedfe051965ec9dabf0271cdc2722a89a218d55a157bd1434",
+      "git_blob": "d55ebd208e47f1160a3af4074bcc9f02098413f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.Utils.v9.1.xml",
+      "bytes": 525077,
+      "sha256": "a23c36155943dd825d0775a2efe63e240ae600ca83269052e8233e45d3cee466",
+      "git_blob": "87d396b8ac93cc2dc6aa7964bfd4570f41fdcc1d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraBars.v11.2.dll",
+      "bytes": 2570144,
+      "sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "git_blob": "450ad919685b45580178283cb7700dad42128fdc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraBars.v11.2.xml",
+      "bytes": 1195919,
+      "sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "git_blob": "91a69654d0769f988359c2fcca0b1bb236203ebd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraBars.v7.3.dll",
+      "bytes": 1613824,
+      "sha256": "fc3cff90b57b06808aceb3dda8ad0ed725ac0329f308ae9e224bb538c1ca3e54",
+      "git_blob": "e42f4dc8d18f687e87445becaae263023190d2a4",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraBars.v9.1.dll",
+      "bytes": 1714688,
+      "sha256": "278e0e5531308e1f3eeb056980dbfb74126f59b3a995011ccb63694a4b852c5e",
+      "git_blob": "207133844742f924fe45b7fe9d855dcd1dc05d34",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraBars.v9.1.xml",
+      "bytes": 845867,
+      "sha256": "a626ef195367cc201d32a2ad39d23363bb843f18e68eebc0360369fe41ee4e87",
+      "git_blob": "53b99e37fc93be3009b34d2ccdc96b85b3fab56f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraCharts.v11.2.dll",
+      "bytes": 6955936,
+      "sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "git_blob": "7263c09c6d0ac25e7852f8b83f3150cacbd60812",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraCharts.v11.2.xml",
+      "bytes": 1427210,
+      "sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "git_blob": "e3bafae4dfde7ecaa0b1cf931356c035254d1ec2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraCharts.v7.3.dll",
+      "bytes": 5033984,
+      "sha256": "dafbb736b62b555eeb610a888beec0d453e2f437d45358ce30d65f89f3599fd2",
+      "git_blob": "c4dc910491181fc72b4304012496335ea9e51b4a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraCharts.v9.1.dll",
+      "bytes": 5821952,
+      "sha256": "fa677fe172d5de91868ed4ea51bafbedcfa3645a008244274fdd95ea143a827f",
+      "git_blob": "08d166f36aea7d46b3a9eaf80669f5347fcfe74b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraCharts.v9.1.xml",
+      "bytes": 973022,
+      "sha256": "94c9b4d733562ef04e3e1e76a2ba6ed62f74407fcb5057d5c61c6440ed910a45",
+      "git_blob": "bdb27383239faf398b885e64d45857c577abecb9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v11.2.Design.dll",
+      "bytes": 215552,
+      "sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "git_blob": "6164583f320fa9656c31a91069f3f4d1f28f8454",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v11.2.dll",
+      "bytes": 2001824,
+      "sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "git_blob": "46e05726a998783a89e1510285013517affa4720",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v11.2.xml",
+      "bytes": 1238439,
+      "sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "git_blob": "8d6950134442aa250cb2f38df45f185c559d68c9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v7.3.Design.dll",
+      "bytes": 253952,
+      "sha256": "8baddd86094bf31de433f3cae1915074b6ac3a357f21fabb1fb1364a99149e87",
+      "git_blob": "bfe64bec945954157b380e04967d0bddfab2f09e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v7.3.dll",
+      "bytes": 1425408,
+      "sha256": "bdb0890d2cdb3c62634c867b34a954776015220768fab53bc014d7e148f15f2b",
+      "git_blob": "686d0862df8f6a626060451b35db24f74bc5674a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v9.1.Design.dll",
+      "bytes": 218112,
+      "sha256": "0e297bc6d82e1ba867cfe276551f247987a45cac6e6149a1f99333f27b924808",
+      "git_blob": "c6434833d5eba17d1bc26a1ca775f0c8011bd143",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v9.1.dll",
+      "bytes": 1502208,
+      "sha256": "169400fd8f0b65a11bfecf76e9a83e7d69753f76518c09ea17fee6f7356c8a32",
+      "git_blob": "3faeb8e01de8be5300f5d8a7fbbdbd0f4b01eacc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraEditors.v9.1.xml",
+      "bytes": 1016388,
+      "sha256": "df19c5b71cd9811db6afce2dc4005d7b322863707cfeecf4440790ff52936754",
+      "git_blob": "11f6baa601345383bc49ad91cd6f12e96b05ca4e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraGrid.v11.2.dll",
+      "bytes": 1946016,
+      "sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "git_blob": "b41ef7f6127024af6089bc1ab0cd74985b7c9c6d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraGrid.v11.2.xml",
+      "bytes": 1269167,
+      "sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "git_blob": "e348498dad0a03848515ec606c6fced5e9e19a75",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraGrid.v7.3.dll",
+      "bytes": 1507328,
+      "sha256": "78614df37581d63d6a5ceaa73c72fa633831665b80802cbe44d9fe4849cf0a57",
+      "git_blob": "ccd42c638b63f19659fc8095c520ee2cccceda14",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraGrid.v9.1.dll",
+      "bytes": 1665024,
+      "sha256": "66c0f29a4a5552a8fd31b215285fe73d17051798759876d505623ccdfa383d5f",
+      "git_blob": "973d86a133dc6b200c1bfce0983d347d24409fe2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraGrid.v9.1.xml",
+      "bytes": 1152465,
+      "sha256": "09aa8e6846e7d3c35b6526666366df469ece2914089d348503335cc3cce40675",
+      "git_blob": "6e26d37ea522df4db662c90290a72d7bfff1f648",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraLayout.v11.2.dll",
+      "bytes": 731040,
+      "sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "git_blob": "2af8697807b7b402be75ca2e377af45593863ad8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraLayout.v11.2.xml",
+      "bytes": 308974,
+      "sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "git_blob": "7a594c30f4d4ac12a6b458b8da4191907cd39e37",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraLayout.v7.3.dll",
+      "bytes": 598016,
+      "sha256": "1131732c22454f9ff4d8a5d5f58d9d38d293ad9fb8cdb7df2f43864ac489c9e5",
+      "git_blob": "5564bd32d43f07b8ca9e67fc73e55e7be109261d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraLayout.v9.1.dll",
+      "bytes": 664576,
+      "sha256": "a2c287a99cbfbca4095acc39a1282ee0656b2522ebc8b2740f85c2cac46ccea9",
+      "git_blob": "7640e416a039b16afa3037b561232ffb4742347b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraLayout.v9.1.xml",
+      "bytes": 269451,
+      "sha256": "ca7d57f3bbf32171370d8340107f304bec23598a18d64db5414766a168139e4c",
+      "git_blob": "ed6737f7786b820e670b86c50d174ed7a3d27888",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPivotGrid.v11.2.dll",
+      "bytes": 589216,
+      "sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "git_blob": "2bb527974b8e154af9f7fbf449151aeee0c95934",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPivotGrid.v11.2.xml",
+      "bytes": 513491,
+      "sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "git_blob": "1c88b6bdaa64fed8cecfb931ad9bd3398999acc2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "bytes": 56320,
+      "sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "git_blob": "e3a06498eac6f1f7525d1a631ce3dfdebbc55486",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v11.2.dll",
+      "bytes": 672672,
+      "sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "git_blob": "4546515f96eadb41d13cc220a3e6274a46a5691b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v11.2.xml",
+      "bytes": 148491,
+      "sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "git_blob": "1f6be845cd82a3f2484eac3b8cc345b65e78ac0b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v7.3.Design.dll",
+      "bytes": 57344,
+      "sha256": "cf7f1061d32926fbd7b3e2e4e67225ac3f189f221520df2081eeafe08ca5d0d2",
+      "git_blob": "4594abfeca5408482f1fb11210cae2a28868b814",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v7.3.dll",
+      "bytes": 1540096,
+      "sha256": "8444495101df2aaa574bfc9ee66fac1b3d2a79e92cc46893ff9d37bfa8eeafac",
+      "git_blob": "ac00024c462bde4436d7c26caeffd66bfae8e529",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v9.1.Design.dll",
+      "bytes": 52224,
+      "sha256": "1f2193f8e47cd74a5c73b81f5f40eeadeccdcc3a9f80799210e5a0a2ff89e1bc",
+      "git_blob": "b8803184984d1e18f8eac5400f6cf81342d8c994",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v9.1.dll",
+      "bytes": 1518080,
+      "sha256": "79862e8f7d7d703b6bf36482d0da67052e4e6b4cdd958ec83d0e9331aeb032fa",
+      "git_blob": "ba6b9e422f08e557c2580909989e7c90857c1c2f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraPrinting.v9.1.xml",
+      "bytes": 454103,
+      "sha256": "88117166d4105d13b6081db3ec6f4fc78afb1669d2eea2cd055b23c14dbf2db4",
+      "git_blob": "7970e42b25298fc1c8c449590c97779e7af063fe",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v11.2.Design.dll",
+      "bytes": 734208,
+      "sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "git_blob": "7163a993a5659819971c0cb488cce0452e9b66be",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "bytes": 1668512,
+      "sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "git_blob": "5af9d058d9496c9eb9f7a6035634ed307c85b445",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v11.2.Extensions.xml",
+      "bytes": 139126,
+      "sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "git_blob": "ccf13a09667ff0a4342fdb5575608cef52198bad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v11.2.dll",
+      "bytes": 1166240,
+      "sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "git_blob": "ddebf57d06630ddf55358194cf9c479cc9a391a5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v11.2.xml",
+      "bytes": 840645,
+      "sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "git_blob": "095ca9c475d0423208ef63c676e76158362e1b7d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v7.3.dll",
+      "bytes": 2756608,
+      "sha256": "22bda89e7165ad98d1308fbc6ffb5420b7a25dcec31cd60dc1e32eb6caec2011",
+      "git_blob": "d321bd5d49cb6379097f963c73f2fb04ef258468",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v9.1.dll",
+      "bytes": 2875392,
+      "sha256": "c65ca735502572419b39ac7d9ae3cc14919030dae31c9dba37d865584114c8d3",
+      "git_blob": "5011862e2fbe48593180801e457fd9e26b81945d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraReports.v9.1.xml",
+      "bytes": 730023,
+      "sha256": "f9cecfab9dd5f37f98ca05184cd3f7c685afa214003991f35b4be549a3afb3d9",
+      "git_blob": "d396665bb6fd8adc2af3d527bdfe46918cd44b39",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraRichEdit.v11.2.dll",
+      "bytes": 1551264,
+      "sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "git_blob": "05cc2a88df88e390ed79c4c1b2ddd1612949bfc0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraRichEdit.v11.2.xml",
+      "bytes": 114637,
+      "sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "git_blob": "024c259bcf03252eb7b29b0c24c8d71d729510ca",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraRichEdit.v9.1.dll",
+      "bytes": 2182144,
+      "sha256": "fbf756b250e8cdecde104a6beb039c907cc583928b3ca71837ae2c87bd8a40f3",
+      "git_blob": "3939ad8f2303c58888cdca5f21dd503826c0e6f3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraRichEdit.v9.1.xml",
+      "bytes": 144262,
+      "sha256": "6317ea77e4ce686d307872242c87941ccb6f4a6a67931f0f55705e198c239c9e",
+      "git_blob": "9a7b7cd1b36be141ab5aa943f35e25e3b5c590b2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraRichTextEdit.v7.3.dll",
+      "bytes": 307200,
+      "sha256": "35e92e6f1028308f7d236a49cb9e3ca34683ace137f57068047665a6eed0278c",
+      "git_blob": "2337ac426e37c0003a352e0267c000ed2e410dd1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "bytes": 989600,
+      "sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "git_blob": "7673301ea8fe9680afca5a37fb6eed4761c9a31c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Core.xml",
+      "bytes": 656716,
+      "sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "git_blob": "293e1ab018eda53d862e78590beb092ebb3d8577",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "bytes": 56736,
+      "sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "git_blob": "9cffc4dc8396ba50698a3a2ce10dfe61010f0c8d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "bytes": 1039,
+      "sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "git_blob": "f6194a513d6b5c323287b58d1dce82542dacc5b3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.dll",
+      "bytes": 1586592,
+      "sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "git_blob": "ebef0bb2cc8d575889242557a2d82e17cb4e5e24",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v11.2.xml",
+      "bytes": 365197,
+      "sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "git_blob": "de4acb662fde58addf7391f7657b89c42a94d934",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v7.3.dll",
+      "bytes": 1306624,
+      "sha256": "59910da5a1f39250383e0e7a09dd1f256219d0467716d1e9ef871b5e9832958f",
+      "git_blob": "d384d3ee4062de9a759d15a0fdc74e609ceaab59",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v9.1.dll",
+      "bytes": 1428480,
+      "sha256": "1b82258be8c898af4727c7afec49d147d845880362b13827259003e6ac3c651c",
+      "git_blob": "f0eea07f8d62a83b447dcea64ca037c7aed4c6a1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraScheduler.v9.1.xml",
+      "bytes": 306999,
+      "sha256": "a2950b66a3893449308cee162f0fd606522f55463e6a69ef639631ed1ac2abb3",
+      "git_blob": "da76e33b8c5104abe0544182ac0321300d53c13a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraTreeList.v11.2.dll",
+      "bytes": 700832,
+      "sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "git_blob": "a4fec7dddbf9e753d794f25717b64d8cf0d559f8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraTreeList.v11.2.xml",
+      "bytes": 464312,
+      "sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "git_blob": "bea5b51f71c3df3e61d0d5a11f48eca6df531be6",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraTreeList.v7.3.dll",
+      "bytes": 610304,
+      "sha256": "a6597c7af094ef9aa00961885955211f5a3083cfeb1aff07b540d2482ebf1c46",
+      "git_blob": "61da84403c53a08e15b988d5c7632301cca3c058",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraTreeList.v9.1.dll",
+      "bytes": 578560,
+      "sha256": "57f035e1dd8b8e19c8aa19110bab3e141817b415b35f84db1d31d59dca862ba4",
+      "git_blob": "f13688542f2db69be402a3c319e1e233d8645ef5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraTreeList.v9.1.xml",
+      "bytes": 434838,
+      "sha256": "5fe78c0accb1d7d59cbf68630332ecf9509cd47f074a51b39cd7497e45c0b425",
+      "git_blob": "3b1d24bc093fbab4905f81214b7a14d765942b45",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "bytes": 530848,
+      "sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "git_blob": "a60c0241ad9f79c152dcfdee03144a226da1bbbd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraVerticalGrid.v11.2.xml",
+      "bytes": 316693,
+      "sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "git_blob": "a14ae6145bb5c6e3262fa648336afdf761ec25c5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraVerticalGrid.v7.3.dll",
+      "bytes": 442368,
+      "sha256": "fe6745b59471cab93ccf0349876e2a945791ac09fc43ad0b0c3f378165ec3396",
+      "git_blob": "539cde30330ade42adc5496dbcea848e8d902d84",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraVerticalGrid.v9.1.dll",
+      "bytes": 445440,
+      "sha256": "65db3c121a646c97c04c2d7c4d23b28a8b60693be33e38458e85af521616b0ec",
+      "git_blob": "df38b2aed1db3827c447908e45b690d998983bd4",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/DevExpress.XtraVerticalGrid.v9.1.xml",
+      "bytes": 292197,
+      "sha256": "f8a25b9a390ab028c4d748a78710a3153957368f3e9ab630a994b68bdc59fec3",
+      "git_blob": "d2c5b44be118c3c3ec92fe682ef12a5907c66c65",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/GRLL.Common.Rutinas.dll",
+      "bytes": 12288,
+      "sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "git_blob": "ccb09ea33a2a412ee05841a68a89bbefab145505",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/GRLL.Common.Rutinas.pdb",
+      "bytes": 24064,
+      "sha256": "b462700963a30480679119838844793390ee14e19564ab283b4c8dd1104cf38b",
+      "git_blob": "4738cd8cfa01a1652e4b05e7f70c8fceb56489bb",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/GRLL.dll.aesgcm",
+      "bytes": 2269227,
+      "sha256": "e2ae5f8772b688ed35808fd13a54cd9100610b2e7808a30af50384b92b5e8aab",
+      "git_blob": "fff213b7a7954db3c68553d489a95692d7fd282c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/GRLL.pdb",
+      "bytes": 5381632,
+      "sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "git_blob": "e2bd09b9519d3e8e4f9c3962e3ddbf530be2e676",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/GRLL.xml",
+      "bytes": 764,
+      "sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "git_blob": "ef6f8de8fd7baf48fcab2cf6f096ff48602e2e61",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Interop.Excel.dll",
+      "bytes": 1093632,
+      "sha256": "fe2954e10e8b5ef673061da53424a1edfe22f41715c32ef25d4c575f58c727bd",
+      "git_blob": "85b91a4b51c0e8d3463a15f950c125ff93a8d8ba",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Interop.Microsoft.Office.Core.dll",
+      "bytes": 442368,
+      "sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "git_blob": "bea148f69f84d25898b6eadbba52a47265ebe0af",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Interop.VBIDE.dll",
+      "bytes": 57344,
+      "sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "git_blob": "eaf9bddc6cc754cbf12a9a88311901a5fdcbeb9e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Microsoft.ReportViewer.Common.dll",
+      "bytes": 3649536,
+      "sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "git_blob": "2ab51fd6a09425a34118c09995c9081d9eb081d2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Microsoft.ReportViewer.WinForms.dll",
+      "bytes": 339968,
+      "sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "git_blob": "2010a318ac61daa20a68c78685cd19ba3670b08f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Microsoft.ReportViewer.WinForms.xml",
+      "bytes": 108039,
+      "sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "git_blob": "b454ddaea32fd4116d8321e4aeb932707e7b971d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.application",
+      "bytes": 1657,
+      "sha256": "115949fa782d4f2f8705b41e4fdb57db7f0283b0394c36796096bf38678c4d02",
+      "git_blob": "6c930c5f1b768f167ec90b59facc6480bd78e3d2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.exe.aesgcm",
+      "bytes": 2839083,
+      "sha256": "fd10b5a604712affc8b5c8d56e3d98ef36ebae84d168f3d1ddeb98869e5487e1",
+      "git_blob": "7426086530e2441750a53802418e360ddb57adaf",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.exe.config.aesgcm",
+      "bytes": 3679,
+      "sha256": "33a2896b3718e7c5e5af2f463ce7157913e307c26f6e5ac2f3d289a304246a84",
+      "git_blob": "47d90edfd93932630789bdef8257ae3da5859d89",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.exe.config.example",
+      "bytes": 2721,
+      "sha256": "3105c75a5d2bd82cd35a786d42457238d8b6c0faf164079538dbe19bf172a836",
+      "git_blob": "05478f86212e36c8ef730dd420a172653d5b87a9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.exe.manifest",
+      "bytes": 94471,
+      "sha256": "56f5cb2bfc2d26c992d868fc7517656af8dfdae91f5e76ea495487df19278069",
+      "git_blob": "5cfa8310230d2c3295bf0e9d58f630185a07054e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.pdb",
+      "bytes": 1940992,
+      "sha256": "906e985d65a4775560fc793f28c904137d0bc394e8e3799435407b9fae7a240a",
+      "git_blob": "ac87ab151207c7098936616f96c4a2780f57b942",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.vshost.application",
+      "bytes": 1657,
+      "sha256": "a16181a9300c452bdea834f41e43d2e8330827bd84f62080c55c2f34e8bf44f9",
+      "git_blob": "b2727a6787603735df40846aeeb565654949a358",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.vshost.exe",
+      "bytes": 11608,
+      "sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "git_blob": "58da5217c62dda7965cb039639e918719bda6107",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.vshost.exe.config.aesgcm",
+      "bytes": 3693,
+      "sha256": "9e3c4c27849ee641a505ff2679b35b94e7fa86ea79ab7c3b4ece25d1932fe48b",
+      "git_blob": "fcfe11459b456a1924f8462f1a2aeaed57521e61",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.vshost.exe.config.example",
+      "bytes": 2727,
+      "sha256": "1ac4270ef5f035d8bc39f8f4bf817c5002adfad63cd7b5e719547116f61dc4e8",
+      "git_blob": "c668807361f44aa50ddd3bd299bd829790517f43",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.vshost.exe.manifest",
+      "bytes": 94471,
+      "sha256": "167d7cb3d6827dae7078e67724d14dd6f233622ae9cda58a948d9438a0eecbcd",
+      "git_blob": "d13daf87ef01d3ac3acab176df03efde1f365691",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/RecursosHumanos.xml",
+      "bytes": 15950,
+      "sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "git_blob": "5acea1a6afbe5e88709132568f8af11e07466ef2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ClassRRHH.dll",
+      "bytes": 55808,
+      "sha256": "39c2b11a6f8f1181f2f9fe061ece9638f57bfa599e94e937e7998e179123c42c",
+      "git_blob": "0fb3660d751dc5b4102029c666b88b7feec18765",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ClassRRHH.pdb",
+      "bytes": 91648,
+      "sha256": "1f3f9621d217a944a778c8ca0afc5831f230f9f15946bfb40831dff277a31865",
+      "git_blob": "2fe4c8fd9716d783f2a60e0812c124a2bfddad94",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ClassRRHH.xml",
+      "bytes": 763,
+      "sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "git_blob": "df2659892efd960564fbacc1d7bc1e990bdb39f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ClsCtrls.dll",
+      "bytes": 58880,
+      "sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "git_blob": "36e083674bbd48315d96e18616ace5c5cf7e30f0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Custom Featured MessageBox.dll",
+      "bytes": 36864,
+      "sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "git_blob": "e3923b269d80bbd084a770813cd5181a2b892971",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Charts.v11.2.Core.dll",
+      "bytes": 181152,
+      "sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "git_blob": "2b066cee40c78f67d76517aa35c46503fa83b4e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Data.v11.2.dll",
+      "bytes": 2680736,
+      "sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "git_blob": "f0267d59e5662ce06f9a69b726e3a5971f7b4e8f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Data.v11.2.xml",
+      "bytes": 844979,
+      "sha256": "ca43e0d2bb837b0177500a609716859868ed1a93990e1c4b964a808d448a690c",
+      "git_blob": "8600991a5bc10cba1a5cabda230a095318e6658a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.PivotGrid.v11.2.Core.dll",
+      "bytes": 995744,
+      "sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "git_blob": "7f7e680f3e691842a6a7c27f31ffc2b5eeed268b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.PivotGrid.v11.2.Core.xml",
+      "bytes": 481082,
+      "sha256": "5e8b2171ff60bb3d9c39488c16cb937877a19502b3298d3c4b130de64c859658",
+      "git_blob": "39ccfb1c1d7da3a654dd7668e6d7c679d4c6b9e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Printing.v11.2.Core.dll",
+      "bytes": 2006944,
+      "sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "git_blob": "acf6ffc1b77e236b166df2bd04e4614d62328d9b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Reports.v11.2.Designer.dll",
+      "bytes": 47008,
+      "sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "git_blob": "1ed5bb063b8b570723f463b4e063b0ecc7dc8ddd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.RichEdit.v11.2.Core.dll",
+      "bytes": 4915104,
+      "sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "git_blob": "bc240a8938949aee5ccb2c16525091a2903cfca8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.RichEdit.v11.2.Core.xml",
+      "bytes": 1188777,
+      "sha256": "d53a8198544ae55b5ce46a2aaac3e490cea038b30c1c2b79caa79ae607804402",
+      "git_blob": "13cab4bd75ec0128a859f3db096bce74b8b70eeb",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Utils.v11.2.dll",
+      "bytes": 3473824,
+      "sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "git_blob": "ab63186acff5a3e134aff5ae05ca83405cb7affc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.Utils.v11.2.xml",
+      "bytes": 413014,
+      "sha256": "bbd75bfeae81f52c1f7f556104cd96d17af2a7f577b17e2c251c7afe6b7e8096",
+      "git_blob": "a1ba404169093901f2e7aedca8c1b029ff642be1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraBars.v11.2.dll",
+      "bytes": 2570144,
+      "sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "git_blob": "450ad919685b45580178283cb7700dad42128fdc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraBars.v11.2.xml",
+      "bytes": 1195919,
+      "sha256": "64a0f4ce5ecd62b9e4eb38fc45568d446a15c5a229b03f0fe0ae2a0a8db6ffb4",
+      "git_blob": "91a69654d0769f988359c2fcca0b1bb236203ebd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraCharts.v11.2.dll",
+      "bytes": 6955936,
+      "sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "git_blob": "7263c09c6d0ac25e7852f8b83f3150cacbd60812",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraCharts.v11.2.xml",
+      "bytes": 1427210,
+      "sha256": "b478985ab1159e1ec0a81cc4e9c71401b59e70f9cd0484024ece7354f3c104d9",
+      "git_blob": "e3bafae4dfde7ecaa0b1cf931356c035254d1ec2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.Design.dll",
+      "bytes": 215552,
+      "sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "git_blob": "6164583f320fa9656c31a91069f3f4d1f28f8454",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.dll",
+      "bytes": 2001824,
+      "sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "git_blob": "46e05726a998783a89e1510285013517affa4720",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraEditors.v11.2.xml",
+      "bytes": 1238439,
+      "sha256": "b5dcbf057f96a073f3376ad6d3dfe85766d5ab4ef01b89d8b87d1cdf7702d070",
+      "git_blob": "8d6950134442aa250cb2f38df45f185c559d68c9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraGrid.v11.2.dll",
+      "bytes": 1946016,
+      "sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "git_blob": "b41ef7f6127024af6089bc1ab0cd74985b7c9c6d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraGrid.v11.2.xml",
+      "bytes": 1269167,
+      "sha256": "75fad0309ac89ef97be008972e596b81c3776c448cc156f1eab14a6193e3658e",
+      "git_blob": "e348498dad0a03848515ec606c6fced5e9e19a75",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraLayout.v11.2.dll",
+      "bytes": 731040,
+      "sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "git_blob": "2af8697807b7b402be75ca2e377af45593863ad8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraLayout.v11.2.xml",
+      "bytes": 308974,
+      "sha256": "416cf66a50982b4d039cfbd4d3d1684ae26cc7e23961dedef560b0cf25651f3e",
+      "git_blob": "7a594c30f4d4ac12a6b458b8da4191907cd39e37",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraPivotGrid.v11.2.dll",
+      "bytes": 589216,
+      "sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "git_blob": "2bb527974b8e154af9f7fbf449151aeee0c95934",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraPivotGrid.v11.2.xml",
+      "bytes": 513491,
+      "sha256": "260bc42abd93a5abe8f0086401d8ef2aaf883f21392ebb80410a2ac35cd72fe4",
+      "git_blob": "1c88b6bdaa64fed8cecfb931ad9bd3398999acc2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "bytes": 56320,
+      "sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "git_blob": "e3a06498eac6f1f7525d1a631ce3dfdebbc55486",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.dll",
+      "bytes": 672672,
+      "sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "git_blob": "4546515f96eadb41d13cc220a3e6274a46a5691b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraPrinting.v11.2.xml",
+      "bytes": 148491,
+      "sha256": "2be70b90491921989c3df660b126a1b201542cad8cb89c2395aa2255219b90ff",
+      "git_blob": "1f6be845cd82a3f2484eac3b8cc345b65e78ac0b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Design.dll",
+      "bytes": 734208,
+      "sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "git_blob": "7163a993a5659819971c0cb488cce0452e9b66be",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "bytes": 1668512,
+      "sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "git_blob": "5af9d058d9496c9eb9f7a6035634ed307c85b445",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.Extensions.xml",
+      "bytes": 139126,
+      "sha256": "5b474fb394bc6a8fb565560d32b37d50b314741b7a72a72a70fabe54018cf638",
+      "git_blob": "ccf13a09667ff0a4342fdb5575608cef52198bad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.dll",
+      "bytes": 1166240,
+      "sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "git_blob": "ddebf57d06630ddf55358194cf9c479cc9a391a5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraReports.v11.2.xml",
+      "bytes": 840645,
+      "sha256": "d391ab27a83e7f76bddc68004b0f320367826c1223e0a26871e8e2c213a5e6d8",
+      "git_blob": "095ca9c475d0423208ef63c676e76158362e1b7d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraRichEdit.v11.2.dll",
+      "bytes": 1551264,
+      "sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "git_blob": "05cc2a88df88e390ed79c4c1b2ddd1612949bfc0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraRichEdit.v11.2.xml",
+      "bytes": 114637,
+      "sha256": "efe43f5bd1ec578dd56ed108b2c4a82be32af624ee2c60254306799da2c838c7",
+      "git_blob": "024c259bcf03252eb7b29b0c24c8d71d729510ca",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "bytes": 989600,
+      "sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "git_blob": "7673301ea8fe9680afca5a37fb6eed4761c9a31c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Core.xml",
+      "bytes": 656716,
+      "sha256": "e7a7e8d877550d553229e3aab5931a7e4aa3ecc260be20d81f4a36205f8a5c32",
+      "git_blob": "293e1ab018eda53d862e78590beb092ebb3d8577",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "bytes": 56736,
+      "sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "git_blob": "9cffc4dc8396ba50698a3a2ce10dfe61010f0c8d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.xml",
+      "bytes": 1039,
+      "sha256": "ddea96dbaf0e9eef73e6bbf60ab478fcd71303b19b23794892ce5f1147223de3",
+      "git_blob": "f6194a513d6b5c323287b58d1dce82542dacc5b3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.dll",
+      "bytes": 1586592,
+      "sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "git_blob": "ebef0bb2cc8d575889242557a2d82e17cb4e5e24",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraScheduler.v11.2.xml",
+      "bytes": 365197,
+      "sha256": "086bddc97c3e69d18950d2046d07f45e935c9f88d8844193c08c023de4df13c2",
+      "git_blob": "de4acb662fde58addf7391f7657b89c42a94d934",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraTreeList.v11.2.dll",
+      "bytes": 700832,
+      "sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "git_blob": "a4fec7dddbf9e753d794f25717b64d8cf0d559f8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraTreeList.v11.2.xml",
+      "bytes": 464312,
+      "sha256": "76c471e23666c743b2281bf840ceb8bf91345543e9bb65a5ad4488a13669da0c",
+      "git_blob": "bea5b51f71c3df3e61d0d5a11f48eca6df531be6",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "bytes": 530848,
+      "sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "git_blob": "a60c0241ad9f79c152dcfdee03144a226da1bbbd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/DevExpress.XtraVerticalGrid.v11.2.xml",
+      "bytes": 316693,
+      "sha256": "0f130c4ddcc2d5824575a86f0d18f09d4f8ce4101c7e6ba9c5f2178a19ac0ed7",
+      "git_blob": "a14ae6145bb5c6e3262fa648336afdf761ec25c5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/GRLL.Common.Rutinas.dll",
+      "bytes": 12288,
+      "sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "git_blob": "ccb09ea33a2a412ee05841a68a89bbefab145505",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/GRLL.dll.aesgcm",
+      "bytes": 2269227,
+      "sha256": "6a715e17f95fbda21e8be062150f952399bcbfa5378353b29f99bbab21765c92",
+      "git_blob": "bfb6b30a06067cf799bc4449adb0b23ded175b59",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/GRLL.pdb",
+      "bytes": 5381632,
+      "sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "git_blob": "e2bd09b9519d3e8e4f9c3962e3ddbf530be2e676",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/GRLL.xml",
+      "bytes": 764,
+      "sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "git_blob": "ef6f8de8fd7baf48fcab2cf6f096ff48602e2e61",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Interop.Microsoft.Office.Core.dll",
+      "bytes": 442368,
+      "sha256": "a82faa99c7767f6a49f5995e364fe10867acab88e2baecb4b89005a3e652bd00",
+      "git_blob": "bea148f69f84d25898b6eadbba52a47265ebe0af",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Interop.VBIDE.dll",
+      "bytes": 57344,
+      "sha256": "06ec989ec12dcde5ecb60e958a83c2e9d99c8eeabc6843d803b04c4d3465ae2b",
+      "git_blob": "eaf9bddc6cc754cbf12a9a88311901a5fdcbeb9e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Microsoft.ReportViewer.Common.dll",
+      "bytes": 3649536,
+      "sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "git_blob": "2ab51fd6a09425a34118c09995c9081d9eb081d2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Microsoft.ReportViewer.WinForms.dll",
+      "bytes": 339968,
+      "sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "git_blob": "2010a318ac61daa20a68c78685cd19ba3670b08f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Microsoft.ReportViewer.WinForms.xml",
+      "bytes": 108039,
+      "sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "git_blob": "b454ddaea32fd4116d8321e4aeb932707e7b971d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.application",
+      "bytes": 1657,
+      "sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "git_blob": "52a25d924ee4e879c972b3b3bba43f81bff5b8ed",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.exe.aesgcm",
+      "bytes": 2840107,
+      "sha256": "18eaf342b50fac4a341dfca2cbc3bb427b6c6afed69a92c7ecc1d0eb0acb4597",
+      "git_blob": "08064e39340954090e8d5a208dce17c1672d77c9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.exe.config.aesgcm",
+      "bytes": 3693,
+      "sha256": "f322cda4f06261a11962b1970a541c3f5d34c0e66c81cc44ce97e20684549e8a",
+      "git_blob": "54abf73e4cfa31519c524643f1cf2a207ac8f17f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.exe.config.example",
+      "bytes": 2727,
+      "sha256": "1c5dd217b4436f2052aad7c331636502f0c6c48a9fff15ba8d22acdf85838699",
+      "git_blob": "0187dc66f2c2756b80d31d5a9a1ca0361e7af8ad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.exe.manifest",
+      "bytes": 95094,
+      "sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "git_blob": "04444645b265b8cb3749e2a20243c15a952c6a57",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.pdb",
+      "bytes": 1943040,
+      "sha256": "c68b6ff561385ccea39ff1ac07864dbc9d2dceea5f0ca3334d4f5249a26467c9",
+      "git_blob": "2e839eceb43bdeda2fd7222a8db61e751486745e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.vshost.application",
+      "bytes": 1657,
+      "sha256": "319e33e28ee045b4b011537a852cc8d4ff9f3fa4d7f70e2d2ab298c7d701e8af",
+      "git_blob": "52a25d924ee4e879c972b3b3bba43f81bff5b8ed",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe",
+      "bytes": 11608,
+      "sha256": "818fe9ae2bed43bcaf2bf0c22a393e9115822cd6dcddda11228d83f5720a1e4e",
+      "git_blob": "58da5217c62dda7965cb039639e918719bda6107",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.config.aesgcm",
+      "bytes": 3693,
+      "sha256": "6cb8ecff072c69ad8d4b2850460753db2ac2186dccd99766d10c59cee25790f2",
+      "git_blob": "b65a116982c355295f4bb69ff5fe288e312d5acc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.config.example",
+      "bytes": 2727,
+      "sha256": "1c5dd217b4436f2052aad7c331636502f0c6c48a9fff15ba8d22acdf85838699",
+      "git_blob": "0187dc66f2c2756b80d31d5a9a1ca0361e7af8ad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.vshost.exe.manifest",
+      "bytes": 95094,
+      "sha256": "20ff17a851474e07c4501435d803c33fffa4c725fac2a919d362db70d96c55b4",
+      "git_blob": "04444645b265b8cb3749e2a20243c15a952c6a57",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/RecursosHumanos.xml",
+      "bytes": 15950,
+      "sha256": "ef8323a5fb0ddff749dfefc442696cb45fc09fa5c8a3b95f134638b8c5a26fc6",
+      "git_blob": "5acea1a6afbe5e88709132568f8af11e07466ef2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Seguridad.dll",
+      "bytes": 16384,
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "git_blob": "d54602a380580281f865b068fca760ef4f246271",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Seguridad.pdb",
+      "bytes": 40448,
+      "sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "git_blob": "0205a41974bd729a3ce48e8ad7b62a671bec9be8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/Seguridad.xml",
+      "bytes": 117,
+      "sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "git_blob": "fc2aa5d393e90d2e720876afe905bf2efd51e483",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Core.dll",
+      "bytes": 667648,
+      "sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "git_blob": "0c0b548953fb3c32b6e8453a0429bd69f1e77387",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Data.DataSetExtensions.dll",
+      "bytes": 53248,
+      "sha256": "aed1f7d5984fcfd814f2e5dd5b80cb9bb8c2acda2e5b6de2b960877aafd06edc",
+      "git_blob": "7ab6fdbcc63fb2c0210e6121bfde86df0250d987",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Data.Linq.dll",
+      "bytes": 684032,
+      "sha256": "f40a510fdd844a87d15d586c1ce7b75191f6e51d7708d38ec01812cdd8435b91",
+      "git_blob": "d0477e29cec6befe8457cbcd8510b816ea7511d9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Data.dll",
+      "bytes": 2927616,
+      "sha256": "d9bed31c194c54a786a043d65d95093c3dedf675948f4470ced6c3251e7fee70",
+      "git_blob": "c15836e8020df6762fdcd8e98a9dae026db4695a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Deployment.dll",
+      "bytes": 970752,
+      "sha256": "c7e4035579f75d4dc8ee6ba98faeb33f096f20681cab17221fd81866971bcb5c",
+      "git_blob": "33307683aa9695ac7ba11665001939e7269f40f0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Design.dll",
+      "bytes": 4927488,
+      "sha256": "f32848f2b73cccc7b1bc50ddca67dd7bb3bd3ee4df9fd8fba74f2daa94a6fcb4",
+      "git_blob": "78b3d1bed3a60d65996de9c576f2a4c4769e6808",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Drawing.dll",
+      "bytes": 630784,
+      "sha256": "0a788344ed020aa7dd876d6a12078a7140dc2d7cc9b25283faca3d16b4875dc2",
+      "git_blob": "4a539b0a46559d301c80a995d485b692fc5ae19a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Windows.Forms.dll",
+      "bytes": 5025792,
+      "sha256": "1977c5979a473f06028fe51405f3c752c34acb7a3bbd95c242add171e0e69046",
+      "git_blob": "41051e3c947d42c76778ac37c6800d02daa2361b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Xml.Linq.dll",
+      "bytes": 139264,
+      "sha256": "2d72acad2f9a20df52bdde3f60ef0a73593884bed79adffbdbf2f9f52a0bde46",
+      "git_blob": "16fb1f65115faafdda9668d3dce88931e66ac3e0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.Xml.dll",
+      "bytes": 2048000,
+      "sha256": "555b1f6e2a11c61f2881e351229a43e6fb74163d2c6c6ff8411b058d41c4b35f",
+      "git_blob": "083530718fdcae8343fe419cf6a99e3013081aa5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/System.dll",
+      "bytes": 3198976,
+      "sha256": "82ddc9060fabb2127ea93b5d97988253802a47e10113c46faaf1b0d9aada7b31",
+      "git_blob": "552ad916e7d4154874253ae4c6c9e18e4e5bf536",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/TabStrip.dll",
+      "bytes": 45056,
+      "sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "git_blob": "5e2b2c701b567f148680ae7d71a2fc51ff66d4f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.Data.v11.2.resources.dll",
+      "bytes": 168352,
+      "sha256": "88a45c567ac8fdb891bd2b01f4442399d74034859049b0894066c4ef03c14c73",
+      "git_blob": "afb11a4513fd97fc80854d4f225d3335408fa218",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "bytes": 86432,
+      "sha256": "abc91674fe665e1176a71d83edfd4654aa51a41aec95ee5ed138f95276a5b7ea",
+      "git_blob": "2b220bd1195b2ffa9f466fecfc9566f75a213de8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "bytes": 184736,
+      "sha256": "cc10fc9bc44fd7f4e32829f89f051f36f2d3f24714a19b9c04043def98089f98",
+      "git_blob": "1f83e2413a15a86da08a753955553772b1b32ecd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.Utils.v11.2.resources.dll",
+      "bytes": 33184,
+      "sha256": "be1362c3b7fec11b48b6fc601f487d7cd314d1173be2b505f06a70d0f7980d12",
+      "git_blob": "8c2626b3ba46e07065c859f8424290cf9b543912",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraBars.v11.2.resources.dll",
+      "bytes": 20384,
+      "sha256": "ef1d897dc372a3ba96afd3e454b9c12a78bdd646fab99cb2b346347296bd09f2",
+      "git_blob": "8c2bd510b3b1fb4bd002a373292375e1a31beaf0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraCharts.v11.2.resources.dll",
+      "bytes": 336288,
+      "sha256": "1a4f5d951461e8fa2705947906f6a63ee41b062605d234b49f7003265f43342c",
+      "git_blob": "4a19f2700de4d76d12018abea9a746940eeba169",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraEditors.v11.2.resources.dll",
+      "bytes": 49568,
+      "sha256": "e1a2d8cdfa4b63897991a33b28ce96b93659d15a53838c430fb490a2f6dbe0db",
+      "git_blob": "6f392f4378e77651cadcd31c91ffe452bc7aff35",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraGrid.v11.2.resources.dll",
+      "bytes": 45472,
+      "sha256": "b592e4723ce5b5b1fc4fe25f67997bb4c72e311a09d22406c2f5edc9c70b3d86",
+      "git_blob": "29e48dce5cba305b5084d45967223e690387c0b6",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraLayout.v11.2.resources.dll",
+      "bytes": 15264,
+      "sha256": "881396ce74c57d08e6589d80ed0a7b5676661876a2e0bd143300b9ca8b24d8a0",
+      "git_blob": "8393166662304b0af447d4a10635f0943d9cabe1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "bytes": 9120,
+      "sha256": "0824360ce3a97afda46cfa5aad203d10ab6ef6013230470e3161081a663917fb",
+      "git_blob": "894c37824976e188df06293e46ed7327c84098dd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "bytes": 14752,
+      "sha256": "52987fc003fc4df7ae7d5db919d99ef8b2940d3289c60bff25faf30749e53bb2",
+      "git_blob": "d3e301f5f802a0846ae7d89e5240ca3edd54445a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "bytes": 135584,
+      "sha256": "3ca9c29e6483d34ee4e39660ef77a1378f5df2371e6e1018f8d2111f2f16e29f",
+      "git_blob": "a14700bd7ace15a4465cb07dd32ca3a3d04080ab",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraReports.v11.2.resources.dll",
+      "bytes": 156064,
+      "sha256": "0387aaa1d284d35ec2d1947f490de3f0bea26e243a638bd1c81076ea79cc93ce",
+      "git_blob": "72d3194d30b90615e4bac81d85e82807926e17a8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "bytes": 98720,
+      "sha256": "e9a6fde641397a2f9d8d086d6c8c4b12e5db1f804059dce2e06c659af7f68f04",
+      "git_blob": "dee10ec6db5f10c0bbbb65236117cb8ac510e198",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "bytes": 61856,
+      "sha256": "2b1f9a6dbf91cf9485bfcf87ed1faef50d9f3a03e9f0c7142ae3a823fa2d7060",
+      "git_blob": "4b4127cf0ca5e4d5423b2e75984561cc7b1e21b9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "bytes": 86432,
+      "sha256": "870f8f528c21f5105907352b94b5ec12274ce818c79704337fcb6fa11d095cdb",
+      "git_blob": "d8703dd4583ddb7bbb15771d77a72560e118da00",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "bytes": 14752,
+      "sha256": "b1f122664f66f3d1fa0ce135e5bf8eb8fcd1b4b78eeeca2b4b8fc1da81c7ef04",
+      "git_blob": "f034757b012c3b58c977b22cecdbc58fbd3e7ae3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/de/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "bytes": 10144,
+      "sha256": "7b1ad4015e0f176ed06ff6b39894244aa2bd29d6c75d4af9b85532cc2d2ce16a",
+      "git_blob": "191be90cb39a202199bc279bdd908a81b3f25bfe",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.Data.v11.2.resources.dll",
+      "bytes": 172448,
+      "sha256": "a160dc77ca35109666b455405cb348dbe0942755546fff25863b6be2bc1085eb",
+      "git_blob": "95027efa3911bf3ba421a6f4c14a0c65dfb3f28f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "bytes": 82336,
+      "sha256": "6930029542b67ca49ab7f0526c7a7d7f533f55c75f1b9af775054154f903cc81",
+      "git_blob": "9aa4b34190f153b551d17ea2deaafc83208e60b5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "bytes": 139680,
+      "sha256": "16950c6371a86bf3386e43350c2c78d248d40eec3b2cee3053c8edca01392fbe",
+      "git_blob": "87162397f19c15323770a7b16a57c86c7be0ccce",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.Utils.v11.2.resources.dll",
+      "bytes": 33184,
+      "sha256": "ca668a041df4dab1002e730d409e6b09753a03f5edc4971c931afd6d89a3e1b9",
+      "git_blob": "832eb2ba24e7996334433a442aaf47ff91ea5832",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraBars.v11.2.resources.dll",
+      "bytes": 33184,
+      "sha256": "2826d575bf068a1bb11d20d0b86195e4f836dc66d8c6d0f7d2d16255aca74fd5",
+      "git_blob": "7ecccdeab413486087f8b074cba0b09f1a636791",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraCharts.v11.2.resources.dll",
+      "bytes": 311712,
+      "sha256": "5012fad101fc3e1ee62a4d48af2602b8670d87c919929551cd0f9025262df11c",
+      "git_blob": "4d7d0a2283aa3d144c868aecc3b049b57fb06097",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraEditors.v11.2.resources.dll",
+      "bytes": 70048,
+      "sha256": "1d55afb085ede6bb68cdb08f1183d5232cfc7530762ba052a84b264188f15918",
+      "git_blob": "3401dc79443632cd078c413741b0ff620a08a69c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraGrid.v11.2.resources.dll",
+      "bytes": 45472,
+      "sha256": "4bdc1a260040e5455b2aa3bbee9af78669ed528921f85417ed5206f6289c75a5",
+      "git_blob": "f3db979f50ed21d8ab420c232fb60e5b8bf72ab0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraLayout.v11.2.resources.dll",
+      "bytes": 15264,
+      "sha256": "70adcc007154f1074e34526e99f8ccdc539ead093aea3936d2d797a01821aa19",
+      "git_blob": "10fae407c3e5780dcbaedbe1b02e9e5bda38bd4d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "bytes": 9120,
+      "sha256": "2c30b773b51ecbf07fbc79ffea11259abcce49b898bb07ba691c24c6544ff308",
+      "git_blob": "53e4a248eed3f05daaff604dc4a0ede2555a8277",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "bytes": 45472,
+      "sha256": "0002a775c01f718d1834099bc76d4cff07f956fa8d33e35bd7c78a0c1f0e36ba",
+      "git_blob": "a389403e1c57ab6eeb4484ebc499213627adfd08",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "bytes": 41376,
+      "sha256": "197f9b11264bab32ec451ede29b1b624e8ee851b95ef4bed2ef3e9440e8282c7",
+      "git_blob": "921d1ae1e475fac6f36da1a3410b8cecfba2d79e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraReports.v11.2.resources.dll",
+      "bytes": 160160,
+      "sha256": "e1bdfbf451a880a7442c7698fbe69a2f8c2aa4fba9d1c6f3cf792fc496dc8902",
+      "git_blob": "73bca6a8917fceede2ac9ff71e17a0bcdc3c6a67",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "bytes": 74144,
+      "sha256": "fef155520e892b886f9f7b956a71b6cbc0d6c09fb074ee6a1c98a408ced4c11a",
+      "git_blob": "faaf3af9c3229fae03f8703124bfe7035cc0d8a6",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "bytes": 61856,
+      "sha256": "420965731fe4f412b9d4b5d82b1212b1d3c52dc1eb4d7d7a5b2903abe18db723",
+      "git_blob": "e9c5219e8fc5323c77774bbc7f13f6ea55030162",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "bytes": 70048,
+      "sha256": "64d96786bedcffd1a1edfaba815ee4f4b2f766f2cafa9f19f179ecebb3872ebf",
+      "git_blob": "e9e1b51d0dd26ec260ddc5e72f848ee1c0db9365",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "bytes": 14752,
+      "sha256": "aa7bc895cdf0b3addf9ec89a6f1831ec6b5f5f81485b284facbea1c37193fbf4",
+      "git_blob": "ad7ce1767b692b3e514d8ef51604584503a23a22",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/es/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "bytes": 10144,
+      "sha256": "baced3e8689c4e5fbfcd0e39dc17101895e7844081cf0a1ca7e6f3b4665125e5",
+      "git_blob": "5c0295f23ab5c01e63fe59296177deb685da7ac0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.Data.v11.2.resources.dll",
+      "bytes": 184736,
+      "sha256": "629ec3f91b26a3b1816def1e589232d4ba8372522cd8d62664c0a6d2a8e00b7b",
+      "git_blob": "cdc65329f2575b124aef5f4b7880b7662e8546f0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "bytes": 90528,
+      "sha256": "c099bf8da64e7d154ca7109345533a2866fc60e2366ea2e993a3ec5b24180cc9",
+      "git_blob": "7fc22719c868b896bbcad5df994dd58dd1390da3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "bytes": 188832,
+      "sha256": "62a9dad78813e61894456418cc91f8105ef3e986861ea3a81c78e05477e1dcc3",
+      "git_blob": "995939399f48e488447cbfe339f478d8b8a68f49",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.Utils.v11.2.resources.dll",
+      "bytes": 33184,
+      "sha256": "3d4692373ccaf14262099efca5b11a4cfc194b8dab027be6cf3b5c1256e6aff6",
+      "git_blob": "be944eb96d4a69c756c70379b2a58afb6858f09d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraBars.v11.2.resources.dll",
+      "bytes": 41376,
+      "sha256": "3cb1369e65b3dce2f8c923a43ebefd261e5057b1e7b5fd304ebacd5357ffa8f6",
+      "git_blob": "23630ecf156147a9d7434cb566ac21c56ed163e7",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraCharts.v11.2.resources.dll",
+      "bytes": 364960,
+      "sha256": "21f68d899c67627d824abc50fd8ef7728f797121299ee20ab27ecfde24243e18",
+      "git_blob": "b80b92ad6a154cb186365d0bb83a0a7706d3f60f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraEditors.v11.2.resources.dll",
+      "bytes": 74144,
+      "sha256": "27981518b145e3bdaf9b8a49a65382f2af936354458a5d2792ba6d1ebf412def",
+      "git_blob": "859b4c838f81754b002874572eba2c2fc9d40b8a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraGrid.v11.2.resources.dll",
+      "bytes": 74144,
+      "sha256": "8145737944e02ee5edba7c6348aaf5a9602af80b8c238e72bd3b209cd5cd5dc4",
+      "git_blob": "c0dad38d1653331d209674d66e29b87761c5033f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraLayout.v11.2.resources.dll",
+      "bytes": 15776,
+      "sha256": "29d5b96f4e1eb7cf8bac332233b798fd575e5bc128b1ce59dc5f5c665aa61df5",
+      "git_blob": "a3aba040f27230acff11a74a59dfacae9c17933e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "bytes": 9632,
+      "sha256": "8b2f782f62b1bf515c8ff277a3001ff5b7812b36b0f824d50721ff737ed71beb",
+      "git_blob": "78dc2d287f85d7962eba158f500af21636936762",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "bytes": 45472,
+      "sha256": "ffbf56fb6003f70d32bb92863004806f2acdaf1a9055f8c49fa76376fa45964b",
+      "git_blob": "d74ec1761445dc8534d54349e5ba52973a11e943",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "bytes": 41376,
+      "sha256": "9e2be9ec5c620ce28910ae4af2aca6a944b36959a7ef8dc06000ec584935ef81",
+      "git_blob": "f17285921e6739965dc6fa30fd2fa4a49a74c512",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraReports.v11.2.resources.dll",
+      "bytes": 164256,
+      "sha256": "02f7b89e90fdc4aa637e61c4a45022250826d8c4cf81485e258aee180e16a72b",
+      "git_blob": "c030f8917fd872dc94cfbc45e506cf3b49f6411c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "bytes": 78240,
+      "sha256": "584e07413beb633abcd3f2a51e786a7c42e473d74471f3834488e7629c63db45",
+      "git_blob": "8af4603bec4f16ca916c9c5ed29831cd0b423c6c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "bytes": 65952,
+      "sha256": "be023a92569529cec04b3f40f1200592eaad2c4e14a19f189999783a2e7f7ba4",
+      "git_blob": "bbb3e6a318913965d8f619e8d9e8566ba73e1881",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "bytes": 65952,
+      "sha256": "690dfff1e9ba13cd22b2a70f815135ba585c85a99853b49d220cbf189cd6c72c",
+      "git_blob": "86608365b72df35fe7c93b8c2ff6f6934c6be89d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "bytes": 15264,
+      "sha256": "b2a7df3caec0b6a576a5093ce8fa2570b9bb4984b6d0cce74a0112beb702ca74",
+      "git_blob": "f8516a7293716f393c18a7026d1536dd17a954e0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ja/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "bytes": 10144,
+      "sha256": "c9ad2cd9ec011387fca1a1f2931da7c854004f322d6434dce0f8be6a4856ea82",
+      "git_blob": "e679d6ffc36797e4e006536dae71e66123477e23",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.Data.v11.2.resources.dll",
+      "bytes": 197024,
+      "sha256": "5c94ec1c527093e4497ab719f3910f88dfd065eabab053869235eec3d2d981ee",
+      "git_blob": "bd32af80f34f5310283a493516a704e6078a3fcf",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.PivotGrid.v11.2.Core.resources.dll",
+      "bytes": 94624,
+      "sha256": "20e8a868a28a77ba513dd54ebd74f115355c862ced8ad97ed7bdeaec71530fed",
+      "git_blob": "7a3ee77f5d074c47c1348bfc02f2b49f0fcfed75",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.RichEdit.v11.2.Core.resources.dll",
+      "bytes": 209312,
+      "sha256": "cd208f0caa57a914347586cbefe23bcb95069551095b7b9c89b8bd16e754a468",
+      "git_blob": "0e4c8c56427abed5b1a47ab8ccd7457dd047c743",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.Utils.v11.2.resources.dll",
+      "bytes": 49568,
+      "sha256": "7dc546b406d032467b058bf630a4d63d3fafb64eaf28dfd03b86899806d0e13b",
+      "git_blob": "f22cb46c4269c67f8cb8e5f99d23574aa76ffbc7",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraBars.v11.2.resources.dll",
+      "bytes": 37280,
+      "sha256": "63842ac07b8f54a757377d47bd012e6c1cc811825198f54063c5ce0231535d92",
+      "git_blob": "7a2076000138c5095bca74483d1a7ca7c1230868",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraCharts.v11.2.resources.dll",
+      "bytes": 410016,
+      "sha256": "64b9c093671d0ad6a8cb744ee6cd980f7ad9c8ea78187b17dec15cb85f75a302",
+      "git_blob": "ab668cfd5d5523d0935b6734980686b9467c263e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraEditors.v11.2.resources.dll",
+      "bytes": 78240,
+      "sha256": "ac587803120fa33d080a10b80cce1076aff7a57fc77d5e54212cb79235464419",
+      "git_blob": "19d8f2cc618e30a31571c0f7b0b70a4e8df2ab99",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraGrid.v11.2.resources.dll",
+      "bytes": 53664,
+      "sha256": "a1f090f79ad70bc457f4f90d00ec2970d1f51552a52b05d406e5cffc9293c279",
+      "git_blob": "4cceef18cbc8b01733effdc34edba7603f622883",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraLayout.v11.2.resources.dll",
+      "bytes": 16288,
+      "sha256": "d9391f15ca25da9320adaa7944c9df02f7fad2a0b9f01a699171a19ec4b7e30f",
+      "git_blob": "abb498ceec7bb5c64c574552046ea5c0e23c1ab0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraPivotGrid.v11.2.resources.dll",
+      "bytes": 9632,
+      "sha256": "e157ecbc3c84b925aae405a31960deb11ced9fa207ad87d0238a5e46245e2c80",
+      "git_blob": "a2fb9e1c3b054ab9eaa7292d1f9f8b64e0d067c5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraPrinting.v11.2.resources.dll",
+      "bytes": 37280,
+      "sha256": "12d721cdd7a2e6a18698cb8ea3663eb67b63132583c97b33f931ae0b9f98a5b2",
+      "git_blob": "3e96b9c93950d12cb598ac587577cf75d0907590",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraReports.v11.2.Extensions.resources.dll",
+      "bytes": 45472,
+      "sha256": "3e2d82c6784ebf1b53848ad666b0ab379cbcba13a7eed4581539a6698e900f76",
+      "git_blob": "6d125b7da02b2e2c03e7f222bacc285071a35e44",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraReports.v11.2.resources.dll",
+      "bytes": 180640,
+      "sha256": "bd668f465fc99d80368feebd1a7abc4e133e02aea19002010a19212989ac1c7e",
+      "git_blob": "ee99afbfe750e93a4e9d69243bbed2c199f8ff70",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraRichEdit.v11.2.resources.dll",
+      "bytes": 94624,
+      "sha256": "253bd01bf46f2aaa9ba83090d89685dc6b8932a179811ac15633ada9ff3d0bf6",
+      "git_blob": "32d1e4811410c7ab13528ca197c877fd0e77baf2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraScheduler.v11.2.Core.resources.dll",
+      "bytes": 65952,
+      "sha256": "98a94b82d5c646fe6de3fa600d30bafa40c03afa7accb55ba7a2f6732c98dc4e",
+      "git_blob": "be2c3e86a09ebdf49b152db1247536ff505f32e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraScheduler.v11.2.resources.dll",
+      "bytes": 90528,
+      "sha256": "d95519a75af58a41eb28febf225872ff23b10a3cb7fc0cf02784af24c6075078",
+      "git_blob": "ca9916742cc20d1749c0bc02a36efe39c0a1b372",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraTreeList.v11.2.resources.dll",
+      "bytes": 20896,
+      "sha256": "ce1c40dd6bae361030acd33e0f430b878ebe02e636bc029cc7c4d98e489a1acd",
+      "git_blob": "3aa7df91ce357b60aec797c10668d80b42494cb7",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Reportes/ru/DevExpress.XtraVerticalGrid.v11.2.resources.dll",
+      "bytes": 10144,
+      "sha256": "bd829e021dc7ddb081af208f9e8e3b4e31e7be37482561f97211570d8c754a8e",
+      "git_blob": "d6ef9f01359465307f7b761bc4ccd8326f2d9f2c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Seguridad.dll",
+      "bytes": 16384,
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "git_blob": "d54602a380580281f865b068fca760ef4f246271",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Seguridad.pdb",
+      "bytes": 40448,
+      "sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "git_blob": "0205a41974bd729a3ce48e8ad7b62a671bec9be8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/Seguridad.xml",
+      "bytes": 117,
+      "sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "git_blob": "fc2aa5d393e90d2e720876afe905bf2efd51e483",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Core.dll",
+      "bytes": 667648,
+      "sha256": "6bcafd59d1c92ee6499b35054442f8e6c5f2723025827e97c1d63308df8fe1b2",
+      "git_blob": "03e2f7954d74ba0a4969c3354180f945cf694322",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Data.DataSetExtensions.dll",
+      "bytes": 53248,
+      "sha256": "ee76404eeba00e198eecd6a7c5281aa005ac751ff5b1b120752837fdc966ccff",
+      "git_blob": "05b19ca7dae935ad65e6a4165e0362a044e26756",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Data.Linq.dll",
+      "bytes": 684032,
+      "sha256": "c70b3ad93d103b3e0ea0828e1d27473b36b5711b134fa87e388f2055b12c407b",
+      "git_blob": "e662f31b1beca3ac340c2d1d57f556ba11d94bf3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Data.dll",
+      "bytes": 2933248,
+      "sha256": "f32c399f4f1c4d1bc923256af2ffa8e1ee65f090d2d780b0b5d2476170abb1ff",
+      "git_blob": "ddcf7f02fea8ceb77bd78afb0350eb4959317a81",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Deployment.dll",
+      "bytes": 970752,
+      "sha256": "bff0f773a4bef44304a68090315c2a86f552af2585661c4b9661f8d967579ed4",
+      "git_blob": "de8c89243e8be59fd81b2e69855d1309cda62bd0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Design.dll",
+      "bytes": 4927488,
+      "sha256": "50b9c05af2fbbb1edb2deac33cad1777c7923c6a7236efa71cc3c463b696ecf4",
+      "git_blob": "2dd0efd2aa989b77f76bec52fd623b032edc2c6c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Drawing.dll",
+      "bytes": 626688,
+      "sha256": "d19f5b12275014ff93d6678cb0a6652b48018c3741f243679fe04419086c496d",
+      "git_blob": "1724dbccbb7393a027e6e6004e72b1966760e281",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Windows.Forms.dll",
+      "bytes": 5025792,
+      "sha256": "7cf1eded738650cae28616f985d75dfc806cf4c7d3f321f21d05e56a34e20206",
+      "git_blob": "963e49d5f817bb3b58699249080b9b2f8969d603",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Xml.Linq.dll",
+      "bytes": 139264,
+      "sha256": "21e668ae055f5bf2151b6f52e32caf0f7a74daccdd803954371ed9696dddaa6f",
+      "git_blob": "6051da050694bac3a3888673c91954b5b9970432",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.Xml.dll",
+      "bytes": 2048000,
+      "sha256": "eb26b9149cee8e2695a7273e0a0a600dad71a09fc2033d91cd15feb84807bb66",
+      "git_blob": "3a3a2cd02385c1f666661169eda43d116d37818d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/System.dll",
+      "bytes": 3178496,
+      "sha256": "44221778c81d3960232ee7f4a005e6e01c438108a565e58038d598cddb7056eb",
+      "git_blob": "6dd5ed861ff595949ea6e182caafd70e1591f1c5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/TabStrip.dll",
+      "bytes": 45056,
+      "sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "git_blob": "5e2b2c701b567f148680ae7d71a2fc51ff66d4f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/ClassRRHH.dll",
+      "bytes": 65024,
+      "sha256": "505e6aeee7a2a4a828792c090c596b5df6aa18af92d8827192f25dadf6855519",
+      "git_blob": "db106c458928e0529c4d9b2caa649a65e34c3a94",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/ClassRRHH.pdb",
+      "bytes": 93696,
+      "sha256": "ee7bde3f34f9e8c6629f6764d10bfd18c544d77e801a0a4930fee26c5072c576",
+      "git_blob": "1b01e09fb95d3156a0bbcee1e222f971148ff33e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/ClassRRHH.xml",
+      "bytes": 763,
+      "sha256": "2b8671985998bc2dd2c2472a50febab703b7ea407d56dc42b3e950293a297485",
+      "git_blob": "df2659892efd960564fbacc1d7bc1e990bdb39f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/ClsCtrls.dll",
+      "bytes": 58880,
+      "sha256": "aac467355fd4bdd0f7700ad1fb6adc9e4e1fd20b180c6cb444eed44ae68dad12",
+      "git_blob": "36e083674bbd48315d96e18616ace5c5cf7e30f0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Custom Featured MessageBox.dll",
+      "bytes": 36864,
+      "sha256": "908fb1614d2c34e76d2003affbe68b5cfaf3a2663a2e74d587e13beaae6df083",
+      "git_blob": "e3923b269d80bbd084a770813cd5181a2b892971",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.Charts.v11.2.Core.dll",
+      "bytes": 181152,
+      "sha256": "349e1e7020b771847d19d1cd538f7452feaf5a8a4240f70cdec49f2e731b0f69",
+      "git_blob": "2b066cee40c78f67d76517aa35c46503fa83b4e3",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.Data.v11.2.dll",
+      "bytes": 2680736,
+      "sha256": "b48a1db7429d70b84c347f395bee17152e37f9743e6662af4a667bc9f8f1bb6a",
+      "git_blob": "f0267d59e5662ce06f9a69b726e3a5971f7b4e8f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.PivotGrid.v11.2.Core.dll",
+      "bytes": 995744,
+      "sha256": "7d666e45f32010ec2cac2d2717f17ade8d6be647cc36138583522bc7503fd9e5",
+      "git_blob": "7f7e680f3e691842a6a7c27f31ffc2b5eeed268b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.Printing.v11.2.Core.dll",
+      "bytes": 2006944,
+      "sha256": "ecb9c9b29a633135677516fdc0ed018c7f3e2cb8d2eccb7ff53ccde4138cf024",
+      "git_blob": "acf6ffc1b77e236b166df2bd04e4614d62328d9b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.Reports.v11.2.Designer.dll",
+      "bytes": 47008,
+      "sha256": "a77c0468df02c73c92a4536c768dcdea2c973fd25b34188e0aa785c7ac3415d7",
+      "git_blob": "1ed5bb063b8b570723f463b4e063b0ecc7dc8ddd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.RichEdit.v11.2.Core.dll",
+      "bytes": 4915104,
+      "sha256": "d5d9e03d6e056d9c062c633b4e7255dd164dcf05357a6ed02fa80643c7250b23",
+      "git_blob": "bc240a8938949aee5ccb2c16525091a2903cfca8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.Utils.v11.2.dll",
+      "bytes": 3473824,
+      "sha256": "25b3efe2d8a4f8228ad79f50169c096d6a0011f888c87de0a401315a18260507",
+      "git_blob": "ab63186acff5a3e134aff5ae05ca83405cb7affc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraBars.v11.2.dll",
+      "bytes": 2570144,
+      "sha256": "507b2a6569dcfb742bac16644cc1a33b8762d84c25412125ee3d95f6b7f2f0af",
+      "git_blob": "450ad919685b45580178283cb7700dad42128fdc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraCharts.v11.2.dll",
+      "bytes": 6955936,
+      "sha256": "6ac10fa9550bc312aa61e3fb3dc81d5dee688ff0b0cbd7be2abcde6c762ad354",
+      "git_blob": "7263c09c6d0ac25e7852f8b83f3150cacbd60812",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraEditors.v11.2.Design.dll",
+      "bytes": 215552,
+      "sha256": "77ef4d53e939701b46d734e4171e34e4ea6ab533079a6dbc66430f9feea19b28",
+      "git_blob": "6164583f320fa9656c31a91069f3f4d1f28f8454",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraEditors.v11.2.dll",
+      "bytes": 2001824,
+      "sha256": "e42be1f9f557ac5536bbdd8c95298baf32e7659a537341c948aec97d04c781dc",
+      "git_blob": "46e05726a998783a89e1510285013517affa4720",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraGrid.v11.2.dll",
+      "bytes": 1946016,
+      "sha256": "4a0b81c695f8c9b67b547251daae36b04a0eb55ec4d3a44fa9ffc0b66573eeff",
+      "git_blob": "b41ef7f6127024af6089bc1ab0cd74985b7c9c6d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraLayout.v11.2.dll",
+      "bytes": 731040,
+      "sha256": "137336ca2ffe38ef46f55d4823052f9fa5b5808899304e500def98b161144896",
+      "git_blob": "2af8697807b7b402be75ca2e377af45593863ad8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraPivotGrid.v11.2.dll",
+      "bytes": 589216,
+      "sha256": "bb59a92d0045c13d2afa8943c11dd238091ddf8d0f62300624fbda784e59c4d6",
+      "git_blob": "2bb527974b8e154af9f7fbf449151aeee0c95934",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraPrinting.v11.2.Design.dll",
+      "bytes": 56320,
+      "sha256": "63dedfe2d713c312913cdcf9c6d5346ef113c58d0d1ebdae06fd1a3e70af3d1e",
+      "git_blob": "e3a06498eac6f1f7525d1a631ce3dfdebbc55486",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraPrinting.v11.2.dll",
+      "bytes": 672672,
+      "sha256": "592b1ffc0f38cb9298efdcfcfe99a09c1dc7a7215a8daac6b86e6d87f5596249",
+      "git_blob": "4546515f96eadb41d13cc220a3e6274a46a5691b",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.Design.dll",
+      "bytes": 734208,
+      "sha256": "28ed61ed343654d9ffd207b93659cc4e4c89ed7db664b583a0b584ddd8937c93",
+      "git_blob": "7163a993a5659819971c0cb488cce0452e9b66be",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.Extensions.dll",
+      "bytes": 1668512,
+      "sha256": "54be4e467411a01fb9b658d52dbb00b39ae23a0cbe6e2c43a5abf76a801c8595",
+      "git_blob": "5af9d058d9496c9eb9f7a6035634ed307c85b445",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraReports.v11.2.dll",
+      "bytes": 1166240,
+      "sha256": "ebd1bf5b12218a6f3fc8debf43894d12b55652cd9b805a295a40ec42aa4633d6",
+      "git_blob": "ddebf57d06630ddf55358194cf9c479cc9a391a5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraRichEdit.v11.2.dll",
+      "bytes": 1551264,
+      "sha256": "c2491e34f57d981e93fa83e88d217099af9a7de4739bc1f4ef7a2c5c96333b74",
+      "git_blob": "05cc2a88df88e390ed79c4c1b2ddd1612949bfc0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.Core.dll",
+      "bytes": 989600,
+      "sha256": "94c2366ddf4a654c88abf6a3597e06632fdeab9368b6a3735e52f472d975f95e",
+      "git_blob": "7673301ea8fe9680afca5a37fb6eed4761c9a31c",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.Reporting.Extensions.dll",
+      "bytes": 56736,
+      "sha256": "7b7f9079c308d53fabe6c6e6658aceb63148eddc3a9af1a24c072d391c28e929",
+      "git_blob": "9cffc4dc8396ba50698a3a2ce10dfe61010f0c8d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraScheduler.v11.2.dll",
+      "bytes": 1586592,
+      "sha256": "f4ac2ac4ae06b5dcea6b73d75aaa8d138c30fdc2be76a01420e2708ccb20ad95",
+      "git_blob": "ebef0bb2cc8d575889242557a2d82e17cb4e5e24",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraTreeList.v11.2.dll",
+      "bytes": 700832,
+      "sha256": "6d843b6cd1a7f32008ae0c5ebcd7af6db1d99f7ba36e61c118fb4816aed9d6de",
+      "git_blob": "a4fec7dddbf9e753d794f25717b64d8cf0d559f8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/DevExpress.XtraVerticalGrid.v11.2.dll",
+      "bytes": 530848,
+      "sha256": "7db7f07dc0917b150d1bcafc74b4bd9895b1557f6ca6c60316ac967a6ae56c01",
+      "git_blob": "a60c0241ad9f79c152dcfdee03144a226da1bbbd",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/GRLL.Common.Rutinas.dll",
+      "bytes": 12288,
+      "sha256": "d9be2383f15cb6ec23b6d2fe093b4d87e77b7ba2c9a0b8340b6cb6e130129850",
+      "git_blob": "ccb09ea33a2a412ee05841a68a89bbefab145505",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/GRLL.dll.aesgcm",
+      "bytes": 2269227,
+      "sha256": "fe0f77067e486a0bd666428fee9d11dd72ca67c678a6cc2c8710349fee92d065",
+      "git_blob": "fd6aec46cd89c0daef05cc9a5bef9c168a870f81",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/GRLL.pdb",
+      "bytes": 5381632,
+      "sha256": "baf0e4c2a7fae2ed04191a7c5ed862c0955e9e1d24b737f558b0ca4279c67d4e",
+      "git_blob": "e2bd09b9519d3e8e4f9c3962e3ddbf530be2e676",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/GRLL.xml",
+      "bytes": 764,
+      "sha256": "4e8855409e4e71718e4a7c2b7e205b561885eb74c27f793292869a5a82287915",
+      "git_blob": "ef6f8de8fd7baf48fcab2cf6f096ff48602e2e61",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Interop.Microsoft.Office.Core.dll",
+      "bytes": 450560,
+      "sha256": "1a52f4df0cbe1ab0caeda7701e863ce1a1fcd6bc846136846afe6128a59789e1",
+      "git_blob": "6c9ad3b8234da6465c23d5fdc9d6c156accc2c17",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Interop.VBIDE.dll",
+      "bytes": 57344,
+      "sha256": "e8aeb9af55cce0f5e37f4c1becd085efa3ba2ffe54bcf98b221c9dd210cc5436",
+      "git_blob": "70dc2793e029dd99933572a25ff52304d744545e",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Microsoft.ReportViewer.Common.dll",
+      "bytes": 3649536,
+      "sha256": "10c4e8114bc763f886c6c2d153dcc4cf5a308f5310b116986ef457c9518a9808",
+      "git_blob": "2ab51fd6a09425a34118c09995c9081d9eb081d2",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Microsoft.ReportViewer.WinForms.dll",
+      "bytes": 339968,
+      "sha256": "9e320119f83ef0e2ab7d94ac22d60f7de8635b6000273d1ecd7441890335b7ec",
+      "git_blob": "2010a318ac61daa20a68c78685cd19ba3670b08f",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Microsoft.ReportViewer.WinForms.xml",
+      "bytes": 108039,
+      "sha256": "ccf920bb49c0c2c4f0dd93f425b2e02d4a150b5123f9736feef1867bd9d5c732",
+      "git_blob": "b454ddaea32fd4116d8321e4aeb932707e7b971d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.application",
+      "bytes": 1657,
+      "sha256": "e2e0fb3890b386eac8593e80f951a7d86b37cff352d48ce6c849dda0e9c09914",
+      "git_blob": "76f176053473f1088beb72c0b9d3074bd33c5588",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.exe.aesgcm",
+      "bytes": 2792491,
+      "sha256": "00347d976d962e98fd47de331bf67a3e2e3800e76a0315ac52f9364a09f3525b",
+      "git_blob": "1d19dda8854e87db6eda5104d19b20579366e6aa",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.exe.config.aesgcm",
+      "bytes": 3693,
+      "sha256": "566e31b467de11aa2b66e23981422d0e2e4f441d75a6097888ef3c38afc5411c",
+      "git_blob": "bdec7f9f29e153288c8d49764d9f8c8b62be3aad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.exe.config.example",
+      "bytes": 2727,
+      "sha256": "1c5dd217b4436f2052aad7c331636502f0c6c48a9fff15ba8d22acdf85838699",
+      "git_blob": "0187dc66f2c2756b80d31d5a9a1ca0361e7af8ad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.exe.manifest",
+      "bytes": 34916,
+      "sha256": "cdc881b66ddba2a873acc397edbb7bd0aedf737fe8a744b62eda524bc354acbe",
+      "git_blob": "43d13f93c9d7a626606fb34cc953674d415176b1",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.pdb",
+      "bytes": 1943040,
+      "sha256": "b62ac9a3354ff73624eaba9c314c844d639d6ce0797aec185a87f9401f533174",
+      "git_blob": "8b74918755eef5db541a5e4557170d1e1d45082d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.vshost.application",
+      "bytes": 1657,
+      "sha256": "97953156163dc04ab4b2c925b59039a54d2803620e39f828f9d9e9d3c34db64f",
+      "git_blob": "076726aa873c4af68ce03c5d1ab7206096cc10bc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.vshost.exe",
+      "bytes": 21472,
+      "sha256": "bf59b95c0ecdb9a99ebbe2f5cc8e15ded1e32accf8645523216fcace8eeb7c3e",
+      "git_blob": "6b75e057945dcfdef868589a73be15d6ecb041cc",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.vshost.exe.config.aesgcm",
+      "bytes": 3693,
+      "sha256": "ea18d3fa3c4edbf921a4e737e3af610c53e93e67c380ef27385e99a209bfcfd7",
+      "git_blob": "b934f46d7c5f6c392e57c9c826a51d9754030b18",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.vshost.exe.config.example",
+      "bytes": 2727,
+      "sha256": "1c5dd217b4436f2052aad7c331636502f0c6c48a9fff15ba8d22acdf85838699",
+      "git_blob": "0187dc66f2c2756b80d31d5a9a1ca0361e7af8ad",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.vshost.exe.manifest",
+      "bytes": 86089,
+      "sha256": "80fa3957e51d7228b64181286f7b7aa3ee87dc1a087f7dcf89f3bb0e507f0527",
+      "git_blob": "8a11de6da6bbebdcb6a1bde45afa8011b43bbaf4",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/RecursosHumanos.xml",
+      "bytes": 15950,
+      "sha256": "2548d9d6890d09878f95b8b815bdee084c3c06114c9ecfd1c19eebeb21f317f8",
+      "git_blob": "5a8d4b65196281345b015b9f39b5d709791c174d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Seguridad.dll",
+      "bytes": 16384,
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5",
+      "git_blob": "d54602a380580281f865b068fca760ef4f246271",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Seguridad.pdb",
+      "bytes": 40448,
+      "sha256": "b1b54873931814f77dc05647069ea9d78b99be9cd6876652f441894b9ecfd21a",
+      "git_blob": "0205a41974bd729a3ce48e8ad7b62a671bec9be8",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/Seguridad.xml",
+      "bytes": 117,
+      "sha256": "49a81ff2b33bd3f95966c4c70c81ef832c9815877189ec02514d3a283cf0e34a",
+      "git_blob": "fc2aa5d393e90d2e720876afe905bf2efd51e483",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Core.dll",
+      "bytes": 667648,
+      "sha256": "50e552009159f5c33fd1d0ed5c501731b96c114c70d958affa1b4fc6ab73aa91",
+      "git_blob": "0c0b548953fb3c32b6e8453a0429bd69f1e77387",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Data.DataSetExtensions.dll",
+      "bytes": 53248,
+      "sha256": "210d821a41d90217cc09f604777d62a2b7a7fac215bb0eaf692a9e26e8f2c23b",
+      "git_blob": "b91ab4b03d8e0e72e478774215e6008ecb6d0d96",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Data.Linq.dll",
+      "bytes": 684032,
+      "sha256": "01adcbd3a544794c40bdbc9abd0e1433136167b2177a11119f6151b90bf621a4",
+      "git_blob": "dc65373f01109f999a9470ecda30a7d14b2b6ee0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Data.dll",
+      "bytes": 2972672,
+      "sha256": "bef49a8e4caff98a3efea9a53a61c1e9a9b63141dc5bc22df3cfc990c55b13a6",
+      "git_blob": "2ee7ebf3c524baf700600b19b4a8af976e922e45",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Deployment.dll",
+      "bytes": 970752,
+      "sha256": "b8de50739e231722cb17f79b1f309aa9f76560a25ef635beb9ba8b00c91da5cf",
+      "git_blob": "b3dc4159dbb5569e48f69a0edb1136e5ba135d6a",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Design.dll",
+      "bytes": 5062656,
+      "sha256": "0598d91bfdf3a9a7585314db27a3d6396de68412a5e143047427bbe9dc2a1010",
+      "git_blob": "192e60cf32d0299bbae9dae1b90931dd29ea713d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Drawing.dll",
+      "bytes": 630784,
+      "sha256": "7b92496ac930d5f891654f3b4d3ecfa2751dbc86df314c1a141801d1ebfe8643",
+      "git_blob": "389d2fdf195a7ec53116f346a63f3fc1d3f2d9e0",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Windows.Forms.dll",
+      "bytes": 5025792,
+      "sha256": "5f1d216750488e283fc74337e7ba2e352e9cb4d2493f1dff3a141a83cfe92b00",
+      "git_blob": "ad61f23412544896585a07713be898a71c5dcfa9",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Xml.Linq.dll",
+      "bytes": 139264,
+      "sha256": "a6f9daaf462f58c8808b63a78db9c4502e1d26dbadb560e8fcc212358f7b93c7",
+      "git_blob": "5ef807c18cac881eb8454ae0ccb86213340b8500",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.Xml.dll",
+      "bytes": 2052096,
+      "sha256": "9e5331c60a512dd364e25a10e22a52ffe16f08e618f3907e987a4fa5cc3ead14",
+      "git_blob": "9cd563d2cd5de90a7e8a3012943e6f421e8bc4a4",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/System.dll",
+      "bytes": 3198976,
+      "sha256": "c190ab95851252549d9eed81ac3b5dd3b59f6db41f482d80fc04a305a8db15f9",
+      "git_blob": "ef930b8e8f818a2ff0132389b6afe7e87cbdf64d",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "legado/RRHH/temp/TabStrip.dll",
+      "bytes": 45056,
+      "sha256": "fadecea0ef0d9d5fa4e85ce7544d99259fd6a5ec45638d6387dd2195a223c284",
+      "git_blob": "5e2b2c701b567f148680ae7d71a2fc51ff66d4f5",
+      "normalizar_lf": false,
+      "grupo": "SCI-LEGADO"
+    },
+    {
+      "ruta": "prompts/01_ingenieria_inversa.md",
+      "bytes": 3155,
+      "sha256": "6abd91487167ebe00eaaf2a87bedf1063e4c94152cd789b3590221688b2106bf",
+      "git_blob": "401e9b5b52f926ecba589df71e0a873cc9770399",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "prompts/03_ocp.md",
+      "bytes": 3512,
+      "sha256": "bdef103dfb8d389116dcd8de82eb25b9ba5777c63e86b65e95d30ad71fd73d2c",
+      "git_blob": "b3cb9e2d2732164a6d5417c3d8a5054f5e613a12",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "prompts/04_ioc.md",
+      "bytes": 5011,
+      "sha256": "c9781e247861c538de94da2f5ccd1dba5d016a608d3480cc08c0777593c79e5b",
+      "git_blob": "904d874317ae26cdbf512d8dfea38ff0535b3961",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "prompts/README.md",
+      "bytes": 780,
+      "sha256": "7bc8067afdd84f763375e5ec67e9bc00be55fe2da70efc35428e090c0c621b86",
+      "git_blob": "997ff572fb1fa325c2f0de8875238e1e63ec741b",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "referencias/README.md",
+      "bytes": 980,
+      "sha256": "f1326f14f6db3ca7a17b48bd8b32cfb17738bbe2540359dd9b6f11c18203ee23",
+      "git_blob": "46201b9753a96e454c53068d891234321a710622",
+      "normalizar_lf": true,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/bibliografia/Codigo sostenible.pdf",
+      "bytes": 382423,
+      "sha256": "8cf86146d34483f5a72e466e381640e3024eac8e045cc1c2c472090c12443f63",
+      "git_blob": "2744c4f59f7ee891bdbd71aee8a3d5694926ef79",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/bibliografia/DIP.pdf",
+      "bytes": 29995,
+      "sha256": "add39fb66205250899b1dd0f6366cf926c8f9faeb8f04610591c9a0986149ab1",
+      "git_blob": "6fd8a1f123cd85ec6cfd6851842bf03c076f25a9",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/bibliografia/solid-principles.pdf",
+      "bytes": 926348,
+      "sha256": "e9a1151f673061f45257d07c4867b61130697698576e2818e5f2d527abaff554",
+      "git_blob": "298d5e9254023455744658a7efb0b3a528af4f75",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/curso/Proyecto Final_Legado.pdf",
+      "bytes": 4196486,
+      "sha256": "0be0c5698285d722c6d12734b534eb49ff87133b81388651bcdf7e688938d184",
+      "git_blob": "1344b44ae7a408551d89f9ed8a55ebff8fb56031",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/curso/Silabo del curso.pdf",
+      "bytes": 287909,
+      "sha256": "9e5724acf277f7363d4975c125778b3f063ad909e77ef3e9dc4ff6035097e5da",
+      "git_blob": "f404218dedb4fc8e387494b85a0272cbd4d11b90",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/semanas/semana04/Semana04_EVO_TG.pdf",
+      "bytes": 1351131,
+      "sha256": "243694203008ae733aa7c02c243a5391dbbe2be1c6e8f482a152774c6ae00102",
+      "git_blob": "938d32df8a1e2c545ba46fe0c0824dda86963233",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/semanas/semana05/Semana05_EVO_TG.pdf",
+      "bytes": 1290874,
+      "sha256": "676190ecbfb1e56717211e39042417ec9b2fc3cff341e80817095b75295c1677",
+      "git_blob": "2c13776e6f51ef9187bb5678f76e69145702f4cb",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "referencias/semanas/semana07/Semana07_EVO_TG.pdf",
+      "bytes": 1217768,
+      "sha256": "7242178093db68d7d89a29644e5f2cf544edd9327a441f6ce2ed503ded1b7296",
+      "git_blob": "aae7767c5bb6d28739d978708df493c280f650c4",
+      "normalizar_lf": false,
+      "grupo": "SCI-CURSO"
+    },
+    {
+      "ruta": "specs/README.md",
+      "bytes": 1263,
+      "sha256": "3cb01f841846c5f932de4bc46c5da1afa586bd29ac09a3191775f4e03e71446e",
+      "git_blob": "f79ed27ad3f325efe299211edf5dad61a788ca64",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": "specs/c02_ingenieria_inversa.json",
+      "bytes": 3737,
+      "sha256": "6ee8a5d20c4c6d79db61647f93fb77e54cde6ba390db294c017174f87ec6dc66",
+      "git_blob": "5b5b41badd362127fa791b7c9743ee68df58f87f",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": "specs/c03_srp_dry.json",
+      "bytes": 2395,
+      "sha256": "d8f4227a5d94674d7924cab74189999937c0393a0977db5af30914fc61396569",
+      "git_blob": "1edf39c1eb0e99151d875e67219a0e3b25639fd8",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": "specs/c04_ocp.json",
+      "bytes": 3321,
+      "sha256": "dd6a81e08e8e3bb3b1857372d6a8c552a3d8f3410dd6fb41055c878cb329d722",
+      "git_blob": "cca8f19d4ad7e5cd2ec3aca9b7544b5e27de0972",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": "specs/c05_ioc.json",
+      "bytes": 4283,
+      "sha256": "3a0f218506dbb7c78ce4876ad5f839ce67fb664f716903de48ab598667b634f7",
+      "git_blob": "b520c640d1f055764f9620aece9ecd7952be7142",
+      "normalizar_lf": true,
+      "grupo": "SCI-REQUISITOS"
+    },
+    {
+      "ruta": "src/README.md",
+      "bytes": 1054,
+      "sha256": "46de146ec26198ac808686399dad8fa74a29300b3405c357eedcb616241775f6",
+      "git_blob": "0cd454f2447eeed3edaf6f719285a8d154ede1fa",
+      "normalizar_lf": true,
+      "grupo": "SCI-CONTROL"
+    },
+    {
+      "ruta": "src/v1/README.md",
+      "bytes": 1909,
+      "sha256": "da07405b948f88752ea5df4e58871701848caf8a262a6ef12790fd1768f22c35",
+      "git_blob": "c38b3e75eb100b0150393b75dd8e538b59e5cf1d",
+      "normalizar_lf": true,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/antecedentes/ClassRRHH_Original.vb",
+      "bytes": 16712,
+      "sha256": "3257c4262e5f7164f1442b474a9b3bd96b65f377a31c229d0eada0e4acc10e4e",
+      "git_blob": "96fab61bf52650d995e9203bcc9f6593646cea93",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/antecedentes/README.md",
+      "bytes": 4436,
+      "sha256": "790a0e6d2e087523e7bc00e4dd821a272d01864cbad6fad2b788d41a52c12287",
+      "git_blob": "d2310d226c2f96dc20ddca7f4a600292b6b5ab6d",
+      "normalizar_lf": true,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/antecedentes/README_recibido.md.txt",
+      "bytes": 850,
+      "sha256": "929256a459bfefe92b020fbf7dbe10e1defa101af9cb52cc6e10aac2735b0226",
+      "git_blob": "fffcc3ffa88cc2a2b2be5073d7f3959b329ee840",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/antecedentes/frmPrincipal_Original.vb",
+      "bytes": 5030,
+      "sha256": "e8965ef46380592c4ea261225865212fd6d7ace4fc14baf33ab588b829134f0b",
+      "git_blob": "c48f33d5368aa5dd2ad87764ac083615fa4e89ae",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My.Resources/Resources.cs",
+      "bytes": 1409,
+      "sha256": "a7dc4a75e76b674c9484a125cff3d880507348793e389968407ed53516660245",
+      "git_blob": "de99e6b71aa648d1333e2b25055b1fb1320a3572",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/InternalXmlHelper.cs",
+      "bytes": 7022,
+      "sha256": "30d7f5f76c9215dc36e47b79c8a7b6807cedc7ddb4cfdb5b0daf2dd8f686fd44",
+      "git_blob": "96d60244ac390ba5c846b1345fd2ca106560f035",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/MyApplication.cs",
+      "bytes": 368,
+      "sha256": "3e069c0ac81dc8ac4714920593cccc8536b72484b237c56994d6590089fb2f75",
+      "git_blob": "4ffd79e5065ebd8437270cc97c5c57b47eb1d7c8",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/MyComputer.cs",
+      "bytes": 386,
+      "sha256": "a8e9ed9421b7b5dd4411c379dd93bb60b3586a2dd2e3e7a88ffb8c38d4f6282c",
+      "git_blob": "83970e3dc8543739d27f74e949291cd8f02b19c9",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/MyProject.cs",
+      "bytes": 3547,
+      "sha256": "63c549c858226f192356e4cb38a888e2e010237308cca4d187ef27a155917227",
+      "git_blob": "778880f29adfe9b89dc9a8f248c196227210fd21",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/MySettings.cs.aesgcm",
+      "bytes": 2386,
+      "sha256": "6f514ba6838c7cf8e8dff724b968f5c47b679e607617e0ea53b023424b461e7c",
+      "git_blob": "d3d9dae413ae0e88c36b3348c9d8e0ba40de5965",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH.My/MySettingsProperty.cs",
+      "bytes": 430,
+      "sha256": "b57aa2ea848c8f38a575fc6a65f088edbf539d5b5428ed13bce3fd1b29aaaffe",
+      "git_blob": "4b66f92e836b4496cd87e05fb5c9cc44ba7fc2bd",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH/AsistenciaAccess.cs",
+      "bytes": 19345,
+      "sha256": "9700d26f14c9f2104239d717c230c6f775286282474d7d4ae629854c6400e7cb",
+      "git_blob": "04a075cd19935aaab26cbca2cfa27556c0a005b1",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH/FamiliaresClass.cs",
+      "bytes": 1330,
+      "sha256": "05519be4fcaf4952f18bafb8198a1fab58cd1a78a882a1b2235dfa136467f00c",
+      "git_blob": "6c74b52b06729b0ac3a06da28000cb276e597786",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH/FichaSocialClass.cs",
+      "bytes": 713,
+      "sha256": "b794ba48ddf6d656fbc2efc25b51812ead7a210eca75018833ab440bea38ab46",
+      "git_blob": "7efadd452cbef99592115bdb4ed73ab4c2c90d7f",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+      "bytes": 44106,
+      "sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+      "git_blob": "dc23f9a37b8eea00b5971bc51eabf63cb9892d5f",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/Properties/AssemblyInfo.cs",
+      "bytes": 555,
+      "sha256": "569cd4307c8807050885037e546c255a2fd26351d512a4e68890e8c147faa4a1",
+      "git_blob": "9f447f2dbc47b3be0e5fe96e1b9f01b78e973a70",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v1/recuperado/app.ico",
+      "bytes": 1078,
+      "sha256": "877a97946a57ab8f8795bbf019d9e5e3a22e1bed2e0ffd8fb3e5df3edc696881",
+      "git_blob": "f3c4929d787664ade0cf25f7372ba3e7285c0950",
+      "normalizar_lf": false,
+      "grupo": "SCI-V1"
+    },
+    {
+      "ruta": "src/v2/README.md",
+      "bytes": 2054,
+      "sha256": "e8a9eb88878d0cf3a02849981ec55fb46013603e024907aafcc6a4d5e22f2b93",
+      "git_blob": "d07b8fc4d3006a4048a6502485203d5474d87acb",
+      "normalizar_lf": true,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/README.md",
+      "bytes": 1365,
+      "sha256": "e81590e3034869f3ada483e177cd034ceb72799c6750d4aad86bdd0e19212b36",
+      "git_blob": "eacdd3ecc967b6e4de519a477a8fbbf072c5b74d",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/README_recibido.md.txt",
+      "bytes": 2377,
+      "sha256": "f772d130455c3073a6cab6de93b96ab021718a2586952600592ee44605c3259d",
+      "git_blob": "a2efa5156ee948987b4a6e4ad7523606f233ec38",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/DataAccess/AsistenciaRepository.cs",
+      "bytes": 2448,
+      "sha256": "2f9458e0e01f0a3d6b208ce4ec4ede79534053ccf7ce3fad576b0f77c08395ef",
+      "git_blob": "1d052f25fba8b9768b2053dfc7a615c922694973",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/DataAccess/DatabaseHelper.cs",
+      "bytes": 3885,
+      "sha256": "bf8139af9e64b104d2c44e35c8374cff98f8068b41d3a076951250585c85e935",
+      "git_blob": "ecbb2ac11b48e3c555707638194bc0940c4e8bcf",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/DataAccess/EmpleadoRepository.cs",
+      "bytes": 3462,
+      "sha256": "ec9347a92b9f2d0258ce33be08dc2a91ceb49f85118fee12911e9aefec8ea3fc",
+      "git_blob": "728d61bad211d93d20e4322794df042bb9381a91",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/Models/Asistencia.cs",
+      "bytes": 1202,
+      "sha256": "7621b4cbd8991e8d52407d9e7c3356daa6fdb8861098c1100edae1c96a142016",
+      "git_blob": "c4171d828b19e08bb39969b5e8200eb3ab5130c0",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/Models/Empleado.cs",
+      "bytes": 1459,
+      "sha256": "1411793b348d9c8282b0acd6bb1f0512177b456846bc4ac63c36e417da9c10ab",
+      "git_blob": "c6c69e71bc87c5685e1a01dc70b71d29aca6d7d1",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/Models/Permiso.cs",
+      "bytes": 1069,
+      "sha256": "1e145bc9ab7738bdb6adb66732ea0101f562847f1b15bbe7cdee71b6bbfd02a0",
+      "git_blob": "1ac9457470dc756532c3bb403229fe8bd6496291",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/antecedentes/src/Services/AsistenciaImportService.cs",
+      "bytes": 5241,
+      "sha256": "10c3e6da8527797c6af286445a59f610645bc81177918307c2c72aad132174bb",
+      "git_blob": "0ae0e00d83bbcec8023512942025ce71c019189e",
+      "normalizar_lf": false,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/caso_empleados/EjecutorConsultasSql.cs",
+      "bytes": 1209,
+      "sha256": "7abe9bdebfc86701daad4badfd4f89ee703c7a29d14d8a042aaf594a9e95008f",
+      "git_blob": "ddcb0868ea56f9d51cb75b86236182b921ac13aa",
+      "normalizar_lf": true,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/caso_empleados/EmpleadoConsultas.cs",
+      "bytes": 1552,
+      "sha256": "9bf6cd6e97c1bdd87d8d88fdd027997b0b2557e3207761d4c8779b4941e7bf4d",
+      "git_blob": "39ad1d445c3b51aded9c97deebc864bf6c1f3f72",
+      "normalizar_lf": true,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v2/caso_empleados/RRHHClass.cs",
+      "bytes": 42236,
+      "sha256": "f0b9e8d338d9ec9f7263bc8ec255a2357313ffa80ee935aaf3a6f04fa46c3c5f",
+      "git_blob": "74c268e6673a889209c778abb751a06ef905b233",
+      "normalizar_lf": true,
+      "grupo": "SCI-V2"
+    },
+    {
+      "ruta": "src/v3/README.md",
+      "bytes": 2889,
+      "sha256": "b58cc478294212d1716e6b6c42cb8e2368cc7a8db4fb240f73c09290827cc92c",
+      "git_blob": "f81c4c26f153571c0161bbc96153c28113c5d465",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/README.md",
+      "bytes": 2161,
+      "sha256": "565ce68deb659dfabb8aab79ea88c20b91a0c5cb69d741dd0786e80de692a478",
+      "git_blob": "df40ad20408105c09bf5e5d53c35add014d2c7b9",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/README_recibido.md.txt",
+      "bytes": 4128,
+      "sha256": "54dc9911795179f30f5d26d3bc12991c92bc2525056a734c386442c7135a1b6c",
+      "git_blob": "523c7744daf6a6815279a6b6c1c528b0d525bf68",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/DataAccess/AsistenciaRepository.cs",
+      "bytes": 1517,
+      "sha256": "a0bb94a57342934147f6edf1266ab733cf3aeb8acf4ac501169e0951f756a263",
+      "git_blob": "ae5df71bea08c734fe7dbc22d67b3e0cc1a386b5",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/DataAccess/DatabaseHelper.cs",
+      "bytes": 2148,
+      "sha256": "49af25b73140c21d7dadbf17ed91f3a9b0a8edad045edb0d7fd8e9d5d2b77991",
+      "git_blob": "ca8ce19dffabb367c4579d0946da216addb377c8",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/DataAccess/EmpleadoRepository.cs",
+      "bytes": 1922,
+      "sha256": "a031ebd7859e9334d705267087971306f1cf980d44f4038c0e74e6a8f5f5ccb1",
+      "git_blob": "616ef4ab1f5bf9a9bb0b11dda2ac5386c4c2409b",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/DataAccess/PermisoRepository.cs",
+      "bytes": 1704,
+      "sha256": "031b6ab63e69ab6cb782f96730f2ccb3ff28968f1dc678f4bfc4ddc450a072f4",
+      "git_blob": "ac728703d70a6106f5b0e9338412275c498804c1",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Importers/AccessImporter.cs",
+      "bytes": 2542,
+      "sha256": "6353e9455ec2f686db2f9e3a80d0da9a09ffa7f12c1e303ddf00c61d8c1128e8",
+      "git_blob": "492260a307a688cc5b5429c3334ea09b11c6f625",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Importers/CsvImporter.cs",
+      "bytes": 2266,
+      "sha256": "c8840f2c7cfe9cc699f05fb4381f63eeeca5248e7418d8a120cb177f6e4216fc",
+      "git_blob": "5be11b3ccefbca48d7b9555f885be4958baab662",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Importers/ImporterFactory.cs",
+      "bytes": 3403,
+      "sha256": "b006fa4eb5a58ecfa07cd173a08cbbee1d6b3faa08f5e8969c04015bbbb2e95e",
+      "git_blob": "c80168b4743a1c3f0bf44b87ff52af8fd2563f03",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Interfaces/IAsistenciaImporter.cs",
+      "bytes": 1746,
+      "sha256": "44893e49bbe2ad8ff9826bfeb4c48431090c5db273b713297b58843284ccfaa8",
+      "git_blob": "b6fe156a5b0df37a71641e36b7640ce321f49c63",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Interfaces/IReporteGenerator.cs",
+      "bytes": 1466,
+      "sha256": "0ab0fb777843a2d559061fad437cbbfe6e90eb4c0c2cbe6954632cfd107fdb6e",
+      "git_blob": "6ad8441b857273ae7af9bff514cf2d5a2973699d",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Models/Asistencia.cs",
+      "bytes": 494,
+      "sha256": "b9ac0502790f90082557a646f82619612114528d8125c5ccfaded52178f28c88",
+      "git_blob": "aa12d74ce01c7d170b6ae2a2f8f4d32b4f46cd11",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Models/Empleado.cs",
+      "bytes": 727,
+      "sha256": "337b64dc9f4bcf2fb9164d38c47145bfd2bf3999f38f01354eaf857a13649d85",
+      "git_blob": "e2bb11b165090dcd4aec0b8ee7212e61ad3a4270",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Models/Permiso.cs",
+      "bytes": 508,
+      "sha256": "866ea18fdd0dd05bd5f6880f5090a61a99bcbf215370ca28c5438caefa1b2bea",
+      "git_blob": "1817d31590b47396489c260e02b084d261f828c7",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Reports/ReporteCargos.cs",
+      "bytes": 545,
+      "sha256": "bdb053749c26ac6d29db786432f50fe19b2004fea497033c8358bfacfd1ba31c",
+      "git_blob": "991ddc3122fc2588a9e6935aa4b1600358378b50",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Reports/ReporteCumpleanos.cs",
+      "bytes": 570,
+      "sha256": "e6a68ab97adba39a9276977d6d99c440ef40919de401acecbeb585e5aa0a670f",
+      "git_blob": "94cced15bb3d4e72f3b58d4e732b513c68db8dc1",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Reports/ReporteOficina.cs",
+      "bytes": 761,
+      "sha256": "c05b42d3d771bcd545834b1ce4c19c45d3c1bddc3c61760f8b7c705916210371",
+      "git_blob": "1f77640e2465de17552376cfb1f73de6040dd15d",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Reports/ReporteProfesion.cs",
+      "bytes": 567,
+      "sha256": "9c011b5f96eb1c5fafaff2dceddc27fad0aaaa8199ededf5f096d6ba4b45e75d",
+      "git_blob": "1c309dc4ec476ec421bc55f2dd66bb3d916ef450",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/antecedentes/src/Services/AsistenciaImportService.cs",
+      "bytes": 1593,
+      "sha256": "9febfcff4f2e30c57bacf744c39518576be1f9521d26f7814ce562fa87f9c6a1",
+      "git_blob": "8f6c0839383e98fbe537e47c5f9f95cdc500b48c",
+      "normalizar_lf": false,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/ComandoReporte.cs",
+      "bytes": 486,
+      "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6",
+      "git_blob": "c4c6e851a986cb142d0df91c94607e6fcf0498c8",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/EjecutorReportesSql.cs",
+      "bytes": 730,
+      "sha256": "55c323ed5c8c39a9235944291dd76805f332b43e4d4fd1f644b83b7e524fa636",
+      "git_blob": "7700336cdfefd59b566857f972fb27d230021264",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/GeneradorReportes.cs",
+      "bytes": 671,
+      "sha256": "83b69da47348cd5e3218ce81139e6fb8225db1125014b3b3756c93dce2bd809e",
+      "git_blob": "9a33fcb623faae7e187e9abe9787a8dc8d5f4594",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/IDefinicionReporte.cs",
+      "bytes": 258,
+      "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936",
+      "git_blob": "1e1a63738dae77ab5fe474729ef6adc0ca0f87d8",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/RRHHClass.cs",
+      "bytes": 41851,
+      "sha256": "b1d066121225e45b2403f6a699385e615c6ef82f81b2f57a2020bd39fac99e0a",
+      "git_blob": "c3563e1ebb9405f9077015becbde7aff5c060f2e",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/ReporteOficina.cs",
+      "bytes": 635,
+      "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e",
+      "git_blob": "c77a8121f659adfb70f98dff366c0f6d4b881a29",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v3/caso_reportes/ReporteOficinaPorSigla.cs",
+      "bytes": 698,
+      "sha256": "94da3cf581271f6b9a39cec1b147f5c63d1607b9411a9ce156db07d05d014258",
+      "git_blob": "1c1ba62ff0a13888fce857f843d3b2ddac19a8c9",
+      "normalizar_lf": true,
+      "grupo": "SCI-V3"
+    },
+    {
+      "ruta": "src/v4/README.md",
+      "bytes": 3591,
+      "sha256": "ae02dbbde2ce9f9c4a00745f05c7f3902a53b78b7f4155fd32cf8408f6d00aff",
+      "git_blob": "93130edc84ebae834ae167b774be2ec60f67027a",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/README.md",
+      "bytes": 1299,
+      "sha256": "05b1a72ef6e451420589c0b6160844e6d49480f9c0b16b2eaed3387cdec685c8",
+      "git_blob": "8bf5babb9a88caf0337a486794995b7d68e446fb",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/README_recibido.md.txt",
+      "bytes": 564,
+      "sha256": "b14c58d632bfdfb3c6f2ecf34f628b2167792fa98521e2c88670f2d3749393b1",
+      "git_blob": "299cf248b46bc7da6038faa1b9e2b3dd3b3fd69c",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IAsistenciaImporter.cs",
+      "bytes": 267,
+      "sha256": "951da48de06b979d9198d8d688d68459207686fc08d1d1e8ee3c43a6a1b760d6",
+      "git_blob": "b16e8577d4488901b214d828163bcb1e724a45e8",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IAsistenciaRepository.cs",
+      "bytes": 483,
+      "sha256": "a85ad64ce0a9e49dad98a50d7e0d3f98c09e80d731038d1188038cfa4ef49b78",
+      "git_blob": "623edd452823f2f4ab237053d154f50ea35f3f51",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IDatabaseHelper.cs",
+      "bytes": 598,
+      "sha256": "9b98d840cfbf9531ece06659a79da9ffffd7c396ba7aebddd1e4ce87c3783088",
+      "git_blob": "b6dc50dfde5b24620446f22cca5a107d3a8bad98",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IEmpleadoRepository.cs",
+      "bytes": 458,
+      "sha256": "fe7b3ea05ad998998706ad8693679cb689341cbf1cf66633c9eab38a36286c5c",
+      "git_blob": "234d1a1faacd33c56baa4cbccf7573d33f0ad8ba",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IPermisoRepository.cs",
+      "bytes": 403,
+      "sha256": "20477072a41d04db1a89a8637b2779baf48d8b46bd331b25dc0ee26e3837bf24",
+      "git_blob": "740483d830fee1bc1ec007bd149ddfb9a39a1c2d",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Interfaces/IReporteGenerator.cs",
+      "bytes": 299,
+      "sha256": "1efb40e291c888556cc5866cc2cbd906f982b72df0de27c6b072e52265c575ad",
+      "git_blob": "270d4613ac861f56a316a957371c761ddf3803b6",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/antecedentes/src/Models",
+      "bytes": 508,
+      "sha256": "866ea18fdd0dd05bd5f6880f5090a61a99bcbf215370ca28c5438caefa1b2bea",
+      "git_blob": "1817d31590b47396489c260e02b084d261f828c7",
+      "normalizar_lf": false,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/caso_ioc/ComposicionReportes.cs",
+      "bytes": 398,
+      "sha256": "847db97f8d6deb187329b511be6189ea6ef741f7f68a981e22bf4e9d922e59d4",
+      "git_blob": "f86bf91e8d239d481c294c27a8335c1e3533d6c1",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/caso_ioc/EjecutorReportesSql.cs",
+      "bytes": 735,
+      "sha256": "db33beaff5ae771ba9fe6ec7a7130553ff1821d8fad492574c23a9496b3e4b71",
+      "git_blob": "a8d39aa4e090dfc6425d3ab01494c8fd95164db7",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/caso_ioc/GeneradorReportes.cs",
+      "bytes": 625,
+      "sha256": "ee7dcd53a3d1c57376024a99e6e2968ca6885e3aa8b80d59b21870c2094e8b6b",
+      "git_blob": "08522e3618d46f701fc7e693ed347a455da6dcf9",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/caso_ioc/IEjecutorReportes.cs",
+      "bytes": 202,
+      "sha256": "9e0480dae37a92f2392d083b3c424b2b5453cc56585523677dd40cd0edd54522",
+      "git_blob": "d530b178dff561a8af91fce8cdd1f6b4b1b89394",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/caso_ioc/RRHHClass.cs",
+      "bytes": 41837,
+      "sha256": "e50a8b4067cae0e4de75e0691a0ecbceda66996c59963a6b93b5780d5158d513",
+      "git_blob": "30a618bb610ece95806333d09d17be72cd52f4b7",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    },
+    {
+      "ruta": "src/v4/pruebas/PruebasIoC.cs",
+      "bytes": 6283,
+      "sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36",
+      "git_blob": "2385444737e5e92aee963618193656a28cbc0994",
+      "normalizar_lf": true,
+      "grupo": "SCI-V4"
+    }
+  ]
+}
