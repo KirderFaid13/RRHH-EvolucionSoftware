@@ -1,0 +1,131 @@
+{
+  "stage": "C07-S09",
+  "base_commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+  "solicitud": "CAM-S09-001",
+  "issue": 10,
+  "new_implementation": "src/v5/caso_cambio/GeneradorReportes.cs",
+  "source_files": [
+    {
+      "path": "src/v2/caso_empleados/EjecutorConsultasSql.cs",
+      "sha256": "7abe9bdebfc86701daad4badfd4f89ee703c7a29d14d8a042aaf594a9e95008f"
+    },
+    {
+      "path": "src/v2/caso_empleados/EmpleadoConsultas.cs",
+      "sha256": "9bf6cd6e97c1bdd87d8d88fdd027997b0b2557e3207761d4c8779b4941e7bf4d"
+    },
+    {
+      "path": "src/v3/caso_reportes/ComandoReporte.cs",
+      "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6"
+    },
+    {
+      "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+      "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficina.cs",
+      "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficinaPorSigla.cs",
+      "sha256": "94da3cf581271f6b9a39cec1b147f5c63d1607b9411a9ce156db07d05d014258"
+    },
+    {
+      "path": "src/v4/caso_ioc/ComposicionReportes.cs",
+      "sha256": "847db97f8d6deb187329b511be6189ea6ef741f7f68a981e22bf4e9d922e59d4"
+    },
+    {
+      "path": "src/v4/caso_ioc/EjecutorReportesSql.cs",
+      "sha256": "db33beaff5ae771ba9fe6ec7a7130553ff1821d8fad492574c23a9496b3e4b71"
+    },
+    {
+      "path": "src/v4/caso_ioc/IEjecutorReportes.cs",
+      "sha256": "9e0480dae37a92f2392d083b3c424b2b5453cc56585523677dd40cd0edd54522"
+    },
+    {
+      "path": "src/v4/caso_ioc/RRHHClass.cs",
+      "sha256": "e50a8b4067cae0e4de75e0691a0ecbceda66996c59963a6b93b5780d5158d513"
+    },
+    {
+      "path": "src/v4/pruebas/PruebasIoC.cs",
+      "sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36"
+    },
+    {
+      "path": "src/v5/caso_cambio/GeneradorReportes.cs",
+      "sha256": "c87071657b95ab19d8068108f5efea0fcf855ba8bea94955020d2fae44fb8861"
+    },
+    {
+      "path": "src/v5/pruebas/PruebasCicloVida.cs",
+      "sha256": "34638316265c4262e4c5b5e4f4b7ffecb0fc1373d8e36380c449ca2ab5c56f15"
+    }
+  ],
+  "private_v1_sources": [
+    {
+      "path": ".local/v1_src/ClassRRHH/AsistenciaAccess.cs",
+      "sha256": "9700d26f14c9f2104239d717c230c6f775286282474d7d4ae629854c6400e7cb"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH/FamiliaresClass.cs",
+      "sha256": "05519be4fcaf4952f18bafb8198a1fab58cd1a78a882a1b2235dfa136467f00c"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH/FichaSocialClass.cs",
+      "sha256": "b794ba48ddf6d656fbc2efc25b51812ead7a210eca75018833ab440bea38ab46"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/InternalXmlHelper.cs",
+      "sha256": "30d7f5f76c9215dc36e47b79c8a7b6807cedc7ddb4cfdb5b0daf2dd8f686fd44"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/MyApplication.cs",
+      "sha256": "3e069c0ac81dc8ac4714920593cccc8536b72484b237c56994d6590089fb2f75"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/MyComputer.cs",
+      "sha256": "a8e9ed9421b7b5dd4411c379dd93bb60b3586a2dd2e3e7a88ffb8c38d4f6282c"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/MyProject.cs",
+      "sha256": "63c549c858226f192356e4cb38a888e2e010237308cca4d187ef27a155917227"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/MySettings.cs",
+      "sha256": "76def10a06f71eaef09ae8f0ccc85c8e0ea25f1b03706435f36a5ab114976dc4"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My/MySettingsProperty.cs",
+      "sha256": "b57aa2ea848c8f38a575fc6a65f088edbf539d5b5428ed13bce3fd1b29aaaffe"
+    },
+    {
+      "path": ".local/v1_src/ClassRRHH.My.Resources/Resources.cs",
+      "sha256": "a7dc4a75e76b674c9484a125cff3d880507348793e389968407ed53516660245"
+    },
+    {
+      "path": ".local/v1_src/Properties/AssemblyInfo.cs",
+      "sha256": "569cd4307c8807050885037e546c255a2fd26351d512a4e68890e8c147faa4a1"
+    }
+  ],
+  "original_compile_references": [
+    {
+      "path": ".local/RRHH/GRLL.dll",
+      "sha256": "e663831bd73e60d79aaaa82226269d007ee0559361ad91705ec8d189b511036c"
+    },
+    {
+      "path": "legado/RRHH/Seguridad.dll",
+      "sha256": "fa073f8f8b83186eb72bddc41f185b95c6ee96ad17808fcf7c87d4f196d78de5"
+    }
+  ],
+  "regression_harness_sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36",
+  "generated_contract_source_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
+  "generated_contract_source_provenance": {
+    "contracts": "evidencia/semanas/semana05/contratos_v1.json",
+    "contracts_sha256": "4909e385f7d4cadf0ce0ab201f1a19746b9e507eae6cfe916206f2ebc4b6dc39",
+    "source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+    "source_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+    "generated_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
+    "historical_private_c05_file_required": false
+  },
+  "compiler_script_sha256": "61d78f0de3922f792e56f64a6b16c9a8bd699ca7268ec95a160ae3b2bc8662d1",
+  "historical_evidence_rewritten": false,
+  "received_code_executed": false,
+  "database_connected": false
+}

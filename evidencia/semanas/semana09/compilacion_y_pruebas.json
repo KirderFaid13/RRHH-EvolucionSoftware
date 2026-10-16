@@ -1,0 +1,166 @@
+{
+  "stage": "C07-S09",
+  "solicitud": "CAM-S09-001",
+  "issue": 10,
+  "base_commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+  "verification_utc": "2026-10-16T04:10:54+00:00",
+  "ok": true,
+  "sdk": "10.0.103",
+  "reference_profile": "installed Framework v4.0.30319",
+  "library": {
+    "exit_code": 0,
+    "source_count": 22,
+    "errors": [],
+    "warnings": [],
+    "output_sha256": "699579f2d3fcc60bdb78aa2106df68acf5496ca57f2bf9ccca6fc051fcf481f3"
+  },
+  "suites": {
+    "rojo_v4": {
+      "compilation": {
+        "exit_code": 0,
+        "source_count": 9,
+        "errors": [],
+        "warnings": [],
+        "output_sha256": "f0b732df0482b0ec41a3294d4a29c86176eb54c706147586b692603a4c66d19e"
+      },
+      "tests": {
+        "exit_code": 1,
+        "scenarios_passed": 4,
+        "scenarios": [
+          "comando_disponible_durante_ejecutor",
+          "dataset_identico_y_utilizable",
+          "misma_excepcion_del_ejecutor",
+          "preparar_conserva_propiedad_del_llamador"
+        ],
+        "failures": [
+          "comando_liberado_tras_exito",
+          "comando_liberado_tras_error"
+        ],
+        "connection_opened": false,
+        "sql_executor_ejecutar_executed": false,
+        "synthetic_data_only": true
+      }
+    },
+    "verde_v5": {
+      "compilation": {
+        "exit_code": 0,
+        "source_count": 9,
+        "errors": [],
+        "warnings": [],
+        "output_sha256": "10ba7b4ebdc8260ab21ee52548103328a01875843ee15ce34d939ee93b2befbd"
+      },
+      "tests": {
+        "exit_code": 0,
+        "scenarios_passed": 6,
+        "scenarios": [
+          "comando_disponible_durante_ejecutor",
+          "comando_liberado_tras_exito",
+          "dataset_identico_y_utilizable",
+          "comando_liberado_tras_error",
+          "misma_excepcion_del_ejecutor",
+          "preparar_conserva_propiedad_del_llamador"
+        ],
+        "failures": [],
+        "connection_opened": false,
+        "sql_executor_ejecutar_executed": false,
+        "synthetic_data_only": true
+      }
+    },
+    "regresion_v5": {
+      "compilation": {
+        "exit_code": 0,
+        "source_count": 10,
+        "errors": [],
+        "warnings": [],
+        "output_sha256": "3d6e7c906f755fa3b30eeb63d0a558d52fb40fb508d4e89412880ff904782222"
+      },
+      "tests": {
+        "exit_code": 0,
+        "scenarios_passed": 16,
+        "scenarios": [
+          "Generar_Report_oficina_valor_1",
+          "Generar_Report_oficina_valor_2",
+          "Generar_Report_oficina_valor_3",
+          "Generar_Report_oficina_valor_4",
+          "Generar_Report_oficina_valor_5",
+          "Generar_Report_oficina_Dep_valor_1",
+          "Generar_Report_oficina_Dep_valor_2",
+          "Generar_Report_oficina_Dep_valor_3",
+          "Generar_Report_oficina_Dep_valor_4",
+          "Generar_Report_oficina_Dep_valor_5",
+          "Generar_Report_oficina_Dep_valor_6",
+          "sustitucion_de_ejecutor_y_resultado",
+          "preparar_no_ejecuta_dependencia",
+          "excepcion_del_ejecutor_se_propaga",
+          "composicion_sql_solo_prepara_sin_abrir",
+          "fallo_de_preparacion_no_llama_ejecutor"
+        ],
+        "failures": [],
+        "connection_opened": false,
+        "sql_executor_ejecutar_executed": false,
+        "synthetic_data_only": true
+      }
+    }
+  },
+  "active_and_reused_source_hashes": [
+    {
+      "path": "src/v2/caso_empleados/EjecutorConsultasSql.cs",
+      "sha256": "7abe9bdebfc86701daad4badfd4f89ee703c7a29d14d8a042aaf594a9e95008f"
+    },
+    {
+      "path": "src/v2/caso_empleados/EmpleadoConsultas.cs",
+      "sha256": "9bf6cd6e97c1bdd87d8d88fdd027997b0b2557e3207761d4c8779b4941e7bf4d"
+    },
+    {
+      "path": "src/v3/caso_reportes/ComandoReporte.cs",
+      "sha256": "01fcae142b457f75119de271b50c06ebe1ba317d991841c3b102dc5473f188a6"
+    },
+    {
+      "path": "src/v3/caso_reportes/IDefinicionReporte.cs",
+      "sha256": "7efa7755d8b22b2d7d90631fbc04dd375d5329f28f6053fac66f84b775c3c936"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficina.cs",
+      "sha256": "5070f89b86cdfb8c68e815eb1b17a3f0da46a2ed0258305cc7caa711e5063a3e"
+    },
+    {
+      "path": "src/v3/caso_reportes/ReporteOficinaPorSigla.cs",
+      "sha256": "94da3cf581271f6b9a39cec1b147f5c63d1607b9411a9ce156db07d05d014258"
+    },
+    {
+      "path": "src/v4/caso_ioc/ComposicionReportes.cs",
+      "sha256": "847db97f8d6deb187329b511be6189ea6ef741f7f68a981e22bf4e9d922e59d4"
+    },
+    {
+      "path": "src/v4/caso_ioc/EjecutorReportesSql.cs",
+      "sha256": "db33beaff5ae771ba9fe6ec7a7130553ff1821d8fad492574c23a9496b3e4b71"
+    },
+    {
+      "path": "src/v4/caso_ioc/IEjecutorReportes.cs",
+      "sha256": "9e0480dae37a92f2392d083b3c424b2b5453cc56585523677dd40cd0edd54522"
+    },
+    {
+      "path": "src/v4/caso_ioc/RRHHClass.cs",
+      "sha256": "e50a8b4067cae0e4de75e0691a0ecbceda66996c59963a6b93b5780d5158d513"
+    },
+    {
+      "path": "src/v5/caso_cambio/GeneradorReportes.cs",
+      "sha256": "c87071657b95ab19d8068108f5efea0fcf855ba8bea94955020d2fae44fb8861"
+    }
+  ],
+  "lifecycle_test_source_sha256": "34638316265c4262e4c5b5e4f4b7ffecb0fc1373d8e36380c449ca2ab5c56f15",
+  "regression_test_source_sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36",
+  "generated_contract_source_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
+  "generated_contract_from_public_json": true,
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false,
+  "historical_evidence_rewritten": false,
+  "failures": [],
+  "limits": [
+    "El rojo v4 es esperado: reproduce dos ausencias de Dispose, no una fuga medida en producción.",
+    "Solo ejecución síncrona con sustitutos; no se ejecutan fachada ni Fill ni SQL.",
+    "Se libera el comando; no se prueba cierre de conexión ni integración CMI.",
+    "El PASS automático no acredita revisión humana ni estado de publicación."
+  ]
+}

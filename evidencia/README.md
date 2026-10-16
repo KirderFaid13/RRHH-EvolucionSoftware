@@ -9,3 +9,7 @@ Cada resultado debe indicar su alcance. Comprobar hashes no verifica funcionamie
 ## Preparación C06/S08
 
 [Semana 08](semanas/semana08/README.md) registra la procedencia de la consigna, la auditoría de los 531 archivos C05 y el alcance permitido, 14 pruebas aisladas del auditor y repetición de 16 escenarios v4 sin SQL. La evidencia anterior permanece intacta. Los resultados fechados describen la preparación. La indicación posterior de incorporar C06 consta en CAM-S08-001 y el resultado se verifica en GitHub.
+
+## Semana 09
+
+[Semana 09](semanas/semana09/README.md): reproducción del defecto v4, ciclo de vida v5, regresión y conservación.

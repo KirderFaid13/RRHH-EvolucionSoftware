@@ -1,0 +1,224 @@
+{
+  "etapa": "C07",
+  "semana": 9,
+  "tema": "Gestión del cambio",
+  "estado": "implementado_y_verificado_localmente_pendiente_integracion",
+  "fecha_registro": "2026-10-15",
+  "autorizacion": {
+    "fuente": "Solicitud del usuario: preparar teoría, caso práctico, documentación, Issues y publicación en GitHub; conservar informe DOCX.",
+    "duracion_exposicion_minutos": [
+      20,
+      30
+    ],
+    "revisor_integrador": "KirderFaid13",
+    "alcance_decision": "El agente selecciona una corrección acotada bajo la autorización general; no se acredita un CAB ni aprobación formal de terceros."
+  },
+  "base": {
+    "commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+    "rama": "main",
+    "rama_trabajo": "semana-09-gestion-cambios",
+    "entregas_previas": 6,
+    "commits_previos": 7,
+    "codigo": "v4 diagnóstica"
+  },
+  "fuentes": {
+    "consigna": {
+      "ruta_original": "SEMANA 09/Semana09_EVO_TG.pdf",
+      "sha256": "1c1ccd50799184639f57a2486d099f403c813b1b4a3c9ad1e46925a80b5853f2",
+      "paginas_practica": [
+        14,
+        15
+      ],
+      "rubrica": 16
+    },
+    "informe_original": {
+      "archivo": "Informe_Gestion_del_Cambio_Software.docx",
+      "sha256": "2c2f15111a1fdfb4e6b368887189211383a628d49d5927b07e79f2e838186586",
+      "politica": "Conservar sin editar; comprobar el hash al finalizar."
+    },
+    "presentacion_original": {
+      "archivo": "Presentacion_Gestion_del_Cambio_Software.pptx",
+      "sha256": "649e1e32967461497b7f1785f3908530e11a879cd32a10f1d219bb8985b87135",
+      "politica": "Fuente de cobertura temática; rediseñar en una copia e integrar el bloque práctico."
+    }
+  },
+  "requisitos": [
+    {
+      "id": "S09-T01",
+      "descripcion": "Definición, necesidad, riesgos, calidad y mantenibilidad",
+      "paginas": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "S09-T02",
+      "descripcion": "Cuatro tipos de cambio, cada uno con explicación y ejemplo",
+      "paginas": [
+        11
+      ]
+    },
+    {
+      "id": "S09-T03",
+      "descripcion": "Ocho etapas de gestión del cambio",
+      "paginas": [
+        12
+      ]
+    },
+    {
+      "id": "S09-T04",
+      "descripcion": "Roles, artefactos y buenas prácticas",
+      "paginas": [
+        13
+      ]
+    },
+    {
+      "id": "S09-P01",
+      "descripcion": "Al menos tres solicitudes de cambio relacionadas con RRHH",
+      "paginas": [
+        14
+      ]
+    },
+    {
+      "id": "S09-P02",
+      "descripcion": "Formato simple, matriz y análisis de impacto por solicitud",
+      "paginas": [
+        15
+      ]
+    },
+    {
+      "id": "S09-P03",
+      "descripcion": "Flujo sencillo de gestión",
+      "paginas": [
+        15
+      ]
+    },
+    {
+      "id": "S09-D01",
+      "descripcion": "Ejemplo de código funcional con alcance y evidencia explícitos",
+      "paginas": [
+        7
+      ]
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "CAM-S09-001",
+      "tipo": "correctivo",
+      "titulo": "Liberar el comando creado por Generar al terminar la ejecución síncrona",
+      "prioridad_propuesta": "alta dentro de esta práctica",
+      "estado": "implementada_y_verificada_localmente",
+      "issue": 10,
+      "alcance": "Nuevo generador v5 usando using sobre ComandoReporte. Preparar conserva propiedad del llamador. Liberar ante éxito y excepción; preservar resultado y excepción por identidad.",
+      "criterios": [
+        "Comando disponible durante Ejecutar",
+        "Dispose tras éxito",
+        "Dispose tras excepción del ejecutor",
+        "Resultado DataSet idéntico y utilizable",
+        "Misma excepción propagada",
+        "Preparar no ejecuta ni libera",
+        "Regresión de 16 escenarios IoC"
+      ],
+      "limite": "No afirmar una fuga observada en producción ni liberación de conexión. No alterar SQL, SP ni esquema."
+    },
+    {
+      "id": "CAM-S09-002",
+      "tipo": "preventivo",
+      "titulo": "Validar argumentos nulos al entrar al generador",
+      "prioridad_propuesta": "media",
+      "estado": "propuesta_pendiente",
+      "issue": 11,
+      "alcance": "Evaluar guardas ArgumentNullException para dependencias y definición; documentar cambio intencional de errores.",
+      "criterios": [
+        "Fallo temprano documentado",
+        "No invocar ejecutor ante entrada inválida",
+        "Conservar entradas válidas"
+      ],
+      "limite": "No implementar como parte de CAM-S09-001."
+    },
+    {
+      "id": "CAM-S09-003",
+      "tipo": "perfectivo",
+      "titulo": "Permitir configurar el tiempo de espera de un reporte",
+      "prioridad_propuesta": "baja",
+      "estado": "propuesta_pendiente",
+      "issue": 12,
+      "alcance": "Evaluar configuración de CommandTimeout con valor predeterminado compatible y política documentada antes de implementar.",
+      "criterios": [
+        "Predeterminado compatible",
+        "Valor explícito aplicado al comando",
+        "Límites e inválidos definidos por contrato"
+      ],
+      "limite": "Sin implementación ni medición real de rendimiento. No inferir cambios de servidor."
+    }
+  ],
+  "implementacion": {
+    "nuevas_fuentes": [
+      "src/v5/caso_cambio/GeneradorReportes.cs"
+    ],
+    "reutiliza": "Composición, interfaz, ejecutor y fachada v4; cuatro definiciones/comando v3; dos helpers v2; once fuentes v1 restauradas para biblioteca diagnóstica.",
+    "fuera_de_alcance": [
+      "SQL/CMI real",
+      "Interfaz del legado",
+      "Esquema y datos",
+      "CAM-S09-002",
+      "CAM-S09-003",
+      "Modificar src/v1-v4 o binarios originales",
+      "Configurar CI o protección de ramas"
+    ],
+    "riesgos_integracion": [
+      "El adaptador conserva SelectCommand apuntando al comando dispuesto; la fachada objDA pública puede tener consumidores en UI/binarios no recuperados.",
+      "Los consumidores visibles reasignan SelectCommand antes de Fill; esto no acredita la integración real."
+    ]
+  },
+  "verificacion": {
+    "antes": "Reproducir ausencia de Dispose con el generador v4 y un ejecutor espía, sin abrir SQL.",
+    "despues": "Compilar v5, aprobar suite nueva y repetir los 16 escenarios previos en salida S09.",
+    "historia": "Comparar blobs de la base, conservar fuentes/evidencias anteriores y hashes originales DOCX/PPTX/PDF.",
+    "salidas_privadas": ".local/c07/",
+    "evidencia": "evidencia/semanas/semana09/",
+    "prohibicion": "No ejecutar main() de verificadores antiguos que sobrescriben evidencia histórica.",
+    "resultado_local": {
+      "biblioteca_fuentes": 22,
+      "rojo_v4": {
+        "aprobados": 4,
+        "total": 6,
+        "fallos_esperados": 2,
+        "exit_code": 1
+      },
+      "verde_v5": {
+        "aprobados": 6,
+        "total": 6,
+        "exit_code": 0
+      },
+      "regresion_v5": {
+        "aprobados": 16,
+        "total": 16,
+        "exit_code": 0
+      },
+      "blobs_historicos_protegidos": 516,
+      "sql_abierto": false
+    },
+    "limites_adicionales": [
+      "Disposed acredita invocación de Dispose; no mide memoria ni handles.",
+      "Fuera de cobertura: adquisición del comando, Dispose que lanza, concurrencia y uso posterior por otros consumidores.",
+      "verificar_v5 valida evidencia y hashes; compilar_v5 reproduce la ejecución de los harness."
+    ]
+  },
+  "entregables": [
+    "Tres solicitudes en JSON/Markdown e Issues reales",
+    "Formato de solicitud y matriz",
+    "Análisis de impacto y flujo",
+    "Código v5 y pruebas propias",
+    "Informe práctico, guion 20–30 min y preguntas de defensa",
+    "PPTX rediseñada con teoría y práctica al final",
+    "Proveniencia y evidencia nueva",
+    "README, contexto y roadmap actualizados"
+  ],
+  "publicacion": {
+    "autorizada": true,
+    "metodo": "Rama semanal, PR descriptivo, squash a main y cierre de la Issue implementada; las propuestas permanecen abiertas.",
+    "nota": "C07 es la séptima entrega académica, no el séptimo commit de Git; el README documental añadió un commit previo.",
+    "detener_despues": "Publicar, verificar, explicar y entregar."
+  }
+}

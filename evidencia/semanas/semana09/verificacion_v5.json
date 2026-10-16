@@ -1,0 +1,64 @@
+{
+  "stage": "C07-S09",
+  "ok": true,
+  "solicitud": "CAM-S09-001",
+  "issue": 10,
+  "verification_utc": "2026-10-16T04:11:01+00:00",
+  "base_commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+  "head_observed": "9555cebf13e9b78d424cc1d82865acfc2d14c0cb",
+  "branch_observed": "semana-09-gestion-cambios",
+  "generator_only_using_changed": true,
+  "active_implementation": "src/v5/caso_cambio/GeneradorReportes.cs",
+  "historical_blobs_preserved": 516,
+  "historical_changes": [],
+  "library_sources": 22,
+  "suites": {
+    "rojo_v4": {
+      "approved": 4,
+      "expected_failure_count": 2,
+      "compiled_sources": 9
+    },
+    "verde_v5": {
+      "approved": 6,
+      "expected_failure_count": 0,
+      "compiled_sources": 9
+    },
+    "regresion_v5": {
+      "approved": 16,
+      "expected_failure_count": 0,
+      "compiled_sources": 10
+    }
+  },
+  "private_exclusions": [
+    {
+      "path": ".local/c07/verde_v5.exe",
+      "ignored": true,
+      "tracked": false
+    },
+    {
+      "path": ".local/clave_legado.key",
+      "ignored": true,
+      "tracked": false
+    },
+    {
+      "path": "prueba.bak",
+      "ignored": true,
+      "tracked": false
+    },
+    {
+      "path": ".env",
+      "ignored": true,
+      "tracked": false
+    }
+  ],
+  "source_sha256": "c87071657b95ab19d8068108f5efea0fcf855ba8bea94955020d2fae44fb8861",
+  "received_code_executed": false,
+  "database_connected": false,
+  "whole_system_equivalence_verified": false,
+  "failures": [],
+  "limits": [
+    "Compara archivos de trabajo con blobs Git de la base; no certifica el índice futuro.",
+    "El fallo rojo es intencional y esperado; las seis pruebas v5 y dieciséis regresiones deben aprobar.",
+    "No certifica revisión humana, publicación, SQL, interfaz ni liberación de conexiones."
+  ]
+}

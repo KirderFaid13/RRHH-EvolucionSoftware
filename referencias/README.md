@@ -18,3 +18,7 @@ El [inventario de referencias](../evidencia/baseline/inventario_referencias.json
 ## Consigna adicional de semana 08
 
 [Semana08_EVO_TG.pdf](semanas/semana08/Semana08_EVO_TG.pdf) se incorpora sin modificar sus bytes. La práctica de GCS está en páginas 14-16 y la rúbrica en 17. Su [procedencia y SHA-256](../evidencia/semanas/semana08/procedencia.json) quedan separados del inventario inicial de ocho referencias, que conserva su significado histórico.
+
+## Semana 09
+
+[Semana 09](semanas/semana09/): consigna, informe DOCX y PPTX originales preservados por SHA-256; se rediseña una copia de la presentación.

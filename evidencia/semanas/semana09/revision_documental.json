@@ -1,0 +1,31 @@
+{
+  "resultado": "PASS",
+  "base": "6c13e74482563cc158c4329852753f7f1eb2effd",
+  "archivos_base": 558,
+  "blobs_conservados": 545,
+  "guias_actualizadas": [
+    ".context/03_course_context.md",
+    ".context/ROADMAP.md",
+    "README.md",
+    "configuracion/README.md",
+    "docs/README.md",
+    "docs/semanas/README.md",
+    "evidencia/README.md",
+    "evidencia/semanas/README.md",
+    "herramientas/README.md",
+    "prompts/README.md",
+    "referencias/README.md",
+    "specs/README.md",
+    "src/README.md"
+  ],
+  "json_validos": 54,
+  "markdown_leidos": 66,
+  "enlaces_locales": 437,
+  "filas_readme": 7,
+  "diapositivas": 26,
+  "informe_original_intacto": true,
+  "ppt_original_intacto": true,
+  "csharp_igual_al_probado": true,
+  "privados_excluidos": true,
+  "verificacion_alcance": "Archivos de trabajo; el índice se coteja tras preparar."
+}
