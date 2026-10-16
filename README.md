@@ -4,11 +4,32 @@ Proyecto académico para estudiar, refactorizar y evolucionar el sistema de Recu
 
 Repositorio [RRHH-EvolucionSoftware](https://github.com/KirderFaid13/RRHH-EvolucionSoftware) público por decisión del responsable, confirmada durante esta preparación. Las claves, configuraciones restauradas y datos locales siguen excluidos de Git.
 
-**Entrega C06: semana 08, gestión de la configuración.** Se añade el inventario de los 531 archivos de C05, un catálogo de elementos, reglas de versiones y cambios, planes de pruebas y calidad y un auditor funcional. El responsable autorizó incorporar esta entrega como sexto commit desde `semana-08-gcs` hacia `main`, mediante solicitud de cambios y squash. [Detalle de incorporación](docs/semanas/semana08/03_preparacion_sexto_commit.md), [informe](docs/semanas/semana08/01_gestion_configuracion.md) y [resultado real en el historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/).
+**Avance documentado hasta semana 08: seis entregas académicas, C01–C06, incorporadas en `main`.** La última, gestión de la configuración, se integró desde `semana-08-gcs` mediante squash en el [PR #2](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/2), commit [f61ceb5](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/f61ceb58370ffd67eea197f56d7607c33c3dbd1f). Su seguimiento está en la [Issue #8](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/8).
 
-Las diapositivas y evidencias fechadas durante la preparación conservan ese momento anterior al commit. El registro `CAM-S08-001` añade la autorización posterior. El estado del PR y el historial Git acreditan la publicación; las pruebas automáticas no acreditan una revisión humana formal.
+C06 incorpora el inventario de los **531 archivos de C05**, catálogo de elementos, reglas de versiones y cambios, planes iniciales de pruebas y calidad y un auditor de configuración. La entrega C06 contiene **558 archivos**: 520 de la base sin cambios, 11 guías actualizadas y 27 altas. [Informe y alcance](docs/semanas/semana08/01_gestion_configuracion.md).
 
-La base software sigue siendo **v4 diagnóstica**, publicada como quinto commit `6d82f9f` mediante [PR #1](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/1). Sus 22 fuentes y 16 escenarios con sustitutos vuelven a comprobarse sin abrir SQL. Resultados reales de CMI, interfaz y equivalencia completa siguen pendientes.
+La base software sigue siendo **v4 diagnóstica**, incorporada en C05 mediante [PR #1](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/1). En C06 aprobaron 14 escenarios del auditor y se repitieron 16 escenarios de v4 con sustitutos, sin abrir SQL. La integración real con CMI, la interfaz, el rendimiento, la autenticación y la equivalencia funcional completa siguen pendientes.
+
+## Avance por entregas
+
+Cada fila enlaza la necesidad y los cambios documentados en la Issue, la revisión exacta del código o los archivos en el commit y, cuando existe, su Pull Request de integración.
+
+| Entrega y tema | Qué se incorporó y qué aporta | Issue | Commit integrado | Pull Request | Informe y evidencias |
+| --- | --- | --- | --- | --- | --- |
+| C01 · Base original | Preservación del RRHH recibido, inventarios y estructura para comparar mejoras con el original. | [#3](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/3) | [e1ead41](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/e1ead41a4101460dd1317856302ca18fc355d0d4) | Commit directo | [Organización](docs/organizacion/01_baseline.md) · [Evidencias](evidencia/baseline/README.md) |
+| C02 · Semana 03 · v1 · Ingeniería inversa | Recuperación parcial de `ClassRRHH.dll` y contratos observados para fundamentar las refactorizaciones. | [#4](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/4) | [9e18ca4](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/9e18ca433073e50522791916fb29240f59723395) | Commit directo | [Informe](docs/ingenieria_inversa/01_informe.md) · [Evidencias](evidencia/ingenieria_inversa/README.md) |
+| C03 · Semana 04 · v2 · SRP/DRY | Separación de tres consultas de empleados y ejecución compartida para reducir duplicación. Once escenarios de comandos aprobados sin SQL. | [#5](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/5) | [a5849d9](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/a5849d9d024394757b50449869a7c47bb6446557) | Commit directo | [Antes/después](docs/semanas/semana04/01_srp_dry.md) · [Evidencias](evidencia/semanas/semana04/README.md) |
+| C04 · Semana 05 · v3 · OCP | Definiciones extensibles de reportes. El núcleo acepta una variante externa sin recompilarse; once escenarios de preparación aprobados. | [#6](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/6) | [7bd215a](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/7bd215a0d7aebb47fd99309c0a3ed661304cfb19) | Commit directo | [Antes/después](docs/semanas/semana05/01_ocp.md) · [Evidencias](evidencia/semanas/semana05/README.md) |
+| C05 · Semana 07 · v4 · IoC | Ejecutor de reportes recibido por interfaz y constructor para sustituir dependencias al probar. Dieciséis escenarios con sustitutos aprobados. | [#7](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/7) | [6d82f9f](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/6d82f9fa6aa608a0d7d71c14fb2fc661e9d21fa2) | [#1 · Integrado](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/1) | [Antes/después](docs/semanas/semana07/01_ioc.md) · [Evidencias](evidencia/semanas/semana07/README.md) |
+| C06 · Semana 08 · Gestión de configuración | Inventario, registro de cambios, planes y auditor para identificar entregas y detectar cambios fuera de alcance. Catorce escenarios del auditor aprobados y dieciséis de v4 repetidos. | [#8](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/8) | [f61ceb5](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commit/f61ceb58370ffd67eea197f56d7607c33c3dbd1f) | [#2 · Integrado](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/2) | [Informe](docs/semanas/semana08/01_gestion_configuracion.md) · [Evidencias](evidencia/semanas/semana08/README.md) |
+
+C01 es la preparación del original. Las semanas 01 y 02 aportan el contexto introductorio y de mantenimiento; semana 06 corresponde a T1 y no tiene una entrega práctica independiente registrada. [Contexto y temario del curso](.context/03_course_context.md).
+
+Las seis Issues se registraron **retrospectivamente el 15 de octubre de 2026** y están cerradas como completadas dentro del alcance descrito en cada una. Las semanas identifican los temas académicos; los commits y PR conservan sus fechas reales. Se pueden recorrer desde el [índice de Issues](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/3#secuencia-de-entregas) o consultar [todas las Issues cerradas](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues?q=is%3Aissue+is%3Aclosed+sort%3Acreated-asc).
+
+C01–C06 identifican las seis entregas académicas. Las actualizaciones documentales posteriores, como este índice, se publican mediante commits adicionales y no constituyen nuevas semanas. El [historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/) conserva la secuencia completa.
+
+Las diapositivas y evidencias fechadas durante la preparación conservan ese momento anterior al commit. Para confirmar el estado de publicación se consultan los enlaces de esta tabla. Las pruebas automáticas no acreditan una revisión humana formal.
 
 ## Lectura inicial
 
@@ -88,18 +109,9 @@ El destino predeterminado es `.local/RRHH/`. El respaldo SQL se obtiene por sepa
 
 La integridad de archivos **no acredita funcionamiento**. Todavía no se ha probado instalación, conexión a CMI, ejecución del programa ni equivalencia de código recuperado.
 
-## Secuencia acordada
+## Procedimientos de comprobación por versión
 
-| Commit | Contenido | Estado de esta revisión |
-| --- | --- | --- |
-| 1 | RRHH original protegido y estructura organizada. | Conservado; publicado en `e1ead41`. |
-| 2 | Ingeniería inversa y base v1 con procedencia documentada. | Publicado en `9e18ca4`; recuperación parcial, compilación diagnóstica comprobada. |
-| 3 | v2: refactorización mediante SRP y DRY. | Publicado en `a5849d9`; tres consultas refactorizadas y 11 escenarios aprobados. |
-| 4 | v3: mejora mediante abierto/cerrado, OCP. | Publicado en `7bd215a`; biblioteca de 20 fuentes compilada y extensión externa aceptada sin recompilar el núcleo. |
-| 5 | v4: semana 07, inversión de control. | Entrega C05 validada: 22 fuentes compiladas y 16 escenarios aprobados con sustitutos. Incorporación por PR desde `semana-07-ioc` con squash. |
-| 6 | Semana 08: gestión de la configuración. | Inventario, auditor, planes y exposición comprobados. Incorporación autorizada desde `semana-08-gcs` mediante PR y squash; resultado consultable en GitHub. |
-
-Se avanza y se explica **un commit por vez**, esperando la indicación del equipo antes del siguiente. C06 corresponde a la sexta entrega autorizada. Los archivos y análisis de etapas anteriores se conservan. El [historial de GitHub](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/commits/main/) y las solicitudes de cambios registran la publicación real. Después de incorporar y explicar semana 08 se detiene el avance.
+Cada nueva entrega se incorpora con autorización del equipo y documenta qué cambia, por qué y cómo se comprueba. Los procedimientos siguientes describen verificaciones de etapas ya incorporadas; deben interpretarse junto con sus límites y la evidencia histórica correspondiente.
 
 Para repetir la comprobación de v1, después de restaurar el legado y disponer de la clave local:
 
