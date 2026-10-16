@@ -1,0 +1,33 @@
+{
+  "etapa": "C07_S09",
+  "fecha_preparacion": "2026-10-15",
+  "fuentes": [
+    {
+      "archivo_original": "Semana09_EVO_TG.pdf",
+      "ruta_versionada": "referencias/semanas/semana09/Semana09_EVO_TG.pdf",
+      "bytes": 696100,
+      "sha256": "1c1ccd50799184639f57a2486d099f403c813b1b4a3c9ad1e46925a80b5853f2",
+      "fuente_conservada_sin_editar": true
+    },
+    {
+      "archivo_original": "Informe_Gestion_del_Cambio_Software.docx",
+      "ruta_versionada": "referencias/semanas/semana09/Informe_teorico_original.docx",
+      "bytes": 44727,
+      "sha256": "2c2f15111a1fdfb4e6b368887189211383a628d49d5927b07e79f2e838186586",
+      "fuente_conservada_sin_editar": true
+    },
+    {
+      "archivo_original": "Presentacion_Gestion_del_Cambio_Software.pptx",
+      "ruta_versionada": "referencias/semanas/semana09/Presentacion_teorica_original.pptx",
+      "bytes": 42190,
+      "sha256": "649e1e32967461497b7f1785f3908530e11a879cd32a10f1d219bb8985b87135",
+      "fuente_conservada_sin_editar": true
+    }
+  ],
+  "imagen_portada": {
+    "ruta": "herramientas/presentacion_semana09/assets/portada_conceptual.png",
+    "tipo": "imagen conceptual generada con IA; no representa un hecho real",
+    "sha256": "eee722b7da19421356627e507c0ae17b2d1d64284e221431a7e961b45102f001"
+  },
+  "politica_informe": "El DOCX del compañero se conserva intacto; la presentación usa redacción propia y afirmaciones contrastadas."
+}

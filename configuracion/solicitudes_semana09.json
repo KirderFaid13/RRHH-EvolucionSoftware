@@ -1,0 +1,410 @@
+{
+  "version_registro": 1,
+  "entrega": "C07",
+  "semana": 9,
+  "fecha_registro": "2026-10-15",
+  "momento": "Preparación del cambio; el estado de publicación y decisiones posteriores se consulta en Issues y PR.",
+  "base": {
+    "commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+    "codigo": "v4 diagnóstica",
+    "commits_previos": 7,
+    "entregas_academicas_previas": 6
+  },
+  "plantilla": "configuracion/plantilla_solicitud.md",
+  "autoridad": {
+    "responsable_revision_integracion": "KirderFaid13",
+    "origen": "El usuario confirmó que revisará e integrará y autorizó completar/publicar semana 09.",
+    "cab_acreditado": false,
+    "revision_independiente_acreditada": false
+  },
+  "politicas": [
+    "No implementar 002/003 dentro de 001",
+    "Fechas reales; no reconstruir aprobaciones históricas",
+    "Sin SQL, restauración de respaldo ni ejecución de binarios recibidos",
+    "Código histórico y evidencia anterior conservados",
+    "Resultados efectivos separados de pruebas previstas"
+  ],
+  "solicitudes": [
+    {
+      "id": "CAM-S09-001",
+      "issue": 10,
+      "titulo": "Liberar el comando creado por Generar al terminar la ejecución síncrona",
+      "tipo": "correctivo",
+      "prioridad_propuesta": "alta dentro de esta práctica",
+      "justificacion_prioridad": "Hallazgo acotado de gestión de recurso con contrato existente y demostración aislada posible.",
+      "estado": "implementada_y_verificada_localmente",
+      "origen": {
+        "tipo": "revision_estatica_del_codigo",
+        "fuentes": [
+          "src/v4/caso_ioc/GeneradorReportes.cs",
+          "src/v3/caso_reportes/ComandoReporte.cs"
+        ],
+        "hallazgo": "Generar crea ComandoReporte, que implementa IDisposable, sin liberarlo explícitamente.",
+        "limite": "No es un incidente productivo observado ni una fuga medida."
+      },
+      "cambio_solicitado": "En una fuente nueva de v5, envolver en using el ComandoReporte creado por Generar y conservar Preparar con propiedad del llamador.",
+      "motivo": "Definir y comprobar el fin de vida del recurso creado por el generador.",
+      "alcance": {
+        "fuentes_nuevas": [
+          "src/v5/caso_cambio/GeneradorReportes.cs"
+        ],
+        "dependencias": [
+          "ComandoReporte v3",
+          "IEjecutorReportes v4",
+          "EjecutorReportesSql y composición/fachada v4"
+        ],
+        "exclusiones": [
+          "Cambiar fuentes v1-v4",
+          "Liberar o cerrar la conexión",
+          "Alterar SQL, procedimientos, parámetros o esquema",
+          "Guardas nulas",
+          "CommandTimeout configurable"
+        ]
+      },
+      "impacto": {
+        "comportamiento": "El comando vive durante Ejecutar y se libera después de devolver o lanzar; resultado y excepción deben conservar identidad.",
+        "riesgos": [
+          "Liberación prematura si un ejecutor retuviera el comando tras una llamada síncrona",
+          "Modificar el resultado o la excepción al introducir el bloque"
+        ],
+        "datos": "Sin migración ni escritura SQL en las pruebas; integración con CMI no comprobada."
+      },
+      "criterios_aceptacion": [
+        {
+          "id": "AC-S09-001-01",
+          "descripcion": "Comando disponible durante Ejecutar"
+        },
+        {
+          "id": "AC-S09-001-02",
+          "descripcion": "Dispose tras éxito"
+        },
+        {
+          "id": "AC-S09-001-03",
+          "descripcion": "Dispose tras excepción del ejecutor"
+        },
+        {
+          "id": "AC-S09-001-04",
+          "descripcion": "Mismo DataSet devuelto y utilizable"
+        },
+        {
+          "id": "AC-S09-001-05",
+          "descripcion": "Misma excepción propagada"
+        },
+        {
+          "id": "AC-S09-001-06",
+          "descripcion": "Preparar no ejecuta ni libera; el llamador mantiene propiedad"
+        },
+        {
+          "id": "AC-S09-001-07",
+          "descripcion": "Repetir 16 escenarios previos de IoC sobre v5 sin SQL"
+        }
+      ],
+      "verificacion": {
+        "plan": [
+          "Reproducir ausencia de Dispose en v4 con ejecutor espía",
+          "Probar ciclo de vida v5, éxito y error",
+          "Repetir regresión de IoC con salidas nuevas S09",
+          "Comprobar conservación de fuentes anteriores"
+        ],
+        "estado": "ejecutada_y_aprobada_localmente",
+        "cantidad_nueva_suite": 6,
+        "regresion_prevista": 16,
+        "evidencia_prevista": [
+          "evidencia/semanas/semana09/compilacion_y_pruebas.json",
+          "evidencia/semanas/semana09/verificacion_v5.json",
+          "evidencia/semanas/semana09/procedencia_codigo.json"
+        ],
+        "limites": [
+          "Sin SQL real",
+          "Sin ejecutar la aplicación recibida",
+          "Sin medición de rendimiento o equivalencia completa"
+        ],
+        "resultados": {
+          "biblioteca_fuentes": 22,
+          "harness_ciclo_vida_fuentes_por_version": 9,
+          "harness_regresion_fuentes": 10,
+          "rojo_v4": {
+            "aprobados": 4,
+            "total": 6,
+            "exit_code": 1,
+            "fallos_esperados": [
+              "comando_liberado_tras_exito",
+              "comando_liberado_tras_error"
+            ]
+          },
+          "verde_v5": {
+            "aprobados": 6,
+            "total": 6,
+            "exit_code": 0
+          },
+          "regresion_v5": {
+            "aprobados": 16,
+            "total": 16,
+            "exit_code": 0
+          },
+          "errores_compilacion": 0,
+          "advertencias_compilacion": 0,
+          "conexion_sql_abierta": false,
+          "codigo_recibido_ejecutado": false,
+          "preservacion": {
+            "blobs_historicos_protegidos": 516,
+            "cambios_en_conjunto_protegido": 0,
+            "alcance": "árbol de trabajo; no certifica el índice futuro"
+          }
+        },
+        "verification_utc": "2026-10-16T03:54:41+00:00",
+        "entorno": "Harness sintéticos ejecutados fuera de AppContainer para inicialización de contadores SqlClient de Windows; sin SQL."
+      },
+      "decision": {
+        "estado": "seleccionada_bajo_autorizacion_general",
+        "responsable": "KirderFaid13",
+        "fundamento": "El usuario autorizó realizar el caso práctico y publicarlo; el agente selecciona una corrección acotada según contrato C07.",
+        "fecha": "2026-10-15",
+        "cab_acreditado": false,
+        "revision_independiente_acreditada": false
+      },
+      "plan": {
+        "rama": "semana-09-gestion-cambios",
+        "base_commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+        "responsable_implementacion": "Agente bajo autorización del responsable",
+        "responsable_revision_integracion": "KirderFaid13",
+        "reversion": "Parche acotado que recupere el comportamiento del generador v4, en rama de reparación y mediante PR; sin revertir main como demostración ni tocar BD.",
+        "reversion_ejecutada": false
+      },
+      "historial": [
+        {
+          "fecha": "2026-10-15",
+          "evento": "registrada",
+          "descripcion": "Solicitud real vinculada a Issue #10 antes de la implementación."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "analizada",
+          "descripcion": "Identificados recurso, dependencia síncrona, riesgos y criterios."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "seleccionada",
+          "descripcion": "Seleccionada bajo autorización general; sin atribuir aprobación formal de terceros."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "implementada_localmente",
+          "descripcion": "Fuente nueva v5 comprobada en disco con using sobre el comando de Generar. Pruebas e integración todavía pendientes de su evidencia."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "verificada_localmente",
+          "descripcion": "Evidencia leída: rojo v4 4/6 con dos fallos esperados de Dispose; verde v5 6/6 y regresión 16/16. Biblioteca de 22 fuentes, sin errores ni advertencias. PR/integración pendientes."
+        }
+      ],
+      "fecha_solicitud": "2026-10-15",
+      "trazabilidad": {
+        "issue_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/10",
+        "contrato": "specs/c07_gestion_cambio.json",
+        "commit_implementacion": null,
+        "pull_request": null,
+        "fecha_cierre": null,
+        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+      }
+    },
+    {
+      "id": "CAM-S09-002",
+      "issue": 11,
+      "titulo": "Validar argumentos nulos al entrar al generador",
+      "tipo": "preventivo",
+      "prioridad_propuesta": "media",
+      "justificacion_prioridad": "Mejora de diagnóstico con impacto en contratos de error que requiere decisión separada.",
+      "estado": "propuesta_pendiente",
+      "origen": {
+        "tipo": "revision_estatica_del_codigo",
+        "fuentes": [
+          "src/v4/caso_ioc/GeneradorReportes.cs"
+        ],
+        "hallazgo": "El constructor asigna dependencias y Preparar utiliza la definición sin guardas nulas explícitas.",
+        "limite": "No se afirma que se hayan observado entradas nulas en operación real."
+      },
+      "cambio_solicitado": "Evaluar ArgumentNullException para dependencias y definición con parámetros y momento de fallo documentados.",
+      "motivo": "Detectar contratos inválidos temprano y facilitar diagnóstico.",
+      "alcance": {
+        "componentes": [
+          "Constructor del generador",
+          "Preparar",
+          "Consumidores, fachada y composición"
+        ],
+        "dependencias": [
+          "Contrato público de errores",
+          "Pruebas válidas e inválidas"
+        ],
+        "exclusiones": [
+          "Implementación como parte de CAM-S09-001",
+          "Afirmar una validación de reglas de negocio"
+        ]
+      },
+      "impacto": {
+        "comportamiento": "Cambio intencional del tipo o momento de excepción para entradas inválidas.",
+        "riesgos": [
+          "Incompatibilidad con consumidores que dependan del error anterior",
+          "Validación incompleta o nombres de parámetro inconsistentes"
+        ],
+        "datos": "No requiere proponer cambios de esquema o datos."
+      },
+      "criterios_aceptacion": [
+        {
+          "id": "AC-S09-002-01",
+          "descripcion": "Fallo temprano con tipo y parámetro documentados"
+        },
+        {
+          "id": "AC-S09-002-02",
+          "descripcion": "No invocar ejecutor ante definición inválida"
+        },
+        {
+          "id": "AC-S09-002-03",
+          "descripcion": "Conservar los casos de entrada válida"
+        }
+      ],
+      "verificacion": {
+        "plan": [
+          "Probar cada parámetro nulo",
+          "Comprobar que el ejecutor no fue llamado",
+          "Repetir escenarios válidos"
+        ],
+        "estado": "no_ejecutada_propuesta",
+        "evidencia": null
+      },
+      "decision": {
+        "estado": "pendiente",
+        "responsable": "KirderFaid13",
+        "motivo": "Evaluar compatibilidad y fijar alcance antes de implementar.",
+        "fecha_registro": "2026-10-15",
+        "implementacion_autorizada_especificamente": false
+      },
+      "plan": {
+        "implementacion": null,
+        "reversion": "Definir antes de una futura implementación; conservar referencia previa y revisar contrato de errores."
+      },
+      "historial": [
+        {
+          "fecha": "2026-10-15",
+          "evento": "registrada",
+          "descripcion": "Solicitud real vinculada a Issue #11."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "analizada_como_propuesta",
+          "descripcion": "Impacto y criterios iniciales registrados; no implementada ni formalmente aplazada."
+        }
+      ],
+      "fecha_solicitud": "2026-10-15",
+      "trazabilidad": {
+        "issue_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/11",
+        "contrato": "specs/c07_gestion_cambio.json",
+        "commit_implementacion": null,
+        "pull_request": null,
+        "fecha_cierre": null,
+        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+      }
+    },
+    {
+      "id": "CAM-S09-003",
+      "issue": 12,
+      "titulo": "Permitir configurar el tiempo de espera de un reporte",
+      "tipo": "perfectivo",
+      "prioridad_propuesta": "baja",
+      "justificacion_prioridad": "Nueva opción que requiere política de valores y diseño del contrato antes de codificar.",
+      "estado": "propuesta_pendiente",
+      "origen": {
+        "tipo": "revision_estatica_del_codigo",
+        "fuentes": [
+          "src/v3/caso_reportes/ReporteOficina.cs",
+          "src/v3/caso_reportes/ReporteOficinaPorSigla.cs"
+        ],
+        "hallazgo": "Las definiciones preparan SqlCommand sin una opción contractual de tiempo de espera del reporte.",
+        "limite": "No existe una medición de lentitud ni un timeout real reproducido."
+      },
+      "cambio_solicitado": "Evaluar CommandTimeout configurable con predeterminado compatible y política explícita de valores.",
+      "motivo": "Permitir un ajuste explícito del comportamiento de espera sin editar repetidamente el núcleo.",
+      "alcance": {
+        "componentes": [
+          "Contrato de configuración",
+          "Definiciones o política de composición, por decidir",
+          "Preparación del comando"
+        ],
+        "dependencias": [
+          "Política de valores válidos",
+          "Compatibilidad con consumidores",
+          "Entorno futuro de integración"
+        ],
+        "exclusiones": [
+          "Implementar en CAM-S09-001",
+          "Cambiar servidor o esquema",
+          "Afirmar aceleración de consultas"
+        ]
+      },
+      "impacto": {
+        "comportamiento": "Valor por defecto compatible; valor explícito aplicado solo al comando previsto.",
+        "riesgos": [
+          "Interrumpir un reporte válido con un límite insuficiente",
+          "Prolongar esperas indebidamente",
+          "Política incompatible o valores inválidos"
+        ],
+        "datos": "No se propone una migración; el timeout real requiere integración futura controlada."
+      },
+      "criterios_aceptacion": [
+        {
+          "id": "AC-S09-003-01",
+          "descripcion": "Conservar predeterminado compatible"
+        },
+        {
+          "id": "AC-S09-003-02",
+          "descripcion": "Aplicar valor explícito al comando"
+        },
+        {
+          "id": "AC-S09-003-03",
+          "descripcion": "Definir límites e inválidos por contrato antes de implementar"
+        }
+      ],
+      "verificacion": {
+        "plan": [
+          "Inspeccionar CommandTimeout en comandos preparados",
+          "Probar valor omitido, explícito e inválidos",
+          "Separar prueba de configuración de una futura prueba de timeout con SQL"
+        ],
+        "estado": "no_ejecutada_propuesta",
+        "evidencia": null
+      },
+      "decision": {
+        "estado": "pendiente",
+        "responsable": "KirderFaid13",
+        "motivo": "Definir política y ubicación de la opción antes de implementar.",
+        "fecha_registro": "2026-10-15",
+        "implementacion_autorizada_especificamente": false
+      },
+      "plan": {
+        "implementacion": null,
+        "reversion": "Definir junto con el contrato futuro; recuperar predeterminado y referencia previa si se retira la opción."
+      },
+      "historial": [
+        {
+          "fecha": "2026-10-15",
+          "evento": "registrada",
+          "descripcion": "Solicitud real vinculada a Issue #12."
+        },
+        {
+          "fecha": "2026-10-15",
+          "evento": "analizada_como_propuesta",
+          "descripcion": "Impacto y criterios iniciales registrados; no implementada ni formalmente aplazada."
+        }
+      ],
+      "fecha_solicitud": "2026-10-15",
+      "trazabilidad": {
+        "issue_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/12",
+        "contrato": "specs/c07_gestion_cambio.json",
+        "commit_implementacion": null,
+        "pull_request": null,
+        "fecha_cierre": null,
+        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+      }
+    }
+  ]
+}
