@@ -7,9 +7,12 @@ La base es `6c13e74`. El código nuevo de CAM-S09-001 está en src/v5; las versi
 - [Verificación](verificacion_v5.json): cambio mínimo, 516 blobs históricos protegidos y exclusiones privadas. Compara archivos de trabajo; el índice final se comprueba por separado.
 - [Procedencia documental](procedencia_documental.json): originales PDF/DOCX/PPTX y portada conceptual. El DOCX no se edita.
 - [Presentación](presentacion.json): contenido, notas, renderizados y hash de la entrega final.
+- [Publicación comprobada](publicacion.json): integración C07 por PR #13, commit y árbol exactos, estados de las tres solicitudes y hashes de los archivos publicados.
 
 Reproducción: primero `python herramientas/compilar_v5.py`, después `python herramientas/verificar_v5.py`. Requiere el entorno descrito en [v5](../../../src/v5/README.md). La inicialización de contadores SqlClient puede necesitar ejecución fuera de AppContainer; no equivale a abrir una conexión.
 
 Disposed observa la invocación de Dispose, no memoria ni handles. No se ejecutaron SQL, Fill, fachada real ni binarios recibidos. El adaptador conserva una referencia al comando dispuesto; consumidores no recuperados, fallos de adquisición/Dispose y concurrencia quedan fuera de estas pruebas. No se acredita equivalencia completa ni revisión humana formal.
 
 La evidencia registra el momento de preparación. La publicación y el cierre se comprueban en [Issue #10](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/10) y [PR #13](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/13). Las [#11](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/11) y [#12](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/12) continúan propuestas.
+
+C07 quedó integrada en `f9fe839c7dd62acaa17c20b06a7c0a8acc28f603`, con el mismo árbol `3273821afa62d2898ed61ac881b6a42fbd974755` revisado en la rama. #10 se cerró por esa incorporación. El ajuste documental de publicación conserva el hash del guion local preparado con CRLF y registra además el hash del archivo versionado con LF; el texto es idéntico. La verificación previa no cotejó ese efecto de normalización en el índice. El PowerPoint y los resultados de código no cambian.

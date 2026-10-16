@@ -28,7 +28,7 @@
   "contenido_sha256": "c27f136ca962f7b261854dd14702c67184f44bcb4647d944050f3b1ade43cc56",
   "contenido_logico_comprobado_con_pptx": true,
   "guion": "docs/semanas/semana09/05_guion_exposicion.md",
-  "guion_sha256": "9637e134e51a909ae449144352fcc59d1f14a7bb20bc413c5445bd40642d3c76",
+  "guion_sha256": "523f9f53024539da52d7494d96fd078baef5e9a4efca4aa0599539596c4465b5",
   "preview": "docs/semanas/semana09/vista_previa.png",
   "preview_sha256": "3b9caad99b19685d29141bd23d182f693371f235590b5229b0ad7511b1050ce4",
   "revision_visual": {
@@ -54,5 +54,7 @@
     "Sin SQL ni interfaz ni equivalencia completa.",
     "No se afirman CI configurada, despliegue productivo ni revisión humana formal.",
     "No se afirma reducción medida de memoria; el adaptador conserva referencia al comando dispuesto."
-  ]
+  ],
+  "guion_preparacion_crlf_sha256": "9637e134e51a909ae449144352fcc59d1f14a7bb20bc413c5445bd40642d3c76",
+  "criterio_hash_guion": "Bytes versionados con LF según .gitattributes; la copia preparada con CRLF conserva el mismo texto."
 }
