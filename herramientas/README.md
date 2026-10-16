@@ -69,3 +69,7 @@ Los binarios, logs y contratos de prueba generados permanecen en `.local/c05/`. 
 - [Generador de diapositivas S08](presentacion_semana08/README.md): reproduce el PPTX editable usando evidencia aprobada.
 
 Desde la raíz: `python herramientas/auditar_configuracion.py` y `python herramientas/verificar_configuracion.py`. Para estos dos scripts use Python 3.12 o posterior y Git compatible con check-attr --source. La repetición v4 requiere el entorno Windows/SDK/Framework descrito en semana 07. AppContainer puede bloquear los contadores locales que SqlClient inicializa: en esta sesión se repitió con ejecución elevada autorizada, sin SQL. [Plan de pruebas y límites](../configuracion/PLAN_PRUEBAS.md).
+
+## Semana 09
+
+Semana 09: `compilar_v5.py` reproduce los harness en `.local/c07/`; `verificar_v5.py` verifica evidencia, hashes y conservación. [Procedimiento y límites](../src/v5/README.md).

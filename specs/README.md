@@ -17,3 +17,7 @@ Antes de intervenir un caso, su especificación deberá indicar:
 Los contratos pueden usar Markdown o JSON según resulte más claro. No deben presuponer interfaces web, endpoints, roles o tablas que todavía no se hayan recuperado del sistema.
 
 [C06/S08: gestión de configuración](c06_gestion_configuracion.json) define el inventario y el auditor, los planes iniciales y la exposición. Preserva fuentes y evidencia anterior y deja el sexto commit pendiente de indicación.
+
+## Semana 09
+
+[C07 — Gestión del cambio](c07_gestion_cambio.json): tres solicitudes, alcance de CAM-S09-001, criterios, límites y publicación autorizada.

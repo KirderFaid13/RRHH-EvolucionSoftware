@@ -116,7 +116,15 @@
   ],
   "regression_harness_sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36",
   "generated_contract_source_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
-  "compiler_script_sha256": "2af3002f7a1dff2a8632d0e3ea37fd68e88f298b0bae77e6261688082f7908fe",
+  "generated_contract_source_provenance": {
+    "contracts": "evidencia/semanas/semana05/contratos_v1.json",
+    "contracts_sha256": "4909e385f7d4cadf0ce0ab201f1a19746b9e507eae6cfe916206f2ebc4b6dc39",
+    "source": "src/v1/recuperado/ClassRRHH/RRHHClass.cs",
+    "source_sha256": "69884fb57064154df7a2c18785ee43830250bc0d966ed7639ae73f839ae34cfd",
+    "generated_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
+    "historical_private_c05_file_required": false
+  },
+  "compiler_script_sha256": "61d78f0de3922f792e56f64a6b16c9a8bd699ca7268ec95a160ae3b2bc8662d1",
   "historical_evidence_rewritten": false,
   "received_code_executed": false,
   "database_connected": false

@@ -45,6 +45,10 @@ public DataSet Generar(IDefinicionReporte reporte)
 
 La ejecución es síncrona: el comando permanece disponible durante `Ejecutar` y se libera al salir del bloque, tanto si devuelve un resultado como si el ejecutor lanza una excepción. El `DataSet` devuelto conserva su identidad y debe seguir utilizable. `Preparar` mantiene su contrato: entrega el comando al llamador, que asume su liberación. Este cambio no libera la conexión ni modifica su apertura o cierre.
 
+Hay un riesgo de integración concreto: `EjecutorReportesSql` deja `SqlDataAdapter.SelectCommand` apuntando al comando que v5 dispone al terminar. La fachada v4 expone `objDA` públicamente, por lo que no podemos descartar consumidores en la interfaz o en binarios todavía no recuperados que intenten reutilizar esa referencia. Los métodos visibles reasignan `SelectCommand` antes de `Fill`, pero esta revisión estática no demuestra compatibilidad con SQL ni con la interfaz real. El contrato comprobado presupone ejecución síncrona y ausencia de reutilización posterior del comando por sus consumidores; esa condición requiere revisión al integrar el sistema completo.
+
+Los seis escenarios no cubren fallos durante la adquisición/preparación del comando ni una excepción lanzada por el propio `Dispose`. Si `Dispose` lanzara una excepción, podría impedir devolver el resultado u ocultar una excepción anterior; la conservación comprobada se refiere a los caminos concretos del ejecutor ensayados. v5 continúa siendo una corrección diagnóstica; no reemplaza una versión de producción validada.
+
 Se mantiene v4 como antecedente verificable. La biblioteca diagnóstica v5 reutiliza la fachada, la composición, la interfaz y el ejecutor de v4, las definiciones y el comando de v3 y las fuentes anteriores indicadas en la compilación. No se reemplazan binarios originales ni se modifican `src/v1` a `src/v4`.
 
 ## Por qué mejora el proyecto

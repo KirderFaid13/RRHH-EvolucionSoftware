@@ -65,7 +65,10 @@
         "comportamiento": "El comando vive durante Ejecutar y se libera después de devolver o lanzar; resultado y excepción deben conservar identidad.",
         "riesgos": [
           "Liberación prematura si un ejecutor retuviera el comando tras una llamada síncrona",
-          "Modificar el resultado o la excepción al introducir el bloque"
+          "Modificar el resultado o la excepción al introducir el bloque",
+          "EjecutorReportesSql conserva SqlDataAdapter.SelectCommand apuntando al comando dispuesto; la fachada v4 expone objDA y pueden existir consumidores de UI/binarios no recuperados que lo reutilicen.",
+          "Los métodos visibles reasignan SelectCommand antes de Fill, pero no se acredita compatibilidad SQL/UI; el contrato local presupone uso síncrono y ausencia de reutilización posterior.",
+          "Adquisición/preparación fallida y excepción del propio Dispose quedan fuera de los seis escenarios; un Dispose que lance podría ocultar la excepción anterior o impedir devolver el resultado."
         ],
         "datos": "Sin migración ni escritura SQL en las pruebas; integración con CMI no comprobada."
       },
@@ -117,7 +120,10 @@
         "limites": [
           "Sin SQL real",
           "Sin ejecutar la aplicación recibida",
-          "Sin medición de rendimiento o equivalencia completa"
+          "Sin medición de rendimiento o equivalencia completa",
+          "SelectCommand y consumidores externos requieren revisión antes de integrar el sistema completo.",
+          "Sin pruebas de fallos de adquisición/preparación ni del propio Dispose.",
+          "v5 es una corrección diagnóstica; no acredita reemplazo de producción."
         ],
         "resultados": {
           "biblioteca_fuentes": 22,
@@ -202,10 +208,11 @@
       "trazabilidad": {
         "issue_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/10",
         "contrato": "specs/c07_gestion_cambio.json",
-        "commit_implementacion": null,
-        "pull_request": null,
+        "commit_implementacion": "9555cebf13e9b78d424cc1d82865acfc2d14c0cb",
+        "pull_request": 13,
         "fecha_cierre": null,
-        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+        "nota": "Commit de código en la rama; integración y cierre efectivos se consultan en PR #13 e Issue #10. Este registro captura la preparación previa al squash.",
+        "pull_request_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/13"
       }
     },
     {
@@ -302,7 +309,8 @@
         "commit_implementacion": null,
         "pull_request": null,
         "fecha_cierre": null,
-        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente.",
+        "pull_request_documentacion": 13
       }
     },
     {
@@ -403,7 +411,8 @@
         "commit_implementacion": null,
         "pull_request": null,
         "fecha_cierre": null,
-        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente."
+        "nota": "Los enlaces e incorporación efectivos se acreditan después en GitHub; no se inventa un hash autorreferente.",
+        "pull_request_documentacion": 13
       }
     }
   ]

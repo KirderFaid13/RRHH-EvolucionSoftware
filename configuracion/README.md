@@ -11,3 +11,7 @@ La base de software es C05, commit `6d82f9f`, con 531 archivos versionados. C06 
 Desde la raíz, `python herramientas/auditar_configuracion.py` comprueba el estado de los archivos de trabajo. `python herramientas/verificar_configuracion.py` prueba el auditor y repite v4 de forma aislada, con nuevas salidas en semana 08. Las entradas privadas de compilación se preparan siguiendo semana 07; nunca se incorporan a Git. [Informe y exposición](../docs/semanas/semana08/01_gestion_configuracion.md).
 
 El PASS del auditor no aprueba una revisión humana ni verifica el contenido del índice o de un futuro commit. Antes del sexto commit se revisarán los archivos agregados y, después de integrar, se comprobará el árbol publicado.
+
+## Semana 09
+
+Semana 09 añade [formato simple](plantilla_solicitud.md) y [tres solicitudes en JSON](solicitudes_semana09.json). CAM-S09-001 implementada/verificada; 002/003 propuestas pendientes. El registro C06 se conserva como histórico.

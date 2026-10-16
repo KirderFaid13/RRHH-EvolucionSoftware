@@ -3,7 +3,7 @@
   "solicitud": "CAM-S09-001",
   "issue": 10,
   "base_commit": "6c13e74482563cc158c4329852753f7f1eb2effd",
-  "verification_utc": "2026-10-16T03:54:41+00:00",
+  "verification_utc": "2026-10-16T04:10:54+00:00",
   "ok": true,
   "sdk": "10.0.103",
   "reference_profile": "installed Framework v4.0.30319",
@@ -12,7 +12,7 @@
     "source_count": 22,
     "errors": [],
     "warnings": [],
-    "output_sha256": "2c620bb5cec06d8f996e01f862788a2a2030ca493b4fef452439e1ff7fb2bbb2"
+    "output_sha256": "699579f2d3fcc60bdb78aa2106df68acf5496ca57f2bf9ccca6fc051fcf481f3"
   },
   "suites": {
     "rojo_v4": {
@@ -21,7 +21,7 @@
         "source_count": 9,
         "errors": [],
         "warnings": [],
-        "output_sha256": "cc2d3abd4d41b0883c03c2ce6751707dcfbd97f59e0bdc240bc63cb1bc5b9e55"
+        "output_sha256": "f0b732df0482b0ec41a3294d4a29c86176eb54c706147586b692603a4c66d19e"
       },
       "tests": {
         "exit_code": 1,
@@ -47,7 +47,7 @@
         "source_count": 9,
         "errors": [],
         "warnings": [],
-        "output_sha256": "88ac89fff0ce1d20c8daed34245ab963d91d123116bcd7392d3e6849a59a99ed"
+        "output_sha256": "10ba7b4ebdc8260ab21ee52548103328a01875843ee15ce34d939ee93b2befbd"
       },
       "tests": {
         "exit_code": 0,
@@ -72,7 +72,7 @@
         "source_count": 10,
         "errors": [],
         "warnings": [],
-        "output_sha256": "ee06c1113e831d5f808c81bca47d0aea6726483c64a4321f8da8b3e8eeca22f0"
+        "output_sha256": "3d6e7c906f755fa3b30eeb63d0a558d52fb40fb508d4e89412880ff904782222"
       },
       "tests": {
         "exit_code": 0,
@@ -151,6 +151,7 @@
   "lifecycle_test_source_sha256": "34638316265c4262e4c5b5e4f4b7ffecb0fc1373d8e36380c449ca2ab5c56f15",
   "regression_test_source_sha256": "d28abdd4898d5ffcf784354485695a80951a0ad2ca7183557a36a101f26e0c36",
   "generated_contract_source_sha256": "06d5a331335571dc9642930bacded64a46072eedaa0bf3180b8376d20f0e61bd",
+  "generated_contract_from_public_json": true,
   "received_code_executed": false,
   "database_connected": false,
   "whole_system_equivalence_verified": false,

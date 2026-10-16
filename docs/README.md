@@ -13,3 +13,7 @@ La documentación se actualiza con cada etapa comprobada. C01-C04 forman la base
 ## Semana 08: gestión de la configuración
 
 El [informe C06](semanas/semana08/01_gestion_configuracion.md) responde la práctica de GCS. Incluye [diapositivas](semanas/semana08/Semana08_GCS_RRHH.pptx), [guion](semanas/semana08/02_guion_exposicion.md) y [preparación del sexto commit](semanas/semana08/03_preparacion_sexto_commit.md). El responsable autorizó su incorporación como sexto commit; el detalle y el resultado verificable se consultan en la guía de incorporación y GitHub.
+
+## Semana 09
+
+[Semana 09: gestión del cambio](semanas/semana09/01_gestion_cambio.md), [matriz de impacto](semanas/semana09/03_matriz_impacto.md) y [guion de exposición](semanas/semana09/05_guion_exposicion.md).

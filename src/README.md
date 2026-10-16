@@ -7,3 +7,7 @@ La ubicación de la entrega original se describe en el [README del repositorio](
 Al incorporar código, se documentará si procede de un archivo fuente original, de una descompilación, de una reconstrucción parcial o de una implementación propuesta. También se registrará qué se pudo compilar o ejecutar realmente.
 
 Las siguientes etapas no deben reemplazar una recuperación incompleta por funciones inventadas ni presentar una propuesta como una copia fiel del sistema original. Consulta el [roadmap](../.context/ROADMAP.md) para el orden de incorporación.
+
+## Semana 09
+
+[v5 / semana 09](v5/README.md): nuevo generador que libera el comando creado por Generar; reutiliza las fuentes anteriores. Guardas nulas y tiempo de espera quedan propuestas.

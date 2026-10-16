@@ -8,10 +8,9 @@ import json
 import os
 from pathlib import Path
 import re
-import shutil
 import subprocess
 
-from compilar_v2 import compile_sources
+from compilar_v2 import compile_sources, cs_string
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "6c13e74482563cc158c4329852753f7f1eb2effd"
@@ -42,6 +41,40 @@ def relative(path):
 
 def hashes(paths):
     return [{"path": relative(path), "sha256": sha(path)} for path in sorted(paths)]
+
+
+def regenerated_contract_source(prior):
+    """Reconstruye los once casos S07 desde contratos públicos, sin .local/c05/."""
+    provenance = read_json(ROOT / "evidencia/semanas/semana07/procedencia.json")
+    contract_path = ROOT / provenance["contracts"]
+    if sha(contract_path) != provenance["contracts_sha256"]:
+        raise ValueError("Los contratos públicos S07 no coinciden con su procedencia")
+    contracts = read_json(contract_path)
+    if sha(ROOT / contracts["source"]) != contracts["source_sha256"]:
+        raise ValueError("El contrato público no corresponde a la fuente v1 registrada")
+    expected = {row["method"]: row for row in contracts["methods"]}
+    calls = []
+    for method, definition, values in [
+        ("Generar_Report_oficina", "ReporteOficina", ["int.MinValue", "-1", "0", "42", "int.MaxValue"]),
+        ("Generar_Report_oficina_Dep", "ReporteOficinaPorSigla", ["null", cs_string(""), cs_string("AREA"),
+         cs_string("área/ñ"), cs_string(" O'NEIL "), cs_string("X" * 1000)]),
+    ]:
+        row = expected[method]
+        for index, value in enumerate(values):
+            label = method + "_valor_" + str(index + 1)
+            calls.append(f'Check(generator,fake,new {definition}({value}),{cs_string(row["command"])},'
+                         f'{cs_string(row["table_name"])},{cs_string(row["parameter"]["name"])},'
+                         f'SqlDbType.{row["parameter"]["sql_type"]},{value},connection,{cs_string(label)});')
+    source = ("using System.Data;\nusing System.Data.SqlClient;\nusing ClassRRHH;\n"
+              "internal partial class PruebasIoC {\n"
+              " private static void ProbarContratosRecuperados(GeneradorReportes generator,EjecutorSimulado fake,SqlConnection connection) {\n"
+              + "\n".join(calls) + "\n }\n}\n").encode("utf-8")
+    if hashlib.sha256(source).hexdigest() != prior["generated_contract_source_sha256"]:
+        raise ValueError("El contrato regenerado difiere del SHA público S07")
+    return source, {"contracts": relative(contract_path), "contracts_sha256": sha(contract_path),
+                    "source": contracts["source"], "source_sha256": contracts["source_sha256"],
+                    "generated_sha256": prior["generated_contract_source_sha256"],
+                    "historical_private_c05_file_required": False}
 
 
 def checked_inputs():
@@ -75,10 +108,8 @@ def checked_inputs():
         if not file.is_file() or sha(file) != row["original_sha256"]:
             raise ValueError("Falta dependencia original verificada: " + name)
         references.append(file)
-    generated = ROOT / ".local/c05/ContratosRecuperados.cs"
+    generated_payload, generated_provenance = regenerated_contract_source(prior)
     regression = ROOT / "src/v4/pruebas/PruebasIoC.cs"
-    if not generated.is_file() or sha(generated) != prior["generated_contract_source_sha256"]:
-        raise ValueError("Falta el contrato diagnóstico S07 verificado en .local/c05/")
     if sha(regression) != prior["test_source_sha256"]:
         raise ValueError("El harness S07 debe conservarse intacto")
     employees = sorted(path for path in (ROOT / "src/v2/caso_empleados").glob("*.cs")
@@ -100,7 +131,8 @@ def checked_inputs():
     return {"contract": contract, "prior": prior, "library": library, "active": active,
             "base": sorted(base), "business_refs": references, "framework_refs": framework_refs,
             "core_v4": core_v4, "core_v5": core_v5, "reports": reports,
-            "regression": regression, "generated": generated}
+            "regression": regression, "generated_payload": generated_payload,
+            "generated_provenance": generated_provenance}
 
 
 def run_suite(executable, marker, log_name):
@@ -118,7 +150,7 @@ def main():
     inputs = checked_inputs()
     OUTPUT.mkdir(parents=True, exist_ok=True)
     generated = OUTPUT / "ContratosRecuperados.cs"
-    shutil.copyfile(inputs["generated"], generated)
+    generated.write_bytes(inputs["generated_payload"])
     library = compile_sources(inputs["library"], OUTPUT / "ClassRRHH.v5.diagnostico.dll",
                               inputs["framework_refs"] + inputs["business_refs"])
     suites = {}
@@ -156,6 +188,7 @@ def main():
                   "original_compile_references": hashes(inputs["business_refs"]),
                   "regression_harness_sha256": sha(inputs["regression"]),
                   "generated_contract_source_sha256": sha(generated),
+                  "generated_contract_source_provenance": inputs["generated_provenance"],
                   "compiler_script_sha256": sha(Path(__file__)),
                   "historical_evidence_rewritten": False,
                   "received_code_executed": False, "database_connected": False}
@@ -166,6 +199,7 @@ def main():
               "lifecycle_test_source_sha256": sha(LIFECYCLE),
               "regression_test_source_sha256": sha(inputs["regression"]),
               "generated_contract_source_sha256": sha(generated),
+              "generated_contract_from_public_json": True,
               "received_code_executed": False, "database_connected": False,
               "whole_system_equivalence_verified": False, "historical_evidence_rewritten": False,
               "failures": failures,

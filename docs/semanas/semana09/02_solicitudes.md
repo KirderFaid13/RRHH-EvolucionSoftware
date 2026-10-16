@@ -24,6 +24,8 @@ Criterios de aceptación:
 
 **Alcance y exclusiones:** solo cambia el generador de v5; se reutilizan los componentes existentes. No se libera la conexión ni se garantiza su cierre ante un error de `Fill`. Tampoco se añaden guardas nulas, valores nuevos, cambios de esquema o pruebas productivas. La [evidencia efectiva](../../../evidencia/semanas/semana09/compilacion_y_pruebas.json) distingue v4 con 4/6 y dos fallos esperados de liberación, v5 con 6/6 y regresión con 16/16. No se interpreta el rojo esperado como una falla de compilación o una fuga medida.
 
+**Riesgo pendiente de integración:** el adaptador SQL conserva `SelectCommand` referenciando el comando ya dispuesto. Como `objDA` es público en la fachada v4, pueden existir consumidores no recuperados que necesiten esa referencia. Los métodos visibles vuelven a asignarla antes de `Fill`, sin que se haya ejecutado la ruta SQL o la interfaz. Debe comprobarse que los consumidores terminen su uso síncrono y no reutilicen después ese comando antes de adoptar v5 en el sistema completo. Fallos de adquisición y del propio `Dispose` quedan fuera de los seis escenarios. La aceptación local no acredita un reemplazo productivo.
+
 ## CAM-S09-002 · Validar argumentos nulos
 
 - **Seguimiento:** [Issue #11](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/11).
