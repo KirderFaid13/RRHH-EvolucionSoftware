@@ -42,3 +42,5 @@ La ruta final exige 26 diapositivas. Las comprobaciones del finalizador incluyen
 - Cifras y estados tomados del contenido verificado por el equipo.
 
 La validación automática no sustituye revisar visualmente cada diapositiva. El render no acredita apertura en PowerPoint ni pruebas funcionales del RRHH. Las propuestas, comprobaciones aisladas y resultados publicados deben distinguirse explícitamente en el contenido y las evidencias del caso práctico.
+
+Los hashes documentales publicados se calculan sobre los bytes versionados por Git. `.gitattributes` normaliza Markdown y JSON a LF; una copia local con CRLF puede conservar el mismo texto y tener otro SHA-256. La evidencia de publicación distingue ambos casos y mantiene el hash anterior de preparación.

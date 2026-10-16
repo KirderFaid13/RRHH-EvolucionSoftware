@@ -1,0 +1,97 @@
+{
+  "etapa": "C07_S09",
+  "verificacion_utc": "2026-10-16T04:19:00.773941+00:00",
+  "tipo": "Cierre documental posterior a la integración; no es otra entrega académica.",
+  "integracion": {
+    "pr": 13,
+    "url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/13",
+    "commit": "f9fe839c7dd62acaa17c20b06a7c0a8acc28f603",
+    "tree": "3273821afa62d2898ed61ac881b6a42fbd974755",
+    "base": "6c13e74482563cc158c4329852753f7f1eb2effd",
+    "metodo": "squash",
+    "head_revisado": "20a08a4f8e53e2387101a0d24d20bca459af0ec4",
+    "mismo_arbol_revisado": true,
+    "archivos": 588,
+    "commits_main_en_esa_integracion": 8
+  },
+  "solicitudes": [
+    {
+      "id": "CAM-S09-001",
+      "issue": 10,
+      "estado_comprobado": "closed",
+      "razon": "completed",
+      "implementada": true
+    },
+    {
+      "id": "CAM-S09-002",
+      "issue": 11,
+      "estado_comprobado": "open",
+      "implementada": false
+    },
+    {
+      "id": "CAM-S09-003",
+      "issue": 12,
+      "estado_comprobado": "open",
+      "implementada": false
+    }
+  ],
+  "conservacion": {
+    "archivos_base": 558,
+    "blobs_base_sin_cambios": 545,
+    "guias_actualizadas": 13,
+    "altas_c07": 30,
+    "blobs_historicos_protegidos": 516,
+    "inventario_indice_verificado": 355
+  },
+  "archivos_publicados": [
+    {
+      "path": "docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH.pptx",
+      "sha256": "022432725d3c939d5dc200f2729833ff6770adc68096f2ab04026e13cd665561",
+      "bytes": 1938436
+    },
+    {
+      "path": "docs/semanas/semana09/05_guion_exposicion.md",
+      "sha256": "523f9f53024539da52d7494d96fd078baef5e9a4efca4aa0599539596c4465b5",
+      "bytes": 27523
+    },
+    {
+      "path": "herramientas/presentacion_semana09/contenido_verificado.json",
+      "sha256": "c27f136ca962f7b261854dd14702c67184f44bcb4647d944050f3b1ade43cc56",
+      "bytes": 43498
+    },
+    {
+      "path": "docs/semanas/semana09/vista_previa.png",
+      "sha256": "3b9caad99b19685d29141bd23d182f693371f235590b5229b0ad7511b1050ce4",
+      "bytes": 44142
+    },
+    {
+      "path": "src/v5/caso_cambio/GeneradorReportes.cs",
+      "sha256": "c87071657b95ab19d8068108f5efea0fcf855ba8bea94955020d2fae44fb8861",
+      "bytes": 687
+    },
+    {
+      "path": "src/v5/pruebas/PruebasCicloVida.cs",
+      "sha256": "34638316265c4262e4c5b5e4f4b7ffecb0fc1373d8e36380c449ca2ab5c56f15",
+      "bytes": 5333
+    },
+    {
+      "path": "herramientas/compilar_v5.py",
+      "sha256": "61d78f0de3922f792e56f64a6b16c9a8bd699ca7268ec95a160ae3b2bc8662d1",
+      "bytes": 12908
+    }
+  ],
+  "normalizacion_guion": {
+    "preparacion_crlf_sha256": "9637e134e51a909ae449144352fcc59d1f14a7bb20bc413c5445bd40642d3c76",
+    "publicado_lf_sha256": "523f9f53024539da52d7494d96fd078baef5e9a4efca4aa0599539596c4465b5",
+    "texto_identico_tras_normalizar": true,
+    "origen": "*.md text eol=lf en .gitattributes",
+    "efecto": "Solo saltos de línea; el PPTX y los resultados de código no cambian.",
+    "correccion": "presentacion.json conserva el hash anterior y usa ahora el SHA-256 del guion versionado."
+  },
+  "limites": [
+    "Registro de integración académica, no despliegue del RRHH.",
+    "Pruebas sin SQL, interfaz ni equivalencia completa.",
+    "No acredita revisión humana independiente.",
+    "El hash del commit de este seguimiento se consulta en su Pull Request; no se escribe un hash futuro."
+  ]
+}
