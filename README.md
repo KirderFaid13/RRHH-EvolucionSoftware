@@ -34,7 +34,9 @@ Las diapositivas y evidencias fechadas durante la preparación conservan ese mom
 
 ## Lectura inicial
 
-Semana 09 se recorre desde el [informe práctico](docs/semanas/semana09/01_gestion_cambio.md), las [tres solicitudes](docs/semanas/semana09/02_solicitudes.md), la [matriz de impacto](docs/semanas/semana09/03_matriz_impacto.md), el [flujo y reversión](docs/semanas/semana09/04_flujo_y_reversion.md), el [código v5](src/v5/README.md) y las [evidencias](evidencia/semanas/semana09/README.md). La exposición reúne [26 diapositivas de teoría y práctica](docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH.pptx) y un [guion con preguntas de defensa para 20–30 minutos](docs/semanas/semana09/05_guion_exposicion.md).
+Semana 09 se recorre desde el [informe práctico](docs/semanas/semana09/01_gestion_cambio.md), las [tres solicitudes](docs/semanas/semana09/02_solicitudes.md), la [matriz de impacto](docs/semanas/semana09/03_matriz_impacto.md), el [flujo y reversión](docs/semanas/semana09/04_flujo_y_reversion.md), el [código v5](src/v5/README.md) y las [evidencias](evidencia/semanas/semana09/README.md). La exposición actual reúne [26 diapositivas con teoría revisada y práctica conservada](docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH_Teoria_Revisada.pptx) y un [guion actualizado para 20–30 minutos](docs/semanas/semana09/06_guion_teoria_revisada.md).
+
+La [revisión editorial #15](https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/15) responde a la solicitud de profundizar los conceptos mediante un caso hipotético de entradas para conciertos. Las primeras quince páginas explican la teoría con ejemplos externos; RRHH comienza en la 16. Se conserva la versión anterior y el código permanece igual. [Índice de materiales y versiones](docs/semanas/semana09/README.md).
 
 El [informe teórico del compañero](referencias/semanas/semana09/Informe_teorico_original.docx) se conserva sin editar. La [consigna](referencias/semanas/semana09/Semana09_EVO_TG.pdf) y la [presentación original](referencias/semanas/semana09/Presentacion_teorica_original.pptx) identifican las fuentes.
 

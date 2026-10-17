@@ -10,4 +10,4 @@ Semana 08 añade [GCS](semana08/01_gestion_configuracion.md), [PPTX](semana08/Se
 
 ## Semana 09
 
-[Semana 09 / C07](semana09/01_gestion_cambio.md): tres solicitudes y una corrección v5; [matriz](semana09/03_matriz_impacto.md) y [exposición](semana09/05_guion_exposicion.md).
+[Semana 09 / C07](semana09/01_gestion_cambio.md): tres solicitudes y una corrección v5; [matriz](semana09/03_matriz_impacto.md), [materiales y versiones](semana09/README.md) y [exposición con teoría revisada](semana09/06_guion_teoria_revisada.md).

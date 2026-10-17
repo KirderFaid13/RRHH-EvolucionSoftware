@@ -44,3 +44,15 @@ La ruta final exige 26 diapositivas. Las comprobaciones del finalizador incluyen
 La validación automática no sustituye revisar visualmente cada diapositiva. El render no acredita apertura en PowerPoint ni pruebas funcionales del RRHH. Las propuestas, comprobaciones aisladas y resultados publicados deben distinguirse explícitamente en el contenido y las evidencias del caso práctico.
 
 Los hashes documentales publicados se calculan sobre los bytes versionados por Git. `.gitattributes` normaliza Markdown y JSON a LF; una copia local con CRLF puede conservar el mismo texto y tener otro SHA-256. La evidencia de publicación distingue ambos casos y mantiene el hash anterior de preparación.
+
+## Revisión de la teoría
+
+La revisión utiliza [contenido_teoria_revisada.json](contenido_teoria_revisada.json) y [generar_teoria_revisada.mjs](generar_teoria_revisada.mjs). El generador crea solamente las primeras quince páginas y las ensambla sobre una copia de la presentación anterior. Mantiene las partes XML, notas, relaciones y dependencias de las once páginas prácticas; coteja también sus renderizados. La imagen de transferencia es una ilustración conceptual generada con IA y se utiliza una vez en la página 2.
+
+Con las mismas variables del runtime, se puede reproducir en una salida privada nueva:
+
+```powershell
+node herramientas/presentacion_semana09/generar_teoria_revisada.mjs . herramientas/presentacion_semana09/contenido_teoria_revisada.json .local/c07/teoria_revision/reproduccion_01.pptx
+```
+
+El archivo final tiene un nombre distinto del antecedente. El guion actual y las versiones anteriores se localizan en el [índice de semana 09](../../docs/semanas/semana09/README.md). Los resultados de compilación del software no se regeneran para esta revisión editorial.

@@ -1,0 +1,120 @@
+{
+  "id": "C07-S09-REVISION-TEORIA",
+  "fecha_local": "2026-10-16",
+  "verificado_utc": "2026-10-17T02:07:10.985790+00:00",
+  "issue": 15,
+  "base_commit": "c8b8298c0d122b5e544cfc7b35eacabc69c4b43c",
+  "motivo": "Profundizar los conceptos con ejemplos externos y mantener RRHH únicamente en el bloque práctico.",
+  "caso_teorico": "Plataforma hipotética de entradas para conciertos; transferencia sin duplicar el derecho de acceso.",
+  "archivos": [
+    {
+      "path": "docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH_Teoria_Revisada.pptx",
+      "sha256": "125f3a30522cf82689e242613275e7a9be27299732637ed921bc56d3ee08960c",
+      "bytes": 5266024
+    },
+    {
+      "path": "docs/semanas/semana09/06_guion_teoria_revisada.md",
+      "sha256": "d7a69064489586a64e24231d666203e7563cae3950dd0c7924bfc5018cc99543",
+      "bytes": 30989
+    },
+    {
+      "path": "herramientas/presentacion_semana09/contenido_teoria_revisada.json",
+      "sha256": "d6a9e8f274f79bf71dc130551a77b6216680430b50256d5c8f355604129d8a82",
+      "bytes": 43921
+    },
+    {
+      "path": "herramientas/presentacion_semana09/generar_teoria_revisada.mjs",
+      "sha256": "ab7231f398a4aaa7f914c464fb52f8fd1802988bcc24af3de9a9f08938085ffa",
+      "bytes": 18487
+    },
+    {
+      "path": "herramientas/presentacion_semana09/assets/transferencia_entrada_conceptual.png",
+      "sha256": "61d9563d03b09062024e2b39559962093dadd311a2aad7ea4af94e06091f488f",
+      "bytes": 1689687
+    },
+    {
+      "path": "docs/semanas/semana09/vista_previa_teoria_revisada.png",
+      "sha256": "55938e1c749ec8e4822853c2cc075426fe0d9639bb2b3d62efad03b9bcfd039d",
+      "bytes": 61910
+    }
+  ],
+  "preservacion": {
+    "fuentes_previas": {
+      "docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH.pptx": "022432725d3c939d5dc200f2729833ff6770adc68096f2ab04026e13cd665561",
+      "docs/semanas/semana09/05_guion_exposicion.md": "523f9f53024539da52d7494d96fd078baef5e9a4efca4aa0599539596c4465b5",
+      "herramientas/presentacion_semana09/contenido_verificado.json": "c27f136ca962f7b261854dd14702c67184f44bcb4647d944050f3b1ade43cc56",
+      "herramientas/presentacion_semana09/generar_presentacion.mjs": "de45e8793ffe39e17f6489e094322b39d35774839d24e12a105f98cac0868934",
+      "referencias/semanas/semana09/Informe_teorico_original.docx": "2c2f15111a1fdfb4e6b368887189211383a628d49d5927b07e79f2e838186586",
+      "referencias/semanas/semana09/Presentacion_teorica_original.pptx": "649e1e32967461497b7f1785f3908530e11a879cd32a10f1d219bb8985b87135"
+    },
+    "practicas_xml_notas_relaciones_identicas": 44,
+    "partes_originales_no_reemplazadas": 72,
+    "renders_practicos_identicos": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "guion_practico_identico": true,
+    "codigo_pruebas_evidencia_sin_modificar": true,
+    "informe_original_intacto": true
+  },
+  "presentacion": {
+    "paginas": 26,
+    "notas": 26,
+    "teoria": 15,
+    "practica": 11,
+    "teoria_segundos": 795,
+    "practica_segundos": 725,
+    "total_segundos": 1520,
+    "tablas_nativas": [
+      8,
+      9,
+      10,
+      12,
+      15,
+      17,
+      20,
+      21,
+      22
+    ],
+    "texto_editable": true,
+    "geometria_hallazgos": 0,
+    "paquete": "PASS",
+    "revision_individual_teoria": 15,
+    "powerpoint_escritorio_abierto": false,
+    "advertencias_no_bloqueantes": "El clasificador de títulos marca oraciones de cuerpo con puntuación; se conservaron al ser frases completas."
+  },
+  "imagen": {
+    "path": "herramientas/presentacion_semana09/assets/transferencia_entrada_conceptual.png",
+    "modo": "Herramienta integrada image_gen",
+    "tipo": "Ilustración conceptual generada, no captura de un sistema real",
+    "uso": "Una vez, diapositiva 2",
+    "prompt": "Sophisticated editorial 3D illustration, landscape 16:9, for a university software change management presentation: hypothetical concert ticket transfer between two smartphones, one inactive credential and one active credential, a single copper ticket ribbon and a distant concert turnstile. Main subjects on the right, empty navy negative space on the left. Deep navy, warm ivory, cobalt and copper palette, cinematic soft lighting, no words, numbers, logos or watermarks."
+  },
+  "fuentes_conceptuales": [
+    "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+    "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulos 5 y 6",
+    "https://git-scm.com/docs/git-revert"
+  ],
+  "comprobaciones": [
+    "Conceptos, cuatro tipos y ocho etapas completos según la consigna.",
+    "Cero referencias al proyecto en las primeras quince páginas y sus notas.",
+    "Hash del archivo entregado idéntico al borrador final revisado.",
+    "Las copias de ENTREGABLES coinciden con los archivos del repositorio.",
+    "Los hashes textuales usan LF según .gitattributes."
+  ],
+  "limites": [
+    "Ejemplo hipotético: no se implementó una plataforma de entradas.",
+    "No se repitieron pruebas funcionales del RRHH porque no se modificó código.",
+    "No se afirma apertura en PowerPoint de escritorio ni revisión humana independiente.",
+    "El estado de publicación se consulta en Issue #15 y su PR."
+  ]
+}

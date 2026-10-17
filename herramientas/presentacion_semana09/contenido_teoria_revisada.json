@@ -1,0 +1,658 @@
+{
+  "version": "C07-S09-teoria-revisada-2026-10-16",
+  "slideCount": 26,
+  "theorySlides": 15,
+  "practicalSlides": 11,
+  "plannedSeconds": 1520,
+  "baseCommit": "6c13e74482563cc158c4329852753f7f1eb2effd",
+  "issue": 10,
+  "pullRequest": 13,
+  "verification": {
+    "red_v4_passed": 4,
+    "red_v4_expected_failures": 2,
+    "green_v5_passed": 6,
+    "regression_passed": 16,
+    "library_sources": 22
+  },
+  "slides": [
+    {
+      "numero": 1,
+      "titulo": "Gestión del cambio en software",
+      "idea": "Una petición de negocio necesita decisiones y comprobaciones antes de llegar a los usuarios.",
+      "visible": [
+        "Caso hipotético: transferir una entrada digital con seguridad.",
+        "CUBA GONZALEZ, Adrian Giovanni",
+        "GORAY GONZALES, Nicolas Alexander",
+        "Docente: Ing. VILCHEZ VALDEZ, Edgard William",
+        "UPN · Trujillo · 2026"
+      ],
+      "ejemplo": "Una compradora quiere ceder su entrada a otra persona y conservar un único derecho de acceso.",
+      "nota": "Imaginemos una plataforma que vende entradas digitales para conciertos. Cada entrada tiene un titular y un código QR que se valida al ingresar. Una compradora pide transferir su entrada a otra persona. Parece suficiente cambiar un nombre, pero debemos impedir que ambos códigos permitan entrar o que dos transferencias simultáneas creen dos titulares. Esta situación es hipotética y nos servirá para explicar los conceptos. Seguiremos la petición desde su origen hasta la publicación y el seguimiento. La pregunta central será qué debemos cambiar, qué condiciones debemos conservar y qué evidencia necesitamos antes de ofrecer la función a los usuarios.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "cover",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "Caso hipotético creado para explicar conceptos. No describe una plataforma existente."
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 2,
+      "titulo": "Qué significa gestionar un cambio",
+      "idea": "Gestionar una modificación implica evaluar, decidir, implementar y verificar con un registro trazable.",
+      "visible": [
+        "Proceso para solicitar, evaluar, autorizar, implementar y verificar una modificación.",
+        "Controla alcance y riesgos; deja decisiones trazables.",
+        "Ejemplo: transferir una entrada sin duplicar el acceso."
+      ],
+      "ejemplo": "La transferencia debe cambiar quién puede ingresar, manteniendo una sola entrada válida.",
+      "nota": "La gestión del cambio es el proceso que permite evaluar una modificación, decidir si conviene realizarla y comprobar su resultado. Puede afectar código, configuración, datos o documentación. En el ejemplo, necesitamos cambiar quién tiene derecho a ingresar y conservar una sola entrada válida. Supondremos que el lector consulta en línea el estado vigente. Por eso debemos considerar la pantalla, el servicio que procesa la transferencia y el control de acceso. Registrar estas relaciones permite conocer el motivo de una decisión y revisar después si se cumplió. La disciplina ayuda a reducir regresiones, cambios fuera de alcance y problemas de mantenimiento durante la evolución del producto.",
+      "tiempo_segundos": 65,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 3,
+      "titulo": "Cambio correctivo",
+      "idea": "Su propósito principal es corregir un comportamiento que incumple lo esperado.",
+      "visible": [
+        "Repara un defecto existente.",
+        "Caso: el lector acepta otra vez un QR ya utilizado.",
+        "Corrección: rechazar el segundo ingreso y comprobar que el primero siga funcionando."
+      ],
+      "ejemplo": "Un QR consumido vuelve a aceptarse. La prueba debe reproducir ese segundo ingreso y confirmar su rechazo.",
+      "nota": "Un cambio correctivo repara un defecto: existe un comportamiento que incumple una condición esperada. En nuestra plataforma hipotética, una entrada utilizada vuelve a ser aceptada por el lector. La condición acordada era que esa entrada permitiera un único ingreso. Primero reproducimos el problema y comprobamos qué causa el segundo acceso. Después corregimos el control correspondiente y repetimos el caso. También verificamos que una entrada válida todavía permita el primer ingreso, para detectar una posible regresión. El motivo principal de esta modificación es reparar el fallo identificado. El ejemplo ayuda a distinguir la causa del cambio de la herramienta o técnica elegida para resolverlo.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://www.computer.org/resources/software-maintenance?source=resources"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 4,
+      "titulo": "Cambio adaptativo",
+      "idea": "Su propósito principal es conservar la utilidad del sistema frente a un cambio de su entorno.",
+      "visible": [
+        "Responde a un cambio externo.",
+        "Caso: el proveedor de pagos retira su API v1.",
+        "Adaptación: integrar v2 conservando la compra y el tratamiento de errores."
+      ],
+      "ejemplo": "El proveedor modifica su contrato de comunicación. La aplicación debe adaptarse para seguir procesando compras.",
+      "nota": "Un cambio adaptativo responde a una modificación del entorno en el que funciona el software. Supongamos que el proveedor de pagos anuncia que retirará su API v1. Una API es el contrato de comunicación entre nuestra aplicación y ese servicio. Aunque las compras todavía funcionen, debemos adaptar la integración antes de que desaparezca la versión anterior. Revisamos los campos enviados, las respuestas y el tratamiento de errores. Después comprobamos que el comprador pueda completar o cancelar una operación según lo esperado. La necesidad nace del proveedor externo. Este ejemplo es hipotético y no presupone un servicio comercial concreto ni una fecha real de retiro.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://www.computer.org/resources/software-maintenance?source=resources"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 5,
+      "titulo": "Cambio perfectivo",
+      "idea": "Su propósito principal es mejorar una capacidad o experiencia de uso.",
+      "visible": [
+        "Mejora una capacidad o la experiencia del usuario.",
+        "Caso: permitir que una compradora transfiera su entrada.",
+        "Resultado esperado: el nuevo titular puede ingresar y el QR anterior deja de ser válido."
+      ],
+      "ejemplo": "La transferencia evita recomprar una entrada al cambiar de asistente, sin crear un derecho de acceso adicional.",
+      "nota": "En la clasificación del curso, un cambio perfectivo mejora una capacidad del sistema o la experiencia del usuario. Nuestra plataforma ya permite comprar entradas, pero ahora se solicita transferir una a otra persona. La nueva capacidad debe respetar reglas claras: la entrada conserva un único titular y solamente el código vigente permite ingresar. Transferir no aumenta el aforo ni crea una compra adicional en este ejemplo. Esas condiciones delimitan el resultado esperado. El propósito principal es atender una necesidad adicional. Usamos las cuatro categorías del curso para explicar motivaciones; no estamos afirmando que sean la única clasificación posible de todo el mantenimiento de software.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://www.computer.org/resources/software-maintenance?source=resources"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 6,
+      "titulo": "Cambio preventivo",
+      "idea": "Su propósito principal es reducir el riesgo de fallas futuras y facilitar el mantenimiento.",
+      "visible": [
+        "Reduce riesgos futuros y facilita el mantenimiento.",
+        "Caso: web y aplicación móvil duplican la regla de acceso.",
+        "Prevención: centralizar esa regla y comprobar que ambas conserven sus respuestas."
+      ],
+      "ejemplo": "Una regla duplicada puede evolucionar de forma distinta en dos clientes. Una política común reduce ese riesgo.",
+      "nota": "Un cambio preventivo reduce riesgos antes de que se manifiesten como fallas para el usuario. Imaginemos que la web y la aplicación móvil contienen copias de la misma regla de acceso. Hoy responden igual, pero una futura modificación podría actualizar una copia y olvidar la otra. Proponemos centralizar la política y comprobar que ambas vías conserven sus respuestas actuales. La finalidad es facilitar el mantenimiento y reducir esa posible divergencia. Debemos definir qué comportamiento se conserva y verificarlo con pruebas de regresión. Cambiar la organización del código requiere cuidado: llamar preventivo al trabajo no garantiza que automáticamente sea seguro o que mejore cualquier atributo del sistema.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://www.computer.org/resources/software-maintenance?source=resources"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 7,
+      "titulo": "Las ocho etapas del cambio",
+      "idea": "Cada etapa responde una pregunta distinta y permite justificar la siguiente decisión.",
+      "visible": [
+        "1 Solicitud",
+        "2 Análisis",
+        "3 Evaluación de impacto",
+        "4 Aprobación o rechazo",
+        "5 Planificación",
+        "6 Implementación",
+        "7 Verificación y pruebas",
+        "8 Registro y cierre",
+        "Caso: evaluar y entregar la transferencia de entradas."
+      ],
+      "ejemplo": "La misma petición conserva su identidad mientras se analiza, decide, desarrolla y comprueba.",
+      "nota": "La solicitud describe la necesidad. El análisis estudia el problema y sus alternativas. La evaluación de impacto identifica componentes afectados, riesgos y esfuerzo. Con esa información, la autoridad responsable aprueba, aplaza o rechaza el cambio. La planificación define cómo ejecutarlo y qué hacer si falla. La implementación realiza la modificación y la verificación contrasta su comportamiento con los criterios acordados. El registro enlaza la decisión, el cambio y sus pruebas. Tras verificar y registrar la aceptación de la entrega, se cierra la solicitud; el seguimiento operativo puede continuar. En la transferencia de entradas debemos recorrer estas preguntas, aunque el equipo use herramientas ligeras. No basta con abrir una tarea y programar: las decisiones intermedias justifican el alcance y las comprobaciones elegidas.",
+      "tiempo_segundos": 65,
+      "bloque": "Teoría",
+      "kind": "flow",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "stages": [
+        "Solicitud",
+        "Análisis",
+        "Evaluación de impacto",
+        "Aprobación o rechazo",
+        "Planificación",
+        "Implementación",
+        "Verificación y pruebas",
+        "Registro y cierre"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 8,
+      "titulo": "Solicitud y criterios de aceptación",
+      "idea": "Una petición útil describe la necesidad y permite reconocer cuándo el resultado es aceptable.",
+      "visible": [
+        "Describe necesidad, alcance y aceptación.",
+        "Necesidad: ceder una entrada sin recomprarla.",
+        "Aceptación: nuevo QR válido y anterior rechazado.",
+        "Fuera de alcance: reventa, devolución y cambio de asiento."
+      ],
+      "ejemplo": "Una solicitud evaluable fija lo que debe pasar y también las capacidades que no incluye la entrega.",
+      "nota": "La solicitud de cambio transforma una petición informal en un trabajo que podemos evaluar. Debe explicar el problema, la justificación, el alcance y los criterios de aceptación. Para la transferencia, la necesidad es ceder una entrada sin comprar otra. El criterio principal establece que el nuevo titular puede ingresar y el código anterior deja de ser válido. También excluimos reventa, devolución y cambio de asiento. Así evitamos que cada participante imagine una función diferente. Una plantilla de solicitud ayuda a registrar esta información, pero el valor está en su precisión. Si el criterio no permite decidir si el resultado es correcto, debemos aclararlo antes de implementar.",
+      "tiempo_segundos": 55,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 9,
+      "titulo": "Análisis de impacto",
+      "idea": "Identifica qué puede verse afectado, qué riesgo introduce el cambio y cuánto esfuerzo exige.",
+      "visible": [
+        "Identifica componentes, riesgos y esfuerzo antes de decidir.",
+        "Entrada: titular y estado.",
+        "Acceso: validez de los códigos QR.",
+        "Pagos: conservar el cobro original.",
+        "Concurrencia: dos solicitudes no deben crear dos titulares."
+      ],
+      "ejemplo": "Una transferencia puede afectar datos y validación de acceso aunque el cambio visible sea un botón.",
+      "nota": "El análisis de impacto identifica las consecuencias directas e indirectas de una modificación. En nuestro caso cambian el titular y el estado de la entrada, y el lector debe reconocer únicamente el código vigente. El cobro original se conserva porque esta propuesta no añade una compra. También aparece un riesgo de concurrencia: dos peticiones podrían intentar transferir la misma entrada al mismo tiempo. Necesitamos decidir cómo actualizar sus datos de forma coherente y aceptar una sola operación. Además estimamos el esfuerzo para modificar, probar y publicar los componentes relacionados. Este análisis permite comparar alternativas y detectar cuándo una petición aparentemente pequeña tiene efectos importantes sobre el sistema.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 5: análisis de impacto"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 10,
+      "titulo": "Roles y decisión del cambio",
+      "idea": "La responsabilidad de decidir se apoya en información de negocio, tecnología y calidad.",
+      "visible": [
+        "Distribuye responsabilidades sobre la misma solicitud.",
+        "Solicitante: necesidad y prioridad.",
+        "Desarrollo: impacto y solución.",
+        "Calidad: criterios, pruebas y revisión.",
+        "Responsable: autorizar y coordinar la publicación."
+      ],
+      "ejemplo": "La decisión puede aplazar la función cuando el riesgo de admitir dos códigos todavía no tiene respuesta comprobable.",
+      "nota": "Los roles reparten responsabilidades. El solicitante explica la necesidad, negocio establece su prioridad, desarrollo evalúa la solución y calidad define cómo comprobarla. La autoridad responsable decide si procede y deja una justificación. En un equipo pequeño puede ser una persona asignada; en contextos de mayor criticidad puede intervenir un comité. La prioridad indica qué conviene atender primero, la urgencia expresa el plazo y el riesgo combina la posibilidad de un problema con sus consecuencias. Por ejemplo, la transferencia puede ser prioritaria y aun así aplazarse si permite dos accesos. Revisar pruebas aporta información a la decisión, pero no sustituye la responsabilidad de autorizarla.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 11,
+      "titulo": "Planificación de la implementación",
+      "idea": "Convierte una decisión aprobada en trabajo ordenado con responsables, dependencias y contingencia.",
+      "visible": [
+        "Define responsables, dependencias, plazo y recuperación.",
+        "Primero: lector compatible con el QR vigente.",
+        "Después: transferencia con actualización coherente de datos.",
+        "Al final: activar la función y comprobar su operación."
+      ],
+      "ejemplo": "Preparar el validador antes de habilitar transferencias reduce el riesgo de publicar componentes incompatibles.",
+      "nota": "Planificar significa ordenar el trabajo antes de modificar el producto. Debemos asignar responsables, identificar dependencias, estimar esfuerzo y fijar condiciones de publicación y recuperación. En el ejemplo, primero preparamos un lector compatible con el estado vigente de la entrada. Después implementamos la transferencia y la actualización coherente de titular y código. La función se activa cuando los componentes necesarios están listos y comprobados. El desarrollo puede aislarse en una rama y organizarse en cambios pequeños con mensajes claros. Una revisión del código ayuda a detectar efectos inesperados. Este orden evita entregar por separado partes que solamente funcionan correctamente cuando se utilizan juntas.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 12,
+      "titulo": "Verificación y pruebas",
+      "idea": "Comprueba la nueva necesidad y los comportamientos anteriores que deben conservarse.",
+      "visible": [
+        "Contrasta resultados con criterios y busca regresiones.",
+        "Transferencia: nuevo QR aceptado y anterior rechazado.",
+        "Simultáneas: una sola transferencia aceptada.",
+        "Compra y acceso habituales siguen funcionando."
+      ],
+      "ejemplo": "La prueba incluye transferencia, validación de acceso y dos peticiones concurrentes, además de la compra habitual.",
+      "nota": "La verificación contrasta el resultado con los criterios acordados. Las pruebas de una regla pueden revisar qué estados permiten transferir. Una prueba de integración comprueba que los componentes y sus datos se actualicen de forma coherente. Una prueba de concurrencia envía dos solicitudes sobre la misma entrada y comprueba que solamente una se acepte. También repetimos compra y acceso habituales para buscar regresiones. Cada prueba debe expresar su entrada, el resultado esperado y la evidencia obtenida. Un flujo de integración continua puede automatizar comprobaciones si está configurado. Que una herramienta indique éxito no elimina la necesidad de revisar si realmente evaluamos los riesgos y condiciones de aceptación.",
+      "tiempo_segundos": 60,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 13,
+      "titulo": "Publicación y plan de reversión",
+      "idea": "Publicar pone el cambio en servicio y la contingencia debe proteger también los datos ya modificados.",
+      "visible": [
+        "Publicar pone la función en servicio.",
+        "Una activación gradual limita la exposición inicial.",
+        "Si falla: pausar nuevas transferencias y conservar las confirmadas.",
+        "Revertir código no deshace automáticamente los datos."
+      ],
+      "ejemplo": "Pausar nuevas transferencias no debe reactivar códigos anteriores de entradas ya transferidas o utilizadas.",
+      "nota": "Publicar significa poner la modificación a disposición de los usuarios. Integrar un cambio en el repositorio es una acción distinta del despliegue y la activación del servicio. Podemos planificar una activación gradual y observar errores de transferencia o rechazo de entradas. Si aparece un problema, una contingencia razonable podría pausar nuevas transferencias mientras se investiga, conservando las ya confirmadas. No debemos reactivar códigos anteriores de entradas transferidas o utilizadas. Revertir código mediante Git registra otra modificación, pero no restaura automáticamente los datos ni corrige cada efecto operativo. El plan de recuperación debe respetar los derechos de acceso y ser compatible con el estado que ya existe.",
+      "tiempo_segundos": 50,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://git-scm.com/docs/git-revert"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 14,
+      "titulo": "Trazabilidad y artefactos",
+      "idea": "Los enlaces entre solicitud, decisión, código y pruebas permiten explicar la historia de una entrega.",
+      "visible": [
+        "Relaciona necesidad, decisión, código y evidencia.",
+        "Solicitud: alcance y aceptación.",
+        "Issue y PR: seguimiento y propuesta.",
+        "Commit y pruebas: modificación y comprobación.",
+        "Registro de cambios: contenido de la entrega."
+      ],
+      "ejemplo": "Ante un rechazo de QR, el equipo puede localizar qué entrega cambió la regla y qué pruebas respaldaron esa decisión.",
+      "nota": "La trazabilidad permite reconstruir por qué existe una modificación y qué comprobaciones la respaldan. La solicitud conserva necesidad, alcance y aceptación. La Issue organiza el seguimiento y el Pull Request presenta el código para revisión. Los commits identifican cambios concretos y el registro de cambios explica el contenido de la entrega. Las evidencias enlazadas muestran qué se comprobó. Si un código QR falla, esta relación ayuda a localizar la versión y la decisión que modificaron la regla. Las plantillas y mensajes claros facilitan la lectura. Las reglas de rama pueden exigir revisiones y pruebas cuando estén configuradas. Las herramientas apoyan el proceso, pero los enlaces deben representar trabajo y decisiones reales.",
+      "tiempo_segundos": 55,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://docs.github.com/en/pull-requests/reference/pull-requests"
+      ],
+      "showExample": true
+    },
+    {
+      "numero": 15,
+      "titulo": "Una transferencia gestionada",
+      "idea": "El resultado de gestionar el cambio es una decisión justificada y una entrega comprobable.",
+      "visible": [
+        "Necesidad: ceder una entrada.",
+        "Decisión: conservar un único derecho de acceso.",
+        "Cambio: actualizar titular e invalidar el QR previo.",
+        "Prueba: comprobar estados y concurrencia.",
+        "Cierre: publicar, registrar y seguir el resultado."
+      ],
+      "ejemplo": "La capacidad nueva debe permitir transferir la entrada sin duplicar titulares, acceso ni aforo.",
+      "nota": "Volvamos a la petición inicial: una persona quiere transferir su entrada. Ahora sabemos que gestionar esa petición implica definir las condiciones de aceptación, evaluar datos y dependencias, decidir el alcance y planificar una publicación compatible. Después implementamos, comprobamos estados y concurrencia, y conservamos el vínculo entre la necesidad y su evidencia. La condición que guía todo el caso es mantener un único derecho de acceso por entrada. Las cuatro categorías nos ayudaron a reconocer distintos motivos para modificar software y las ocho etapas ordenaron las decisiones. Con este enfoque podemos explicar cualquier cambio mediante preguntas concretas: qué necesidad atiende, qué debe conservar y cómo comprobamos su resultado.",
+      "tiempo_segundos": 45,
+      "bloque": "Teoría",
+      "kind": "concept",
+      "fuentes": [
+        "referencias/semanas/semana09/Semana09_EVO_TG.pdf, páginas 9–13",
+        "https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf, capítulo 6: control de cambios y autoridad de decisión"
+      ],
+      "showExample": true
+    },
+    {
+      "titulo": "Tres solicitudes, una intervención",
+      "idea": "Registrar propuestas permite decidir qué implementar y qué conservar pendiente.",
+      "visible": [
+        "#10 Liberar el comando: implementada.",
+        "#11 Validar nulos: propuesta pendiente.",
+        "#12 Configurar espera: propuesta pendiente."
+      ],
+      "ejemplo": "El alcance de esta entrega se limita a CAM-S09-001.",
+      "nota": "La práctica pide al menos tres solicitudes relacionadas con RRHH. Registramos las tres en GitHub antes de escribir la nueva implementación. La primera corrige la liberación del comando que crea el generador. La segunda propone validar argumentos nulos. La tercera propone configurar el tiempo de espera. Elegimos la primera porque encontramos una responsabilidad de recurso sin delimitar y podemos comprobar una solución pequeña sin acceder a CMI. Las otras dos continúan abiertas: haberlas identificado no significa que estén aprobadas ni terminadas. Esta distinción demuestra control del alcance. Cada solicitud tiene su motivo, impacto, prioridad propuesta y criterios, y puede seguirse desde la matriz hasta su Issue.",
+      "tiempo_segundos": 60,
+      "bloque": "Caso RRHH",
+      "kind": "concept",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ]
+    },
+    {
+      "titulo": "Matriz de impacto",
+      "idea": "El impacto se evalúa por cambio, no mediante una etiqueta general de riesgo.",
+      "visible": [],
+      "ejemplo": "Cada solicitud conserva su propio criterio de aceptación.",
+      "nota": "La matriz compara las tres solicitudes usando los mismos criterios. En la primera cambia el final de vida del comando, con el riesgo de que alguien lo quiera reutilizar después. En la segunda cambiarían el tipo y el momento del error ante un argumento nulo, por lo que habría que revisar los consumidores. En la tercera cambiaría la configuración del comando y necesitaríamos definir límites y un valor predeterminado compatible. No asignamos horas o porcentajes de mejora sin medición. Las prioridades son propuestas para esta práctica. La matriz permite justificar la selección y evita que la corrección inicial se convierta informalmente en tres implementaciones distintas.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "matrix",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ],
+      "tableRows": [
+        [
+          "Solicitud",
+          "Qué afecta",
+          "Riesgo principal",
+          "Decisión"
+        ],
+        [
+          "001 · Correctiva",
+          "Ciclo del comando",
+          "Uso posterior",
+          "Implementada"
+        ],
+        [
+          "002 · Preventiva",
+          "Entradas y errores",
+          "Contrato de error",
+          "Pendiente"
+        ],
+        [
+          "003 · Perfectiva",
+          "Tiempo de espera",
+          "Límites y espera",
+          "Pendiente"
+        ]
+      ],
+      "columnWidths": [
+        260,
+        330,
+        330,
+        232
+      ],
+      "tableFontSize": 28,
+      "tableTop": 205,
+      "tableHeight": 330
+    },
+    {
+      "titulo": "Solicitud CAM-S09-001",
+      "idea": "Un formato corto debe permitir decidir y verificar el cierre.",
+      "visible": [
+        "Problema: comando sin liberación delimitada.",
+        "Alcance: Generar síncrono.",
+        "Aceptación: liberar tras éxito y error.",
+        "Conservar: DataSet, excepción y Preparar."
+      ],
+      "ejemplo": "Issue #10 concentra el contrato del cambio.",
+      "nota": "Esta es la solicitud que sí ejecutamos. Su origen es la revisión del generador v4, no un incidente reportado por un usuario de producción. El formato identifica el problema, la razón, el alcance y la evidencia que necesitamos. Definimos dos caminos obligatorios: ejecución con resultado y ejecución con excepción. También dejamos claro qué debemos conservar: el mismo DataSet, la misma excepción del ejecutor y la propiedad del recurso cuando alguien usa Preparar directamente. La autorización general del usuario nos permite realizar la práctica y publicarla. La selección técnica queda documentada sin inventar una aprobación de un comité o una revisión independiente que no ocurrió.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "concept",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ]
+    },
+    {
+      "titulo": "Antes y después de Generar",
+      "idea": "La modificación de código es pequeña porque el análisis delimitó su alcance.",
+      "visible": [],
+      "ejemplo": "Un único GeneradorReportes nuevo en src/v5/.",
+      "nota": "El lado izquierdo muestra la ruta anterior: Preparar crea el contenedor del comando y el ejecutor lo utiliza. El método termina sin llamar explícitamente a Dispose sobre el contenedor. A la derecha delimitamos esa responsabilidad con using. El comando permanece disponible durante la llamada síncrona y se libera antes de salir del método, tanto al devolver el resultado como al propagarse un error del ejecutor. No copiamos ni reescribimos toda la aplicación. La biblioteca v5 selecciona este generador y reutiliza los componentes anteriores. Esta es la implementación visible del cambio; la explicación de gestión está en por qué lo solicitamos, qué riesgos evaluamos y cómo lo comprobamos.",
+      "tiempo_segundos": 90,
+      "bloque": "Caso RRHH",
+      "kind": "code",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json",
+        "src/v4/caso_ioc/GeneradorReportes.cs",
+        "src/v5/caso_cambio/GeneradorReportes.cs",
+        "https://learn.microsoft.com/dotnet/csharp/language-reference/statements/using"
+      ],
+      "before": "return _sql.Ejecutar(\n    Preparar(reporte));",
+      "after": "using (var comando =\n       Preparar(reporte))\n{\n    return _sql.Ejecutar(comando);\n}"
+    },
+    {
+      "titulo": "Propiedad del comando",
+      "idea": "Liberar el comando no significa cerrar la conexión ni destruir el resultado.",
+      "visible": [],
+      "ejemplo": "Generar libera lo que crea. Preparar entrega la propiedad a su llamador.",
+      "nota": "La pregunta importante es quién conserva la responsabilidad sobre cada recurso. Si llamamos Generar, el método crea el ComandoReporte para la ejecución y lo libera al terminar. Si llamamos Preparar directamente, recibimos el contenedor y debemos liberarlo nosotros. El DataSet devuelto es un objeto distinto: la prueba confirma que sigue siendo el mismo resultado y que podemos leer su tabla sintética. La conexión y el adaptador no pasan a ser propiedad del generador. Existe un límite relevante: el adaptador conserva SelectCommand apuntando al comando dispuesto. Por eso necesitamos revisar posibles consumidores externos antes de integrar esta biblioteca con la interfaz y CMI reales.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "matrix",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ],
+      "tableRows": [
+        [
+          "Ruta",
+          "Durante el uso",
+          "Al terminar"
+        ],
+        [
+          "Generar con éxito",
+          "Comando disponible",
+          "Generar llama Dispose"
+        ],
+        [
+          "Generar con error",
+          "Ejecutor recibe comando",
+          "Generar llama Dispose"
+        ],
+        [
+          "Preparar directo",
+          "Llamador recibe comando",
+          "Llamador libera"
+        ]
+      ],
+      "columnWidths": [
+        290,
+        430,
+        432
+      ],
+      "tableFontSize": 28,
+      "tableTop": 205,
+      "tableHeight": 330
+    },
+    {
+      "titulo": "Primero, una prueba que falla",
+      "idea": "La reproducción conecta el hallazgo de código con una comprobación observable.",
+      "visible": [
+        "Misma suite nueva contra v4.",
+        "Dos fallos esperados: liberación tras éxito y tras error.",
+        "La compilación termina correctamente."
+      ],
+      "ejemplo": "La salida 1 del caso rojo confirma el resultado esperado de la reproducción.",
+      "nota": "No comenzamos mostrando solamente pruebas que pasan. Ejecutamos la suite nueva contra el generador anterior para comprobar que detecta precisamente la ausencia de liberación. Cuatro escenarios aprueban y dos fallan: Dispose después del éxito y después del error. La biblioteca y el harness sí compilan, por lo que este resultado no es un fallo de instalación. El ejecutor espía observa el evento Disposed del comando y devuelve datos sintéticos o lanza una excepción controlada. El harness limpia después de observar, para no confundir su propia limpieza con la del generador. Esto reproduce el comportamiento estudiado sin abrir una conexión ni medir una supuesta fuga en producción.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "evidence",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ],
+      "metrics": [
+        {
+          "value": "4/6",
+          "label": "v4: dos fallos esperados"
+        },
+        {
+          "value": "2",
+          "label": "faltas de liberación observadas"
+        }
+      ]
+    },
+    {
+      "titulo": "Corrección y regresión",
+      "idea": "El cambio debe resolver el defecto y conservar lo que ya estaba comprobado.",
+      "visible": [
+        "Seis escenarios de ciclo de vida aprobados.",
+        "Dieciséis escenarios IoC previos aprobados.",
+        "Biblioteca de 22 fuentes compilada sin errores ni advertencias."
+      ],
+      "ejemplo": "Mismo DataSet, misma excepción y Preparar con propiedad del llamador.",
+      "nota": "Con el nuevo generador, la misma suite de ciclo de vida aprueba sus seis escenarios. Además repetimos los dieciséis escenarios de IoC anteriores contra v5. Así comprobamos tanto el objetivo nuevo como los contratos que ya conocíamos. Las pruebas observan que el comando está disponible dentro del ejecutor y que después recibe Dispose. También comprueban la identidad del resultado y de la excepción, y la responsabilidad del llamador al usar Preparar. La biblioteca diagnóstica compila veintidós fuentes reutilizadas y nuevas. Estos números describen escenarios concretos y compilación; no son un porcentaje de cobertura ni demuestran que el sistema completo funcione conectado al servidor.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "evidence",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ],
+      "metrics": [
+        {
+          "value": "6/6",
+          "label": "ciclo de vida v5"
+        },
+        {
+          "value": "16/16",
+          "label": "regresión IoC"
+        },
+        {
+          "value": "22",
+          "label": "fuentes de biblioteca"
+        }
+      ]
+    },
+    {
+      "titulo": "Evidencia reproducible",
+      "idea": "La ejecución y la verificación de evidencia son pasos diferentes.",
+      "visible": [
+        "compilar_v5.py ejecuta los harness.",
+        "verificar_v5.py comprueba hashes, alcance y evidencia.",
+        "Resultados nuevos en evidencia/semanas/semana09/."
+      ],
+      "ejemplo": "Las evidencias de semanas anteriores se conservan.",
+      "nota": "Para reproducir el resultado se ejecuta primero compilar_v5.py y después verificar_v5.py. El primer comando compila la selección de fuentes y ejecuta los harness nuevos y de regresión. El segundo comprueba que los hashes, los artefactos y la evidencia corresponden al código actual; también verifica los archivos históricos protegidos y las exclusiones privadas. No usamos los main de las herramientas antiguas porque generarían resultados sobre sus carpetas históricas. Los compilados quedan en .local y los resultados permitidos en evidencia de semana nueve. El verificador conservó quinientos dieciséis blobs protegidos respecto de la base. El índice Git se revisa por separado antes de publicar.",
+      "tiempo_segundos": 60,
+      "bloque": "Caso RRHH",
+      "kind": "code",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ],
+      "before": "python herramientas/compilar_v5.py\npython herramientas/verificar_v5.py",
+      "after": null
+    },
+    {
+      "titulo": "El seguimiento queda en GitHub",
+      "idea": "Una solicitud debe permitir recorrer problema, cambio, evidencia e integración.",
+      "visible": [
+        "Issue #10: motivo y criterios.",
+        "Rama semana-09-gestion-cambios.",
+        "PR #13: diff y resultados.",
+        "Issues #11 y #12: propuestas abiertas."
+      ],
+      "ejemplo": "El PR enlaza la solicitud y su commit de integración.",
+      "nota": "La trazabilidad se puede recorrer en GitHub. Partimos de la Issue diez, donde registramos la solicitud antes de implementar. En la rama semanal aislamos el código, las pruebas y la documentación. El Pull Request trece reúne el diff y explica los resultados y los riesgos. Al integrarlo mediante squash en main, la referencia Closes cierra la solicitud implementada. Las Issues once y doce permanecen abiertas porque no las ejecutamos. Los commits mantienen sus fechas reales. Main es la línea de integración del proyecto académico y no representa un despliegue productivo. El estado definitivo y el identificador del commit pueden comprobarse desde el propio PR.",
+      "tiempo_segundos": 70,
+      "bloque": "Caso RRHH",
+      "kind": "concept",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json",
+        "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/10",
+        "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/pull/13",
+        "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue"
+      ]
+    },
+    {
+      "titulo": "Reversión prevista",
+      "idea": "Una contingencia necesita un procedimiento y límites explícitos.",
+      "visible": [
+        "Detener la integración si falla un criterio.",
+        "Después de integrar: evaluar revert del commit de C07.",
+        "Recompilar y comprobar el estado restaurado.",
+        "Plan documentado; no se revirtió main."
+      ],
+      "ejemplo": "Esta corrección no contiene migraciones de base de datos.",
+      "nota": "El plan de reversión depende del estado real del cambio. Antes de integrar, una prueba fallida obliga a detenernos y revisar la propuesta. Después de integrar, una reversión debe identificar el commit correcto y crear una nueva revisión, conservando el historial. También requiere recompilar y comprobar el comportamiento restaurado; recuperar archivos por sí solo no verifica funcionamiento. En este caso no hay migraciones ni datos escritos, de modo que no existe una reversión de base asociada. Si otro cambio incluyera datos, necesitaría un procedimiento específico. Este es un plan previsto: no aplicamos una reversión sobre main para aparentar una recuperación que no necesitábamos.",
+      "tiempo_segundos": 55,
+      "bloque": "Caso RRHH",
+      "kind": "concept",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json",
+        "docs/semanas/semana09/04_flujo_y_reversion.md",
+        "https://git-scm.com/docs/git-revert"
+      ]
+    },
+    {
+      "titulo": "Qué mejora y qué sigue pendiente",
+      "idea": "La calidad de la decisión también se demuestra explicando sus límites.",
+      "visible": [
+        "Tres solicitudes evaluadas; una corrección comprobada.",
+        "Liberación explícita del comando durante ejecución síncrona.",
+        "Dos propuestas pendientes y trazabilidad en GitHub.",
+        "Integración real con SQL e interfaz aún pendiente."
+      ],
+      "ejemplo": "La siguiente decisión se toma con evidencia, sin ampliar informalmente el alcance.",
+      "nota": "Concluimos mostrando el resultado y su alcance. Mejoramos una responsabilidad concreta sobre el comando y demostramos el cambio con pruebas antes y después, más regresión. También aplicamos el proceso de gestión: registramos tres solicitudes, analizamos su impacto, seleccionamos una y conservamos las demás como propuestas pendientes. La integración real con CMI y la interfaz no se ha probado. Tampoco medimos memoria, handles, rendimiento o seguridad. El adaptador y los consumidores no recuperados siguen siendo un punto de revisión. Si el docente pregunta por qué no implementamos las tres, la respuesta es que el enunciado pide identificarlas y evaluarlas, y el control del alcance permite demostrar correctamente una intervención seleccionada.",
+      "tiempo_segundos": 65,
+      "bloque": "Caso RRHH",
+      "kind": "concept",
+      "fuentes": [
+        "specs/c07_gestion_cambio.json",
+        "docs/semanas/semana09/01_gestion_cambio.md",
+        "evidencia/semanas/semana09/compilacion_y_pruebas.json"
+      ]
+    }
+  ],
+  "revisionDe": "C07-S09",
+  "caso_teorico": "Plataforma hipotética de venta y acceso a conciertos",
+  "supuestos_teoricos": [
+    "Validación en línea contra el estado vigente de cada entrada",
+    "Cada entrada conserva un único titular y un único derecho de acceso",
+    "La transferencia propuesta no añade una compra ni cambia asiento o aforo",
+    "Todos los escenarios y resultados esperados del caso son ilustrativos, no mediciones de un producto real"
+  ]
+}
