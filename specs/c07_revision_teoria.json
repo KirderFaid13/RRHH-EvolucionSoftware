@@ -1,0 +1,49 @@
+{
+  "id": "C07-S09-REVISION-TEORIA",
+  "fecha_solicitud_local": "2026-10-16",
+  "origen": "El usuario solicita profundizar la teoría de la primera mitad con conceptos y ejemplos ajenos a RRHH.",
+  "base_commit": "c8b8298c0d122b5e544cfc7b35eacabc69c4b43c",
+  "issue": 15,
+  "issue_url": "https://github.com/KirderFaid13/RRHH-EvolucionSoftware/issues/15",
+  "alcance": {
+    "diapositivas_reescritas": [1, 15],
+    "diapositivas_practicas_preservadas": [16, 26],
+    "cantidad_total": 26,
+    "duracion_total_minutos": [20, 30],
+    "caso_teorico": "Plataforma hipotética de venta y acceso a conciertos; transferencia de una entrada digital entre personas.",
+    "invariante_del_ejemplo": "Una entrada conserva un único propietario y una sola credencial vigente; transferirla no incrementa el aforo.",
+    "entrega": "Nueva presentación y nuevo guion; conservar versiones y documentos originales."
+  },
+  "cobertura": [
+    "Qué es un cambio y qué es gestionar el cambio en software",
+    "Importancia, calidad, mantenibilidad, alcance, autorización y comunicación",
+    "Correctivo, adaptativo, perfectivo y preventivo según la clasificación pedida por el curso, cada uno con explicación y ejemplo general",
+    "Solicitud, análisis, impacto, decisión, planificación, implementación, verificación, registro y cierre",
+    "Responsabilidades de los roles, artefactos y buenas prácticas",
+    "Riesgos y prioridad, criterios de aceptación, publicación, contingencia y trazabilidad"
+  ],
+  "restricciones": [
+    "No utilizar referencias a RRHH, CMI, Dispose, using, C07, Issues reales ni resultados de pruebas del proyecto dentro de las primeras quince diapositivas o sus notas.",
+    "Identificar el caso de conciertos como hipotético; no atribuirle resultados medidos.",
+    "No modificar el informe DOCX ni las presentaciones previas.",
+    "No modificar código, pruebas, binarios ni evidencia de compilación del sistema.",
+    "Mantener paleta, tipografía, tamaño y coherencia visual con la presentación existente.",
+    "Mantener el texto, notas y contenido visual de las diapositivas prácticas 16 a 26.",
+    "Distinguir reversión de código de reparación de datos o credenciales ya emitidas."
+  ],
+  "salidas": {
+    "presentacion": "docs/semanas/semana09/Semana09_Gestion_Cambio_RRHH_Teoria_Revisada.pptx",
+    "guion": "docs/semanas/semana09/06_guion_teoria_revisada.md",
+    "contenido": "herramientas/presentacion_semana09/contenido_teoria_revisada.json",
+    "generador": "herramientas/presentacion_semana09/generar_teoria_revisada.mjs",
+    "registro": "evidencia/semanas/semana09/revision_teoria.json"
+  },
+  "aceptacion": [
+    "Las primeras quince diapositivas cubren el temario docente y explican cada concepto con un ejemplo del caso externo.",
+    "Las once diapositivas prácticas conservan su contenido y apariencia; comparar sus partes XML, notas y renderizados cuando sea posible.",
+    "Texto, tablas y código editables; notas en las veintiséis páginas.",
+    "Revisar individualmente el render de cada diapositiva, la geometría y el paquete final.",
+    "Registrar hashes sobre bytes versionados con LF y cotejar con el índice antes de publicar.",
+    "Conservar hashes de fuentes originales y de los resultados técnicos anteriores."
+  ]
+}

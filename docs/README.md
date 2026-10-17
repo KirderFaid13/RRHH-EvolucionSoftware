@@ -16,4 +16,4 @@ El [informe C06](semanas/semana08/01_gestion_configuracion.md) responde la prác
 
 ## Semana 09
 
-[Semana 09: gestión del cambio](semanas/semana09/01_gestion_cambio.md), [matriz de impacto](semanas/semana09/03_matriz_impacto.md) y [guion de exposición](semanas/semana09/05_guion_exposicion.md).
+[Semana 09: gestión del cambio](semanas/semana09/01_gestion_cambio.md), [matriz de impacto](semanas/semana09/03_matriz_impacto.md), [materiales y versiones](semanas/semana09/README.md) y [guion con teoría revisada](semanas/semana09/06_guion_teoria_revisada.md).
